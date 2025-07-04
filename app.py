@@ -23,7 +23,7 @@ st.markdown(
 
 # --- Bot Configuration ---
 BOT_NAME = "SupportSage"
-# --- THIS LINE HAS BEEN UPDATED TO THE CORRECT RELATIVE PATH ---
+
 KNOWLEDGE_BASE_PATH = "intent.csv"
 
 # --- Data Loading & Caching ---
