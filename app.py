@@ -6,7 +6,7 @@ import uuid
 
 # Configuration
 RASA_SERVER_URL = "http://localhost:5005"  # Change this to your Rasa server URL
-RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
+RASA_WEBHOOK_URL = f"http://0.0.0.0:5005/webhooks/rest/webhook"
 
 # Initialize session state
 if 'messages' not in st.session_state:
