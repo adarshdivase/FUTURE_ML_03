@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  rasa:
+    image: my-rasa-bot  # Your Rasa bot image
+    volumes:
+      - ./data:/app/data # Example: Mount your Rasa project data
+      - ./models:/app/models # Mount your Rasa trained models
+    ports:
+      - "5005:5005" # Expose Rasa port to the host
+    command: rasa run -m models --enable-api --cors "*" --debug # Example Rasa command
+    # environment:
+    #   - SQLALCHEMY_SILENCE_UBER_WARNING=1 # Optional: To silence SQLAlchemy warnings
+
+  streamlit_app:
+    build:
+      context: . # Build context for your Streamlit app (where your Dockerfile for Streamlit is)
+      dockerfile: Dockerfile.streamlit # Name of your Streamlit Dockerfile
+    ports:
+      - "8501:8501" # Streamlit's default port
+    depends_on:
+      - rasa # Ensure Rasa starts before Streamlit
+    environment:
+      - RASA_SERVER_URL=http://rasa:5005 # How Streamlit app accesses Rasa
