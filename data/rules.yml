@@ -14900,3 +14900,11 @@ rules:
   steps:
   - intent: qa_pair_3724
   - action: utter_qa_pair_3724
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
