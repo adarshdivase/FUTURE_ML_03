@@ -1,29 +1,25 @@
-
-#  queue: queue
-#  wait_time_between_pulls:  10   # [optional](default: 100)
-#    password: <password used for authentication>
-#    type: redis
-#  url: http://my-server.com/models/default_core@latest
-#  url: "http://localhost:5055/webhook"
-# Event broker which all conversation events should be streamed to.
-# By default the conversations are stored in memory.
-# Server which runs your custom actions.
-#  type: pika
-#models:
-# https://rasa.com/docs/rasa/custom-actions
-#  url: localhost
-#tracker_store:
 # This file contains the different endpoints your bot can use.
-#  username: username
-#    username: <username used for authentication>
-#action_endpoint:
-# https://rasa.com/docs/rasa/event-brokers
 # Server where the models are pulled from.
-#  password: password
-# Tracker store which is used to store the conversations.
 # https://rasa.com/docs/rasa/model-storage#fetching-models-from-a-server
-#event_broker:
-#    db: <number of your database within redis>
-#    url: <host of the redis instance>
+
+#models:
+#  url: http://my-server.com/models/default_core@latest
+#  wait_time_between_pulls:  10   # [optional](default: 100)
+
+# Server which runs your custom actions.
+# https://rasa.com/docs/rasa/custom-actions
+
+#action_endpoint:
+#  url: "http://localhost:5055/webhook"
+
+# Tracker store which is used to store the conversations.
+# By default the conversations are stored in memory.
 # https://rasa.com/docs/rasa/tracker-stores
+
+#tracker_store:
+#    type: redis
+#    url: <host of the redis instance>
 #    port: <port of your redis instance>
+#    username: <username used for authentication>
+#    password: <password used for authentication>
+#    db: <number of your database within redis>

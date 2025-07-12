@@ -1,25 +1,55 @@
 recipe: default.v1
-assistant_id: 20240712-111100-primal-crust
+assistant_id: 20240712-optimized-chatbot
 language: en
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: CountVectorsFeaturizer
+  analyzer: word
+  min_ngram: 1
+  max_ngram: 2
 - name: DIETClassifier
-  epochs: 100
+  epochs: 30
+  constrain_similarities: true
+  model_confidence: softmax
+  loss_type: cross_entropy
+  similarity_type: auto
+  eval_num_examples: 20
+  eval_num_epochs: 4
+  drop_rate: 0.2
+  use_masked_language_model: false
+  batch_size:
+  - 64
+  - 256
 - name: EntitySynonymMapper
 - name: ResponseSelector
-  epochs: 100
+  epochs: 30
+  constrain_similarities: true
+  batch_size:
+  - 64
+  - 256
 - name: FallbackClassifier
-  threshold: 0.3
+  threshold: 0.7
   ambiguity_threshold: 0.1
 policies:
 - name: RulePolicy
+  core_fallback_threshold: 0.4
 - name: UnexpecTEDIntentPolicy
-  max_history: 5
-  epochs: 100
-- name: TEDPolicy
-  max_history: 5
-  epochs: 100
+  max_history: 3
+  epochs: 30
   constrain_similarities: true
+  batch_size:
+  - 32
+  - 64
+- name: TEDPolicy
+  max_history: 3
+  epochs: 30
+  constrain_similarities: true
+  batch_size:
+  - 32
+  - 64
