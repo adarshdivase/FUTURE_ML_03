@@ -1765,13 +1765,39 @@ nlu:
 
     - hey
 
+    - howdy
+
+    - what''s up
+
+    - whats up
+
+    - sup
+
     - good morning
 
     - good afternoon
 
     - good evening
 
-    - greetings'
+    - good day
+
+    - greetings
+
+    - hiya
+
+    - yo
+
+    - hii
+
+    - helo
+
+    - hellow
+
+    - morning
+
+    - afternoon
+
+    - evening'
 - intent: goodbye
   examples: '- bye
 
@@ -1779,11 +1805,35 @@ nlu:
 
     - see you later
 
+    - see ya
+
     - farewell
 
     - have a nice day
 
-    - talk to you later'
+    - talk to you later
+
+    - ttyl
+
+    - catch you later
+
+    - until next time
+
+    - take care
+
+    - see you soon
+
+    - later
+
+    - peace
+
+    - cya
+
+    - good night
+
+    - goodnight
+
+    - have a good one'
 - intent: bot_challenge
   examples: '- are you a bot?
 
@@ -1791,7 +1841,19 @@ nlu:
 
     - what are you?
 
-    - are you a robot?'
+    - are you a robot?
+
+    - are you real?
+
+    - are you AI?
+
+    - are you artificial intelligence?
+
+    - what kind of bot are you?
+
+    - who are you?
+
+    - what are you exactly?'
 - intent: affirm
   examples: '- yes
 
@@ -1803,7 +1865,31 @@ nlu:
 
     - that''s right
 
-    - sure'
+    - sure
+
+    - absolutely
+
+    - definitely
+
+    - of course
+
+    - yep
+
+    - yeah
+
+    - yup
+
+    - indeed
+
+    - true
+
+    - affirmative
+
+    - roger
+
+    - okay
+
+    - ok'
 - intent: deny
   examples: '- no
 
@@ -1815,4 +1901,24 @@ nlu:
 
     - that''s wrong
 
-    - nope'
+    - nope
+
+    - nah
+
+    - negative
+
+    - false
+
+    - definitely not
+
+    - absolutely not
+
+    - never
+
+    - not at all
+
+    - not really
+
+    - I don''t think so
+
+    - no way'

@@ -1210,3 +1210,15 @@ stories:
   - action: utter_greet
   - intent: goodbye
   - action: utter_goodbye
+- story: bot challenge flow
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: affirm
+  - action: utter_greet
+- story: greeting with bot question
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot

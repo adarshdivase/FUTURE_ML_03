@@ -1212,3 +1212,11 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
+- rule: Handle affirmation
+  steps:
+  - intent: affirm
+  - action: utter_greet
+- rule: Handle denial
+  steps:
+  - intent: deny
+  - action: utter_please_rephrase
