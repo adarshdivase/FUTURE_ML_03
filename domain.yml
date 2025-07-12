@@ -909,14 +909,26 @@ responses:
   - text: when i have time, i sometimes draw and paint.
   utter_greet:
   - text: Hello! How can I help you today?
+  - text: Hi there! What can I do for you?
+  - text: Hey! How can I assist you?
+  - text: Hello! What would you like to know?
   utter_goodbye:
   - text: Goodbye! Have a great day!
+  - text: See you later! Take care!
+  - text: Bye! Have a wonderful day!
+  - text: Farewell! Hope to chat again soon!
   utter_iamabot:
   - text: I am a chatbot created to help answer your questions.
+  - text: I'm an AI assistant here to help you with information.
+  - text: I'm a bot designed to provide helpful answers to your queries.
   utter_default:
   - text: I'm sorry, I don't understand that question. Could you please rephrase it?
+  - text: I'm not sure about that. Can you ask it differently?
+  - text: I didn't quite get that. Could you try rephrasing your question?
   utter_please_rephrase:
   - text: I'm sorry, I don't understand. Can you rephrase that?
+  - text: Could you please ask that in a different way?
+  - text: I'm having trouble understanding. Can you try again?
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
