@@ -1,0 +1,40 @@
+name: Train Rasa Model
+
+# This action runs automatically whenever you push code to your "main" branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  train-model:
+    runs-on: ubuntu-latest  # Use a clean Linux environment from GitHub
+
+    steps:
+    # 1. Check out your repository code
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    # 2. Set up the correct Python version (e.g., 3.8)
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+
+    # 3. Install all Python dependencies, including Rasa
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install rasa==3.6.0
+
+    # 4. Run the Rasa training command
+    - name: Train Rasa Model
+      run: rasa train
+
+    # 5. (Optional) Upload the trained model as an artifact
+    # This saves the trained model so you can download it from GitHub
+    - name: Upload Trained Model
+      uses: actions/upload-artifact@v3
+      with:
+        name: trained-rasa-model
+        path: models/
