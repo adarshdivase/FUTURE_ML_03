@@ -1,1509 +1,912 @@
 version: '3.1'
 intents:
-- intent_hi_how_are_635a97b3
-- intent_im_fine_how_59ddb211
-- intent_im_pretty_good_d6daeebb
-- intent_no_problem_so_e26c7e89
-- intent_ive_been_great_0c077647
-- intent_ive_been_good_ce7cf0ba
-- intent_what_school_do_dccd4fba
-- intent_i_go_to_7228a576
-- intent_do_you_like_949a696f
-- intent_its_okay_its_5c3d518a
-- intent_good_luck_with_084584c2
-- intent_hows_it_going_bbe7ad8b
-- intent_never_better_thanks_193a1493
-- intent_so_how_have_4884b581
-- intent_ive_actually_been_71ddb855
-- intent_im_actually_in_904b40cd
-- intent_which_school_do_cf201aea
-- intent_im_attending_pcc_1520c5e6
-- intent_are_you_enjoying_827f627b
-- intent_its_not_bad_3cf9ea5f
-- intent_good_luck_with_95bc26ff
-- intent_how_are_you_31640c89
-- intent_im_doing_great_d41655d6
-- intent_im_absolutely_lovely_136b146f
-- intent_i_havent_been_0193d5b1
-- intent_i_started_school_2e944ba9
-- intent_where_are_you_72fc4fa6
-- intent_how_do_you_b04c9712
-- intent_i_like_it_031cf488
-- intent_its_an_ugly_91dc7e5a
-- intent_i_know_i_8ff31b25
-- intent_its_the_middle_06e9842f
-- intent_that_would_be_9f9ddbcf
-- intent_yeah_especially_since_c0c058c0
-- intent_i_know_it_3b6c6541
-- intent_yes_it_would_dc639dad
-- intent_i_really_wish_02c80692
-- intent_me_too_i_ba8bf8ea
-- intent_i_like_winter_fcb39f93
-- intent_id_rather_be_faa01254
-- intent_it_doesnt_look_202ffcfc
-- intent_youre_right_i_de199303
-- intent_in_the_middle_72d97e4a
-- intent_that_wouldnt_seem_23c2b809
-- intent_considering_that_its_29137732
-- intent_exactly_it_wouldnt_c4942792
-- intent_i_know_youre_b1ad6c8d
-- intent_i_wish_it_f691c4ba
-- intent_thats_how_i_86eece56
-- intent_i_enjoy_the_6b60c48e
-- intent_i_know_what_e238c269
-- intent_i_wish_it_c8d15d1e
-- intent_that_is_true_e1ffdab3
-- intent_it_wouldnt_rain_f5d95da9
-- intent_it_wouldnt_seem_8537d187
-- intent_it_would_be_7709aaf5
-- intent_any_rain_right_ed98db4b
-- intent_thats_right_it_5b32d5c3
-- intent_i_want_it_7555eb82
-- intent_i_know_what_48465bd2
-- intent_winter_is_great_9efde366
-- intent_its_such_a_914efe6b
-- intent_it_looks_like_626030f1
-- intent_yes_and_i_c84a179d
-- intent_why_is_that_37f30d2d
-- intent_i_really_love_a77b42ac
-- intent_me_too_it_2c2bd94f
-- intent_yes_but_i_caf141f2
-- intent_really_why_is_2af7a503
-- intent_because_you_can_824f4c3e
-- intent_i_really_hope_141ab8a5
-- intent_isnt_it_a_dcaaf609
-- intent_it_seems_that_ec4a61c3
-- intent_hopefully_it_will_ae5d0f52
-- intent_how_come_2246bfd2
-- intent_i_like_how_888a071c
-- intent_i_feel_the_0839dbb7
-- intent_i_especially_love_f31eae34
-- intent_the_stars_look_c83267c3
-- intent_i_really_want_1a8c714e
-- intent_dont_you_think_ccc06a00
-- intent_yes_i_think_684e209f
-- intent_i_think_that_bf32596e
-- intent_i_hope_that_4f0d21aa
-- intent_you_like_the_e0dfc387
-- intent_the_sky_looks_419d95fb
-- intent_i_understand_rain_da8d858d
-- intent_i_love_most_fd5d3865
-- intent_you_can_see_7eba5e4f
-- intent_i_really_want_b396d419
-- intent_that_sounds_like_dfdc3223
-- intent_i_heard_that_6b82fac0
-- intent_is_it_going_5ac2cc3e
-- intent_i_believe_so_082f6703
-- intent_good_i_hope_6c98bf31
-- intent_i_know_i_3d991f54
-- intent_but_you_know_81adb332
-- intent_youre_right_one_42efcbc8
-- intent_i_really_wish_7f15d751
-- intent_i_do_too_35f81f2f
-- intent_i_would_like_8b8757a8
-- intent_a_trip_to_694b51dd
-- intent_the_forecast_says_4618162f
-- intent_so_do_you_b5b15be8
-- intent_it_sounds_like_7ba658aa
-- intent_i_really_hope_d432edcf
-- intent_that_would_ruin_f8c09acb
-- intent_that_is_true_75cbaeac
-- intent_it_would_be_be606e21
-- intent_that_would_be_1298d926
-- intent_it_would_be_69eab66f
-- intent_whats_the_weather_63301010
-- intent_the_weather_this_907b861f
-- intent_will_it_be_23b56fba
-- intent_i_think_it_c212dc4b
-- intent_it_wouldnt_be_22ea00a4
-- intent_i_want_this_18a77436
-- intent_this_california_weather_e285ad74
-- intent_i_know_every_1f68ed20
-- intent_i_would_love_c12a3d92
-- intent_hello_may_i_15711221
-- intent_ive_been_trying_d5f4c3e4
-- intent_sorry_about_that_10824c88
-- intent_its_okay_ca38c72b
-- intent_so_what_were_1affc732
-- intent_oh_i_just_5b4064c7
-- intent_sure_what_did_0e2d00b9
-- intent_maybe_we_can_dfb88210
-- intent_that_sounds_like_46294a44
-- intent_ill_see_you_fcda5a30
-- intent_hi_how_are_672db29d
-- intent_speaking_whats_up_74d2148f
-- intent_why_havent_you_fb7b48bc
-- intent_my_bad_i_12bc01b3
-- intent_thats_all_right_e43eb92d
-- intent_what_was_the_e7ee8827
-- intent_i_want_to_8022f999
-- intent_sounds_good_what_6f46fba5
-- intent_i_was_thinking_578a1957
-- intent_okay_lets_go_bb8c597a
-- intent_until_then_cabddd8e
-- intent_youre_talking_to_98a78449
-- intent_ive_called_you_a2257f92
-- intent_i_was_busy_8070e168
-- intent_did_you_need_b7793220
-- intent_is_there_somewhere_c3bda241
-- intent_how_about_a_2c2784b9
-- intent_a_movie_sounds_bffd8a7e
-- intent_have_you_seen_e19b8c24
-- intent_no_i_havent_ee6de5a3
-- intent_shes_really_pretty_0a8c3c7b
-- intent_describe_her_to_44a86d72
-- intent_shes_not_too_01558acb
-- intent_shes_about_five_83347e26
-- intent_what_does_she_26317187
-- intent_she_has_pretty_1dddb729
-- intent_i_may_know_edf37d51
-- intent_so_you_have_daa74b09
-- intent_i_havent_seen_66aa3989
-- intent_i_think_that_f0d0e88e
-- intent_tell_me_how_3ff1514a
-- intent_shes_kind_of_4985d227
-- intent_what_height_is_a63b299e
-- intent_shes_probably_about_51c2a1b5
-- intent_thats_nice_but_c6458f9d
-- intent_the_first_thing_35a1bb70
-- intent_i_think_i_a19f8026
-- intent_are_you_telling_14f9a63e
-- intent_have_you_met_a7d35014
-- intent_no_have_you_80b22f3e
-- intent_shes_one_of_afb6575f
-- intent_well_shes_quite_f9a59468
-- intent_how_tall_would_04c73599
-- intent_i_would_say_3b180041
-- intent_what_about_her_2b155c73
-- intent_she_has_light_b7dca660
-- intent_i_think_i_531d78a0
-- intent_why_werent_you_23b2eb97
-- intent_i_wasnt_really_be61ec90
-- intent_what_was_wrong_e5827646
-- intent_my_stomach_was_c6303fe7
-- intent_do_you_feel_1714bc2e
-- intent_i_dont_really_1661b8ed
-- intent_do_you_want_450c9bda
-- intent_no_thanks_i_2f4d20a6
-- intent_what_reason_do_a3e5b443
-- intent_i_was_sick_f6a0544a
-- intent_i_had_a_0a33af58
-- intent_did_it_get_e9cfa398
-- intent_im_still_feeling_8346d33b
-- intent_would_you_like_9dedc602
-- intent_i_took_something_049f4c2d
-- intent_get_better_c7f6584a
-- intent_i_stayed_home_2ee26862
-- intent_are_you_feeling_b8d5f449
-- intent_im_still_feeling_5e1bfade
-- intent_im_going_to_e405da12
-- intent_did_you_hear_25efa8c5
-- intent_i_got_a_a94da66e
-- intent_did_you_really_593105da
-- intent_seriously_i_am_2df4eb24
-- intent_well_congratulations_a967bf94
-- intent_thank_you_16450deb
-- intent_im_so_happy_3bcec174
-- intent_yes_you_really_ebad862b
-- intent_have_you_heard_ba03f420
-- intent_you_havent_told_2bd39003
-- intent_i_got_a_8c75596d
-- intent_its_the_truth_aec78d7b
-- intent_congratulations_on_your_d9136991
-- intent_im_serious_you_8595e789
-- intent_is_that_what_3ae96d1c
-- intent_i_havent_told_b2c7c78a
-- intent_i_havent_heard_889008eb
-- intent_my_boss_offered_0fd9285a
-- intent_are_you_serious_ac20f0bc
-- intent_yes_i_am_768cea4b
-- intent_thats_great_congratulations_d8ea6979
-- intent_i_appreciate_that_85292d15
-- intent_you_have_no_ea385cbb
-- intent_you_look_really_3f511b18
-- intent_thank_you_i_f7bf2a69
-- intent_i_got_it_d6cdbf8e
-- intent_its_really_nice_e556c11d
-- intent_thanks_again_you_f769d950
-- intent_thank_you_i_03c224ca
-- intent_really_what_kind_8db14fb8
-- intent_these_are_called_437b667f
-- intent_i_really_like_0d9d4094
-- intent_they_were_about_6541078d
-- intent_i_absolutely_love_5d01195c
-- intent_you_do_i_18ceefba
-- intent_seriously_it_looks_17eb7a05
-- intent_i_bought_it_18493bee
-- intent_i_really_like_656a2d3a
-- intent_thank_you_i_d55d4b67
-- intent_those_are_nice_deae1d28
-- intent_these_are_some_c9ee4c01
-- intent_those_are_great_238ee64d
-- intent_i_got_them_9e2d17c8
-- intent_i_think_that_ae505537
-- intent_is_that_right_1c8ae363
-- intent_what_store_did_fd67fa70
-- intent_i_went_to_8c8a6d7e
-- intent_i_love_your_f1e8c569
-- intent_well_i_think_8673229d
-- intent_thanks_i_found_9ad10522
-- intent_i_think_that_3c1cbe5e
-- intent_these_are_chucks_228d4cc4
-- intent_your_shoes_look_94f5bf9d
-- intent_tell_me_what_2fd27b24
-- intent_i_enjoy_drawing_6d6e667e
-- intent_you_know_how_5a622f6b
-- intent_when_did_you_158caaf1
-- intent_i_learned_back_b70538c2
-- intent_oh_so_you_63e12fdb
-- intent_yeah_i_loved_b78dc8f5
-- intent_i_see_that_cfc87a9b
-- intent_i_wish_i_3aae2699
-- intent_what_kinds_of_7af66130
-- intent_ive_always_liked_55323cd6
-- intent_i_didnt_know_8234fe07
-- intent_i_do_it_32cee602
-- intent_how_long_have_19bd30d1
-- intent_did_you_take_1882d69b
-- intent_that_was_my_041a2550
-- intent_you_have_got_9e18f557
-- intent_thanks_ecd43020
-- intent_if_only_i_609954e8
-- intent_are_there_any_f69a3f6b
-- intent_oh_you_actually_423e0c13
-- intent_every_so_often_c97e8cca
-- intent_i_was_taught_5949892d
-- intent_exactly_it_was_3ce05930
-- intent_whats_your_favorite_470126b4
-- intent_my_favorite_movie_53a26a08
-- intent_oh_why_is_0b027a60
-- intent_its_the_funniest_1f79f7c7
-- intent_thats_true_it_3b08072d
-- intent_yes_i_saw_d45e132f
-- intent_didnt_you_laugh_8d73d86d
-- intent_me_too_that_f550b390
-- intent_mine_too_8d73d3bc
-- intent_i_have_it_7ec1ca64
-- intent_which_movie_is_42659029
-- intent_honestly_it_is_ea94360a
-- intent_youre_right_that_b1e2c692
-- intent_i_didnt_think_dbf4c78c
-- intent_i_went_to_53a07dd2
-- intent_i_was_laughing_10bdf740
-- intent_i_couldnt_help_5776ae3a
-- intent_same_here_4cab7fca
-- intent_i_bought_the_4cf4bb58
-- intent_im_going_to_50ec6ac1
-- intent_you_think_so_4a503d8b
-- intent_well_superbad_is_22c2e785
-- intent_youre_not_lying_f62a178c
-- intent_i_didnt_know_3a4b1bf4
-- intent_i_made_sure_57192afc
-- intent_i_couldnt_keep_42206cf7
-- intent_i_was_laughing_afdcb8b0
-- intent_thats_exactly_how_07126a91
-- intent_what_type_of_88ca7826
-- intent_i_like_listening_c0333430
-- intent_i_enjoy_rock_21f66829
-- intent_why_is_that_37f30d2d
-- intent_i_like_the_77a2bc3f
-- intent_thats_a_good_d8637abf
-- intent_what_kind_of_789e3eaf
-- intent_i_enjoy_listening_b6ec8fab
-- intent_what_kind_3407ac05
-- intent_i_like_to_f238c942
-- intent_i_like_the_41649a8a
-- intent_i_think_thats_48ab6689
-- intent_what_is_your_24d6c530
-- intent_i_listen_to_fe1402d5
-- intent_what_genres_831d521e
-- intent_i_enjoy_listening_ee3531ab
-- intent_did_you_go_ae73d5f4
-- intent_no_i_couldnt_24160a17
-- intent_you_missed_a_31eb17ee
-- intent_oh_really_who_0fc91181
-- intent_our_school_did_ecdadc5a
-- intent_too_bad_i_b57543bb
-- intent_yeah_you_should_790c7f68
-- intent_so_what_was_f53051d4
-- intent_the_score_was_b117631e
-- intent_man_that_was_b615f243
-- intent_were_you_able_2f506bd8
-- intent_i_was_unable_ff9b9bb7
-- intent_you_should_have_13bb1c68
-- intent_our_team_was_b566d206
-- intent_i_wish_i_064a30b1
-- intent_it_was_a_6d57dfdf
-- intent_what_was_the_222067e9
-- intent_our_team_won_ad485095
-- intent_sounds_like_it_765bd527
-- intent_i_was_meaning_192f48b2
-- intent_i_wanted_to_f28bbcd8
-- intent_its_too_bad_c4843b11
-- intent_our_team_played_8b313dd0
-- intent_i_really_wish_40644be8
-- intent_it_was_the_db3d85ce
-- intent_so_tell_me_038a39f8
-- intent_the_other_team_7d176988
-- intent_it_mustve_been_2ad133f3
-- intent_what_are_you_4453ade8
-- intent_im_going_to_be3fde51
-- intent_im_not_sure_83a0d4c3
-- intent_well_did_you_74c50433
-- intent_what_movie_are_9be009c5
-- intent_im_not_sure_fb7b90e0
-- intent_no_thanks_maybe_403691ed
-- intent_do_you_know_783550dc
-- intent_i_am_going_b2717a7f
-- intent_i_dont_know_19dc8709
-- intent_do_you_know_70b07c54
-- intent_i_dont_know_323bf863
-- intent_thank_you_for_8ee93c00
-- intent_you_have_any_7168df40
-- intent_im_going_to_eaeab07f
-- intent_im_not_quite_6b9478c3
-- intent_what_movie_are_218cb7de
-- intent_not_sure_is_2a6d6d49
-- intent_no_good_movies_b40da83f
-- intent_have_you_decided_733e90d9
-- intent_did_you_go_1ef32a08
-- intent_yeah_i_went_eb02b89c
-- intent_no_i_didnt_f38f9f59
-- intent_that_sucks_did_c76fd193
-- intent_that_would_be_924e4cd7
-- intent_i_will_be_4ac2ccac
-- intent_have_you_attended_9fd5ae2c
-- intent_i_wasnt_able_4e946aaf
-- intent_im_sorry_to_a22a33a1
-- intent_i_would_really_7dc80995
-- intent_its_no_trouble_40448a34
-- intent_if_you_get_e9834ce2
-- intent_have_you_gone_a4fda1b8
-- intent_i_couldnt_go_c05cfa12
-- intent_thats_horrible_id_2c3332cc
-- intent_thank_you_very_2f36c23a
-- intent_dont_mention_it_8d4192d1
-- intent_did_you_hear_a628414c
-- intent_what_happened_9aed4763
-- intent_our_cousin_went_97a97b6e
-- intent_she_did_why_ce99a760
-- intent_i_wouldve_thought_256aafcc
-- intent_no_i_had_c0d619b3
-- intent_well_she_did_6d6b8183
-- intent_oh_my_god_c9c87802
-- intent_are_you_going_576f2653
-- intent_good_i_just_61d85861
-- intent_have_you_heard_19d4a927
-- intent_heard_what_89d0d03a
-- intent_debrah_already_had_7907cb20
-- intent_i_didnt_know_23018ccc
-- intent_i_thought_you_00f32dcd
-- intent_thats_good_to_ac3e3c45
-- intent_will_you_go_67e08c0f
-- intent_of_course_i_f0b1241c
-- intent_i_just_wanted_7e3f4f66
-- intent_have_you_heard_e7f3ade0
-- intent_debrah_had_her_96baa3b3
-- intent_nobody_told_me_bb0ba989
-- intent_i_thought_you_357ee93a
-- intent_i_really_wasnt_3673687d
-- intent_she_was_a_b5dc6224
-- intent_wow_how_exciting_f66536e5
-- intent_i_know_you_df82e337
-- intent_of_course_did_81ffd170
-- intent_i_didnt_want_7100f0cd
-- intent_thats_sad_but_3ebb9ba3
-- intent_thats_a_switch_df8100df
-- intent_im_serious_have_4feffc68
-- intent_i_really_want_b76b2f1e
-- intent_so_go_then_06921767
-- intent_i_really_dont_f2a8d843
-- intent_well_anyway_do_cd0e2587
-- intent_did_you_make_48d7fdcc
-- intent_you_should_have_ea51fe67
-- intent_that_was_an_ffb43796
-- intent_maybe_it_was_b74dbeee
-- intent_no_not_recently_170824c1
-- intent_i_want_to_2ed2197f
-- intent_whats_stopping_you_0bab986c
-- intent_i_dont_want_5bc03fdd
-- intent_so_will_you_e756d8b8
-- intent_did_you_even_eff80da9
-- intent_yeah_i_went_7424168c
-- intent_no_i_didnt_b9f1f694
-- intent_thats_nice_have_e81a5831
-- intent_no_but_that_fe017476
-- intent_it_may_have_5af6c4bb
-- intent_i_havent_lately_4d4a421e
-- intent_i_would_love_4fda48af
-- intent_so_then_why_febf54de
-- intent_i_dont_want_bbbc44c2
-- intent_thanks_for_coming_bc9f1d8d
-- intent_its_no_problem_86a8838a
-- intent_i_missed_you_de5e4ee7
-- intent_why_havent_you_6c6e3e0b
-- intent_ive_been_really_f799e8a1
-- intent_working_073b3a3f
-- intent_i_wouldve_come_aa50c624
-- intent_ive_been_working_10966711
-- intent_well_regardless_im_e2d2ce84
-- intent_im_really_glad_68538801
-- intent_i_had_to_765b68fd
-- intent_i_was_missing_e08b253c
-- intent_so_why_havent_8f93cf55
-- intent_ive_actually_been_93503a8a
-- intent_ive_just_been_43b3ada7
-- intent_tell_me_what_c637bc4e
-- intent_im_really_happy_2c3f2198
-- intent_i_really_missed_4a96944b
-- intent_ive_been_missing_8b675769
-- intent_i_dont_understand_a8368730
-- intent_lately_ive_been_69b455e9
-- intent_tell_me_what_4c1afe8b
-- intent_ive_really_been_23617437
-- intent_ive_been_pretty_c5dec4de
-- intent_so_what_have_935ae110
-- intent_ive_just_been_c9f06cd1
-- intent_hey_did_you_c35f35a4
-- intent_yeah_but_im_455ea6fa
-- intent_oh_really_she_4ab57c41
-- intent_well_shell_probably_14f49dda
-- intent_yeah_so_are_b8a94483
-- intent_i_think_so_354bef05
-- intent_it_really_does_da2a6b29
-- intent_what_time_does_ebbc21ab
-- intent_it_starts_at_da4b9909
-- intent_oh_well_how_5d911838
-- intent_im_not_sure_49d6280c
-- intent_have_you_heard_51892132
-- intent_ive_heard_about_1fb6ae29
-- intent_really_i_got_f419d108
-- intent_im_guessing_that_2f96275b
-- intent_youre_probably_right_94fbb8b4
-- intent_i_want_to_bde1b01b
-- intent_i_know_it_ac6f2303
-- intent_its_supposed_to_a9ba2cca
-- intent_how_many_invitations_c8229493
-- intent_i_really_dont_3002e3ef
-- intent_has_anyone_told_3de6f3c2
-- intent_i_was_told_944027c5
-- intent_is_that_right_48c894b4
-- intent_i_believe_that_12f8bf18
-- intent_yeah_it_sounds_9ecdaced
-- intent_exactly_it_seems_01e7c904
-- intent_when_exactly_does_40a2ca41
-- intent_the_invitation_says_1468c4a2
-- intent_has_she_given_9f1208fa
-- intent_hey_whats_up_b3363293
-- intent_im_throwing_a_bc8ef499
-- intent_nobody_has_told_676c647c
-- intent_when_does_it_e88e01fa
-- intent_at_800_pm_d68886e2
-- intent_ill_be_there_4fab3a6e
+- hi_how_are
+- im_fine_how
+- im_pretty_good
+- no_problem_so
+- ive_been_great
+- ive_been_good
+- what_school_do
+- go_to
+- do_you_like
+- its_okay_its
+- good_luck_with
+- hows_it_going
+- im_doing_well
+- never_better_thanks
+- so_how_have
+- ive_actually_been
+- im_actually_in
+- which_school_do
+- im_attending_pcc
+- are_you_enjoying
+- its_not_bad
+- good_luck_with_1
+- how_are_you
+- im_doing_great
+- im_absolutely_lovely
+- everythings_been_good
+- havent_been
+- started_school
+- where_are_you
+- im_going_to
+- how_do_you
+- like_it
+- its_an_ugly
+- know
+- its_the_middle
+- that_would_be
+- yeah_especially_since
+- know_it
+- yes_it_would
+- really_wish
+- me_too
+- like_winter
+- id_rather_be
+- it_doesnt_look
+- youre_right
+- in_the_middle
+- that_wouldnt_seem
+- considering_that_its
+- exactly_it_wouldnt
+- know_youre
+- wish_it
+- thats_how
+- enjoy_the
+- know_what
+- wish_it_1
+- that_is_true
+- it_wouldnt_rain
+- it_wouldnt_seem
+- it_would_be
+- any_rain_right
+- thats_right_it
+- want_it
+- know_what_1
+- winter_is_great
+- its_such
+- yes_it_is
+- it_looks_like
+- yes_and
+- why_is_that
+- really_love
+- me_too_it
+- yes_but
+- really_why_is
+- because_you_can
+- really_hope
+- isnt_it
+- it_really_is
+- it_seems_that
+- hopefully_it_will
+- how_come
+- like_how
+- feel_the
+- especially_love
+- really_why
+- the_stars_look
+- really_want
+- dont_you_think
+- yes_think
+- think_that
+- hope_that
+- you_like_the
+- the_sky_looks
+- understand_rain
+- love_most
+- you_can_see
+- really_want_1
+- that_sounds_like
+- heard_that
+- is_it_going
+- believe_so
+- good_hope
+- know_1
+- but_you_know
+- youre_right_one
+- really_wish_1
+- do_too
+- would_like
+- trip_to
+- the_forecast_says
+- so_do_you
+- it_sounds_like
+- really_hope_1
+- that_would_ruin
+- the_weather_in
+- that_is_true_1
+- it_would_be_1
+- that_would_be_1
+- it_would_be_2
+- whats_the_weather
+- the_weather_this
+- will_it_be
+- think_it
+- it_wouldnt_be
+- want_this
+- this_california_weather
+- know_every
+- would_love
+- hello_may
+- this_is_she
+- ive_been_trying
+- sorry_about_that
+- its_okay
+- so_what_were
+- oh_just
+- sure_what_did
+- maybe_we_can
+- that_sounds_like_1
+- ill_see_you
+- hi_how_are_1
+- speaking_whats_up
+- why_havent_you
+- my_bad
+- thats_all_right
+- what_was_the
+- want_to
+- sounds_good_what
+- was_thinking
+- okay_lets_go
+- until_then
+- is_alice_available
+- youre_talking_to
+- ive_called_you
+- was_busy
+- no_problem
+- did_you_need
+- do_you_want
+- is_there_somewhere
+- how_about
+- movie_sounds
+- have_you_seen
+- no_havent
+- shes_really_pretty
+- describe_her_to
+- shes_not_too
+- well_how_tall
+- shes_about_five
+- what_does_she
+- she_has_pretty
+- may_know
+- so_you_have
+- theres_new
+- havent_seen
+- think_that_1
+- tell_me_how
+- shes_kind_of
+- what_height_is
+- shes_probably_about
+- thats_nice_but
+- the_first_thing
+- think
+- are_you_telling
+- have_you_met
+- no_have_you
+- shes_one_of
+- what_does_she_1
+- well_shes_quite
+- how_tall_would
+- would_say
+- what_about_her
+- she_has_light
+- think_1
+- why_werent_you
+- wasnt_really
+- what_was_wrong
+- my_stomach_was
+- do_you_feel
+- dont_really
+- do_you_want_1
+- no_thanks
+- hope_you
+- what_reason_do
+- was_sick
+- how_were_you
+- had
+- did_it_get
+- im_still_feeling
+- would_you_like
+- took_something
+- get_better
+- why_didnt_you
+- stayed_home
+- what_was_your
+- my_stomach_was_1
+- are_you_feeling
+- im_still_feeling_1
+- im_going_to_1
+- thats_okay
+- did_you_hear
+- got
+- did_you_really
+- seriously_am
+- well_congratulations
+- thank_you
+- im_so_happy
+- really
+- yes_you_really
+- you_think_so
+- have_you_heard
+- you_havent_told
+- got_1
+- is_that_right
+- its_the_truth
+- congratulations_on_your
+- thank_you_very
+- am_really
+- are_you_really
+- im_serious_you
+- is_that_what
+- havent_told
+- havent_heard
+- my_boss_offered
+- are_you_serious
+- yes_am
+- thats_great_congratulations
+- appreciate_that
+- you_have_no
+- you_look_really
+- thank_you_1
+- really_where_did
+- got_it
+- its_really_nice
+- thanks_again_you
+- thank_you_2
+- really_what_kind
+- these_are_called
+- really_like
+- they_were_about
+- absolutely_love
+- you_do
+- seriously_it_looks
+- bought_it
+- really_like_1
+- thanks_think
+- thank_you_3
+- those_are_nice
+- these_are_some
+- those_are_great
+- got_them
+- think_that_2
+- is_that_right_1
+- what_store_did
+- went_to
+- love_your
+- well_think
+- thanks_found
+- think_that_3
+- these_are_chucks
+- your_shoes_look
+- tell_me_what
+- enjoy_drawing
+- you_know_how
+- yes_do
+- when_did_you
+- learned_back
+- oh_so_you
+- yeah_loved
+- see_that
+- wish
+- what_kinds_of
+- ive_always_liked
+- didnt_know
+- do_it
+- how_long_have
+- first_learned
+- did_you_take
+- that_was_my
+- you_have_got
+- thanks
+- if_only
+- are_there_any
 - greet
 - goodbye
 - bot_challenge
 - affirm
 - deny
 responses:
-  utter_intent_hi_how_are_635a97b3:
+  utter_hi_how_are:
   - text: i'm fine. how about yourself?
-  utter_intent_im_fine_how_59ddb211:
+  utter_im_fine_how:
   - text: i'm pretty good. thanks for asking.
-  utter_intent_im_pretty_good_d6daeebb:
+  utter_im_pretty_good:
   - text: no problem. so how have you been?
-  utter_intent_no_problem_so_e26c7e89:
+  utter_no_problem_so:
   - text: i've been great. what about you?
-  utter_intent_ive_been_great_0c077647:
+  utter_ive_been_great:
   - text: i've been good. i'm in school right now.
-  utter_intent_ive_been_good_ce7cf0ba:
+  utter_ive_been_good:
   - text: what school do you go to?
-  utter_intent_what_school_do_dccd4fba:
+  utter_what_school_do:
   - text: i go to pcc.
-  utter_intent_i_go_to_7228a576:
+  utter_go_to:
   - text: do you like it there?
-  utter_intent_do_you_like_949a696f:
+  utter_do_you_like:
   - text: it's okay. it's a really big campus.
-  utter_intent_its_okay_its_5c3d518a:
+  utter_its_okay_its:
   - text: good luck with school.
-  utter_intent_good_luck_with_084584c2:
+  utter_good_luck_with:
   - text: thank you very much.
-  utter_intent_hows_it_going_bbe7ad8b:
+  utter_hows_it_going:
   - text: i'm doing well. how about you?
-  utter_intent_never_better_thanks_193a1493:
+  utter_im_doing_well:
+  - text: never better, thanks.
+  utter_never_better_thanks:
   - text: so how have you been lately?
-  utter_intent_so_how_have_4884b581:
+  utter_so_how_have:
   - text: i've actually been pretty good. you?
-  utter_intent_ive_actually_been_71ddb855:
+  utter_ive_actually_been:
   - text: i'm actually in school right now.
-  utter_intent_im_actually_in_904b40cd:
+  utter_im_actually_in:
   - text: which school do you attend?
-  utter_intent_which_school_do_cf201aea:
+  utter_which_school_do:
   - text: i'm attending pcc right now.
-  utter_intent_im_attending_pcc_1520c5e6:
+  utter_im_attending_pcc:
   - text: are you enjoying it there?
-  utter_intent_are_you_enjoying_827f627b:
+  utter_are_you_enjoying:
   - text: it's not bad. there are a lot of people there.
-  utter_intent_its_not_bad_3cf9ea5f:
+  utter_its_not_bad:
   - text: good luck with that.
-  utter_intent_good_luck_with_95bc26ff:
+  utter_good_luck_with_1:
   - text: thanks.
-  utter_intent_how_are_you_31640c89:
+  utter_how_are_you:
   - text: i'm doing great. what about you?
-  utter_intent_im_doing_great_d41655d6:
+  utter_im_doing_great:
   - text: i'm absolutely lovely, thank you.
-  utter_intent_im_absolutely_lovely_136b146f:
+  utter_im_absolutely_lovely:
   - text: everything's been good with you?
-  utter_intent_i_havent_been_0193d5b1:
+  utter_everythings_been_good:
+  - text: i haven't been better. how about yourself?
+  utter_havent_been:
   - text: i started school recently.
-  utter_intent_i_started_school_2e944ba9:
+  utter_started_school:
   - text: where are you going to school?
-  utter_intent_where_are_you_72fc4fa6:
+  utter_where_are_you:
   - text: i'm going to pcc.
-  utter_intent_how_do_you_b04c9712:
+  utter_im_going_to:
+  - text: how do you like it so far?
+  utter_how_do_you:
   - text: i like it so far. my classes are pretty good right now.
-  utter_intent_i_like_it_031cf488:
+  utter_like_it:
   - text: i wish you luck.
-  utter_intent_its_an_ugly_91dc7e5a:
+  utter_its_an_ugly:
   - text: i know. i think it may rain.
-  utter_intent_i_know_i_8ff31b25:
+  utter_know:
   - text: it's the middle of summer, it shouldn't rain today.
-  utter_intent_its_the_middle_06e9842f:
+  utter_its_the_middle:
   - text: that would be weird.
-  utter_intent_that_would_be_9f9ddbcf:
+  utter_that_would_be:
   - text: yeah, especially since it's ninety degrees outside.
-  utter_intent_yeah_especially_since_c0c058c0:
+  utter_yeah_especially_since:
   - text: i know, it would be horrible if it rained and it was hot outside.
-  utter_intent_i_know_it_3b6c6541:
+  utter_know_it:
   - text: yes, it would be.
-  utter_intent_yes_it_would_dc639dad:
+  utter_yes_it_would:
   - text: i really wish it wasn't so hot every day.
-  utter_intent_i_really_wish_02c80692:
+  utter_really_wish:
   - text: me too. i can't wait until winter.
-  utter_intent_me_too_i_ba8bf8ea:
+  utter_me_too:
   - text: i like winter too, but sometimes it gets too cold.
-  utter_intent_i_like_winter_fcb39f93:
+  utter_like_winter:
   - text: i'd rather be cold than hot.
-  utter_intent_id_rather_be_faa01254:
+  utter_id_rather_be:
   - text: me too.
-  utter_intent_it_doesnt_look_202ffcfc:
+  utter_it_doesnt_look:
   - text: you're right. i think it's going to rain later.
-  utter_intent_youre_right_i_de199303:
+  utter_youre_right:
   - text: in the middle of the summer, it shouldn't be raining.
-  utter_intent_in_the_middle_72d97e4a:
+  utter_in_the_middle:
   - text: that wouldn't seem right.
-  utter_intent_that_wouldnt_seem_23c2b809:
+  utter_that_wouldnt_seem:
   - text: considering that it's over ninety degrees outside, that would be weird.
-  utter_intent_considering_that_its_29137732:
+  utter_considering_that_its:
   - text: exactly, it wouldn't be nice if it started raining. it's too hot.
-  utter_intent_exactly_it_wouldnt_c4942792:
+  utter_exactly_it_wouldnt:
   - text: i know, you're absolutely right.
-  utter_intent_i_know_youre_b1ad6c8d:
+  utter_know_youre:
   - text: i wish it would cool off one day.
-  utter_intent_i_wish_it_f691c4ba:
+  utter_wish_it:
   - text: that's how i feel, i want winter to come soon.
-  utter_intent_thats_how_i_86eece56:
+  utter_thats_how:
   - text: i enjoy the winter, but it gets really cold sometimes.
-  utter_intent_i_enjoy_the_6b60c48e:
+  utter_enjoy_the:
   - text: i know what you mean, but i'd rather be cold than hot.
-  utter_intent_i_know_what_e238c269:
+  utter_know_what:
   - text: that's exactly how i feel.
-  utter_intent_i_wish_it_c8d15d1e:
+  utter_wish_it_1:
   - text: that is true. i hope it doesn't rain.
-  utter_intent_that_is_true_e1ffdab3:
+  utter_that_is_true:
   - text: it wouldn't rain in the middle of the summer.
-  utter_intent_it_wouldnt_rain_f5d95da9:
+  utter_it_wouldnt_rain:
   - text: it wouldn't seem right if it started raining right now.
-  utter_intent_it_wouldnt_seem_8537d187:
+  utter_it_wouldnt_seem:
   - text: it would be weird if it started raining in ninety degree weather.
-  utter_intent_it_would_be_7709aaf5:
+  utter_it_would_be:
   - text: any rain right now would be pointless.
-  utter_intent_any_rain_right_ed98db4b:
+  utter_any_rain_right:
   - text: that's right, it really would be.
-  utter_intent_thats_right_it_5b32d5c3:
+  utter_thats_right_it:
   - text: i want it to cool down some.
-  utter_intent_i_want_it_7555eb82:
+  utter_want_it:
   - text: i know what you mean, i can't wait until it's winter.
-  utter_intent_i_know_what_48465bd2:
+  utter_know_what_1:
   - text: winter is great. i wish it didn't get so cold sometimes though.
-  utter_intent_winter_is_great_9efde366:
+  utter_winter_is_great:
   - text: i would rather deal with the winter than the summer.
-  utter_intent_its_such_a_914efe6b:
+  utter_its_such:
   - text: yes, it is.
-  utter_intent_it_looks_like_626030f1:
+  utter_yes_it_is:
+  - text: it looks like it may rain soon.
+  utter_it_looks_like:
   - text: yes, and i hope that it does.
-  utter_intent_yes_and_i_c84a179d:
+  utter_yes_and:
   - text: why is that?
-  utter_intent_why_is_that_37f30d2d:
-  - text: i like the different instruments that they use.
-  utter_intent_i_really_love_a77b42ac:
+  utter_why_is_that:
+  - text: i really love how rain clears the air.
+  utter_really_love:
   - text: me too. it always smells so fresh after it rains.
-  utter_intent_me_too_it_2c2bd94f:
+  utter_me_too_it:
   - text: yes, but i love the night air after it rains.
-  utter_intent_yes_but_i_caf141f2:
+  utter_yes_but:
   - text: really? why is it?
-  utter_intent_really_why_is_2af7a503:
+  utter_really_why_is:
   - text: because you can see the stars perfectly.
-  utter_intent_because_you_can_824f4c3e:
+  utter_because_you_can:
   - text: i really hope it rains today.
-  utter_intent_i_really_hope_141ab8a5:
+  utter_really_hope:
   - text: yeah, me too.
-  utter_intent_isnt_it_a_dcaaf609:
+  utter_isnt_it:
   - text: it really is.
-  utter_intent_it_seems_that_ec4a61c3:
+  utter_it_really_is:
+  - text: it seems that it may rain today.
+  utter_it_seems_that:
   - text: hopefully it will.
-  utter_intent_hopefully_it_will_ae5d0f52:
+  utter_hopefully_it_will:
   - text: how come?
-  utter_intent_how_come_2246bfd2:
+  utter_how_come:
   - text: i like how clear the sky gets after it rains.
-  utter_intent_i_like_how_888a071c:
+  utter_like_how:
   - text: i feel the same way. it smells so good after it rains.
-  utter_intent_i_feel_the_0839dbb7:
+  utter_feel_the:
   - text: i especially love the night air when it rains.
-  utter_intent_i_especially_love_f31eae34:
+  utter_especially_love:
   - text: really? why?
-  utter_intent_the_stars_look_c83267c3:
+  utter_really_why:
+  - text: the stars look so much closer after it rains.
+  utter_the_stars_look:
   - text: i really want it to rain today.
-  utter_intent_i_really_want_1a8c714e:
+  utter_really_want:
   - text: yeah, so do i.
-  utter_intent_dont_you_think_ccc06a00:
+  utter_dont_you_think:
   - text: yes, i think so too.
-  utter_intent_yes_i_think_684e209f:
+  utter_yes_think:
   - text: i think that it's going to rain.
-  utter_intent_i_think_that_bf32596e:
+  utter_think_that:
   - text: i hope that it does rain.
-  utter_intent_i_hope_that_4f0d21aa:
+  utter_hope_that:
   - text: you like the rain?
-  utter_intent_you_like_the_e0dfc387:
+  utter_you_like_the:
   - text: the sky looks so clean after it rains. i love it.
-  utter_intent_the_sky_looks_419d95fb:
+  utter_the_sky_looks:
   - text: i understand. rain does make it smell cleaner.
-  utter_intent_i_understand_rain_da8d858d:
+  utter_understand_rain:
   - text: i love most how it is at night after it rains.
-  utter_intent_i_love_most_fd5d3865:
+  utter_love_most:
   - text: how come?
-  utter_intent_you_can_see_7eba5e4f:
+  utter_you_can_see:
   - text: i would love for it to rain today.
-  utter_intent_i_really_want_b396d419:
+  utter_really_want_1:
   - text: that sounds like fun. what's the weather going to be like?
-  utter_intent_that_sounds_like_dfdc3223:
+  utter_that_sounds_like:
   - text: i heard that it's going to be warm this weekend.
-  utter_intent_i_heard_that_6b82fac0:
+  utter_heard_that:
   - text: is it going to be perfect beach weather?
-  utter_intent_is_it_going_5ac2cc3e:
+  utter_is_it_going:
   - text: i believe so.
-  utter_intent_i_believe_so_082f6703:
+  utter_believe_so:
   - text: good. i hope it doesn't cool off this weekend.
-  utter_intent_good_i_hope_6c98bf31:
+  utter_good_hope:
   - text: i know. i really want to go to the beach.
-  utter_intent_i_know_i_3d991f54:
+  utter_know_1:
   - text: but you know that california weather is really unpredictable.
-  utter_intent_but_you_know_81adb332:
+  utter_but_you_know:
   - text: you're right. one minute it's hot, and then the next minute it's cold.
-  utter_intent_youre_right_one_42efcbc8:
+  utter_youre_right_one:
   - text: i really wish the weather would just stay the same.
-  utter_intent_i_really_wish_7f15d751:
+  utter_really_wish_1:
   - text: i do too. that way we can have our activities planned ahead of time.
-  utter_intent_i_do_too_35f81f2f:
+  utter_do_too:
   - text: yeah, that would make things a lot easier.
-  utter_intent_i_would_like_8b8757a8:
+  utter_would_like:
   - text: a trip to the beach would be fun. how is the weather going to be?
-  utter_intent_a_trip_to_694b51dd:
+  utter_trip_to:
   - text: the forecast says that it will be warm on the weekend.
-  utter_intent_the_forecast_says_4618162f:
+  utter_the_forecast_says:
   - text: so do you think it'll be perfect weather for the beach?
-  utter_intent_so_do_you_b5b15be8:
+  utter_so_do_you:
   - text: it sounds like it will be.
-  utter_intent_it_sounds_like_7ba658aa:
+  utter_it_sounds_like:
   - text: i really hope it doesn't get cold.
-  utter_intent_i_really_hope_d432edcf:
+  utter_really_hope_1:
   - text: that would ruin things, i want to go so badly.
-  utter_intent_that_would_ruin_f8c09acb:
+  utter_that_would_ruin:
   - text: the weather in california is unpredictable, so you never know.
-  utter_intent_that_is_true_75cbaeac:
+  utter_the_weather_in:
+  - text: that is true. the weather is constantly changing.
+  utter_that_is_true_1:
   - text: it would be nice if the weather would never change.
-  utter_intent_it_would_be_be606e21:
+  utter_it_would_be_1:
   - text: that would be great, then we could plan things sooner.
-  utter_intent_that_would_be_1298d926:
+  utter_that_would_be_1:
   - text: true. predictable weather would make life easier.
-  utter_intent_it_would_be_69eab66f:
+  utter_it_would_be_2:
   - text: what's the weather going to be like? i may want to go too.
-  utter_intent_whats_the_weather_63301010:
+  utter_whats_the_weather:
   - text: the weather this weekend is supposed to be warm.
-  utter_intent_the_weather_this_907b861f:
+  utter_the_weather_this:
   - text: will it be good beach weather?
-  utter_intent_will_it_be_23b56fba:
+  utter_will_it_be:
   - text: i think it will be.
-  utter_intent_i_think_it_c212dc4b:
+  utter_think_it:
   - text: it wouldn't be good if it got cold this weekend.
-  utter_intent_it_wouldnt_be_22ea00a4:
+  utter_it_wouldnt_be:
   - text: i want this trip to be perfect, i hope it stays warm.
-  utter_intent_i_want_this_18a77436:
-  - text: this california weather is so uncertain, it's impossible to know what'll happen.
-  utter_intent_this_california_weather_e285ad74:
+  utter_want_this:
+  - text: this california weather is so uncertain, it's impossible to know what'll
+      happen.
+  utter_this_california_weather:
   - text: i know. every day the weather seems different.
-  utter_intent_i_know_every_1f68ed20:
+  utter_know_every:
   - text: i would love it if it wasn't always so unpredictable.
-  utter_intent_i_would_love_c12a3d92:
+  utter_would_love:
   - text: that would make it easier for us to make plans.
-  utter_intent_hello_may_i_15711221:
+  utter_hello_may:
   - text: this is she. how's it going?
-  utter_intent_ive_been_trying_d5f4c3e4:
+  utter_this_is_she:
+  - text: i've been trying to call you all day.
+  utter_ive_been_trying:
   - text: sorry about that. i was cleaning up.
-  utter_intent_sorry_about_that_10824c88:
+  utter_sorry_about_that:
   - text: it's okay.
-  utter_intent_its_okay_ca38c72b:
+  utter_its_okay:
   - text: so what were you calling me about?
-  utter_intent_so_what_were_1affc732:
+  utter_so_what_were:
   - text: oh, i just wanted to see if you wanted to hang out tomorrow.
-  utter_intent_oh_i_just_5b4064c7:
+  utter_oh_just:
   - text: sure, what did you want to do?
-  utter_intent_sure_what_did_0e2d00b9:
+  utter_sure_what_did:
   - text: maybe we can go see a movie or something.
-  utter_intent_maybe_we_can_dfb88210:
+  utter_maybe_we_can:
   - text: that sounds like fun. let's do it.
-  utter_intent_that_sounds_like_46294a44:
+  utter_that_sounds_like_1:
   - text: i'll see you tomorrow then.
-  utter_intent_ill_see_you_fcda5a30:
+  utter_ill_see_you:
   - text: see you then. goodbye.
-  utter_intent_hi_how_are_672db29d:
+  utter_hi_how_are_1:
   - text: speaking. what's up?
-  utter_intent_speaking_whats_up_74d2148f:
+  utter_speaking_whats_up:
   - text: why haven't you answered the phone?
-  utter_intent_why_havent_you_fb7b48bc:
+  utter_why_havent_you:
   - text: my bad, i had chores to do.
-  utter_intent_my_bad_i_12bc01b3:
+  utter_my_bad:
   - text: that's all right.
-  utter_intent_thats_all_right_e43eb92d:
+  utter_thats_all_right:
   - text: what was the reason for your call?
-  utter_intent_what_was_the_e7ee8827:
+  utter_what_was_the:
   - text: i want to do something tomorrow with you.
-  utter_intent_i_want_to_8022f999:
+  utter_want_to:
   - text: sounds good. what did you have in mind?
-  utter_intent_sounds_good_what_6f46fba5:
+  utter_sounds_good_what:
   - text: i was thinking about seeing a movie.
-  utter_intent_i_was_thinking_578a1957:
+  utter_was_thinking:
   - text: okay, let's go see a movie.
-  utter_intent_okay_lets_go_bb8c597a:
+  utter_okay_lets_go:
   - text: until then.
-  utter_intent_until_then_cabddd8e:
+  utter_until_then:
   - text: talk to you later.
-  utter_intent_youre_talking_to_98a78449:
+  utter_is_alice_available:
+  - text: you're talking to her.
+  utter_youre_talking_to:
   - text: i've called you a hundred times today.
-  utter_intent_ive_called_you_a2257f92:
+  utter_ive_called_you:
   - text: i was busy doing something. i apologize.
-  utter_intent_i_was_busy_8070e168:
+  utter_was_busy:
   - text: no problem.
-  utter_intent_did_you_need_b7793220:
+  utter_no_problem:
+  - text: did you need something?
+  utter_did_you_need:
   - text: do you want to do something tomorrow?
-  utter_intent_is_there_somewhere_c3bda241:
+  utter_do_you_want:
+  - text: is there somewhere special you wanted to go?
+  utter_is_there_somewhere:
   - text: how about a movie?
-  utter_intent_how_about_a_2c2784b9:
+  utter_how_about:
   - text: a movie sounds good.
-  utter_intent_a_movie_sounds_bffd8a7e:
+  utter_movie_sounds:
   - text: call me tomorrow then.
-  utter_intent_have_you_seen_e19b8c24:
+  utter_have_you_seen:
   - text: no, i haven't.
-  utter_intent_no_i_havent_ee6de5a3:
+  utter_no_havent:
   - text: she's really pretty.
-  utter_intent_shes_really_pretty_0a8c3c7b:
+  utter_shes_really_pretty:
   - text: describe her to me.
-  utter_intent_describe_her_to_44a86d72:
+  utter_describe_her_to:
   - text: she's not too tall.
-  utter_intent_shes_not_too_01558acb:
+  utter_shes_not_too:
   - text: well, how tall is she?
-  utter_intent_shes_about_five_83347e26:
+  utter_well_how_tall:
+  - text: she's about five feet even.
+  utter_shes_about_five:
   - text: what does she look like, though?
-  utter_intent_what_does_she_26317187:
+  utter_what_does_she:
   - text: she has pretty light brown eyes.
-  utter_intent_she_has_pretty_1dddb729:
+  utter_she_has_pretty:
   - text: i may know which girl you're talking about.
-  utter_intent_i_may_know_edf37d51:
+  utter_may_know:
   - text: so you have seen her around?
-  utter_intent_so_you_have_daa74b09:
+  utter_so_you_have:
   - text: yes, i have.
-  utter_intent_i_havent_seen_66aa3989:
+  utter_theres_new:
+  - text: i haven't seen her yet.
+  utter_havent_seen:
   - text: i think that she is very pretty.
-  utter_intent_i_think_that_f0d0e88e:
+  utter_think_that_1:
   - text: tell me how she looks.
-  utter_intent_tell_me_how_3ff1514a:
+  utter_tell_me_how:
   - text: she's kind of short.
-  utter_intent_shes_kind_of_4985d227:
+  utter_shes_kind_of:
   - text: what height is she?
-  utter_intent_what_height_is_a63b299e:
+  utter_what_height_is:
   - text: she's probably about five feet.
-  utter_intent_shes_probably_about_51c2a1b5:
+  utter_shes_probably_about:
   - text: that's nice, but tell me what she looks like.
-  utter_intent_thats_nice_but_c6458f9d:
+  utter_thats_nice_but:
   - text: the first thing i noticed was her beautiful brown eyes.
-  utter_intent_the_first_thing_35a1bb70:
+  utter_the_first_thing:
   - text: i think i might've bumped into her before.
-  utter_intent_i_think_i_a19f8026:
+  utter_think:
   - text: are you telling me that you've seen her before?
-  utter_intent_are_you_telling_14f9a63e:
+  utter_are_you_telling:
   - text: i believe so.
-  utter_intent_have_you_met_a7d35014:
+  utter_have_you_met:
   - text: no. have you?
-  utter_intent_no_have_you_80b22f3e:
+  utter_no_have_you:
   - text: she's one of the prettiest girls at the school.
-  utter_intent_shes_one_of_afb6575f:
+  utter_shes_one_of:
   - text: what does she look like?
-  utter_intent_well_shes_quite_f9a59468:
+  utter_what_does_she_1:
+  - text: well, she's quite short.
+  utter_well_shes_quite:
   - text: how tall would you say that she is?
-  utter_intent_how_tall_would_04c73599:
+  utter_how_tall_would:
   - text: i would say she's only five feet.
-  utter_intent_i_would_say_3b180041:
+  utter_would_say:
   - text: what about her facial features?
-  utter_intent_what_about_her_2b155c73:
+  utter_what_about_her:
   - text: she has light brown eyes, absolutely beautiful.
-  utter_intent_she_has_light_b7dca660:
+  utter_she_has_light:
   - text: i think i know who you're talking about.
-  utter_intent_i_think_i_531d78a0:
+  utter_think_1:
   - text: have you seen her?
-  utter_intent_why_werent_you_23b2eb97:
+  utter_why_werent_you:
   - text: i wasn't really feeling well.
-  utter_intent_i_wasnt_really_be61ec90:
+  utter_wasnt_really:
   - text: what was wrong with you?
-  utter_intent_what_was_wrong_e5827646:
+  utter_what_was_wrong:
   - text: my stomach was upset.
-  utter_intent_my_stomach_was_c6303fe7:
+  utter_my_stomach_was:
   - text: do you feel better now?
-  utter_intent_do_you_feel_1714bc2e:
+  utter_do_you_feel:
   - text: i don't really feel too well yet.
-  utter_intent_i_dont_really_1661b8ed:
+  utter_dont_really:
   - text: do you want anything to make you feel better?
-  utter_intent_do_you_want_450c9bda:
+  utter_do_you_want_1:
   - text: no, thanks. i already took some medicine.
-  utter_intent_no_thanks_i_2f4d20a6:
+  utter_no_thanks:
   - text: i hope you feel better.
-  utter_intent_what_reason_do_a3e5b443:
-  - text: i was sick.
-  utter_intent_i_was_sick_f6a0544a:
-  - text: how were you sick?
-  utter_intent_i_had_a_0a33af58:
-  - text: did it get any better?
-  utter_intent_did_it_get_e9cfa398:
-  - text: i'm still feeling under the weather.
-  utter_intent_im_still_feeling_8346d33b:
-  - text: would you like anything for your stomach?
-  utter_intent_would_you_like_9dedc602:
-  - text: i took something earlier.
-  utter_intent_i_took_something_049f4c2d:
-  - text: get better.
-  utter_intent_get_better_c7f6584a:
-  - text: thanks a lot.
-  utter_intent_i_stayed_home_2ee26862:
-  - text: what was your problem?
-  utter_intent_are_you_feeling_b8d5f449:
-  - text: i'm still feeling a little sick.
-  utter_intent_im_still_feeling_5e1bfade:
-  - text: i'm going to the store, would you like any pepto bismol?
-  utter_intent_im_going_to_e405da12:
-  - text: that's okay.
-  utter_intent_did_you_hear_25efa8c5:
-  - text: no, i haven't.
-  utter_intent_i_got_a_a94da66e:
-  - text: did you really?
-  utter_intent_did_you_really_593105da:
-  - text: seriously, i am so excited.
-  utter_intent_seriously_i_am_2df4eb24:
-  - text: well, congratulations.
-  utter_intent_well_congratulations_a967bf94:
+  utter_hope_you:
   - text: thank you.
-  utter_intent_thank_you_16450deb:
+  utter_what_reason_do:
+  - text: i was sick.
+  utter_was_sick:
+  - text: how were you sick?
+  utter_how_were_you:
+  - text: i had a stomachache.
+  utter_had:
+  - text: did it get any better?
+  utter_did_it_get:
+  - text: i'm still feeling under the weather.
+  utter_im_still_feeling:
+  - text: would you like anything for your stomach?
+  utter_would_you_like:
+  - text: i took something earlier.
+  utter_took_something:
+  - text: get better.
+  utter_get_better:
+  - text: thanks a lot.
+  utter_why_didnt_you:
+  - text: i stayed home because i wasn't feeling well.
+  utter_stayed_home:
+  - text: what was your problem?
+  utter_what_was_your:
+  - text: my stomach was bothering me.
+  utter_my_stomach_was_1:
+  - text: are you feeling any better?
+  utter_are_you_feeling:
+  - text: i'm still feeling a little sick.
+  utter_im_still_feeling_1:
+  - text: i'm going to the store, would you like any pepto bismol?
+  utter_im_going_to_1:
+  - text: that's okay.
+  utter_thats_okay:
+  - text: i hope you feel better.
+  utter_did_you_hear:
+  - text: no, i haven't.
+  utter_got:
+  - text: did you really?
+  utter_did_you_really:
+  - text: seriously, i am so excited.
+  utter_seriously_am:
+  - text: well, congratulations.
+  utter_well_congratulations:
+  - text: thank you.
+  utter_thank_you:
   - text: i'm so happy for you.
-  utter_intent_im_so_happy_3bcec174:
+  utter_im_so_happy:
   - text: really?
-  utter_intent_yes_you_really_ebad862b:
+  utter_really:
+  - text: yes. you really deserved this.
+  utter_yes_you_really:
   - text: you think so?
-  utter_intent_have_you_heard_ba03f420:
+  utter_you_think_so:
+  - text: yes. good for you.
+  utter_have_you_heard:
   - text: you haven't told me anything yet.
-  utter_intent_you_havent_told_2bd39003:
+  utter_you_havent_told:
   - text: i got a promotion at work earlier this week.
-  utter_intent_i_got_a_8c75596d:
+  utter_got_1:
   - text: is that right?
-  utter_intent_its_the_truth_aec78d7b:
+  utter_is_that_right:
+  - text: it's the truth. i am really happy.
+  utter_its_the_truth:
   - text: congratulations on your promotion.
-  utter_intent_congratulations_on_your_d9136991:
+  utter_congratulations_on_your:
   - text: thank you very much.
-  utter_intent_im_serious_you_8595e789:
+  utter_thank_you_very:
+  - text: i am really excited for you.
+  utter_am_really:
+  - text: are you really?
+  utter_are_you_really:
+  - text: i'm serious. you deserved this promotion.
+  utter_im_serious_you:
   - text: is that what you really think?
-  utter_intent_is_that_what_3ae96d1c:
+  utter_is_that_what:
   - text: yes, i do.
-  utter_intent_i_havent_told_b2c7c78a:
+  utter_havent_told:
   - text: i haven't heard anything.
-  utter_intent_i_havent_heard_889008eb:
+  utter_havent_heard:
   - text: my boss offered me a promotion, and i took it.
-  utter_intent_my_boss_offered_0fd9285a:
+  utter_my_boss_offered:
   - text: are you serious?
-  utter_intent_are_you_serious_ac20f0bc:
+  utter_are_you_serious:
   - text: yes, i am really excited.
-  utter_intent_yes_i_am_768cea4b:
+  utter_yes_am:
   - text: that's great. congratulations.
-  utter_intent_thats_great_congratulations_d8ea6979:
+  utter_thats_great_congratulations:
   - text: i appreciate that.
-  utter_intent_i_appreciate_that_85292d15:
+  utter_appreciate_that:
   - text: you have no idea how happy i am for you.
-  utter_intent_you_have_no_ea385cbb:
+  utter_you_have_no:
   - text: for real?
-  utter_intent_you_look_really_3f511b18:
+  utter_you_look_really:
   - text: thank you. i just got this outfit the other day.
-  utter_intent_thank_you_i_f7bf2a69:
+  utter_thank_you_1:
   - text: really, where did you get it?
-  utter_intent_i_got_it_d6cdbf8e:
+  utter_really_where_did:
+  - text: i got it from macy's.
+  utter_got_it:
   - text: it's really nice.
-  utter_intent_its_really_nice_e556c11d:
+  utter_its_really_nice:
   - text: thanks again. you look nice today, too.
-  utter_intent_thanks_again_you_f769d950:
+  utter_thanks_again_you:
   - text: thank you. i just got these shoes today.
-  utter_intent_thank_you_i_03c224ca:
+  utter_thank_you_2:
   - text: really? what kind of shoes are they?
-  utter_intent_really_what_kind_8db14fb8:
+  utter_really_what_kind:
   - text: these are called all star chuck taylors.
-  utter_intent_these_are_called_437b667f:
+  utter_these_are_called:
   - text: i really like those. how much did they cost?
-  utter_intent_i_really_like_0d9d4094:
+  utter_really_like:
   - text: they were about forty dollars.
-  utter_intent_they_were_about_6541078d:
+  utter_they_were_about:
   - text: i think i'm going to go buy myself a pair.
-  utter_intent_i_absolutely_love_5d01195c:
+  utter_absolutely_love:
   - text: you do? i just bought this outfit a couple days ago.
-  utter_intent_you_do_i_18ceefba:
+  utter_you_do:
   - text: seriously, it looks really nice on you. where did you buy it from?
-  utter_intent_seriously_it_looks_17eb7a05:
+  utter_seriously_it_looks:
   - text: i bought it from the macy's at the santa anita mall.
-  utter_intent_i_bought_it_18493bee:
+  utter_bought_it:
   - text: i really like that outfit.
-  utter_intent_i_really_like_656a2d3a:
+  utter_really_like_1:
   - text: thanks. i think you look nice today, too.
-  utter_intent_thank_you_i_d55d4b67:
+  utter_thanks_think:
+  - text: thank you. i just bought these new shoes earlier today.
+  utter_thank_you_3:
   - text: those are nice. what are they?
-  utter_intent_those_are_nice_deae1d28:
+  utter_those_are_nice:
   - text: these are some chucks.
-  utter_intent_these_are_some_c9ee4c01:
+  utter_these_are_some:
   - text: those are great. how much were they?
-  utter_intent_those_are_great_238ee64d:
+  utter_those_are_great:
   - text: i got them for forty.
-  utter_intent_i_got_them_9e2d17c8:
+  utter_got_them:
   - text: i think i might go and find me my own pair of chucks.
-  utter_intent_i_think_that_ae505537:
+  utter_think_that_2:
   - text: is that right? this is a brand new outfit.
-  utter_intent_is_that_right_1c8ae363:
+  utter_is_that_right_1:
   - text: what store did you get it from?
-  utter_intent_what_store_did_fd67fa70:
+  utter_what_store_did:
   - text: i went to macy's and picked it out.
-  utter_intent_i_went_to_8c8a6d7e:
+  utter_went_to:
   - text: i love your outfit right now.
-  utter_intent_i_love_your_f1e8c569:
+  utter_love_your:
   - text: well, i think you look nice today too.
-  utter_intent_well_i_think_8673229d:
+  utter_well_think:
   - text: thanks. i found these new shoes earlier at the store.
-  utter_intent_thanks_i_found_9ad10522:
+  utter_thanks_found:
   - text: i think that those are some really nice shoes. what kind are they?
-  utter_intent_i_think_that_3c1cbe5e:
+  utter_think_that_3:
   - text: these are chucks.
-  utter_intent_these_are_chucks_228d4cc4:
+  utter_these_are_chucks:
   - text: your shoes look really nice. how much did you get them for?
-  utter_intent_your_shoes_look_94f5bf9d:
+  utter_your_shoes_look:
   - text: they only cost me about forty dollars.
-  utter_intent_tell_me_what_2fd27b24:
+  utter_tell_me_what:
   - text: i enjoy drawing and painting.
-  utter_intent_i_enjoy_drawing_6d6e667e:
+  utter_enjoy_drawing:
   - text: you know how to draw and paint?
-  utter_intent_you_know_how_5a622f6b:
+  utter_you_know_how:
   - text: yes, i do.
-  utter_intent_when_did_you_158caaf1:
+  utter_yes_do:
+  - text: when did you learn how to do that?
+  utter_when_did_you:
   - text: i learned back in high school.
-  utter_intent_i_learned_back_b70538c2:
+  utter_learned_back:
   - text: oh, so you took an art class?
-  utter_intent_oh_so_you_63e12fdb:
+  utter_oh_so_you:
   - text: yeah, i loved that class.
-  utter_intent_yeah_i_loved_b78dc8f5:
+  utter_yeah_loved:
   - text: i see that you're pretty talented.
-  utter_intent_i_see_that_cfc87a9b:
+  utter_see_that:
   - text: thank you very much.
-  utter_intent_i_wish_i_3aae2699:
+  utter_wish:
   - text: i'm sure you have a talent. it's just hidden.
-  utter_intent_what_kinds_of_7af66130:
+  utter_what_kinds_of:
   - text: i've always liked to draw and paint.
-  utter_intent_ive_always_liked_55323cd6:
+  utter_ive_always_liked:
   - text: i didn't know you knew how to draw and paint.
-  utter_intent_i_didnt_know_8234fe07:
+  utter_didnt_know:
   - text: i do it every once in a while.
-  utter_intent_i_do_it_32cee602:
+  utter_do_it:
   - text: how long have you known how to do that?
-  utter_intent_how_long_have_19bd30d1:
+  utter_how_long_have:
   - text: i first learned how to do it in high school.
-  utter_intent_did_you_take_1882d69b:
+  utter_first_learned:
+  - text: did you take some sort of art class or something?
+  utter_did_you_take:
   - text: that was my favorite class.
-  utter_intent_that_was_my_041a2550:
+  utter_that_was_my:
   - text: you have got to be talented.
-  utter_intent_you_have_got_9e18f557:
+  utter_you_have_got:
   - text: thanks.
-  utter_intent_thanks_ecd43020:
+  utter_thanks:
   - text: if only i was talented.
-  utter_intent_if_only_i_609954e8:
+  utter_if_only:
   - text: you have a talent. you just don't know what it is yet.
-  utter_intent_are_there_any_f69a3f6b:
+  utter_are_there_any:
   - text: when i have time, i sometimes draw and paint.
-  utter_intent_oh_you_actually_423e0c13:
-  - text: every so often, i do.
-  utter_intent_every_so_often_c97e8cca:
-  - text: did you always know how to draw and paint?
-  utter_intent_i_was_taught_5949892d:
-  - text: you had an art class?
-  utter_intent_exactly_it_was_3ce05930:
-  - text: well, it's good that you're so talented.
-  utter_intent_whats_your_favorite_470126b4:
-  - text: my favorite movie is superbad.
-  utter_intent_my_favorite_movie_53a26a08:
-  - text: oh, why is that?
-  utter_intent_oh_why_is_0b027a60:
-  - text: it's the funniest movie that i've ever seen.
-  utter_intent_its_the_funniest_1f79f7c7:
-  - text: that's true. it is a very funny movie.
-  utter_intent_thats_true_it_3b08072d:
-  - text: you've seen it before?
-  utter_intent_yes_i_saw_d45e132f:
-  - text: didn't you laugh through the whole movie? i did.
-  utter_intent_didnt_you_laugh_8d73d86d:
-  - text: me too. that movie brought tears to my eyes.
-  utter_intent_me_too_that_f550b390:
-  - text: mine too.
-  utter_intent_mine_too_8d73d3bc:
-  - text: i have it on dvd at my house if you want to come over and watch it.
-  utter_intent_i_have_it_7ec1ca64:
-  - text: sure, let's go.
-  utter_intent_which_movie_is_42659029:
-  - text: i have to say, my favorite movie is superbad.
-  utter_intent_honestly_it_is_ea94360a:
-  - text: you're right. that movie is hilarious.
-  utter_intent_youre_right_that_b1e2c692:
-  - text: i didn't think you saw that movie.
-  utter_intent_i_didnt_think_dbf4c78c:
-  - text: i went to see it the day it came out.
-  utter_intent_i_went_to_53a07dd2:
-  - text: i was laughing through the whole movie.
-  utter_intent_i_was_laughing_10bdf740:
-  - text: i couldn't help laughing, either.
-  utter_intent_i_couldnt_help_5776ae3a:
-  - text: same here.
-  utter_intent_same_here_4cab7fca:
-  - text: i bought the movie. would you like to come to my house and watch it?
-  utter_intent_i_bought_the_4cf4bb58:
-  - text: of course.
-  utter_intent_im_going_to_50ec6ac1:
-  - text: you think so, how come?
-  utter_intent_you_think_so_4a503d8b:
-  - text: well, superbad is super funny.
-  utter_intent_well_superbad_is_22c2e785:
-  - text: you're not lying, i found that movie absolutely hilarious.
-  utter_intent_youre_not_lying_f62a178c:
-  - text: i didn't know that you saw superbad before.
-  utter_intent_i_didnt_know_3a4b1bf4:
-  - text: i made sure to be in line to see it the first day it came out.
-  utter_intent_i_made_sure_57192afc:
-  - text: i couldn't keep from laughing throughout the whole movie.
-  utter_intent_i_couldnt_keep_42206cf7:
-  - text: i was laughing hysterically the whole time my stomach muscles hurt afterwards.
-  utter_intent_i_was_laughing_afdcb8b0:
-  - text: that's exactly how i felt.
-  utter_intent_thats_exactly_how_07126a91:
-  - text: i got the movie when it came out on dvd, do you want to come over?
-  utter_intent_what_type_of_88ca7826:
-  - text: i like listening to different kinds of music.
-  utter_intent_i_like_listening_c0333430:
-  - text: like what, for instance?
-  utter_intent_i_enjoy_rock_21f66829:
-  - text: why is that?
-  utter_intent_i_like_the_77a2bc3f:
-  - text: that's a good reason to like something.
-  utter_intent_thats_a_good_d8637abf:
-  - text: yeah, i think so too.
-  utter_intent_what_kind_of_789e3eaf:
-  - text: i enjoy listening to all kinds of music.
-  utter_intent_i_enjoy_listening_b6ec8fab:
-  - text: what kind?
-  utter_intent_what_kind_3407ac05:
-  - text: i like to listen to rock and rb.
-  utter_intent_i_like_to_f238c942:
-  - text: why do you like that type of music?
-  utter_intent_i_like_the_41649a8a:
-  - text: i think that's an excellent reason to like something.
-  utter_intent_i_think_thats_48ab6689:
-  - text: thanks, i feel the same way.
-  utter_intent_what_is_your_24d6c530:
-  - text: i listen to various types of music.
-  utter_intent_i_listen_to_fe1402d5:
-  - text: what genres?
-  utter_intent_what_genres_831d521e:
-  - text: i enjoy listening to both rock and rb.
-  utter_intent_i_enjoy_listening_ee3531ab:
-  - text: what interests you in that type of music?
-  utter_intent_did_you_go_ae73d5f4:
-  - text: no, i couldn't make it.
-  utter_intent_no_i_couldnt_24160a17:
-  - text: you missed a really good game.
-  utter_intent_you_missed_a_31eb17ee:
-  - text: oh, really? who won?
-  utter_intent_oh_really_who_0fc91181:
-  - text: our school did. they played really well.
-  utter_intent_our_school_did_ecdadc5a:
-  - text: too bad i was busy. i really wanted to go.
-  utter_intent_too_bad_i_b57543bb:
-  - text: yeah, you should have. it was really exciting.
-  utter_intent_yeah_you_should_790c7f68:
-  - text: so what was the score?
-  utter_intent_so_what_was_f53051d4:
-  - text: the score was 101-98.
-  utter_intent_the_score_was_b117631e:
-  - text: man, that was a really close game.
-  utter_intent_man_that_was_b615f243:
-  - text: that's what made it so great.
-  utter_intent_were_you_able_2f506bd8:
-  - text: i was unable to make it.
-  utter_intent_i_was_unable_ff9b9bb7:
-  - text: you should have been there. it was intense.
-  utter_intent_you_should_have_13bb1c68:
-  - text: is that right. who ended up winning?
-  utter_intent_our_team_was_b566d206:
-  - text: i wish i was free that night. i'm kind of mad that i didn't go.
-  utter_intent_i_wish_i_064a30b1:
-  - text: it was a great game.
-  utter_intent_it_was_a_6d57dfdf:
-  - text: what was the score at the end of the game?
-  utter_intent_what_was_the_222067e9:
-  - text: our team won 101-98.
-  utter_intent_our_team_won_ad485095:
-  - text: sounds like it was a close game.
-  utter_intent_sounds_like_it_765bd527:
-  - text: that's the reason it was such a great game.
-  utter_intent_i_was_meaning_192f48b2:
-  - text: i wanted to go, but i couldn't.
-  utter_intent_i_wanted_to_f28bbcd8:
-  - text: it was a great game.
-  utter_intent_its_too_bad_c4843b11:
-  - text: our team played hard and won.
-  utter_intent_our_team_played_8b313dd0:
-  - text: i really wish i went to the game.
-  utter_intent_i_really_wish_40644be8:
-  - text: it was the best game ever.
-  utter_intent_it_was_the_db3d85ce:
-  - text: so tell me the final score.
-  utter_intent_so_tell_me_038a39f8:
-  - text: the other team lost by three points, 101-98.
-  utter_intent_the_other_team_7d176988:
-  - text: it must've been a close game.
-  utter_intent_it_mustve_been_2ad133f3:
-  - text: it really was. you should've gone.
-  utter_intent_what_are_you_4453ade8:
-  - text: i'm going to the movies with a friend. how about you?
-  utter_intent_im_going_to_be3fde51:
-  - text: i'm not sure yet.
-  utter_intent_im_not_sure_83a0d4c3:
-  - text: well, did you want to go see a movie with me?
-  utter_intent_well_did_you_74c50433:
-  - text: what movie are you going to see?
-  utter_intent_what_movie_are_9be009c5:
-  - text: i'm not sure yet. is there something you want to see?
-  utter_intent_im_not_sure_fb7b90e0:
-  - text: there's nothing i can think of.
-  utter_intent_no_thanks_maybe_403691ed:
-  - text: okay, sounds good.
-  utter_intent_do_you_know_783550dc:
-  - text: i am going to see a movie with a friend of mine. what about you?
-  utter_intent_i_am_going_b2717a7f:
-  - text: i don't know.
-  utter_intent_i_dont_know_19dc8709:
-  - text: would you like to see a movie with me and my friend?
-  utter_intent_do_you_know_70b07c54:
-  - text: i don't know, but was there a certain movie you wanted to see?
-  utter_intent_i_dont_know_323bf863:
-  - text: none that i can think of.
-  utter_intent_thank_you_for_8ee93c00:
-  - text: all right. another time then.
-  utter_intent_you_have_any_7168df40:
-  - text: i'm going to the movie theater with my friend. what are you going to do?
-  utter_intent_im_going_to_eaeab07f:
-  - text: i'm not quite sure yet.
-  utter_intent_im_not_quite_6b9478c3:
-  - text: how about you see a movie with me and my friend?
-  utter_intent_what_movie_are_218cb7de:
-  - text: not sure. is there a movie out that catches your eye?
-  utter_intent_not_sure_is_2a6d6d49:
-  - text: no good movies come to mind.
-  utter_intent_no_good_movies_b40da83f:
-  - text: have you decided whether or not you would like to go?
-  utter_intent_have_you_decided_733e90d9:
-  - text: no, thanks. maybe another time.
-  utter_intent_did_you_go_1ef32a08:
-  - text: yeah, i went to school today. were you there?
-  utter_intent_yeah_i_went_eb02b89c:
-  - text: no, i didn't go, i've been sick.
-  utter_intent_no_i_didnt_f38f9f59:
-  - text: that sucks. did you want the assignments from english class?
-  utter_intent_that_sucks_did_c76fd193:
-  - text: that would be nice, thank you.
-  utter_intent_that_would_be_924e4cd7:
-  - text: no problem, you're welcome.
-  utter_intent_i_will_be_4ac2ccac:
-  - text: well, thank you. i hope to see you at school tomorrow.
-  utter_intent_have_you_attended_9fd5ae2c:
-  - text: i attended school today. did you?
-  utter_intent_i_wasnt_able_4e946aaf:
-  - text: i'm sorry to hear that. would you like the assignments from english class?
-  utter_intent_im_sorry_to_a22a33a1:
-  - text: i would really appreciate that, thanks.
-  utter_intent_i_would_really_7dc80995:
-  - text: it's no trouble at all.
-  utter_intent_its_no_trouble_40448a34:
-  - text: if you get sick, i'll return the favor.
-  utter_intent_if_you_get_e9834ce2:
-  - text: thanks. see you at school tomorrow if you feel better.
-  utter_intent_have_you_gone_a4fda1b8:
-  - text: i went to school today. did you go to school?
-  utter_intent_i_couldnt_go_c05cfa12:
-  - text: that's horrible. i'd be happy to give you the assignments from english class.
-  utter_intent_thats_horrible_id_2c3332cc:
-  - text: thank you very much, that's kind of you.
-  utter_intent_thank_you_very_2f36c23a:
-  - text: don't mention it.
-  utter_intent_dont_mention_it_8d4192d1:
-  - text: when you miss a day of school, i'll be happy to give you the english assignments.
-  utter_intent_did_you_hear_a628414c:
-  - text: what happened?
-  utter_intent_what_happened_9aed4763:
-  - text: our cousin went into labor and had her baby last week.
-  utter_intent_our_cousin_went_97a97b6e:
-  - text: she did? why didn't anyone tell me?
-  utter_intent_she_did_why_ce99a760:
-  - text: i would've thought that somebody would have told you.
-  utter_intent_i_wouldve_thought_256aafcc:
-  - text: no, i had no idea.
-  utter_intent_no_i_had_c0d619b3:
-  - text: well, she did, her baby was 8 pounds 6 ounces.
-  utter_intent_well_she_did_6d6b8183:
-  - text: oh my god, that's great!
-  utter_intent_oh_my_god_c9c87802:
-  - text: are you going to go and visit her and the baby?
-  utter_intent_are_you_going_576f2653:
-  - text: i think that i might.
-  utter_intent_good_i_just_61d85861:
-  - text: thanks for telling me.
-  utter_intent_have_you_heard_19d4a927:
-  - text: heard what?
-  utter_intent_heard_what_89d0d03a:
-  - text: debrah already had her baby.
-  utter_intent_debrah_already_had_7907cb20:
-  - text: i didn't know that.
-  utter_intent_i_didnt_know_23018ccc:
-  - text: i thought you knew.
-  utter_intent_i_thought_you_00f32dcd:
-  - text: i honestly didn't know.
-  utter_intent_thats_good_to_ac3e3c45:
-  - text: will you go and visit them?
-  utter_intent_will_you_go_67e08c0f:
-  - text: of course i will.
-  utter_intent_of_course_i_f0b1241c:
-  - text: i just wanted to give you the good news.
-  utter_intent_i_just_wanted_7e3f4f66:
-  - text: thanks for letting me know.
-  utter_intent_have_you_heard_e7f3ade0:
-  - text: i haven't heard anything.
-  utter_intent_debrah_had_her_96baa3b3:
-  - text: nobody told me.
-  utter_intent_nobody_told_me_bb0ba989:
-  - text: i thought you heard.
-  utter_intent_i_thought_you_357ee93a:
-  - text: i really wasn't told anything.
-  utter_intent_i_really_wasnt_3673687d:
-  - text: she was a cute 8 pounds 6 ounces.
-  utter_intent_she_was_a_b5dc6224:
-  - text: wow, how exciting.
-  utter_intent_wow_how_exciting_f66536e5:
-  - text: i know, you should really go and see her and the baby.
-  utter_intent_i_know_you_df82e337:
-  - text: of course i will.
-  utter_intent_of_course_did_81ffd170:
-  - text: i didn't want to, so i didn't.
-  utter_intent_i_didnt_want_7100f0cd:
-  - text: that's sad, but have you gone to the movies recently?
-  utter_intent_thats_sad_but_3ebb9ba3:
-  - text: that's a switch.
-  utter_intent_thats_a_switch_df8100df:
-  - text: i'm serious, have you?
-  utter_intent_im_serious_have_4feffc68:
-  - text: no, i haven't. why?
-  utter_intent_i_really_want_b76b2f1e:
-  - text: so go then.
-  utter_intent_so_go_then_06921767:
-  - text: i really don't want to go by myself.
-  utter_intent_i_really_dont_f2a8d843:
-  - text: well anyway, do you plan on going to school tomorrow?
-  utter_intent_well_anyway_do_cd0e2587:
-  - text: no, i think i'm going to go to the movies.
-  utter_intent_did_you_make_48d7fdcc:
-  - text: i always do. did you go to school today?
-  utter_intent_you_should_have_ea51fe67:
-  - text: that was an odd change of subject.
-  utter_intent_that_was_an_ffb43796:
-  - text: maybe it was, but answer the question.
-  utter_intent_maybe_it_was_b74dbeee:
-  - text: no, not recently.
-  utter_intent_no_not_recently_170824c1:
-  - text: i want to go to see a movie this weekend.
-  utter_intent_i_want_to_2ed2197f:
-  - text: what's stopping you then?
-  utter_intent_whats_stopping_you_0bab986c:
-  - text: i don't want to go alone.
-  utter_intent_i_dont_want_5bc03fdd:
-  - text: so, will you be at school tomorrow?
-  utter_intent_so_will_you_e756d8b8:
-  - text: no, i want to go to the movies instead.
-  utter_intent_did_you_even_eff80da9:
-  - text: yeah, i went. did you go?
-  utter_intent_yeah_i_went_7424168c:
-  - text: no, i didn't feel like it.
-  utter_intent_no_i_didnt_b9f1f694:
-  - text: that's nice, have you been to the movies lately?
-  utter_intent_thats_nice_have_e81a5831:
-  - text: no, but that was a random change of subject.
-  utter_intent_no_but_that_fe017476:
-  - text: it may have been random, but have you?
-  utter_intent_it_may_have_5af6c4bb:
-  - text: i haven't lately.
-  utter_intent_i_havent_lately_4d4a421e:
-  - text: i would love to catch a movie this weekend.
-  utter_intent_i_would_love_4fda48af:
-  - text: so then, why don't you just go?
-  utter_intent_so_then_why_febf54de:
-  - text: i don't want to see a movie by myself.
-  utter_intent_i_dont_want_bbbc44c2:
-  - text: okay, so are you going to school tomorrow?
-  utter_intent_thanks_for_coming_bc9f1d8d:
-  - text: it's no problem. i was really missing you anyway.
-  utter_intent_its_no_problem_86a8838a:
-  - text: i missed you too.
-  utter_intent_i_missed_you_de5e4ee7:
-  - text: why haven't you tried to come see me then?
-  utter_intent_why_havent_you_6c6e3e0b:
-  - text: i've been really busy.
-  utter_intent_ive_been_really_f799e8a1:
-  - text: doing what?
-  utter_intent_working_073b3a3f:
-  - text: i would've come to see you sooner, but i've been busy too.
-  utter_intent_i_wouldve_come_aa50c624:
-  - text: what have you been doing?
-  utter_intent_ive_been_working_10966711:
-  - text: well regardless, i'm very happy that you came to see me.
-  utter_intent_well_regardless_im_e2d2ce84:
-  - text: i am too.
-  utter_intent_im_really_glad_68538801:
-  - text: i had to. i was missing you a lot.
-  utter_intent_i_had_to_765b68fd:
-  - text: i was missing you too.
-  utter_intent_i_was_missing_e08b253c:
-  - text: so, why haven't you visited me?
-  utter_intent_so_why_havent_8f93cf55:
-  - text: i've actually been busy lately.
-  utter_intent_ive_actually_been_93503a8a:
-  - text: what have you been doing?
-  utter_intent_ive_just_been_43b3ada7:
-  - text: i've also been busy.
-  utter_intent_tell_me_what_c637bc4e:
-  - text: basically, i've been working too.
-  utter_intent_im_really_happy_2c3f2198:
-  - text: i really missed you a lot.
-  utter_intent_i_really_missed_4a96944b:
-  - text: i've been missing you like crazy.
-  utter_intent_ive_been_missing_8b675769:
-  - text: i don't understand why you haven't come to visit me.
-  utter_intent_i_dont_understand_a8368730:
-  - text: lately, i've been quite busy.
-  utter_intent_lately_ive_been_69b455e9:
-  - text: tell me what you've been up to.
-  utter_intent_tell_me_what_4c1afe8b:
-  - text: i've really been working a lot lately.
-  utter_intent_ive_really_been_23617437:
-  - text: i've been pretty busy myself.
-  utter_intent_ive_been_pretty_c5dec4de:
-  - text: so what have you been up to?
-  utter_intent_so_what_have_935ae110:
-  - text: i've just been working a lot.
-  utter_intent_ive_just_been_c9f06cd1:
-  - text: whatever the reason may be, i'm glad you visited me.
-  utter_intent_hey_did_you_c35f35a4:
-  - text: yeah, but i'm still waiting for my invitation.
-  utter_intent_yeah_but_im_455ea6fa:
-  - text: oh really? she gave me mine earlier today.
-  utter_intent_oh_really_she_4ab57c41:
-  - text: well, she'll probably just give me my invitation later on today.
-  utter_intent_well_shell_probably_14f49dda:
-  - text: yeah, so are you planning on going?
-  utter_intent_yeah_so_are_b8a94483:
-  - text: i think so. it sounds like it's going to be a lot of fun.
-  utter_intent_i_think_so_354bef05:
-  - text: it really does, i can't wait.
-  utter_intent_it_really_does_da2a6b29:
-  - text: what time does the party start?
-  utter_intent_what_time_does_ebbc21ab:
-  - text: it starts at 8 o'clock.
-  utter_intent_it_starts_at_da4b9909:
-  - text: oh, well, how many people has she given invites to so far?
-  utter_intent_oh_well_how_5d911838:
-  - text: i'm not sure, but i don't think she's given out that many.
-  utter_intent_im_not_sure_49d6280c:
-  - text: well, hopefully she'll give me my invite later on today.
-  utter_intent_have_you_heard_51892132:
-  - text: i've heard about it, but i'm still waiting for my invitation.
-  utter_intent_ive_heard_about_1fb6ae29:
-  - text: really? i got mine from her this morning.
-  utter_intent_really_i_got_f419d108:
-  - text: i'm guessing that she's going to give me my invite today or tomorrow.
-  utter_intent_im_guessing_that_2f96275b:
-  - text: you're probably right, do you intend on going to the party?
-  utter_intent_youre_probably_right_94fbb8b4:
-  - text: i want to. i heard it's going to be really fun.
-  utter_intent_i_want_to_bde1b01b:
-  - text: i know, it does sound pretty awesome.
-  utter_intent_i_know_it_ac6f2303:
-  - text: well, when does the party start?
-  utter_intent_its_supposed_to_a9ba2cca:
-  - text: how many invitations has she given out?
-  utter_intent_how_many_invitations_c8229493:
-  - text: i really don't know, but i don't think she gave out that many yet.
-  utter_intent_i_really_dont_3002e3ef:
-  - text: i really want to go, so i hope that she gives me my invite soon.
-  utter_intent_has_anyone_told_3de6f3c2:
-  - text: i was told about it already. i'm just waiting for my invitation.
-  utter_intent_i_was_told_944027c5:
-  - text: is that right? i already got my invitation from her earlier.
-  utter_intent_is_that_right_48c894b4:
-  - text: i believe that she will give me the invitation today.
-  utter_intent_i_believe_that_12f8bf18:
-  - text: are you even going to go?
-  utter_intent_yeah_it_sounds_9ecdaced:
-  - text: exactly, it seems like it's going to be loads of fun.
-  utter_intent_exactly_it_seems_01e7c904:
-  - text: when exactly does the party start?
-  utter_intent_when_exactly_does_40a2ca41:
-  - text: the invitation says it starts at 800 p.m.
-  utter_intent_the_invitation_says_1468c4a2:
-  - text: has she given out a lot of invitations yet?
-  utter_intent_has_she_given_9f1208fa:
-  - text: i have no idea, she hasn't given out many though.
-  utter_intent_hey_whats_up_b3363293:
-  - text: nothing really.
-  utter_intent_im_throwing_a_bc8ef499:
-  - text: i didn't realize that.
-  utter_intent_nobody_has_told_676c647c:
-  - text: did you want to go?
-  utter_intent_when_does_it_e88e01fa:
-  - text: at 800 p.m.
-  utter_intent_at_800_pm_d68886e2:
-  - text: i'll be there.
-  utter_intent_ill_be_there_4fab3a6e:
-  - text: i'd better see you there.
   utter_greet:
   - text: Hello! How can I help you today?
   utter_goodbye:
@@ -1514,9 +917,6 @@ responses:
   - text: I'm sorry, I don't understand that question. Could you please rephrase it?
   utter_please_rephrase:
   - text: I'm sorry, I don't understand. Can you rephrase that?
-actions:
-- utter_default
-- utter_please_rephrase
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
