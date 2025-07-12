@@ -8,8 +8,8 @@ import uuid
 # Initialize RASA_SERVER_URL and RASA_WEBHOOK_URL in session_state
 # This ensures their values persist across reruns
 if 'rasa_server_url' not in st.session_state:
-    # This is the address Streamlit (on your host) uses to connect to Rasa (in Docker via port mapping)
-    st.session_state.rasa_server_url = "http://localhost:5005"
+    # Updated to use your Hugging Face Spaces backend URL
+    st.session_state.rasa_server_url = "https://adarshdivase-rasabackend.hf.space"
 
 # The webhook URL is derived from the server URL
 st.session_state.rasa_webhook_url = f"{st.session_state.rasa_server_url}/webhooks/rest/webhook"
@@ -35,7 +35,7 @@ def send_message_to_rasa(message, user_id):
             st.session_state.rasa_webhook_url, # Use session_state variable
             json=payload,
             headers={"Content-Type": "application/json"},
-            timeout=10
+            timeout=30  # Increased timeout for hosted services
         )
 
         if response.status_code == 200:
@@ -60,8 +60,21 @@ def send_message_to_rasa(message, user_id):
 def check_rasa_server():
     """Check if Rasa server is running"""
     try:
-        response = requests.get(f"{st.session_state.rasa_server_url}/version", timeout=5) # Use session_state variable
-        return response.status_code == 200
+        # Try multiple endpoints to check server status
+        endpoints_to_check = [
+            f"{st.session_state.rasa_server_url}/version",
+            f"{st.session_state.rasa_server_url}/",
+            f"{st.session_state.rasa_server_url}/status"
+        ]
+        
+        for endpoint in endpoints_to_check:
+            try:
+                response = requests.get(endpoint, timeout=10)
+                if response.status_code == 200:
+                    return True
+            except:
+                continue
+        return False
     except:
         return False
 
@@ -79,7 +92,7 @@ with col2:
     if check_rasa_server():
         st.success("🟢 Server Online")
     else:
-        st.error("🔴 Server Offline - Please ensure Rasa Docker container is running with port 5005 exposed.")
+        st.error("🔴 Server Offline - Please ensure your Rasa backend on Hugging Face Spaces is running.")
 
 # Chat container
 chat_container = st.container()
@@ -148,12 +161,25 @@ with st.sidebar:
 
     # Server configuration
     st.subheader("Server Configuration")
+    st.info("🔗 Connected to Hugging Face Spaces backend")
     # Use session_state for the text_input's value and update it directly
     new_url = st.text_input("Rasa Server URL", value=st.session_state.rasa_server_url)
     if st.button("Update Server URL"):
         st.session_state.rasa_server_url = new_url # Update session_state directly
         # The webhook URL is automatically re-derived at the top of the script on rerun
         st.rerun()
+
+    # Quick server options
+    st.subheader("Quick Server Options")
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("🌐 HF Spaces"):
+            st.session_state.rasa_server_url = "https://adarshdivase-rasabackend.hf.space"
+            st.rerun()
+    with col2:
+        if st.button("🏠 Local"):
+            st.session_state.rasa_server_url = "http://localhost:5005"
+            st.rerun()
 
     # Chat controls
     st.subheader("Chat Controls")
@@ -171,6 +197,15 @@ with st.sidebar:
     st.text(f"User ID: {st.session_state.user_id[:8]}...")
     st.text(f"Messages: {len(st.session_state.messages)}")
     st.text(f"Current Rasa URL: {st.session_state.rasa_server_url}") # Use session_state variable
+    st.text(f"Webhook URL: {st.session_state.rasa_webhook_url}")
+
+    # Test connection
+    if st.button("🔄 Test Connection"):
+        with st.spinner("Testing connection..."):
+            if check_rasa_server():
+                st.success("✅ Connection successful!")
+            else:
+                st.error("❌ Connection failed!")
 
     # Export chat
     if st.button("Export Chat"):
@@ -188,4 +223,4 @@ with st.sidebar:
 
 # Footer
 st.markdown("---")
-st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK})") # Added your GitHub link
+st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK}) | [Backend]({st.session_state.rasa_server_url})")
