@@ -5,14 +5,23 @@ from datetime import datetime
 import uuid
 
 # Configuration
-RASA_SERVER_URL = "http://localhost:5005" # Changed to localhost for host machine access
-RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook" # Dynamically set using RASA_SERVER_URL
+# Initialize RASA_SERVER_URL and RASA_WEBHOOK_URL in session_state
+# This ensures their values persist across reruns
+if 'rasa_server_url' not in st.session_state:
+    # This is the address Streamlit (on your host) uses to connect to Rasa (in Docker via port mapping)
+    st.session_state.rasa_server_url = "http://localhost:5005"
 
-# Initialize session state
+# The webhook URL is derived from the server URL
+st.session_state.rasa_webhook_url = f"{st.session_state.rasa_server_url}/webhooks/rest/webhook"
+
+# Initialize other session state variables
 if 'messages' not in st.session_state:
     st.session_state.messages = []
 if 'user_id' not in st.session_state:
     st.session_state.user_id = str(uuid.uuid4())
+
+# Your GitHub Repository Link
+GITHUB_REPO_LINK = "https://github.com/adarshdivase/FUTURE_ML_05"
 
 def send_message_to_rasa(message, user_id):
     """Send message to Rasa server and get response"""
@@ -23,7 +32,7 @@ def send_message_to_rasa(message, user_id):
         }
 
         response = requests.post(
-            RASA_WEBHOOK_URL,
+            st.session_state.rasa_webhook_url, # Use session_state variable
             json=payload,
             headers={"Content-Type": "application/json"},
             timeout=10
@@ -39,7 +48,7 @@ def send_message_to_rasa(message, user_id):
             return [{"text": "Sorry, I'm having trouble connecting to the server. Please check the logs for more details."}]
 
     except requests.exceptions.ConnectionError:
-        st.error(f"Connection Error: Could not connect to Rasa server at {RASA_WEBHOOK_URL}. Make sure it's running and accessible.")
+        st.error(f"Connection Error: Could not connect to Rasa server at {st.session_state.rasa_webhook_url}. Make sure it's running and accessible.")
         return [{"text": "Sorry, I'm currently unavailable. Please try again later."}]
     except requests.exceptions.Timeout:
         st.error("Timeout Error: Rasa server took too long to respond.")
@@ -51,7 +60,7 @@ def send_message_to_rasa(message, user_id):
 def check_rasa_server():
     """Check if Rasa server is running"""
     try:
-        response = requests.get(f"{RASA_SERVER_URL}/version", timeout=5)
+        response = requests.get(f"{st.session_state.rasa_server_url}/version", timeout=5) # Use session_state variable
         return response.status_code == 200
     except:
         return False
@@ -123,19 +132,15 @@ if prompt := st.chat_input("Type your message here..."):
 
             if 'buttons' in response:
                 st.markdown("**Quick replies:**")
-                # Using a unique key for each button to prevent Streamlit warnings
                 for button in response['buttons']:
                     if st.button(button['title'], key=f"btn_{button['payload']}_{uuid.uuid4()}"):
-                        # If a button is clicked, simulate sending its payload as a user message
-                        # This will trigger a rerun and process the button's payload
-                        # This part might need refinement based on how you want quick replies to function.
-                        # For now, it just re-sends the payload as a new user message.
+                        # Simulate clicking the button by adding its payload as a new user message
                         st.session_state.messages.append({
                             "role": "user",
                             "content": button['payload'],
                             "timestamp": datetime.now().strftime("%H:%M:%S")
                         })
-                        st.experimental_rerun() # Use rerun to process the new message
+                        st.rerun() # Use rerun to process the new message
 
 # Sidebar with additional features
 with st.sidebar:
@@ -143,13 +148,11 @@ with st.sidebar:
 
     # Server configuration
     st.subheader("Server Configuration")
-    # Make the input dynamic, so if the user updates it, it reflects immediately
-    current_rasa_url = st.text_input("Rasa Server URL", value=st.session_state.get('rasa_server_url_setting', RASA_SERVER_URL))
+    # Use session_state for the text_input's value and update it directly
+    new_url = st.text_input("Rasa Server URL", value=st.session_state.rasa_server_url)
     if st.button("Update Server URL"):
-        st.session_state.rasa_server_url_setting = current_rasa_url
-        global RASA_SERVER_URL, RASA_WEBHOOK_URL
-        RASA_SERVER_URL = current_rasa_url
-        RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
+        st.session_state.rasa_server_url = new_url # Update session_state directly
+        # The webhook URL is automatically re-derived at the top of the script on rerun
         st.rerun()
 
     # Chat controls
@@ -167,7 +170,7 @@ with st.sidebar:
     st.subheader("Debug Info")
     st.text(f"User ID: {st.session_state.user_id[:8]}...")
     st.text(f"Messages: {len(st.session_state.messages)}")
-    st.text(f"Current Rasa URL: {RASA_SERVER_URL}")
+    st.text(f"Current Rasa URL: {st.session_state.rasa_server_url}") # Use session_state variable
 
     # Export chat
     if st.button("Export Chat"):
@@ -185,4 +188,4 @@ with st.sidebar:
 
 # Footer
 st.markdown("---")
-st.markdown("Built with Streamlit and Rasa | [GitHub](https://github.com/your-repo)")
+st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK})") # Added your GitHub link
