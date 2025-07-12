@@ -1,101 +1,173 @@
-# app.py
 import streamlit as st
-import pandas as pd
-import re
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+import requests
+import json
+from datetime import datetime
 import uuid
 
-# --- Page Configuration ---
-st.set_page_config(page_title="SupportSage - AI Assistant", layout="centered")
+# Configuration
+RASA_SERVER_URL = "http://localhost:5005"  # Change this to your Rasa server URL
+RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
 
-st.markdown(
-    """
-    <style>
-    .stButton>button {
-        border-radius: 0.5rem;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# --- Bot Configuration ---
-BOT_NAME = "SupportSage"
-# --- THIS LINE HAS BEEN UPDATED TO THE CORRECT RELATIVE PATH ---
-KNOWLEDGE_BASE_PATH = "chatbot_knowledge_base.csv"
-
-# --- Data Loading & Caching ---
-# Use st.cache_resource to load the model only once
-@st.cache_resource
-def load_knowledge_base():
-    """Loads data, trains the vectorizer, and creates question vectors."""
-    try:
-        df = pd.read_csv(KNOWLEDGE_BASE_PATH)
-        if "question" not in df.columns or "answer" not in df.columns:
-            st.error("Error: CSV must have 'question' and 'answer' columns.")
-            return None, None, None
-        
-        vectorizer = TfidfVectorizer(preprocessor=lambda x: re.sub(r'[^a-z0-9\s]', '', x.lower()))
-        question_vectors = vectorizer.fit_transform(df['question'])
-        
-        return vectorizer, df, question_vectors
-    except FileNotFoundError:
-        st.error(f"Knowledge base file not found at '{KNOWLEDGE_BASE_PATH}'. Please check the path.")
-        return None, None, None
-
-vectorizer, df, question_vectors = load_knowledge_base()
-
-# --- Chatbot Logic ---
-def get_bot_response(user_message):
-    """Finds the most similar question and returns its answer."""
-    if vectorizer is None or df is None:
-        return "I'm sorry, my knowledge base isn't loaded correctly. Please check the application logs."
-
-    # Preprocess and vectorize user's message
-    user_vector = vectorizer.transform([user_message])
-    
-    # Calculate similarities
-    similarities = cosine_similarity(user_vector, question_vectors)
-    
-    # Find the best match
-    most_similar_index = np.argmax(similarities)
-    confidence = similarities[0, most_similar_index]
-    
-    CONFIDENCE_THRESHOLD = 0.3 # Adjust if needed
-    
-    if confidence > CONFIDENCE_THRESHOLD:
-        response = df.iloc[most_similar_index]['answer']
-    else:
-        response = "I'm not sure how to answer that. Could you please rephrase?"
-        
-    return response
-
-# --- Streamlit UI ---
-st.title(f"🤖 {BOT_NAME} - Your AI Customer Assistant")
-
-# Initialize chat history
-if "messages" not in st.session_state:
+# Initialize session state
+if 'messages' not in st.session_state:
     st.session_state.messages = []
+if 'user_id' not in st.session_state:
+    st.session_state.user_id = str(uuid.uuid4())
 
-# Display chat messages from history
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+def send_message_to_rasa(message, user_id):
+    """Send message to Rasa server and get response"""
+    try:
+        payload = {
+            "sender": user_id,
+            "message": message
+        }
+        
+        response = requests.post(
+            RASA_WEBHOOK_URL,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            rasa_responses = response.json()
+            return rasa_responses
+        else:
+            st.error(f"Error: Received status code {response.status_code}")
+            return [{"text": "Sorry, I'm having trouble connecting to the server."}]
+            
+    except requests.exceptions.ConnectionError:
+        st.error("Connection Error: Could not connect to Rasa server. Make sure it's running.")
+        return [{"text": "Sorry, I'm currently unavailable. Please try again later."}]
+    except requests.exceptions.Timeout:
+        st.error("Timeout Error: Server took too long to respond.")
+        return [{"text": "Sorry, I'm taking too long to respond. Please try again."}]
+    except Exception as e:
+        st.error(f"Unexpected error: {str(e)}")
+        return [{"text": "Sorry, something went wrong. Please try again."}]
 
-# Accept user input
-if prompt := st.chat_input("Ask me about customer support..."):
-    # Add user message to chat history
-    st.session_state.messages.append({"role": "user", "content": prompt})
+def check_rasa_server():
+    """Check if Rasa server is running"""
+    try:
+        response = requests.get(f"{RASA_SERVER_URL}/version", timeout=5)
+        return response.status_code == 200
+    except:
+        return False
+
+# Streamlit UI
+st.set_page_config(page_title="Rasa Chatbot", page_icon="🤖", layout="wide")
+
+st.title("🤖 Rasa Chatbot")
+st.markdown("---")
+
+# Check server status
+col1, col2 = st.columns([3, 1])
+with col1:
+    st.markdown("### Chat with your Rasa assistant")
+with col2:
+    if check_rasa_server():
+        st.success("🟢 Server Online")
+    else:
+        st.error("🔴 Server Offline")
+
+# Chat container
+chat_container = st.container()
+
+# Display chat messages
+with chat_container:
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+            if message.get("timestamp"):
+                st.caption(message["timestamp"])
+
+# Chat input
+if prompt := st.chat_input("Type your message here..."):
+    # Add user message to chat
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    st.session_state.messages.append({
+        "role": "user", 
+        "content": prompt,
+        "timestamp": timestamp
+    })
+    
+    # Display user message
     with st.chat_message("user"):
         st.markdown(prompt)
-
-    # Get and display bot response
+        st.caption(timestamp)
+    
+    # Get response from Rasa
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
-            response = get_bot_response(prompt)
-            st.markdown(response)
+            rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
+        
+        # Display bot responses
+        for response in rasa_responses:
+            if 'text' in response:
+                st.markdown(response['text'])
+                response_timestamp = datetime.now().strftime("%H:%M:%S")
+                st.caption(response_timestamp)
+                
+                # Add bot response to chat history
+                st.session_state.messages.append({
+                    "role": "assistant",
+                    "content": response['text'],
+                    "timestamp": response_timestamp
+                })
             
-    # Add bot response to chat history
-    st.session_state.messages.append({"role": "assistant", "content": response})
+            # Handle other response types (images, buttons, etc.)
+            if 'image' in response:
+                st.image(response['image'])
+            
+            if 'buttons' in response:
+                st.markdown("**Quick replies:**")
+                for button in response['buttons']:
+                    if st.button(button['title'], key=f"btn_{uuid.uuid4()}"):
+                        # Simulate clicking the button
+                        st.rerun()
+
+# Sidebar with additional features
+with st.sidebar:
+    st.header("Settings")
+    
+    # Server configuration
+    st.subheader("Server Configuration")
+    new_url = st.text_input("Rasa Server URL", value=RASA_SERVER_URL)
+    if st.button("Update Server URL"):
+        RASA_SERVER_URL = new_url
+        RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
+        st.rerun()
+    
+    # Chat controls
+    st.subheader("Chat Controls")
+    if st.button("Clear Chat History"):
+        st.session_state.messages = []
+        st.rerun()
+    
+    if st.button("New Session"):
+        st.session_state.user_id = str(uuid.uuid4())
+        st.session_state.messages = []
+        st.rerun()
+    
+    # Debug info
+    st.subheader("Debug Info")
+    st.text(f"User ID: {st.session_state.user_id[:8]}...")
+    st.text(f"Messages: {len(st.session_state.messages)}")
+    
+    # Export chat
+    if st.button("Export Chat"):
+        chat_data = {
+            "user_id": st.session_state.user_id,
+            "messages": st.session_state.messages,
+            "export_time": datetime.now().isoformat()
+        }
+        st.download_button(
+            label="Download Chat JSON",
+            data=json.dumps(chat_data, indent=2),
+            file_name=f"chat_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+            mime="application/json"
+        )
+
+# Footer
+st.markdown("---")
+st.markdown("Built with Streamlit and Rasa | [GitHub](https://github.com/your-repo)")
