@@ -34,7 +34,7 @@ jobs:
     # 5. (Optional) Upload the trained model as an artifact
     # This saves the trained model so you can download it from GitHub
     - name: Upload Trained Model
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: trained-rasa-model
         path: models/
