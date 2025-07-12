@@ -1,0 +1,12 @@
+recipe: default.v1
+assistant_id: 20240712-111100-primal-crust
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 100
+policies:
+- name: RulePolicy
