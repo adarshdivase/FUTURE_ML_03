@@ -1,2949 +1,1763 @@
 version: '3.1'
 nlu:
-- intent: intent_hi_how_are_635a97b3
+- intent: hi_how_are
   examples: '- hi, how are you doing?
 
     - hi, how are you doing?
 
     - hi how are you doing'
-- intent: intent_im_fine_how_59ddb211
+- intent: im_fine_how
   examples: '- i''m fine. how about yourself?
 
     - i''m fine. how about yourself?
 
     - im fine how about yourself'
-- intent: intent_im_pretty_good_d6daeebb
+- intent: im_pretty_good
   examples: '- i''m pretty good. thanks for asking.
 
     - i''m pretty good. thanks for asking.
 
     - im pretty good thanks for asking'
-- intent: intent_no_problem_so_e26c7e89
+- intent: no_problem_so
   examples: '- no problem. so how have you been?
 
     - no problem. so how have you been?
 
     - no problem so how have you been'
-- intent: intent_ive_been_great_0c077647
+- intent: ive_been_great
   examples: '- i''ve been great. what about you?
 
     - i''ve been great. what about you?
 
     - ive been great what about you'
-- intent: intent_ive_been_good_ce7cf0ba
+- intent: ive_been_good
   examples: '- i''ve been good. i''m in school right now.
 
     - i''ve been good. i''m in school right now.
 
     - ive been good im in school right now'
-- intent: intent_what_school_do_dccd4fba
+- intent: what_school_do
   examples: '- what school do you go to?
 
     - what school do you go to?
 
     - what school do you go to'
-- intent: intent_i_go_to_7228a576
+- intent: go_to
   examples: '- i go to pcc.
 
     - i go to pcc.
 
     - i go to pcc'
-- intent: intent_do_you_like_949a696f
+- intent: do_you_like
   examples: '- do you like it there?
 
     - do you like it there?
 
     - do you like it there'
-- intent: intent_its_okay_its_5c3d518a
+- intent: its_okay_its
   examples: '- it''s okay. it''s a really big campus.
 
     - it''s okay. it''s a really big campus.
 
     - its okay its a really big campus'
-- intent: intent_good_luck_with_084584c2
+- intent: good_luck_with
   examples: '- good luck with school.
 
     - good luck with school.
 
     - good luck with school'
-- intent: intent_hows_it_going_bbe7ad8b
+- intent: hows_it_going
   examples: '- how''s it going?
 
     - how''s it going?
 
     - hows it going'
-- intent: intent_never_better_thanks_193a1493
+- intent: im_doing_well
+  examples: '- i''m doing well. how about you?
+
+    - i''m doing well. how about you?
+
+    - im doing well how about you'
+- intent: never_better_thanks
   examples: '- never better, thanks.
 
     - never better, thanks.
 
     - never better thanks'
-- intent: intent_so_how_have_4884b581
+- intent: so_how_have
   examples: '- so how have you been lately?
 
     - so how have you been lately?
 
     - so how have you been lately'
-- intent: intent_ive_actually_been_71ddb855
+- intent: ive_actually_been
   examples: '- i''ve actually been pretty good. you?
 
     - i''ve actually been pretty good. you?
 
     - ive actually been pretty good you'
-- intent: intent_im_actually_in_904b40cd
+- intent: im_actually_in
   examples: '- i''m actually in school right now.
 
     - i''m actually in school right now.
 
     - im actually in school right now'
-- intent: intent_which_school_do_cf201aea
+- intent: which_school_do
   examples: '- which school do you attend?
 
     - which school do you attend?
 
     - which school do you attend'
-- intent: intent_im_attending_pcc_1520c5e6
+- intent: im_attending_pcc
   examples: '- i''m attending pcc right now.
 
     - i''m attending pcc right now.
 
     - im attending pcc right now'
-- intent: intent_are_you_enjoying_827f627b
+- intent: are_you_enjoying
   examples: '- are you enjoying it there?
 
     - are you enjoying it there?
 
     - are you enjoying it there'
-- intent: intent_its_not_bad_3cf9ea5f
+- intent: its_not_bad
   examples: '- it''s not bad. there are a lot of people there.
 
     - it''s not bad. there are a lot of people there.
 
     - its not bad there are a lot of people there'
-- intent: intent_good_luck_with_95bc26ff
+- intent: good_luck_with_1
   examples: '- good luck with that.
 
     - good luck with that.
 
     - good luck with that'
-- intent: intent_how_are_you_31640c89
+- intent: how_are_you
   examples: '- how are you doing today?
 
     - how are you doing today?
 
     - how are you doing today'
-- intent: intent_im_doing_great_d41655d6
+- intent: im_doing_great
   examples: '- i''m doing great. what about you?
 
     - i''m doing great. what about you?
 
     - im doing great what about you'
-- intent: intent_im_absolutely_lovely_136b146f
+- intent: im_absolutely_lovely
   examples: '- i''m absolutely lovely, thank you.
 
     - i''m absolutely lovely, thank you.
 
     - im absolutely lovely thank you'
-- intent: intent_i_havent_been_0193d5b1
+- intent: everythings_been_good
+  examples: '- everything''s been good with you?
+
+    - everything''s been good with you?
+
+    - everythings been good with you'
+- intent: havent_been
   examples: '- i haven''t been better. how about yourself?
 
     - i haven''t been better. how about yourself?
 
     - i havent been better how about yourself'
-- intent: intent_i_started_school_2e944ba9
+- intent: started_school
   examples: '- i started school recently.
 
     - i started school recently.
 
     - i started school recently'
-- intent: intent_where_are_you_72fc4fa6
+- intent: where_are_you
   examples: '- where are you going to school?
 
     - where are you going to school?
 
     - where are you going to school'
-- intent: intent_how_do_you_b04c9712
+- intent: im_going_to
+  examples: '- i''m going to pcc.
+
+    - i''m going to pcc.
+
+    - im going to pcc'
+- intent: how_do_you
   examples: '- how do you like it so far?
 
     - how do you like it so far?
 
     - how do you like it so far'
-- intent: intent_i_like_it_031cf488
+- intent: like_it
   examples: '- i like it so far. my classes are pretty good right now.
 
     - i like it so far. my classes are pretty good right now.
 
     - i like it so far my classes are pretty good right now'
-- intent: intent_its_an_ugly_91dc7e5a
+- intent: its_an_ugly
   examples: '- it''s an ugly day today.
 
     - it''s an ugly day today.
 
     - its an ugly day today'
-- intent: intent_i_know_i_8ff31b25
+- intent: know
   examples: '- i know. i think it may rain.
 
     - i know. i think it may rain.
 
     - i know i think it may rain'
-- intent: intent_its_the_middle_06e9842f
+- intent: its_the_middle
   examples: '- it''s the middle of summer, it shouldn''t rain today.
 
     - it''s the middle of summer, it shouldn''t rain today.
 
     - its the middle of summer it shouldnt rain today'
-- intent: intent_that_would_be_9f9ddbcf
+- intent: that_would_be
   examples: '- that would be weird.
 
     - that would be weird.
 
     - that would be weird'
-- intent: intent_yeah_especially_since_c0c058c0
+- intent: yeah_especially_since
   examples: '- yeah, especially since it''s ninety degrees outside.
 
     - yeah, especially since it''s ninety degrees outside.
 
     - yeah especially since its ninety degrees outside'
-- intent: intent_i_know_it_3b6c6541
+- intent: know_it
   examples: '- i know, it would be horrible if it rained and it was hot outside.
 
     - i know, it would be horrible if it rained and it was hot outside.
 
     - i know it would be horrible if it rained and it was hot outside'
-- intent: intent_yes_it_would_dc639dad
+- intent: yes_it_would
   examples: '- yes, it would be.
 
     - yes, it would be.
 
     - yes it would be'
-- intent: intent_i_really_wish_02c80692
+- intent: really_wish
   examples: '- i really wish it wasn''t so hot every day.
 
     - i really wish it wasn''t so hot every day.
 
     - i really wish it wasnt so hot every day'
-- intent: intent_me_too_i_ba8bf8ea
+- intent: me_too
   examples: '- me too. i can''t wait until winter.
 
     - me too. i can''t wait until winter.
 
     - me too i cant wait until winter'
-- intent: intent_i_like_winter_fcb39f93
+- intent: like_winter
   examples: '- i like winter too, but sometimes it gets too cold.
 
     - i like winter too, but sometimes it gets too cold.
 
     - i like winter too but sometimes it gets too cold'
-- intent: intent_id_rather_be_faa01254
+- intent: id_rather_be
   examples: '- i''d rather be cold than hot.
 
     - i''d rather be cold than hot.
 
     - id rather be cold than hot'
-- intent: intent_it_doesnt_look_202ffcfc
+- intent: it_doesnt_look
   examples: '- it doesn''t look very nice outside today.
 
     - it doesn''t look very nice outside today.
 
     - it doesnt look very nice outside today'
-- intent: intent_youre_right_i_de199303
+- intent: youre_right
   examples: '- you''re right. i think it''s going to rain later.
 
     - you''re right. i think it''s going to rain later.
 
     - youre right i think its going to rain later'
-- intent: intent_in_the_middle_72d97e4a
+- intent: in_the_middle
   examples: '- in the middle of the summer, it shouldn''t be raining.
 
     - in the middle of the summer, it shouldn''t be raining.
 
     - in the middle of the summer it shouldnt be raining'
-- intent: intent_that_wouldnt_seem_23c2b809
+- intent: that_wouldnt_seem
   examples: '- that wouldn''t seem right.
 
     - that wouldn''t seem right.
 
     - that wouldnt seem right'
-- intent: intent_considering_that_its_29137732
+- intent: considering_that_its
   examples: '- considering that it''s over ninety degrees outside, that would be weird.
 
     - considering that it''s over ninety degrees outside, that would be weird.
 
     - considering that its over ninety degrees outside that would be weird'
-- intent: intent_exactly_it_wouldnt_c4942792
+- intent: exactly_it_wouldnt
   examples: '- exactly, it wouldn''t be nice if it started raining. it''s too hot.
 
     - exactly, it wouldn''t be nice if it started raining. it''s too hot.
 
     - exactly it wouldnt be nice if it started raining its too hot'
-- intent: intent_i_know_youre_b1ad6c8d
+- intent: know_youre
   examples: '- i know, you''re absolutely right.
 
     - i know, you''re absolutely right.
 
     - i know youre absolutely right'
-- intent: intent_i_wish_it_f691c4ba
+- intent: wish_it
   examples: '- i wish it would cool off one day.
 
     - i wish it would cool off one day.
 
     - i wish it would cool off one day'
-- intent: intent_thats_how_i_86eece56
+- intent: thats_how
   examples: '- that''s how i feel, i want winter to come soon.
 
     - that''s how i feel, i want winter to come soon.
 
     - thats how i feel i want winter to come soon'
-- intent: intent_i_enjoy_the_6b60c48e
+- intent: enjoy_the
   examples: '- i enjoy the winter, but it gets really cold sometimes.
 
     - i enjoy the winter, but it gets really cold sometimes.
 
     - i enjoy the winter but it gets really cold sometimes'
-- intent: intent_i_know_what_e238c269
+- intent: know_what
   examples: '- i know what you mean, but i''d rather be cold than hot.
 
     - i know what you mean, but i''d rather be cold than hot.
 
     - i know what you mean but id rather be cold than hot'
-- intent: intent_i_wish_it_c8d15d1e
+- intent: wish_it_1
   examples: '- i wish it was a nicer day today.
 
     - i wish it was a nicer day today.
 
     - i wish it was a nicer day today'
-- intent: intent_that_is_true_e1ffdab3
+- intent: that_is_true
   examples: '- that is true. i hope it doesn''t rain.
 
     - that is true. i hope it doesn''t rain.
 
     - that is true i hope it doesnt rain'
-- intent: intent_it_wouldnt_rain_f5d95da9
+- intent: it_wouldnt_rain
   examples: '- it wouldn''t rain in the middle of the summer.
 
     - it wouldn''t rain in the middle of the summer.
 
     - it wouldnt rain in the middle of the summer'
-- intent: intent_it_wouldnt_seem_8537d187
+- intent: it_wouldnt_seem
   examples: '- it wouldn''t seem right if it started raining right now.
 
     - it wouldn''t seem right if it started raining right now.
 
     - it wouldnt seem right if it started raining right now'
-- intent: intent_it_would_be_7709aaf5
+- intent: it_would_be
   examples: '- it would be weird if it started raining in ninety degree weather.
 
     - it would be weird if it started raining in ninety degree weather.
 
     - it would be weird if it started raining in ninety degree weather'
-- intent: intent_any_rain_right_ed98db4b
+- intent: any_rain_right
   examples: '- any rain right now would be pointless.
 
     - any rain right now would be pointless.
 
     - any rain right now would be pointless'
-- intent: intent_thats_right_it_5b32d5c3
+- intent: thats_right_it
   examples: '- that''s right, it really would be.
 
     - that''s right, it really would be.
 
     - thats right it really would be'
-- intent: intent_i_want_it_7555eb82
+- intent: want_it
   examples: '- i want it to cool down some.
 
     - i want it to cool down some.
 
     - i want it to cool down some'
-- intent: intent_i_know_what_48465bd2
+- intent: know_what_1
   examples: '- i know what you mean, i can''t wait until it''s winter.
 
     - i know what you mean, i can''t wait until it''s winter.
 
     - i know what you mean i cant wait until its winter'
-- intent: intent_winter_is_great_9efde366
+- intent: winter_is_great
   examples: '- winter is great. i wish it didn''t get so cold sometimes though.
 
     - winter is great. i wish it didn''t get so cold sometimes though.
 
     - winter is great i wish it didnt get so cold sometimes though'
-- intent: intent_its_such_a_914efe6b
+- intent: its_such
   examples: '- it''s such a nice day.
 
     - it''s such a nice day.
 
     - its such a nice day'
-- intent: intent_it_looks_like_626030f1
+- intent: yes_it_is
+  examples: '- yes, it is.
+
+    - yes, it is.
+
+    - yes it is'
+- intent: it_looks_like
   examples: '- it looks like it may rain soon.
 
     - it looks like it may rain soon.
 
     - it looks like it may rain soon'
-- intent: intent_yes_and_i_c84a179d
+- intent: yes_and
   examples: '- yes, and i hope that it does.
 
     - yes, and i hope that it does.
 
     - yes and i hope that it does'
-- intent: intent_why_is_that_37f30d2d
+- intent: why_is_that
   examples: '- why is that?
 
     - why is that?
 
     - why is that'
-- intent: intent_i_really_love_a77b42ac
+- intent: really_love
   examples: '- i really love how rain clears the air.
 
     - i really love how rain clears the air.
 
     - i really love how rain clears the air'
-- intent: intent_me_too_it_2c2bd94f
+- intent: me_too_it
   examples: '- me too. it always smells so fresh after it rains.
 
     - me too. it always smells so fresh after it rains.
 
     - me too it always smells so fresh after it rains'
-- intent: intent_yes_but_i_caf141f2
+- intent: yes_but
   examples: '- yes, but i love the night air after it rains.
 
     - yes, but i love the night air after it rains.
 
     - yes but i love the night air after it rains'
-- intent: intent_really_why_is_2af7a503
+- intent: really_why_is
   examples: '- really? why is it?
 
     - really? why is it?
 
     - really why is it'
-- intent: intent_because_you_can_824f4c3e
+- intent: because_you_can
   examples: '- because you can see the stars perfectly.
 
     - because you can see the stars perfectly.
 
     - because you can see the stars perfectly'
-- intent: intent_i_really_hope_141ab8a5
+- intent: really_hope
   examples: '- i really hope it rains today.
 
     - i really hope it rains today.
 
     - i really hope it rains today'
-- intent: intent_isnt_it_a_dcaaf609
+- intent: isnt_it
   examples: '- isn''t it a nice day?
 
     - isn''t it a nice day?
 
     - isnt it a nice day'
-- intent: intent_it_seems_that_ec4a61c3
+- intent: it_really_is
+  examples: '- it really is.
+
+    - it really is.
+
+    - it really is'
+- intent: it_seems_that
   examples: '- it seems that it may rain today.
 
     - it seems that it may rain today.
 
     - it seems that it may rain today'
-- intent: intent_hopefully_it_will_ae5d0f52
+- intent: hopefully_it_will
   examples: '- hopefully it will.
 
     - hopefully it will.
 
     - hopefully it will'
-- intent: intent_how_come_2246bfd2
+- intent: how_come
   examples: '- how come?'
-- intent: intent_i_like_how_888a071c
+- intent: like_how
   examples: '- i like how clear the sky gets after it rains.
 
     - i like how clear the sky gets after it rains.
 
     - i like how clear the sky gets after it rains'
-- intent: intent_i_feel_the_0839dbb7
+- intent: feel_the
   examples: '- i feel the same way. it smells so good after it rains.
 
     - i feel the same way. it smells so good after it rains.
 
     - i feel the same way it smells so good after it rains'
-- intent: intent_i_especially_love_f31eae34
+- intent: especially_love
   examples: '- i especially love the night air when it rains.
 
     - i especially love the night air when it rains.
 
     - i especially love the night air when it rains'
-- intent: intent_the_stars_look_c83267c3
+- intent: really_why
+  examples: '- really? why?'
+- intent: the_stars_look
   examples: '- the stars look so much closer after it rains.
 
     - the stars look so much closer after it rains.
 
     - the stars look so much closer after it rains'
-- intent: intent_i_really_want_1a8c714e
+- intent: really_want
   examples: '- i really want it to rain today.
 
     - i really want it to rain today.
 
     - i really want it to rain today'
-- intent: intent_dont_you_think_ccc06a00
+- intent: dont_you_think
   examples: '- don''t you think it''s nice out?
 
     - don''t you think it''s nice out?
 
     - dont you think its nice out'
-- intent: intent_yes_i_think_684e209f
+- intent: yes_think
   examples: '- yes, i think so too.
 
     - yes, i think so too.
 
     - yes i think so too'
-- intent: intent_i_think_that_bf32596e
+- intent: think_that
   examples: '- i think that it''s going to rain.
 
     - i think that it''s going to rain.
 
     - i think that its going to rain'
-- intent: intent_i_hope_that_4f0d21aa
+- intent: hope_that
   examples: '- i hope that it does rain.
 
     - i hope that it does rain.
 
     - i hope that it does rain'
-- intent: intent_you_like_the_e0dfc387
+- intent: you_like_the
   examples: '- you like the rain?
 
     - you like the rain?
 
     - you like the rain'
-- intent: intent_the_sky_looks_419d95fb
+- intent: the_sky_looks
   examples: '- the sky looks so clean after it rains. i love it.
 
     - the sky looks so clean after it rains. i love it.
 
     - the sky looks so clean after it rains i love it'
-- intent: intent_i_understand_rain_da8d858d
+- intent: understand_rain
   examples: '- i understand. rain does make it smell cleaner.
 
     - i understand. rain does make it smell cleaner.
 
     - i understand rain does make it smell cleaner'
-- intent: intent_i_love_most_fd5d3865
+- intent: love_most
   examples: '- i love most how it is at night after it rains.
 
     - i love most how it is at night after it rains.
 
     - i love most how it is at night after it rains'
-- intent: intent_you_can_see_7eba5e4f
+- intent: you_can_see
   examples: '- you can see the stars so much more clearly after it rains.
 
     - you can see the stars so much more clearly after it rains.
 
     - you can see the stars so much more clearly after it rains'
-- intent: intent_i_really_want_b396d419
+- intent: really_want_1
   examples: '- i really want to go to the beach this weekend.
 
     - i really want to go to the beach this weekend.
 
     - i really want to go to the beach this weekend'
-- intent: intent_that_sounds_like_dfdc3223
+- intent: that_sounds_like
   examples: '- that sounds like fun. what''s the weather going to be like?
 
     - that sounds like fun. what''s the weather going to be like?
 
     - that sounds like fun whats the weather going to be like'
-- intent: intent_i_heard_that_6b82fac0
+- intent: heard_that
   examples: '- i heard that it''s going to be warm this weekend.
 
     - i heard that it''s going to be warm this weekend.
 
     - i heard that its going to be warm this weekend'
-- intent: intent_is_it_going_5ac2cc3e
+- intent: is_it_going
   examples: '- is it going to be perfect beach weather?
 
     - is it going to be perfect beach weather?
 
     - is it going to be perfect beach weather'
-- intent: intent_i_believe_so_082f6703
+- intent: believe_so
   examples: '- i believe so.
 
     - i believe so.
 
     - i believe so'
-- intent: intent_good_i_hope_6c98bf31
+- intent: good_hope
   examples: '- good. i hope it doesn''t cool off this weekend.
 
     - good. i hope it doesn''t cool off this weekend.
 
     - good i hope it doesnt cool off this weekend'
-- intent: intent_i_know_i_3d991f54
+- intent: know_1
   examples: '- i know. i really want to go to the beach.
 
     - i know. i really want to go to the beach.
 
     - i know i really want to go to the beach'
-- intent: intent_but_you_know_81adb332
+- intent: but_you_know
   examples: '- but you know that california weather is really unpredictable.
 
     - but you know that california weather is really unpredictable.
 
     - but you know that california weather is really unpredictable'
-- intent: intent_youre_right_one_42efcbc8
-  examples: '- you''re right. one minute it''s hot, and then the next minute it''s cold.
+- intent: youre_right_one
+  examples: '- you''re right. one minute it''s hot, and then the next minute it''s
+    cold.
 
     - you''re right. one minute it''s hot, and then the next minute it''s cold.
 
     - youre right one minute its hot and then the next minute its cold'
-- intent: intent_i_really_wish_7f15d751
+- intent: really_wish_1
   examples: '- i really wish the weather would just stay the same.
 
     - i really wish the weather would just stay the same.
 
     - i really wish the weather would just stay the same'
-- intent: intent_i_do_too_35f81f2f
+- intent: do_too
   examples: '- i do too. that way we can have our activities planned ahead of time.
 
     - i do too. that way we can have our activities planned ahead of time.
 
     - i do too that way we can have our activities planned ahead of time'
-- intent: intent_i_would_like_8b8757a8
+- intent: would_like
   examples: '- i would like to take a trip to the beach this weekend.
 
     - i would like to take a trip to the beach this weekend.
 
     - i would like to take a trip to the beach this weekend'
-- intent: intent_a_trip_to_694b51dd
+- intent: trip_to
   examples: '- a trip to the beach would be fun. how is the weather going to be?
 
     - a trip to the beach would be fun. how is the weather going to be?
 
     - a trip to the beach would be fun how is the weather going to be'
-- intent: intent_the_forecast_says_4618162f
+- intent: the_forecast_says
   examples: '- the forecast says that it will be warm on the weekend.
 
     - the forecast says that it will be warm on the weekend.
 
     - the forecast says that it will be warm on the weekend'
-- intent: intent_so_do_you_b5b15be8
+- intent: so_do_you
   examples: '- so do you think it''ll be perfect weather for the beach?
 
     - so do you think it''ll be perfect weather for the beach?
 
     - so do you think itll be perfect weather for the beach'
-- intent: intent_it_sounds_like_7ba658aa
+- intent: it_sounds_like
   examples: '- it sounds like it will be.
 
     - it sounds like it will be.
 
     - it sounds like it will be'
-- intent: intent_i_really_hope_d432edcf
+- intent: really_hope_1
   examples: '- i really hope it doesn''t get cold.
 
     - i really hope it doesn''t get cold.
 
     - i really hope it doesnt get cold'
-- intent: intent_that_would_ruin_f8c09acb
+- intent: that_would_ruin
   examples: '- that would ruin things, i want to go so badly.
 
     - that would ruin things, i want to go so badly.
 
     - that would ruin things i want to go so badly'
-- intent: intent_that_is_true_75cbaeac
+- intent: the_weather_in
+  examples: '- the weather in california is unpredictable, so you never know.
+
+    - the weather in california is unpredictable, so you never know.
+
+    - the weather in california is unpredictable so you never know'
+- intent: that_is_true_1
   examples: '- that is true. the weather is constantly changing.
 
     - that is true. the weather is constantly changing.
 
     - that is true the weather is constantly changing'
-- intent: intent_it_would_be_be606e21
+- intent: it_would_be_1
   examples: '- it would be nice if the weather would never change.
 
     - it would be nice if the weather would never change.
 
     - it would be nice if the weather would never change'
-- intent: intent_that_would_be_1298d926
+- intent: that_would_be_1
   examples: '- that would be great, then we could plan things sooner.
 
     - that would be great, then we could plan things sooner.
 
     - that would be great then we could plan things sooner'
-- intent: intent_it_would_be_69eab66f
+- intent: it_would_be_2
   examples: '- it would be nice to go to the beach sometime this weekend.
 
     - it would be nice to go to the beach sometime this weekend.
 
     - it would be nice to go to the beach sometime this weekend'
-- intent: intent_whats_the_weather_63301010
+- intent: whats_the_weather
   examples: '- what''s the weather going to be like? i may want to go too.
 
     - what''s the weather going to be like? i may want to go too.
 
     - whats the weather going to be like i may want to go too'
-- intent: intent_the_weather_this_907b861f
+- intent: the_weather_this
   examples: '- the weather this weekend is supposed to be warm.
 
     - the weather this weekend is supposed to be warm.
 
     - the weather this weekend is supposed to be warm'
-- intent: intent_will_it_be_23b56fba
+- intent: will_it_be
   examples: '- will it be good beach weather?
 
     - will it be good beach weather?
 
     - will it be good beach weather'
-- intent: intent_i_think_it_c212dc4b
+- intent: think_it
   examples: '- i think it will be.
 
     - i think it will be.
 
     - i think it will be'
-- intent: intent_it_wouldnt_be_22ea00a4
+- intent: it_wouldnt_be
   examples: '- it wouldn''t be good if it got cold this weekend.
 
     - it wouldn''t be good if it got cold this weekend.
 
     - it wouldnt be good if it got cold this weekend'
-- intent: intent_i_want_this_18a77436
+- intent: want_this
   examples: '- i want this trip to be perfect, i hope it stays warm.
 
     - i want this trip to be perfect, i hope it stays warm.
 
     - i want this trip to be perfect i hope it stays warm'
-- intent: intent_this_california_weather_e285ad74
-  examples: '- this california weather is so uncertain, it''s impossible to know what''ll happen.
+- intent: this_california_weather
+  examples: '- this california weather is so uncertain, it''s impossible to know what''ll
+    happen.
 
     - this california weather is so uncertain, it''s impossible to know what''ll happen.
 
     - this california weather is so uncertain its impossible to know whatll happen'
-- intent: intent_i_know_every_1f68ed20
+- intent: know_every
   examples: '- i know. every day the weather seems different.
 
     - i know. every day the weather seems different.
 
     - i know every day the weather seems different'
-- intent: intent_i_would_love_c12a3d92
+- intent: would_love
   examples: '- i would love it if it wasn''t always so unpredictable.
 
     - i would love it if it wasn''t always so unpredictable.
 
     - i would love it if it wasnt always so unpredictable'
-- intent: intent_hello_may_i_15711221
+- intent: hello_may
   examples: '- hello, may i speak to alice please?
 
     - hello, may i speak to alice please?
 
     - hello may i speak to alice please'
-- intent: intent_ive_been_trying_d5f4c3e4
+- intent: this_is_she
+  examples: '- this is she. how''s it going?
+
+    - this is she. how''s it going?
+
+    - this is she hows it going'
+- intent: ive_been_trying
   examples: '- i''ve been trying to call you all day.
 
     - i''ve been trying to call you all day.
 
     - ive been trying to call you all day'
-- intent: intent_sorry_about_that_10824c88
+- intent: sorry_about_that
   examples: '- sorry about that. i was cleaning up.
 
     - sorry about that. i was cleaning up.
 
     - sorry about that i was cleaning up'
-- intent: intent_its_okay_ca38c72b
+- intent: its_okay
   examples: '- it''s okay.'
-- intent: intent_so_what_were_1affc732
+- intent: so_what_were
   examples: '- so what were you calling me about?
 
     - so what were you calling me about?
 
     - so what were you calling me about'
-- intent: intent_oh_i_just_5b4064c7
+- intent: oh_just
   examples: '- oh, i just wanted to see if you wanted to hang out tomorrow.
 
     - oh, i just wanted to see if you wanted to hang out tomorrow.
 
     - oh i just wanted to see if you wanted to hang out tomorrow'
-- intent: intent_sure_what_did_0e2d00b9
+- intent: sure_what_did
   examples: '- sure, what did you want to do?
 
     - sure, what did you want to do?
 
     - sure what did you want to do'
-- intent: intent_maybe_we_can_dfb88210
+- intent: maybe_we_can
   examples: '- maybe we can go see a movie or something.
 
     - maybe we can go see a movie or something.
 
     - maybe we can go see a movie or something'
-- intent: intent_that_sounds_like_46294a44
+- intent: that_sounds_like_1
   examples: '- that sounds like fun. let''s do it.
 
     - that sounds like fun. let''s do it.
 
     - that sounds like fun lets do it'
-- intent: intent_ill_see_you_fcda5a30
+- intent: ill_see_you
   examples: '- i''ll see you tomorrow then.
 
     - i''ll see you tomorrow then.
 
     - ill see you tomorrow then'
-- intent: intent_hi_how_are_672db29d
+- intent: hi_how_are_1
   examples: '- hi, how are you. is alice there?
 
     - hi, how are you. is alice there?
 
     - hi how are you is alice there'
-- intent: intent_speaking_whats_up_74d2148f
+- intent: speaking_whats_up
   examples: '- speaking. what''s up?
 
     - speaking. what''s up?
 
     - speaking whats up'
-- intent: intent_why_havent_you_fb7b48bc
+- intent: why_havent_you
   examples: '- why haven''t you answered the phone?
 
     - why haven''t you answered the phone?
 
     - why havent you answered the phone'
-- intent: intent_my_bad_i_12bc01b3
+- intent: my_bad
   examples: '- my bad, i had chores to do.
 
     - my bad, i had chores to do.
 
     - my bad i had chores to do'
-- intent: intent_thats_all_right_e43eb92d
+- intent: thats_all_right
   examples: '- that''s all right.
 
     - that''s all right.
 
     - thats all right'
-- intent: intent_what_was_the_e7ee8827
+- intent: what_was_the
   examples: '- what was the reason for your call?
 
     - what was the reason for your call?
 
     - what was the reason for your call'
-- intent: intent_i_want_to_8022f999
+- intent: want_to
   examples: '- i want to do something tomorrow with you.
 
     - i want to do something tomorrow with you.
 
     - i want to do something tomorrow with you'
-- intent: intent_sounds_good_what_6f46fba5
+- intent: sounds_good_what
   examples: '- sounds good. what did you have in mind?
 
     - sounds good. what did you have in mind?
 
     - sounds good what did you have in mind'
-- intent: intent_i_was_thinking_578a1957
+- intent: was_thinking
   examples: '- i was thinking about seeing a movie.
 
     - i was thinking about seeing a movie.
 
     - i was thinking about seeing a movie'
-- intent: intent_okay_lets_go_bb8c597a
+- intent: okay_lets_go
   examples: '- okay, let''s go see a movie.
 
     - okay, let''s go see a movie.
 
     - okay lets go see a movie'
-- intent: intent_until_then_cabddd8e
+- intent: until_then
   examples: '- until then.'
-- intent: intent_youre_talking_to_98a78449
+- intent: is_alice_available
+  examples: '- is alice available?
+
+    - is alice available?
+
+    - is alice available'
+- intent: youre_talking_to
   examples: '- you''re talking to her.
 
     - you''re talking to her.
 
     - youre talking to her'
-- intent: intent_ive_called_you_a2257f92
+- intent: ive_called_you
   examples: '- i''ve called you a hundred times today.
 
     - i''ve called you a hundred times today.
 
     - ive called you a hundred times today'
-- intent: intent_i_was_busy_8070e168
+- intent: was_busy
   examples: '- i was busy doing something. i apologize.
 
     - i was busy doing something. i apologize.
 
     - i was busy doing something i apologize'
-- intent: intent_did_you_need_b7793220
+- intent: no_problem
+  examples: '- no problem.'
+- intent: did_you_need
   examples: '- did you need something?
 
     - did you need something?
 
     - did you need something'
-- intent: intent_is_there_somewhere_c3bda241
+- intent: do_you_want
+  examples: '- do you want to do something tomorrow?
+
+    - do you want to do something tomorrow?
+
+    - do you want to do something tomorrow'
+- intent: is_there_somewhere
   examples: '- is there somewhere special you wanted to go?
 
     - is there somewhere special you wanted to go?
 
     - is there somewhere special you wanted to go'
-- intent: intent_how_about_a_2c2784b9
+- intent: how_about
   examples: '- how about a movie?
 
     - how about a movie?
 
     - how about a movie'
-- intent: intent_a_movie_sounds_bffd8a7e
+- intent: movie_sounds
   examples: '- a movie sounds good.
 
     - a movie sounds good.
 
     - a movie sounds good'
-- intent: intent_have_you_seen_e19b8c24
+- intent: have_you_seen
   examples: '- have you seen the new girl in school?
 
     - have you seen the new girl in school?
 
     - have you seen the new girl in school'
-- intent: intent_no_i_havent_ee6de5a3
+- intent: no_havent
   examples: '- no, i haven''t.
 
     - no, i haven''t.
 
     - no i havent'
-- intent: intent_shes_really_pretty_0a8c3c7b
+- intent: shes_really_pretty
   examples: '- she''s really pretty.
 
     - she''s really pretty.
 
     - shes really pretty'
-- intent: intent_describe_her_to_44a86d72
+- intent: describe_her_to
   examples: '- describe her to me.
 
     - describe her to me.
 
     - describe her to me'
-- intent: intent_shes_not_too_01558acb
+- intent: shes_not_too
   examples: '- she''s not too tall.
 
     - she''s not too tall.
 
     - shes not too tall'
-- intent: intent_shes_about_five_83347e26
+- intent: well_how_tall
+  examples: '- well, how tall is she?
+
+    - well, how tall is she?
+
+    - well how tall is she'
+- intent: shes_about_five
   examples: '- she''s about five feet even.
 
     - she''s about five feet even.
 
     - shes about five feet even'
-- intent: intent_what_does_she_26317187
+- intent: what_does_she
   examples: '- what does she look like, though?
 
     - what does she look like, though?
 
     - what does she look like though'
-- intent: intent_she_has_pretty_1dddb729
+- intent: she_has_pretty
   examples: '- she has pretty light brown eyes.
 
     - she has pretty light brown eyes.
 
     - she has pretty light brown eyes'
-- intent: intent_i_may_know_edf37d51
+- intent: may_know
   examples: '- i may know which girl you''re talking about.
 
     - i may know which girl you''re talking about.
 
     - i may know which girl youre talking about'
-- intent: intent_so_you_have_daa74b09
+- intent: so_you_have
   examples: '- so you have seen her around?
 
     - so you have seen her around?
 
     - so you have seen her around'
-- intent: intent_i_havent_seen_66aa3989
+- intent: theres_new
+  examples: '- there''s a new girl in school, have you seen her yet?
+
+    - there''s a new girl in school, have you seen her yet?
+
+    - theres a new girl in school have you seen her yet'
+- intent: havent_seen
   examples: '- i haven''t seen her yet.
 
     - i haven''t seen her yet.
 
     - i havent seen her yet'
-- intent: intent_i_think_that_f0d0e88e
+- intent: think_that_1
   examples: '- i think that she is very pretty.
 
     - i think that she is very pretty.
 
     - i think that she is very pretty'
-- intent: intent_tell_me_how_3ff1514a
+- intent: tell_me_how
   examples: '- tell me how she looks.
 
     - tell me how she looks.
 
     - tell me how she looks'
-- intent: intent_shes_kind_of_4985d227
+- intent: shes_kind_of
   examples: '- she''s kind of short.
 
     - she''s kind of short.
 
     - shes kind of short'
-- intent: intent_what_height_is_a63b299e
+- intent: what_height_is
   examples: '- what height is she?
 
     - what height is she?
 
     - what height is she'
-- intent: intent_shes_probably_about_51c2a1b5
+- intent: shes_probably_about
   examples: '- she''s probably about five feet.
 
     - she''s probably about five feet.
 
     - shes probably about five feet'
-- intent: intent_thats_nice_but_c6458f9d
+- intent: thats_nice_but
   examples: '- that''s nice, but tell me what she looks like.
 
     - that''s nice, but tell me what she looks like.
 
     - thats nice but tell me what she looks like'
-- intent: intent_the_first_thing_35a1bb70
+- intent: the_first_thing
   examples: '- the first thing i noticed was her beautiful brown eyes.
 
     - the first thing i noticed was her beautiful brown eyes.
 
     - the first thing i noticed was her beautiful brown eyes'
-- intent: intent_i_think_i_a19f8026
+- intent: think
   examples: '- i think i might''ve bumped into her before.
 
     - i think i might''ve bumped into her before.
 
     - i think i mightve bumped into her before'
-- intent: intent_are_you_telling_14f9a63e
+- intent: are_you_telling
   examples: '- are you telling me that you''ve seen her before?
 
     - are you telling me that you''ve seen her before?
 
     - are you telling me that youve seen her before'
-- intent: intent_have_you_met_a7d35014
+- intent: have_you_met
   examples: '- have you met the new girl?
 
     - have you met the new girl?
 
     - have you met the new girl'
-- intent: intent_no_have_you_80b22f3e
+- intent: no_have_you
   examples: '- no. have you?
 
     - no. have you?
 
     - no have you'
-- intent: intent_shes_one_of_afb6575f
+- intent: shes_one_of
   examples: '- she''s one of the prettiest girls at the school.
 
     - she''s one of the prettiest girls at the school.
 
     - shes one of the prettiest girls at the school'
-- intent: intent_well_shes_quite_f9a59468
+- intent: what_does_she_1
+  examples: '- what does she look like?
+
+    - what does she look like?
+
+    - what does she look like'
+- intent: well_shes_quite
   examples: '- well, she''s quite short.
 
     - well, she''s quite short.
 
     - well shes quite short'
-- intent: intent_how_tall_would_04c73599
+- intent: how_tall_would
   examples: '- how tall would you say that she is?
 
     - how tall would you say that she is?
 
     - how tall would you say that she is'
-- intent: intent_i_would_say_3b180041
+- intent: would_say
   examples: '- i would say she''s only five feet.
 
     - i would say she''s only five feet.
 
     - i would say shes only five feet'
-- intent: intent_what_about_her_2b155c73
+- intent: what_about_her
   examples: '- what about her facial features?
 
     - what about her facial features?
 
     - what about her facial features'
-- intent: intent_she_has_light_b7dca660
+- intent: she_has_light
   examples: '- she has light brown eyes, absolutely beautiful.
 
     - she has light brown eyes, absolutely beautiful.
 
     - she has light brown eyes absolutely beautiful'
-- intent: intent_i_think_i_531d78a0
+- intent: think_1
   examples: '- i think i know who you''re talking about.
 
     - i think i know who you''re talking about.
 
     - i think i know who youre talking about'
-- intent: intent_why_werent_you_23b2eb97
+- intent: why_werent_you
   examples: '- why weren''t you at school yesterday?
 
     - why weren''t you at school yesterday?
 
     - why werent you at school yesterday'
-- intent: intent_i_wasnt_really_be61ec90
+- intent: wasnt_really
   examples: '- i wasn''t really feeling well.
 
     - i wasn''t really feeling well.
 
     - i wasnt really feeling well'
-- intent: intent_what_was_wrong_e5827646
+- intent: what_was_wrong
   examples: '- what was wrong with you?
 
     - what was wrong with you?
 
     - what was wrong with you'
-- intent: intent_my_stomach_was_c6303fe7
+- intent: my_stomach_was
   examples: '- my stomach was upset.
 
     - my stomach was upset.
 
     - my stomach was upset'
-- intent: intent_do_you_feel_1714bc2e
+- intent: do_you_feel
   examples: '- do you feel better now?
 
     - do you feel better now?
 
     - do you feel better now'
-- intent: intent_i_dont_really_1661b8ed
+- intent: dont_really
   examples: '- i don''t really feel too well yet.
 
     - i don''t really feel too well yet.
 
     - i dont really feel too well yet'
-- intent: intent_do_you_want_450c9bda
+- intent: do_you_want_1
   examples: '- do you want anything to make you feel better?
 
     - do you want anything to make you feel better?
 
     - do you want anything to make you feel better'
-- intent: intent_no_thanks_i_2f4d20a6
+- intent: no_thanks
   examples: '- no, thanks. i already took some medicine.
 
     - no, thanks. i already took some medicine.
 
     - no thanks i already took some medicine'
-- intent: intent_what_reason_do_a3e5b443
+- intent: hope_you
+  examples: '- i hope you feel better.
+
+    - i hope you feel better.
+
+    - i hope you feel better'
+- intent: what_reason_do
   examples: '- what reason do you have for missing school?
 
     - what reason do you have for missing school?
 
     - what reason do you have for missing school'
-- intent: intent_i_was_sick_f6a0544a
+- intent: was_sick
   examples: '- i was sick.
 
     - i was sick.
 
     - i was sick'
-- intent: intent_i_had_a_0a33af58
+- intent: how_were_you
+  examples: '- how were you sick?
+
+    - how were you sick?
+
+    - how were you sick'
+- intent: had
   examples: '- i had a stomachache.
 
     - i had a stomachache.
 
     - i had a stomachache'
-- intent: intent_did_it_get_e9cfa398
+- intent: did_it_get
   examples: '- did it get any better?
 
     - did it get any better?
 
     - did it get any better'
-- intent: intent_im_still_feeling_8346d33b
+- intent: im_still_feeling
   examples: '- i''m still feeling under the weather.
 
     - i''m still feeling under the weather.
 
     - im still feeling under the weather'
-- intent: intent_would_you_like_9dedc602
+- intent: would_you_like
   examples: '- would you like anything for your stomach?
 
     - would you like anything for your stomach?
 
     - would you like anything for your stomach'
-- intent: intent_i_took_something_049f4c2d
+- intent: took_something
   examples: '- i took something earlier.
 
     - i took something earlier.
 
     - i took something earlier'
-- intent: intent_get_better_c7f6584a
+- intent: get_better
   examples: '- get better.'
-- intent: intent_i_stayed_home_2ee26862
+- intent: why_didnt_you
+  examples: '- why didn''t you go to school yesterday?
+
+    - why didn''t you go to school yesterday?
+
+    - why didnt you go to school yesterday'
+- intent: stayed_home
   examples: '- i stayed home because i wasn''t feeling well.
 
     - i stayed home because i wasn''t feeling well.
 
     - i stayed home because i wasnt feeling well'
-- intent: intent_are_you_feeling_b8d5f449
+- intent: what_was_your
+  examples: '- what was your problem?
+
+    - what was your problem?
+
+    - what was your problem'
+- intent: my_stomach_was_1
+  examples: '- my stomach was bothering me.
+
+    - my stomach was bothering me.
+
+    - my stomach was bothering me'
+- intent: are_you_feeling
   examples: '- are you feeling any better?
 
     - are you feeling any better?
 
     - are you feeling any better'
-- intent: intent_im_still_feeling_5e1bfade
+- intent: im_still_feeling_1
   examples: '- i''m still feeling a little sick.
 
     - i''m still feeling a little sick.
 
     - im still feeling a little sick'
-- intent: intent_im_going_to_e405da12
+- intent: im_going_to_1
   examples: '- i''m going to the store, would you like any pepto bismol?
 
     - i''m going to the store, would you like any pepto bismol?
 
     - im going to the store would you like any pepto bismol'
-- intent: intent_did_you_hear_25efa8c5
+- intent: thats_okay
+  examples: '- that''s okay.'
+- intent: did_you_hear
   examples: '- did you hear the good news?
 
     - did you hear the good news?
 
     - did you hear the good news'
-- intent: intent_i_got_a_a94da66e
+- intent: got
   examples: '- i got a promotion at my job.
 
     - i got a promotion at my job.
 
     - i got a promotion at my job'
-- intent: intent_did_you_really_593105da
+- intent: did_you_really
   examples: '- did you really?
 
     - did you really?
 
     - did you really'
-- intent: intent_seriously_i_am_2df4eb24
+- intent: seriously_am
   examples: '- seriously, i am so excited.
 
     - seriously, i am so excited.
 
     - seriously i am so excited'
-- intent: intent_well_congratulations_a967bf94
+- intent: well_congratulations
   examples: '- well, congratulations.'
-- intent: intent_thank_you_16450deb
+- intent: thank_you
   examples: '- thank you.'
-- intent: intent_im_so_happy_3bcec174
+- intent: im_so_happy
   examples: '- i''m so happy for you.
 
     - i''m so happy for you.
 
     - im so happy for you'
-- intent: intent_yes_you_really_ebad862b
+- intent: really
+  examples: '- really?'
+- intent: yes_you_really
   examples: '- yes. you really deserved this.
 
     - yes. you really deserved this.
 
     - yes you really deserved this'
-- intent: intent_have_you_heard_ba03f420
+- intent: you_think_so
+  examples: '- you think so?
+
+    - you think so?
+
+    - you think so'
+- intent: have_you_heard
   examples: '- have you heard my good news?
 
     - have you heard my good news?
 
     - have you heard my good news'
-- intent: intent_you_havent_told_2bd39003
+- intent: you_havent_told
   examples: '- you haven''t told me anything yet.
 
     - you haven''t told me anything yet.
 
     - you havent told me anything yet'
-- intent: intent_i_got_a_8c75596d
+- intent: got_1
   examples: '- i got a promotion at work earlier this week.
 
     - i got a promotion at work earlier this week.
 
     - i got a promotion at work earlier this week'
-- intent: intent_its_the_truth_aec78d7b
+- intent: is_that_right
+  examples: '- is that right?
+
+    - is that right?
+
+    - is that right'
+- intent: its_the_truth
   examples: '- it''s the truth. i am really happy.
 
     - it''s the truth. i am really happy.
 
     - its the truth i am really happy'
-- intent: intent_congratulations_on_your_d9136991
+- intent: congratulations_on_your
   examples: '- congratulations on your promotion.
 
     - congratulations on your promotion.
 
     - congratulations on your promotion'
-- intent: intent_im_serious_you_8595e789
+- intent: thank_you_very
+  examples: '- thank you very much.
+
+    - thank you very much.
+
+    - thank you very much'
+- intent: am_really
+  examples: '- i am really excited for you.
+
+    - i am really excited for you.
+
+    - i am really excited for you'
+- intent: are_you_really
+  examples: '- are you really?
+
+    - are you really?
+
+    - are you really'
+- intent: im_serious_you
   examples: '- i''m serious. you deserved this promotion.
 
     - i''m serious. you deserved this promotion.
 
     - im serious you deserved this promotion'
-- intent: intent_is_that_what_3ae96d1c
+- intent: is_that_what
   examples: '- is that what you really think?
 
     - is that what you really think?
 
     - is that what you really think'
-- intent: intent_i_havent_told_b2c7c78a
+- intent: havent_told
   examples: '- i haven''t told you what happened yet, have i?
 
     - i haven''t told you what happened yet, have i?
 
     - i havent told you what happened yet have i'
-- intent: intent_i_havent_heard_889008eb
+- intent: havent_heard
   examples: '- i haven''t heard anything.
 
     - i haven''t heard anything.
 
     - i havent heard anything'
-- intent: intent_my_boss_offered_0fd9285a
+- intent: my_boss_offered
   examples: '- my boss offered me a promotion, and i took it.
 
     - my boss offered me a promotion, and i took it.
 
     - my boss offered me a promotion and i took it'
-- intent: intent_are_you_serious_ac20f0bc
+- intent: are_you_serious
   examples: '- are you serious?
 
     - are you serious?
 
     - are you serious'
-- intent: intent_yes_i_am_768cea4b
+- intent: yes_am
   examples: '- yes, i am really excited.
 
     - yes, i am really excited.
 
     - yes i am really excited'
-- intent: intent_thats_great_congratulations_d8ea6979
+- intent: thats_great_congratulations
   examples: '- that''s great. congratulations.
 
     - that''s great. congratulations.
 
     - thats great congratulations'
-- intent: intent_i_appreciate_that_85292d15
+- intent: appreciate_that
   examples: '- i appreciate that.
 
     - i appreciate that.
 
     - i appreciate that'
-- intent: intent_you_have_no_ea385cbb
+- intent: you_have_no
   examples: '- you have no idea how happy i am for you.
 
     - you have no idea how happy i am for you.
 
     - you have no idea how happy i am for you'
-- intent: intent_you_look_really_3f511b18
+- intent: you_look_really
   examples: '- you look really nice today.
 
     - you look really nice today.
 
     - you look really nice today'
-- intent: intent_thank_you_i_f7bf2a69
+- intent: thank_you_1
   examples: '- thank you. i just got this outfit the other day.
 
     - thank you. i just got this outfit the other day.
 
     - thank you i just got this outfit the other day'
-- intent: intent_i_got_it_d6cdbf8e
+- intent: really_where_did
+  examples: '- really, where did you get it?
+
+    - really, where did you get it?
+
+    - really where did you get it'
+- intent: got_it
   examples: '- i got it from macy''s.
 
     - i got it from macy''s.
 
     - i got it from macys'
-- intent: intent_its_really_nice_e556c11d
+- intent: its_really_nice
   examples: '- it''s really nice.
 
     - it''s really nice.
 
     - its really nice'
-- intent: intent_thanks_again_you_f769d950
+- intent: thanks_again_you
   examples: '- thanks again. you look nice today, too.
 
     - thanks again. you look nice today, too.
 
     - thanks again you look nice today too'
-- intent: intent_thank_you_i_03c224ca
+- intent: thank_you_2
   examples: '- thank you. i just got these shoes today.
 
     - thank you. i just got these shoes today.
 
     - thank you i just got these shoes today'
-- intent: intent_really_what_kind_8db14fb8
+- intent: really_what_kind
   examples: '- really? what kind of shoes are they?
 
     - really? what kind of shoes are they?
 
     - really what kind of shoes are they'
-- intent: intent_these_are_called_437b667f
+- intent: these_are_called
   examples: '- these are called all star chuck taylors.
 
     - these are called all star chuck taylors.
 
     - these are called all star chuck taylors'
-- intent: intent_i_really_like_0d9d4094
+- intent: really_like
   examples: '- i really like those. how much did they cost?
 
     - i really like those. how much did they cost?
 
     - i really like those how much did they cost'
-- intent: intent_they_were_about_6541078d
+- intent: they_were_about
   examples: '- they were about forty dollars.
 
     - they were about forty dollars.
 
     - they were about forty dollars'
-- intent: intent_i_absolutely_love_5d01195c
+- intent: absolutely_love
   examples: '- i absolutely love what you''re wearing today.
 
     - i absolutely love what you''re wearing today.
 
     - i absolutely love what youre wearing today'
-- intent: intent_you_do_i_18ceefba
+- intent: you_do
   examples: '- you do? i just bought this outfit a couple days ago.
 
     - you do? i just bought this outfit a couple days ago.
 
     - you do i just bought this outfit a couple days ago'
-- intent: intent_seriously_it_looks_17eb7a05
+- intent: seriously_it_looks
   examples: '- seriously, it looks really nice on you. where did you buy it from?
 
     - seriously, it looks really nice on you. where did you buy it from?
 
     - seriously it looks really nice on you where did you buy it from'
-- intent: intent_i_bought_it_18493bee
+- intent: bought_it
   examples: '- i bought it from the macy''s at the santa anita mall.
 
     - i bought it from the macy''s at the santa anita mall.
 
     - i bought it from the macys at the santa anita mall'
-- intent: intent_i_really_like_656a2d3a
+- intent: really_like_1
   examples: '- i really like that outfit.
 
     - i really like that outfit.
 
     - i really like that outfit'
-- intent: intent_thank_you_i_d55d4b67
+- intent: thanks_think
+  examples: '- thanks. i think you look nice today, too.
+
+    - thanks. i think you look nice today, too.
+
+    - thanks i think you look nice today too'
+- intent: thank_you_3
   examples: '- thank you. i just bought these new shoes earlier today.
 
     - thank you. i just bought these new shoes earlier today.
 
     - thank you i just bought these new shoes earlier today'
-- intent: intent_those_are_nice_deae1d28
+- intent: those_are_nice
   examples: '- those are nice. what are they?
 
     - those are nice. what are they?
 
     - those are nice what are they'
-- intent: intent_these_are_some_c9ee4c01
+- intent: these_are_some
   examples: '- these are some chucks.
 
     - these are some chucks.
 
     - these are some chucks'
-- intent: intent_those_are_great_238ee64d
+- intent: those_are_great
   examples: '- those are great. how much were they?
 
     - those are great. how much were they?
 
     - those are great how much were they'
-- intent: intent_i_got_them_9e2d17c8
+- intent: got_them
   examples: '- i got them for forty.
 
     - i got them for forty.
 
     - i got them for forty'
-- intent: intent_i_think_that_ae505537
+- intent: think_that_2
   examples: '- i think that you look very cute today.
 
     - i think that you look very cute today.
 
     - i think that you look very cute today'
-- intent: intent_is_that_right_1c8ae363
+- intent: is_that_right_1
   examples: '- is that right? this is a brand new outfit.
 
     - is that right? this is a brand new outfit.
 
     - is that right this is a brand new outfit'
-- intent: intent_what_store_did_fd67fa70
+- intent: what_store_did
   examples: '- what store did you get it from?
 
     - what store did you get it from?
 
     - what store did you get it from'
-- intent: intent_i_went_to_8c8a6d7e
+- intent: went_to
   examples: '- i went to macy''s and picked it out.
 
     - i went to macy''s and picked it out.
 
     - i went to macys and picked it out'
-- intent: intent_i_love_your_f1e8c569
+- intent: love_your
   examples: '- i love your outfit right now.
 
     - i love your outfit right now.
 
     - i love your outfit right now'
-- intent: intent_well_i_think_8673229d
+- intent: well_think
   examples: '- well, i think you look nice today too.
 
     - well, i think you look nice today too.
 
     - well i think you look nice today too'
-- intent: intent_thanks_i_found_9ad10522
+- intent: thanks_found
   examples: '- thanks. i found these new shoes earlier at the store.
 
     - thanks. i found these new shoes earlier at the store.
 
     - thanks i found these new shoes earlier at the store'
-- intent: intent_i_think_that_3c1cbe5e
+- intent: think_that_3
   examples: '- i think that those are some really nice shoes. what kind are they?
 
     - i think that those are some really nice shoes. what kind are they?
 
     - i think that those are some really nice shoes what kind are they'
-- intent: intent_these_are_chucks_228d4cc4
+- intent: these_are_chucks
   examples: '- these are chucks.
 
     - these are chucks.
 
     - these are chucks'
-- intent: intent_your_shoes_look_94f5bf9d
+- intent: your_shoes_look
   examples: '- your shoes look really nice. how much did you get them for?
 
     - your shoes look really nice. how much did you get them for?
 
     - your shoes look really nice how much did you get them for'
-- intent: intent_tell_me_what_2fd27b24
+- intent: tell_me_what
   examples: '- tell me, what do you enjoy doing in your spare time?
 
     - tell me, what do you enjoy doing in your spare time?
 
     - tell me what do you enjoy doing in your spare time'
-- intent: intent_i_enjoy_drawing_6d6e667e
+- intent: enjoy_drawing
   examples: '- i enjoy drawing and painting.
 
     - i enjoy drawing and painting.
 
     - i enjoy drawing and painting'
-- intent: intent_you_know_how_5a622f6b
+- intent: you_know_how
   examples: '- you know how to draw and paint?
 
     - you know how to draw and paint?
 
     - you know how to draw and paint'
-- intent: intent_when_did_you_158caaf1
+- intent: yes_do
+  examples: '- yes, i do.
+
+    - yes, i do.
+
+    - yes i do'
+- intent: when_did_you
   examples: '- when did you learn how to do that?
 
     - when did you learn how to do that?
 
     - when did you learn how to do that'
-- intent: intent_i_learned_back_b70538c2
+- intent: learned_back
   examples: '- i learned back in high school.
 
     - i learned back in high school.
 
     - i learned back in high school'
-- intent: intent_oh_so_you_63e12fdb
+- intent: oh_so_you
   examples: '- oh, so you took an art class?
 
     - oh, so you took an art class?
 
     - oh so you took an art class'
-- intent: intent_yeah_i_loved_b78dc8f5
+- intent: yeah_loved
   examples: '- yeah, i loved that class.
 
     - yeah, i loved that class.
 
     - yeah i loved that class'
-- intent: intent_i_see_that_cfc87a9b
+- intent: see_that
   examples: '- i see that you''re pretty talented.
 
     - i see that you''re pretty talented.
 
     - i see that youre pretty talented'
-- intent: intent_i_wish_i_3aae2699
+- intent: wish
   examples: '- i wish i had a talent like that.
 
     - i wish i had a talent like that.
 
     - i wish i had a talent like that'
-- intent: intent_what_kinds_of_7af66130
+- intent: what_kinds_of
   examples: '- what kinds of things do you like to do?
 
     - what kinds of things do you like to do?
 
     - what kinds of things do you like to do'
-- intent: intent_ive_always_liked_55323cd6
+- intent: ive_always_liked
   examples: '- i''ve always liked to draw and paint.
 
     - i''ve always liked to draw and paint.
 
     - ive always liked to draw and paint'
-- intent: intent_i_didnt_know_8234fe07
+- intent: didnt_know
   examples: '- i didn''t know you knew how to draw and paint.
 
     - i didn''t know you knew how to draw and paint.
 
     - i didnt know you knew how to draw and paint'
-- intent: intent_i_do_it_32cee602
+- intent: do_it
   examples: '- i do it every once in a while.
 
     - i do it every once in a while.
 
     - i do it every once in a while'
-- intent: intent_how_long_have_19bd30d1
+- intent: how_long_have
   examples: '- how long have you known how to do that?
 
     - how long have you known how to do that?
 
     - how long have you known how to do that'
-- intent: intent_did_you_take_1882d69b
+- intent: first_learned
+  examples: '- i first learned how to do it in high school.
+
+    - i first learned how to do it in high school.
+
+    - i first learned how to do it in high school'
+- intent: did_you_take
   examples: '- did you take some sort of art class or something?
 
     - did you take some sort of art class or something?
 
     - did you take some sort of art class or something'
-- intent: intent_that_was_my_041a2550
+- intent: that_was_my
   examples: '- that was my favorite class.
 
     - that was my favorite class.
 
     - that was my favorite class'
-- intent: intent_you_have_got_9e18f557
+- intent: you_have_got
   examples: '- you have got to be talented.
 
     - you have got to be talented.
 
     - you have got to be talented'
-- intent: intent_thanks_ecd43020
+- intent: thanks
   examples: '- thanks.'
-- intent: intent_if_only_i_609954e8
+- intent: if_only
   examples: '- if only i was talented.
 
     - if only i was talented.
 
     - if only i was talented'
-- intent: intent_are_there_any_f69a3f6b
+- intent: are_there_any
   examples: '- are there any hobbies you do?
 
     - are there any hobbies you do?
 
     - are there any hobbies you do'
-- intent: intent_oh_you_actually_423e0c13
-  examples: '- oh, you actually do that?
-
-    - oh, you actually do that?
-
-    - oh you actually do that'
-- intent: intent_every_so_often_c97e8cca
-  examples: '- every so often, i do.
-
-    - every so often, i do.
-
-    - every so often i do'
-- intent: intent_i_was_taught_5949892d
-  examples: '- i was taught in high school how to draw and paint.
-
-    - i was taught in high school how to draw and paint.
-
-    - i was taught in high school how to draw and paint'
-- intent: intent_exactly_it_was_3ce05930
-  examples: '- exactly, it was my favorite class.
-
-    - exactly, it was my favorite class.
-
-    - exactly it was my favorite class'
-- intent: intent_whats_your_favorite_470126b4
-  examples: '- what''s your favorite movie?
-
-    - what''s your favorite movie?
-
-    - whats your favorite movie'
-- intent: intent_my_favorite_movie_53a26a08
-  examples: '- my favorite movie is superbad.
-
-    - my favorite movie is superbad.
-
-    - my favorite movie is superbad'
-- intent: intent_oh_why_is_0b027a60
-  examples: '- oh, why is that?
-
-    - oh, why is that?
-
-    - oh why is that'
-- intent: intent_its_the_funniest_1f79f7c7
-  examples: '- it''s the funniest movie that i''ve ever seen.
-
-    - it''s the funniest movie that i''ve ever seen.
-
-    - its the funniest movie that ive ever seen'
-- intent: intent_thats_true_it_3b08072d
-  examples: '- that''s true. it is a very funny movie.
-
-    - that''s true. it is a very funny movie.
-
-    - thats true it is a very funny movie'
-- intent: intent_yes_i_saw_d45e132f
-  examples: '- yes, i saw that movie the first day it came out in theaters.
-
-    - yes, i saw that movie the first day it came out in theaters.
-
-    - yes i saw that movie the first day it came out in theaters'
-- intent: intent_didnt_you_laugh_8d73d86d
-  examples: '- didn''t you laugh through the whole movie? i did.
-
-    - didn''t you laugh through the whole movie? i did.
-
-    - didnt you laugh through the whole movie i did'
-- intent: intent_me_too_that_f550b390
-  examples: '- me too. that movie brought tears to my eyes.
-
-    - me too. that movie brought tears to my eyes.
-
-    - me too that movie brought tears to my eyes'
-- intent: intent_mine_too_8d73d3bc
-  examples: '- mine too.'
-- intent: intent_i_have_it_7ec1ca64
-  examples: '- i have it on dvd at my house if you want to come over and watch it.
-
-    - i have it on dvd at my house if you want to come over and watch it.
-
-    - i have it on dvd at my house if you want to come over and watch it'
-- intent: intent_which_movie_is_42659029
-  examples: '- which movie is your favorite to watch?
-
-    - which movie is your favorite to watch?
-
-    - which movie is your favorite to watch'
-- intent: intent_honestly_it_is_ea94360a
-  examples: '- honestly, it is one of the funniest movies i''ve seen in a long time.
-
-    - honestly, it is one of the funniest movies i''ve seen in a long time.
-
-    - honestly it is one of the funniest movies ive seen in a long time'
-- intent: intent_youre_right_that_b1e2c692
-  examples: '- you''re right. that movie is hilarious.
-
-    - you''re right. that movie is hilarious.
-
-    - youre right that movie is hilarious'
-- intent: intent_i_didnt_think_dbf4c78c
-  examples: '- i didn''t think you saw that movie.
-
-    - i didn''t think you saw that movie.
-
-    - i didnt think you saw that movie'
-- intent: intent_i_went_to_53a07dd2
-  examples: '- i went to see it the day it came out.
-
-    - i went to see it the day it came out.
-
-    - i went to see it the day it came out'
-- intent: intent_i_was_laughing_10bdf740
-  examples: '- i was laughing through the whole movie.
-
-    - i was laughing through the whole movie.
-
-    - i was laughing through the whole movie'
-- intent: intent_i_couldnt_help_5776ae3a
-  examples: '- i couldn''t help laughing, either.
-
-    - i couldn''t help laughing, either.
-
-    - i couldnt help laughing either'
-- intent: intent_same_here_4cab7fca
-  examples: '- same here.'
-- intent: intent_i_bought_the_4cf4bb58
-  examples: '- i bought the movie. would you like to come to my house and watch it?
-
-    - i bought the movie. would you like to come to my house and watch it?
-
-    - i bought the movie would you like to come to my house and watch it'
-- intent: intent_im_going_to_50ec6ac1
-  examples: '- i''m going to have to say that superbad is the best movie ever.
-
-    - i''m going to have to say that superbad is the best movie ever.
-
-    - im going to have to say that superbad is the best movie ever'
-- intent: intent_you_think_so_4a503d8b
-  examples: '- you think so, how come?
-
-    - you think so, how come?
-
-    - you think so how come'
-- intent: intent_well_superbad_is_22c2e785
-  examples: '- well, superbad is super funny.
-
-    - well, superbad is super funny.
-
-    - well superbad is super funny'
-- intent: intent_youre_not_lying_f62a178c
-  examples: '- you''re not lying, i found that movie absolutely hilarious.
-
-    - you''re not lying, i found that movie absolutely hilarious.
-
-    - youre not lying i found that movie absolutely hilarious'
-- intent: intent_i_didnt_know_3a4b1bf4
-  examples: '- i didn''t know that you saw superbad before.
-
-    - i didn''t know that you saw superbad before.
-
-    - i didnt know that you saw superbad before'
-- intent: intent_i_made_sure_57192afc
-  examples: '- i made sure to be in line to see it the first day it came out.
-
-    - i made sure to be in line to see it the first day it came out.
-
-    - i made sure to be in line to see it the first day it came out'
-- intent: intent_i_couldnt_keep_42206cf7
-  examples: '- i couldn''t keep from laughing throughout the whole movie.
-
-    - i couldn''t keep from laughing throughout the whole movie.
-
-    - i couldnt keep from laughing throughout the whole movie'
-- intent: intent_i_was_laughing_afdcb8b0
-  examples: '- i was laughing hysterically the whole time my stomach muscles hurt afterwards.
-
-    - i was laughing hysterically the whole time my stomach muscles hurt afterwards.
-
-    - i was laughing hysterically the whole time my stomach muscles hurt afterwards'
-- intent: intent_thats_exactly_how_07126a91
-  examples: '- that''s exactly how i felt.
-
-    - that''s exactly how i felt.
-
-    - thats exactly how i felt'
-- intent: intent_what_type_of_88ca7826
-  examples: '- what type of music do you like to listen to?
-
-    - what type of music do you like to listen to?
-
-    - what type of music do you like to listen to'
-- intent: intent_i_like_listening_c0333430
-  examples: '- i like listening to different kinds of music.
-
-    - i like listening to different kinds of music.
-
-    - i like listening to different kinds of music'
-- intent: intent_i_enjoy_rock_21f66829
-  examples: '- i enjoy rock and rb.
-
-    - i enjoy rock and rb.
-
-    - i enjoy rock and rb'
-- intent: intent_why_is_that_37f30d2d
-  examples: '- why is that?
-
-    - why is that?
-
-    - why is that'
-- intent: intent_i_like_the_77a2bc3f
-  examples: '- i like the different instruments that they use.
-
-    - i like the different instruments that they use.
-
-    - i like the different instruments that they use'
-- intent: intent_thats_a_good_d8637abf
-  examples: '- that''s a good reason to like something.
-
-    - that''s a good reason to like something.
-
-    - thats a good reason to like something'
-- intent: intent_what_kind_of_789e3eaf
-  examples: '- what kind of music do you enjoy listening to?
-
-    - what kind of music do you enjoy listening to?
-
-    - what kind of music do you enjoy listening to'
-- intent: intent_i_enjoy_listening_b6ec8fab
-  examples: '- i enjoy listening to all kinds of music.
-
-    - i enjoy listening to all kinds of music.
-
-    - i enjoy listening to all kinds of music'
-- intent: intent_what_kind_3407ac05
-  examples: '- what kind?'
-- intent: intent_i_like_to_f238c942
-  examples: '- i like to listen to rock and rb.
-
-    - i like to listen to rock and rb.
-
-    - i like to listen to rock and rb'
-- intent: intent_i_like_the_41649a8a
-  examples: '- i like the kinds of instruments that they use.
-
-    - i like the kinds of instruments that they use.
-
-    - i like the kinds of instruments that they use'
-- intent: intent_i_think_thats_48ab6689
-  examples: '- i think that''s an excellent reason to like something.
-
-    - i think that''s an excellent reason to like something.
-
-    - i think thats an excellent reason to like something'
-- intent: intent_what_is_your_24d6c530
-  examples: '- what is your favorite kind of music?
-
-    - what is your favorite kind of music?
-
-    - what is your favorite kind of music'
-- intent: intent_i_listen_to_fe1402d5
-  examples: '- i listen to various types of music.
-
-    - i listen to various types of music.
-
-    - i listen to various types of music'
-- intent: intent_what_genres_831d521e
-  examples: '- what genres?'
-- intent: intent_i_enjoy_listening_ee3531ab
-  examples: '- i enjoy listening to both rock and rb.
-
-    - i enjoy listening to both rock and rb.
-
-    - i enjoy listening to both rock and rb'
-- intent: intent_did_you_go_ae73d5f4
-  examples: '- did you go to the basketball game on friday?
-
-    - did you go to the basketball game on friday?
-
-    - did you go to the basketball game on friday'
-- intent: intent_no_i_couldnt_24160a17
-  examples: '- no, i couldn''t make it.
-
-    - no, i couldn''t make it.
-
-    - no i couldnt make it'
-- intent: intent_you_missed_a_31eb17ee
-  examples: '- you missed a really good game.
-
-    - you missed a really good game.
-
-    - you missed a really good game'
-- intent: intent_oh_really_who_0fc91181
-  examples: '- oh, really? who won?
-
-    - oh, really? who won?
-
-    - oh really who won'
-- intent: intent_our_school_did_ecdadc5a
-  examples: '- our school did. they played really well.
-
-    - our school did. they played really well.
-
-    - our school did they played really well'
-- intent: intent_too_bad_i_b57543bb
-  examples: '- too bad i was busy. i really wanted to go.
-
-    - too bad i was busy. i really wanted to go.
-
-    - too bad i was busy i really wanted to go'
-- intent: intent_yeah_you_should_790c7f68
-  examples: '- yeah, you should have. it was really exciting.
-
-    - yeah, you should have. it was really exciting.
-
-    - yeah you should have it was really exciting'
-- intent: intent_so_what_was_f53051d4
-  examples: '- so what was the score?
-
-    - so what was the score?
-
-    - so what was the score'
-- intent: intent_the_score_was_b117631e
-  examples: '- the score was 101-98.
-
-    - the score was 101-98.
-
-    - the score was 10198'
-- intent: intent_man_that_was_b615f243
-  examples: '- man, that was a really close game.
-
-    - man, that was a really close game.
-
-    - man that was a really close game'
-- intent: intent_were_you_able_2f506bd8
-  examples: '- were you able to attend friday night''s basketball game?
-
-    - were you able to attend friday night''s basketball game?
-
-    - were you able to attend friday nights basketball game'
-- intent: intent_i_was_unable_ff9b9bb7
-  examples: '- i was unable to make it.
-
-    - i was unable to make it.
-
-    - i was unable to make it'
-- intent: intent_you_should_have_13bb1c68
-  examples: '- you should have been there. it was intense.
-
-    - you should have been there. it was intense.
-
-    - you should have been there it was intense'
-- intent: intent_our_team_was_b566d206
-  examples: '- our team was victorious.
-
-    - our team was victorious.
-
-    - our team was victorious'
-- intent: intent_i_wish_i_064a30b1
-  examples: '- i wish i was free that night. i''m kind of mad that i didn''t go.
-
-    - i wish i was free that night. i''m kind of mad that i didn''t go.
-
-    - i wish i was free that night im kind of mad that i didnt go'
-- intent: intent_it_was_a_6d57dfdf
-  examples: '- it was a great game.
-
-    - it was a great game.
-
-    - it was a great game'
-- intent: intent_what_was_the_222067e9
-  examples: '- what was the score at the end of the game?
-
-    - what was the score at the end of the game?
-
-    - what was the score at the end of the game'
-- intent: intent_our_team_won_ad485095
-  examples: '- our team won 101-98.
-
-    - our team won 101-98.
-
-    - our team won 10198'
-- intent: intent_sounds_like_it_765bd527
-  examples: '- sounds like it was a close game.
-
-    - sounds like it was a close game.
-
-    - sounds like it was a close game'
-- intent: intent_i_was_meaning_192f48b2
-  examples: '- i was meaning to ask you if you saw the basketball game on friday.
-
-    - i was meaning to ask you if you saw the basketball game on friday.
-
-    - i was meaning to ask you if you saw the basketball game on friday'
-- intent: intent_i_wanted_to_f28bbcd8
-  examples: '- i wanted to go, but i couldn''t.
-
-    - i wanted to go, but i couldn''t.
-
-    - i wanted to go but i couldnt'
-- intent: intent_its_too_bad_c4843b11
-  examples: '- it''s too bad that i couldn''t make it. who won?
-
-    - it''s too bad that i couldn''t make it. who won?
-
-    - its too bad that i couldnt make it who won'
-- intent: intent_our_team_played_8b313dd0
-  examples: '- our team played hard and won.
-
-    - our team played hard and won.
-
-    - our team played hard and won'
-- intent: intent_i_really_wish_40644be8
-  examples: '- i really wish i went to the game.
-
-    - i really wish i went to the game.
-
-    - i really wish i went to the game'
-- intent: intent_it_was_the_db3d85ce
-  examples: '- it was the best game ever.
-
-    - it was the best game ever.
-
-    - it was the best game ever'
-- intent: intent_so_tell_me_038a39f8
-  examples: '- so tell me the final score.
-
-    - so tell me the final score.
-
-    - so tell me the final score'
-- intent: intent_the_other_team_7d176988
-  examples: '- the other team lost by three points, 101-98.
-
-    - the other team lost by three points, 101-98.
-
-    - the other team lost by three points 10198'
-- intent: intent_it_mustve_been_2ad133f3
-  examples: '- it must''ve been a close game.
-
-    - it must''ve been a close game.
-
-    - it mustve been a close game'
-- intent: intent_what_are_you_4453ade8
-  examples: '- what are you doing this weekend?
-
-    - what are you doing this weekend?
-
-    - what are you doing this weekend'
-- intent: intent_im_going_to_be3fde51
-  examples: '- i''m going to the movies with a friend. how about you?
-
-    - i''m going to the movies with a friend. how about you?
-
-    - im going to the movies with a friend how about you'
-- intent: intent_im_not_sure_83a0d4c3
-  examples: '- i''m not sure yet.
-
-    - i''m not sure yet.
-
-    - im not sure yet'
-- intent: intent_well_did_you_74c50433
-  examples: '- well, did you want to go see a movie with me?
-
-    - well, did you want to go see a movie with me?
-
-    - well did you want to go see a movie with me'
-- intent: intent_what_movie_are_9be009c5
-  examples: '- what movie are you going to see?
-
-    - what movie are you going to see?
-
-    - what movie are you going to see'
-- intent: intent_im_not_sure_fb7b90e0
-  examples: '- i''m not sure yet. is there something you want to see?
-
-    - i''m not sure yet. is there something you want to see?
-
-    - im not sure yet is there something you want to see'
-- intent: intent_no_thanks_maybe_403691ed
-  examples: '- no, thanks, maybe another time.
-
-    - no, thanks, maybe another time.
-
-    - no thanks maybe another time'
-- intent: intent_do_you_know_783550dc
-  examples: '- do you know what you''re going to do this weekend?
-
-    - do you know what you''re going to do this weekend?
-
-    - do you know what youre going to do this weekend'
-- intent: intent_i_am_going_b2717a7f
-  examples: '- i am going to see a movie with a friend of mine. what about you?
-
-    - i am going to see a movie with a friend of mine. what about you?
-
-    - i am going to see a movie with a friend of mine what about you'
-- intent: intent_i_dont_know_19dc8709
-  examples: '- i don''t know.
-
-    - i don''t know.
-
-    - i dont know'
-- intent: intent_do_you_know_70b07c54
-  examples: '- do you know what movie you''re going to watch?
-
-    - do you know what movie you''re going to watch?
-
-    - do you know what movie youre going to watch'
-- intent: intent_i_dont_know_323bf863
-  examples: '- i don''t know, but was there a certain movie you wanted to see?
-
-    - i don''t know, but was there a certain movie you wanted to see?
-
-    - i dont know but was there a certain movie you wanted to see'
-- intent: intent_thank_you_for_8ee93c00
-  examples: '- thank you for inviting me, but i think i''ll pass.
-
-    - thank you for inviting me, but i think i''ll pass.
-
-    - thank you for inviting me but i think ill pass'
-- intent: intent_you_have_any_7168df40
-  examples: '- you have any ideas as to what you want to do this weekend?
-
-    - you have any ideas as to what you want to do this weekend?
-
-    - you have any ideas as to what you want to do this weekend'
-- intent: intent_im_going_to_eaeab07f
-  examples: '- i''m going to the movie theater with my friend. what are you going to do?
-
-    - i''m going to the movie theater with my friend. what are you going to do?
-
-    - im going to the movie theater with my friend what are you going to do'
-- intent: intent_im_not_quite_6b9478c3
-  examples: '- i''m not quite sure yet.
-
-    - i''m not quite sure yet.
-
-    - im not quite sure yet'
-- intent: intent_what_movie_are_218cb7de
-  examples: '- what movie are you and your friend planning on watching?
-
-    - what movie are you and your friend planning on watching?
-
-    - what movie are you and your friend planning on watching'
-- intent: intent_not_sure_is_2a6d6d49
-  examples: '- not sure. is there a movie out that catches your eye?
-
-    - not sure. is there a movie out that catches your eye?
-
-    - not sure is there a movie out that catches your eye'
-- intent: intent_no_good_movies_b40da83f
-  examples: '- no good movies come to mind.
-
-    - no good movies come to mind.
-
-    - no good movies come to mind'
-- intent: intent_have_you_decided_733e90d9
-  examples: '- have you decided whether or not you would like to go?
-
-    - have you decided whether or not you would like to go?
-
-    - have you decided whether or not you would like to go'
-- intent: intent_did_you_go_1ef32a08
-  examples: '- did you go to school today?
-
-    - did you go to school today?
-
-    - did you go to school today'
-- intent: intent_yeah_i_went_eb02b89c
-  examples: '- yeah, i went to school today. were you there?
-
-    - yeah, i went to school today. were you there?
-
-    - yeah i went to school today were you there'
-- intent: intent_no_i_didnt_f38f9f59
-  examples: '- no, i didn''t go, i''ve been sick.
-
-    - no, i didn''t go, i''ve been sick.
-
-    - no i didnt go ive been sick'
-- intent: intent_that_sucks_did_c76fd193
-  examples: '- that sucks. did you want the assignments from english class?
-
-    - that sucks. did you want the assignments from english class?
-
-    - that sucks did you want the assignments from english class'
-- intent: intent_that_would_be_924e4cd7
-  examples: '- that would be nice, thank you.
-
-    - that would be nice, thank you.
-
-    - that would be nice thank you'
-- intent: intent_i_will_be_4ac2ccac
-  examples: '- i will be glad to do the same for you when you''re sick.
-
-    - i will be glad to do the same for you when you''re sick.
-
-    - i will be glad to do the same for you when youre sick'
-- intent: intent_have_you_attended_9fd5ae2c
-  examples: '- have you attended school today?
-
-    - have you attended school today?
-
-    - have you attended school today'
-- intent: intent_i_wasnt_able_4e946aaf
-  examples: '- i wasn''t able to attend school because i was feeling ill.
-
-    - i wasn''t able to attend school because i was feeling ill.
-
-    - i wasnt able to attend school because i was feeling ill'
-- intent: intent_im_sorry_to_a22a33a1
-  examples: '- i''m sorry to hear that. would you like the assignments from english class?
-
-    - i''m sorry to hear that. would you like the assignments from english class?
-
-    - im sorry to hear that would you like the assignments from english class'
-- intent: intent_i_would_really_7dc80995
-  examples: '- i would really appreciate that, thanks.
-
-    - i would really appreciate that, thanks.
-
-    - i would really appreciate that thanks'
-- intent: intent_its_no_trouble_40448a34
-  examples: '- it''s no trouble at all.
-
-    - it''s no trouble at all.
-
-    - its no trouble at all'
-- intent: intent_if_you_get_e9834ce2
-  examples: '- if you get sick, i''ll return the favor.
-
-    - if you get sick, i''ll return the favor.
-
-    - if you get sick ill return the favor'
-- intent: intent_have_you_gone_a4fda1b8
-  examples: '- have you gone to school today?
-
-    - have you gone to school today?
-
-    - have you gone to school today'
-- intent: intent_i_couldnt_go_c05cfa12
-  examples: '- i couldn''t go to school today, i was sick.
-
-    - i couldn''t go to school today, i was sick.
-
-    - i couldnt go to school today i was sick'
-- intent: intent_thats_horrible_id_2c3332cc
-  examples: '- that''s horrible. i''d be happy to give you the assignments from english class.
-
-    - that''s horrible. i''d be happy to give you the assignments from english class.
-
-    - thats horrible id be happy to give you the assignments from english class'
-- intent: intent_thank_you_very_2f36c23a
-  examples: '- thank you very much, that''s kind of you.
-
-    - thank you very much, that''s kind of you.
-
-    - thank you very much thats kind of you'
-- intent: intent_dont_mention_it_8d4192d1
-  examples: '- don''t mention it.
-
-    - don''t mention it.
-
-    - dont mention it'
-- intent: intent_did_you_hear_a628414c
-  examples: '- did you hear the news?
-
-    - did you hear the news?
-
-    - did you hear the news'
-- intent: intent_what_happened_9aed4763
-  examples: '- what happened?'
-- intent: intent_our_cousin_went_97a97b6e
-  examples: '- our cousin went into labor and had her baby last week.
-
-    - our cousin went into labor and had her baby last week.
-
-    - our cousin went into labor and had her baby last week'
-- intent: intent_she_did_why_ce99a760
-  examples: '- she did? why didn''t anyone tell me?
-
-    - she did? why didn''t anyone tell me?
-
-    - she did why didnt anyone tell me'
-- intent: intent_i_wouldve_thought_256aafcc
-  examples: '- i would''ve thought that somebody would have told you.
-
-    - i would''ve thought that somebody would have told you.
-
-    - i wouldve thought that somebody would have told you'
-- intent: intent_no_i_had_c0d619b3
-  examples: '- no, i had no idea.
-
-    - no, i had no idea.
-
-    - no i had no idea'
-- intent: intent_well_she_did_6d6b8183
-  examples: '- well, she did, her baby was 8 pounds 6 ounces.
-
-    - well, she did, her baby was 8 pounds 6 ounces.
-
-    - well she did her baby was 8 pounds 6 ounces'
-- intent: intent_oh_my_god_c9c87802
-  examples: '- oh my god, that''s great!
-
-    - oh my god, that''s great!
-
-    - oh my god thats great'
-- intent: intent_are_you_going_576f2653
-  examples: '- are you going to go and visit her and the baby?
-
-    - are you going to go and visit her and the baby?
-
-    - are you going to go and visit her and the baby'
-- intent: intent_good_i_just_61d85861
-  examples: '- good! i just thought i''d let you know.
-
-    - good! i just thought i''d let you know.
-
-    - good i just thought id let you know'
-- intent: intent_have_you_heard_19d4a927
-  examples: '- have you heard what happened?
-
-    - have you heard what happened?
-
-    - have you heard what happened'
-- intent: intent_heard_what_89d0d03a
-  examples: '- heard what?'
-- intent: intent_debrah_already_had_7907cb20
-  examples: '- debrah already had her baby.
-
-    - debrah already had her baby.
-
-    - debrah already had her baby'
-- intent: intent_i_didnt_know_23018ccc
-  examples: '- i didn''t know that.
-
-    - i didn''t know that.
-
-    - i didnt know that'
-- intent: intent_i_thought_you_00f32dcd
-  examples: '- i thought you knew.
-
-    - i thought you knew.
-
-    - i thought you knew'
-- intent: intent_thats_good_to_ac3e3c45
-  examples: '- that''s good to hear.
-
-    - that''s good to hear.
-
-    - thats good to hear'
-- intent: intent_will_you_go_67e08c0f
-  examples: '- will you go and visit them?
-
-    - will you go and visit them?
-
-    - will you go and visit them'
-- intent: intent_of_course_i_f0b1241c
-  examples: '- of course i will.
-
-    - of course i will.
-
-    - of course i will'
-- intent: intent_i_just_wanted_7e3f4f66
-  examples: '- i just wanted to give you the good news.
-
-    - i just wanted to give you the good news.
-
-    - i just wanted to give you the good news'
-- intent: intent_have_you_heard_e7f3ade0
-  examples: '- have you heard the news?
-
-    - have you heard the news?
-
-    - have you heard the news'
-- intent: intent_debrah_had_her_96baa3b3
-  examples: '- debrah had her baby last week.
-
-    - debrah had her baby last week.
-
-    - debrah had her baby last week'
-- intent: intent_nobody_told_me_bb0ba989
-  examples: '- nobody told me.
-
-    - nobody told me.
-
-    - nobody told me'
-- intent: intent_i_thought_you_357ee93a
-  examples: '- i thought you heard.
-
-    - i thought you heard.
-
-    - i thought you heard'
-- intent: intent_i_really_wasnt_3673687d
-  examples: '- i really wasn''t told anything.
-
-    - i really wasn''t told anything.
-
-    - i really wasnt told anything'
-- intent: intent_she_was_a_b5dc6224
-  examples: '- she was a cute 8 pounds 6 ounces.
-
-    - she was a cute 8 pounds 6 ounces.
-
-    - she was a cute 8 pounds 6 ounces'
-- intent: intent_wow_how_exciting_f66536e5
-  examples: '- wow, how exciting.
-
-    - wow, how exciting.
-
-    - wow how exciting'
-- intent: intent_i_know_you_df82e337
-  examples: '- i know, you should really go and see her and the baby.
-
-    - i know, you should really go and see her and the baby.
-
-    - i know you should really go and see her and the baby'
-- intent: intent_of_course_did_81ffd170
-  examples: '- of course. did you?
-
-    - of course. did you?
-
-    - of course did you'
-- intent: intent_i_didnt_want_7100f0cd
-  examples: '- i didn''t want to, so i didn''t.
-
-    - i didn''t want to, so i didn''t.
-
-    - i didnt want to so i didnt'
-- intent: intent_thats_sad_but_3ebb9ba3
-  examples: '- that''s sad, but have you gone to the movies recently?
-
-    - that''s sad, but have you gone to the movies recently?
-
-    - thats sad but have you gone to the movies recently'
-- intent: intent_thats_a_switch_df8100df
-  examples: '- that''s a switch.
-
-    - that''s a switch.
-
-    - thats a switch'
-- intent: intent_im_serious_have_4feffc68
-  examples: '- i''m serious, have you?
-
-    - i''m serious, have you?
-
-    - im serious have you'
-- intent: intent_i_really_want_b76b2f1e
-  examples: '- i really want to go to the movies this weekend.
-
-    - i really want to go to the movies this weekend.
-
-    - i really want to go to the movies this weekend'
-- intent: intent_so_go_then_06921767
-  examples: '- so go then.
-
-    - so go then.
-
-    - so go then'
-- intent: intent_i_really_dont_f2a8d843
-  examples: '- i really don''t want to go by myself.
-
-    - i really don''t want to go by myself.
-
-    - i really dont want to go by myself'
-- intent: intent_well_anyway_do_cd0e2587
-  examples: '- well anyway, do you plan on going to school tomorrow?
-
-    - well anyway, do you plan on going to school tomorrow?
-
-    - well anyway do you plan on going to school tomorrow'
-- intent: intent_did_you_make_48d7fdcc
-  examples: '- did you make it to school today?
-
-    - did you make it to school today?
-
-    - did you make it to school today'
-- intent: intent_you_should_have_ea51fe67
-  examples: '- you should have, but have you seen any movies lately?
-
-    - you should have, but have you seen any movies lately?
-
-    - you should have but have you seen any movies lately'
-- intent: intent_that_was_an_ffb43796
-  examples: '- that was an odd change of subject.
-
-    - that was an odd change of subject.
-
-    - that was an odd change of subject'
-- intent: intent_maybe_it_was_b74dbeee
-  examples: '- maybe it was, but answer the question.
-
-    - maybe it was, but answer the question.
-
-    - maybe it was but answer the question'
-- intent: intent_no_not_recently_170824c1
-  examples: '- no, not recently.
-
-    - no, not recently.
-
-    - no not recently'
-- intent: intent_i_want_to_2ed2197f
-  examples: '- i want to go to see a movie this weekend.
-
-    - i want to go to see a movie this weekend.
-
-    - i want to go to see a movie this weekend'
-- intent: intent_whats_stopping_you_0bab986c
-  examples: '- what''s stopping you then?
-
-    - what''s stopping you then?
-
-    - whats stopping you then'
-- intent: intent_i_dont_want_5bc03fdd
-  examples: '- i don''t want to go alone.
-
-    - i don''t want to go alone.
-
-    - i dont want to go alone'
-- intent: intent_so_will_you_e756d8b8
-  examples: '- so, will you be at school tomorrow?
-
-    - so, will you be at school tomorrow?
-
-    - so will you be at school tomorrow'
-- intent: intent_did_you_even_eff80da9
-  examples: '- did you even bother to go to school today?
-
-    - did you even bother to go to school today?
-
-    - did you even bother to go to school today'
-- intent: intent_yeah_i_went_7424168c
-  examples: '- yeah, i went. did you go?
-
-    - yeah, i went. did you go?
-
-    - yeah i went did you go'
-- intent: intent_no_i_didnt_b9f1f694
-  examples: '- no, i didn''t feel like it.
-
-    - no, i didn''t feel like it.
-
-    - no i didnt feel like it'
-- intent: intent_thats_nice_have_e81a5831
-  examples: '- that''s nice, have you been to the movies lately?
-
-    - that''s nice, have you been to the movies lately?
-
-    - thats nice have you been to the movies lately'
-- intent: intent_no_but_that_fe017476
-  examples: '- no, but that was a random change of subject.
-
-    - no, but that was a random change of subject.
-
-    - no but that was a random change of subject'
-- intent: intent_it_may_have_5af6c4bb
-  examples: '- it may have been random, but have you?
-
-    - it may have been random, but have you?
-
-    - it may have been random but have you'
-- intent: intent_i_havent_lately_4d4a421e
-  examples: '- i haven''t lately.
-
-    - i haven''t lately.
-
-    - i havent lately'
-- intent: intent_i_would_love_4fda48af
-  examples: '- i would love to catch a movie this weekend.
-
-    - i would love to catch a movie this weekend.
-
-    - i would love to catch a movie this weekend'
-- intent: intent_so_then_why_febf54de
-  examples: '- so then, why don''t you just go?
-
-    - so then, why don''t you just go?
-
-    - so then why dont you just go'
-- intent: intent_i_dont_want_bbbc44c2
-  examples: '- i don''t want to see a movie by myself.
-
-    - i don''t want to see a movie by myself.
-
-    - i dont want to see a movie by myself'
-- intent: intent_thanks_for_coming_bc9f1d8d
-  examples: '- thanks for coming to see me today.
-
-    - thanks for coming to see me today.
-
-    - thanks for coming to see me today'
-- intent: intent_its_no_problem_86a8838a
-  examples: '- it''s no problem. i was really missing you anyway.
-
-    - it''s no problem. i was really missing you anyway.
-
-    - its no problem i was really missing you anyway'
-- intent: intent_i_missed_you_de5e4ee7
-  examples: '- i missed you too.
-
-    - i missed you too.
-
-    - i missed you too'
-- intent: intent_why_havent_you_6c6e3e0b
-  examples: '- why haven''t you tried to come see me then?
-
-    - why haven''t you tried to come see me then?
-
-    - why havent you tried to come see me then'
-- intent: intent_ive_been_really_f799e8a1
-  examples: '- i''ve been really busy.
-
-    - i''ve been really busy.
-
-    - ive been really busy'
-- intent: intent_working_073b3a3f
-  examples: '- working.'
-- intent: intent_i_wouldve_come_aa50c624
-  examples: '- i would''ve come to see you sooner, but i''ve been busy too.
-
-    - i would''ve come to see you sooner, but i''ve been busy too.
-
-    - i wouldve come to see you sooner but ive been busy too'
-- intent: intent_ive_been_working_10966711
-  examples: '- i''ve been working too.
-
-    - i''ve been working too.
-
-    - ive been working too'
-- intent: intent_well_regardless_im_e2d2ce84
-  examples: '- well regardless, i''m very happy that you came to see me.
-
-    - well regardless, i''m very happy that you came to see me.
-
-    - well regardless im very happy that you came to see me'
-- intent: intent_im_really_glad_68538801
-  examples: '- i''m really glad that you came to see me.
-
-    - i''m really glad that you came to see me.
-
-    - im really glad that you came to see me'
-- intent: intent_i_had_to_765b68fd
-  examples: '- i had to. i was missing you a lot.
-
-    - i had to. i was missing you a lot.
-
-    - i had to i was missing you a lot'
-- intent: intent_i_was_missing_e08b253c
-  examples: '- i was missing you too.
-
-    - i was missing you too.
-
-    - i was missing you too'
-- intent: intent_so_why_havent_8f93cf55
-  examples: '- so, why haven''t you visited me?
-
-    - so, why haven''t you visited me?
-
-    - so why havent you visited me'
-- intent: intent_ive_actually_been_93503a8a
-  examples: '- i''ve actually been busy lately.
-
-    - i''ve actually been busy lately.
-
-    - ive actually been busy lately'
-- intent: intent_ive_just_been_43b3ada7
-  examples: '- i''ve just been working really hard.
-
-    - i''ve just been working really hard.
-
-    - ive just been working really hard'
-- intent: intent_tell_me_what_c637bc4e
-  examples: '- tell me what you''ve been doing.
-
-    - tell me what you''ve been doing.
-
-    - tell me what youve been doing'
-- intent: intent_im_really_happy_2c3f2198
-  examples: '- i''m really happy that you came to visit me.
-
-    - i''m really happy that you came to visit me.
-
-    - im really happy that you came to visit me'
-- intent: intent_i_really_missed_4a96944b
-  examples: '- i really missed you a lot.
-
-    - i really missed you a lot.
-
-    - i really missed you a lot'
-- intent: intent_ive_been_missing_8b675769
-  examples: '- i''ve been missing you like crazy.
-
-    - i''ve been missing you like crazy.
-
-    - ive been missing you like crazy'
-- intent: intent_i_dont_understand_a8368730
-  examples: '- i don''t understand why you haven''t come to visit me.
-
-    - i don''t understand why you haven''t come to visit me.
-
-    - i dont understand why you havent come to visit me'
-- intent: intent_lately_ive_been_69b455e9
-  examples: '- lately, i''ve been quite busy.
-
-    - lately, i''ve been quite busy.
-
-    - lately ive been quite busy'
-- intent: intent_tell_me_what_4c1afe8b
-  examples: '- tell me what you''ve been up to.
-
-    - tell me what you''ve been up to.
-
-    - tell me what youve been up to'
-- intent: intent_ive_really_been_23617437
-  examples: '- i''ve really been working a lot lately.
-
-    - i''ve really been working a lot lately.
-
-    - ive really been working a lot lately'
-- intent: intent_ive_been_pretty_c5dec4de
-  examples: '- i''ve been pretty busy myself.
-
-    - i''ve been pretty busy myself.
-
-    - ive been pretty busy myself'
-- intent: intent_so_what_have_935ae110
-  examples: '- so what have you been up to?
-
-    - so what have you been up to?
-
-    - so what have you been up to'
-- intent: intent_ive_just_been_c9f06cd1
-  examples: '- i''ve just been working a lot.
-
-    - i''ve just been working a lot.
-
-    - ive just been working a lot'
-- intent: intent_hey_did_you_c35f35a4
-  examples: '- hey, did you hear about jessica''s party this weekend?
-
-    - hey, did you hear about jessica''s party this weekend?
-
-    - hey did you hear about jessicas party this weekend'
-- intent: intent_yeah_but_im_455ea6fa
-  examples: '- yeah, but i''m still waiting for my invitation.
-
-    - yeah, but i''m still waiting for my invitation.
-
-    - yeah but im still waiting for my invitation'
-- intent: intent_oh_really_she_4ab57c41
-  examples: '- oh really? she gave me mine earlier today.
-
-    - oh really? she gave me mine earlier today.
-
-    - oh really she gave me mine earlier today'
-- intent: intent_well_shell_probably_14f49dda
-  examples: '- well, she''ll probably just give me my invitation later on today.
-
-    - well, she''ll probably just give me my invitation later on today.
-
-    - well shell probably just give me my invitation later on today'
-- intent: intent_yeah_so_are_b8a94483
-  examples: '- yeah, so are you planning on going?
-
-    - yeah, so are you planning on going?
-
-    - yeah so are you planning on going'
-- intent: intent_i_think_so_354bef05
-  examples: '- i think so. it sounds like it''s going to be a lot of fun.
-
-    - i think so. it sounds like it''s going to be a lot of fun.
-
-    - i think so it sounds like its going to be a lot of fun'
-- intent: intent_it_really_does_da2a6b29
-  examples: '- it really does, i can''t wait.
-
-    - it really does, i can''t wait.
-
-    - it really does i cant wait'
-- intent: intent_what_time_does_ebbc21ab
-  examples: '- what time does the party start?
-
-    - what time does the party start?
-
-    - what time does the party start'
-- intent: intent_it_starts_at_da4b9909
-  examples: '- it starts at 8 o''clock.
-
-    - it starts at 8 o''clock.
-
-    - it starts at 8 oclock'
-- intent: intent_oh_well_how_5d911838
-  examples: '- oh, well, how many people has she given invites to so far?
-
-    - oh, well, how many people has she given invites to so far?
-
-    - oh well how many people has she given invites to so far'
-- intent: intent_im_not_sure_49d6280c
-  examples: '- i''m not sure, but i don''t think she''s given out that many.
-
-    - i''m not sure, but i don''t think she''s given out that many.
-
-    - im not sure but i dont think shes given out that many'
-- intent: intent_have_you_heard_51892132
-  examples: '- have you heard about jessica''s party on saturday?
-
-    - have you heard about jessica''s party on saturday?
-
-    - have you heard about jessicas party on saturday'
-- intent: intent_ive_heard_about_1fb6ae29
-  examples: '- i''ve heard about it, but i''m still waiting for my invitation.
-
-    - i''ve heard about it, but i''m still waiting for my invitation.
-
-    - ive heard about it but im still waiting for my invitation'
-- intent: intent_really_i_got_f419d108
-  examples: '- really? i got mine from her this morning.
-
-    - really? i got mine from her this morning.
-
-    - really i got mine from her this morning'
-- intent: intent_im_guessing_that_2f96275b
-  examples: '- i''m guessing that she''s going to give me my invite today or tomorrow.
-
-    - i''m guessing that she''s going to give me my invite today or tomorrow.
-
-    - im guessing that shes going to give me my invite today or tomorrow'
-- intent: intent_youre_probably_right_94fbb8b4
-  examples: '- you''re probably right, do you intend on going to the party?
-
-    - you''re probably right, do you intend on going to the party?
-
-    - youre probably right do you intend on going to the party'
-- intent: intent_i_want_to_bde1b01b
-  examples: '- i want to. i heard it''s going to be really fun.
-
-    - i want to. i heard it''s going to be really fun.
-
-    - i want to i heard its going to be really fun'
-- intent: intent_i_know_it_ac6f2303
-  examples: '- i know, it does sound pretty awesome.
-
-    - i know, it does sound pretty awesome.
-
-    - i know it does sound pretty awesome'
-- intent: intent_its_supposed_to_a9ba2cca
-  examples: '- it''s supposed to start at about eight.
-
-    - it''s supposed to start at about eight.
-
-    - its supposed to start at about eight'
-- intent: intent_how_many_invitations_c8229493
-  examples: '- how many invitations has she given out?
-
-    - how many invitations has she given out?
-
-    - how many invitations has she given out'
-- intent: intent_i_really_dont_3002e3ef
-  examples: '- i really don''t know, but i don''t think she gave out that many yet.
-
-    - i really don''t know, but i don''t think she gave out that many yet.
-
-    - i really dont know but i dont think she gave out that many yet'
-- intent: intent_has_anyone_told_3de6f3c2
-  examples: '- has anyone told you about jessica''s party coming up?
-
-    - has anyone told you about jessica''s party coming up?
-
-    - has anyone told you about jessicas party coming up'
-- intent: intent_i_was_told_944027c5
-  examples: '- i was told about it already. i''m just waiting for my invitation.
-
-    - i was told about it already. i''m just waiting for my invitation.
-
-    - i was told about it already im just waiting for my invitation'
-- intent: intent_is_that_right_48c894b4
-  examples: '- is that right? i already got my invitation from her earlier.
-
-    - is that right? i already got my invitation from her earlier.
-
-    - is that right i already got my invitation from her earlier'
-- intent: intent_i_believe_that_12f8bf18
-  examples: '- i believe that she will give me the invitation today.
-
-    - i believe that she will give me the invitation today.
-
-    - i believe that she will give me the invitation today'
-- intent: intent_yeah_it_sounds_9ecdaced
-  examples: '- yeah, it sounds like it''s going to be the best party of the year.
-
-    - yeah, it sounds like it''s going to be the best party of the year.
-
-    - yeah it sounds like its going to be the best party of the year'
-- intent: intent_exactly_it_seems_01e7c904
-  examples: '- exactly, it seems like it''s going to be loads of fun.
-
-    - exactly, it seems like it''s going to be loads of fun.
-
-    - exactly it seems like its going to be loads of fun'
-- intent: intent_when_exactly_does_40a2ca41
-  examples: '- when exactly does the party start?
-
-    - when exactly does the party start?
-
-    - when exactly does the party start'
-- intent: intent_the_invitation_says_1468c4a2
-  examples: '- the invitation says it starts at 800 p.m.
-
-    - the invitation says it starts at 800 p.m.
-
-    - the invitation says it starts at 800 pm'
-- intent: intent_has_she_given_9f1208fa
-  examples: '- has she given out a lot of invitations yet?
-
-    - has she given out a lot of invitations yet?
-
-    - has she given out a lot of invitations yet'
-- intent: intent_hey_whats_up_b3363293
-  examples: '- hey, what''s up?
-
-    - hey, what''s up?
-
-    - hey whats up'
-- intent: intent_im_throwing_a_bc8ef499
-  examples: '- i''m throwing a party on friday.
-
-    - i''m throwing a party on friday.
-
-    - im throwing a party on friday'
-- intent: intent_nobody_has_told_676c647c
-  examples: '- nobody has told me anything about your party.
-
-    - nobody has told me anything about your party.
-
-    - nobody has told me anything about your party'
-- intent: intent_when_does_it_e88e01fa
-  examples: '- when does it start?
-
-    - when does it start?
-
-    - when does it start'
-- intent: intent_at_800_pm_d68886e2
-  examples: '- at 800 p.m.
-
-    - at 800 p.m.
-
-    - at 800 pm'
-- intent: intent_ill_be_there_4fab3a6e
-  examples: '- i''ll be there.
-
-    - i''ll be there.
-
-    - ill be there'
 - intent: greet
   examples: '- hello
 
@@ -2955,7 +1769,9 @@ nlu:
 
     - good afternoon
 
-    - good evening'
+    - good evening
+
+    - greetings'
 - intent: goodbye
   examples: '- bye
 
@@ -2965,13 +1781,17 @@ nlu:
 
     - farewell
 
-    - have a nice day'
+    - have a nice day
+
+    - talk to you later'
 - intent: bot_challenge
   examples: '- are you a bot?
 
     - are you human?
 
-    - what are you?'
+    - what are you?
+
+    - are you a robot?'
 - intent: affirm
   examples: '- yes
 
@@ -2981,7 +1801,9 @@ nlu:
 
     - exactly
 
-    - that''s right'
+    - that''s right
+
+    - sure'
 - intent: deny
   examples: '- no
 
@@ -2991,4 +1813,6 @@ nlu:
 
     - not right
 
-    - that''s wrong'
+    - that''s wrong
+
+    - nope'

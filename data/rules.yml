@@ -1,2005 +1,1205 @@
 version: '3.1'
 rules:
-- rule: Respond to intent_hi_how_are_635a97b3
-  steps:
-  - intent: intent_hi_how_are_635a97b3
-  - action: utter_intent_hi_how_are_635a97b3
-- rule: Respond to intent_im_fine_how_59ddb211
-  steps:
-  - intent: intent_im_fine_how_59ddb211
-  - action: utter_intent_im_fine_how_59ddb211
-- rule: Respond to intent_im_pretty_good_d6daeebb
-  steps:
-  - intent: intent_im_pretty_good_d6daeebb
-  - action: utter_intent_im_pretty_good_d6daeebb
-- rule: Respond to intent_no_problem_so_e26c7e89
-  steps:
-  - intent: intent_no_problem_so_e26c7e89
-  - action: utter_intent_no_problem_so_e26c7e89
-- rule: Respond to intent_ive_been_great_0c077647
-  steps:
-  - intent: intent_ive_been_great_0c077647
-  - action: utter_intent_ive_been_great_0c077647
-- rule: Respond to intent_ive_been_good_ce7cf0ba
-  steps:
-  - intent: intent_ive_been_good_ce7cf0ba
-  - action: utter_intent_ive_been_good_ce7cf0ba
-- rule: Respond to intent_what_school_do_dccd4fba
-  steps:
-  - intent: intent_what_school_do_dccd4fba
-  - action: utter_intent_what_school_do_dccd4fba
-- rule: Respond to intent_i_go_to_7228a576
-  steps:
-  - intent: intent_i_go_to_7228a576
-  - action: utter_intent_i_go_to_7228a576
-- rule: Respond to intent_do_you_like_949a696f
-  steps:
-  - intent: intent_do_you_like_949a696f
-  - action: utter_intent_do_you_like_949a696f
-- rule: Respond to intent_its_okay_its_5c3d518a
-  steps:
-  - intent: intent_its_okay_its_5c3d518a
-  - action: utter_intent_its_okay_its_5c3d518a
-- rule: Respond to intent_good_luck_with_084584c2
-  steps:
-  - intent: intent_good_luck_with_084584c2
-  - action: utter_intent_good_luck_with_084584c2
-- rule: Respond to intent_hows_it_going_bbe7ad8b
-  steps:
-  - intent: intent_hows_it_going_bbe7ad8b
-  - action: utter_intent_hows_it_going_bbe7ad8b
-- rule: Respond to intent_never_better_thanks_193a1493
-  steps:
-  - intent: intent_never_better_thanks_193a1493
-  - action: utter_intent_never_better_thanks_193a1493
-- rule: Respond to intent_so_how_have_4884b581
-  steps:
-  - intent: intent_so_how_have_4884b581
-  - action: utter_intent_so_how_have_4884b581
-- rule: Respond to intent_ive_actually_been_71ddb855
-  steps:
-  - intent: intent_ive_actually_been_71ddb855
-  - action: utter_intent_ive_actually_been_71ddb855
-- rule: Respond to intent_im_actually_in_904b40cd
-  steps:
-  - intent: intent_im_actually_in_904b40cd
-  - action: utter_intent_im_actually_in_904b40cd
-- rule: Respond to intent_which_school_do_cf201aea
-  steps:
-  - intent: intent_which_school_do_cf201aea
-  - action: utter_intent_which_school_do_cf201aea
-- rule: Respond to intent_im_attending_pcc_1520c5e6
-  steps:
-  - intent: intent_im_attending_pcc_1520c5e6
-  - action: utter_intent_im_attending_pcc_1520c5e6
-- rule: Respond to intent_are_you_enjoying_827f627b
-  steps:
-  - intent: intent_are_you_enjoying_827f627b
-  - action: utter_intent_are_you_enjoying_827f627b
-- rule: Respond to intent_its_not_bad_3cf9ea5f
-  steps:
-  - intent: intent_its_not_bad_3cf9ea5f
-  - action: utter_intent_its_not_bad_3cf9ea5f
-- rule: Respond to intent_good_luck_with_95bc26ff
-  steps:
-  - intent: intent_good_luck_with_95bc26ff
-  - action: utter_intent_good_luck_with_95bc26ff
-- rule: Respond to intent_how_are_you_31640c89
-  steps:
-  - intent: intent_how_are_you_31640c89
-  - action: utter_intent_how_are_you_31640c89
-- rule: Respond to intent_im_doing_great_d41655d6
-  steps:
-  - intent: intent_im_doing_great_d41655d6
-  - action: utter_intent_im_doing_great_d41655d6
-- rule: Respond to intent_im_absolutely_lovely_136b146f
-  steps:
-  - intent: intent_im_absolutely_lovely_136b146f
-  - action: utter_intent_im_absolutely_lovely_136b146f
-- rule: Respond to intent_i_havent_been_0193d5b1
-  steps:
-  - intent: intent_i_havent_been_0193d5b1
-  - action: utter_intent_i_havent_been_0193d5b1
-- rule: Respond to intent_i_started_school_2e944ba9
-  steps:
-  - intent: intent_i_started_school_2e944ba9
-  - action: utter_intent_i_started_school_2e944ba9
-- rule: Respond to intent_where_are_you_72fc4fa6
-  steps:
-  - intent: intent_where_are_you_72fc4fa6
-  - action: utter_intent_where_are_you_72fc4fa6
-- rule: Respond to intent_how_do_you_b04c9712
-  steps:
-  - intent: intent_how_do_you_b04c9712
-  - action: utter_intent_how_do_you_b04c9712
-- rule: Respond to intent_i_like_it_031cf488
-  steps:
-  - intent: intent_i_like_it_031cf488
-  - action: utter_intent_i_like_it_031cf488
-- rule: Respond to intent_its_an_ugly_91dc7e5a
-  steps:
-  - intent: intent_its_an_ugly_91dc7e5a
-  - action: utter_intent_its_an_ugly_91dc7e5a
-- rule: Respond to intent_i_know_i_8ff31b25
-  steps:
-  - intent: intent_i_know_i_8ff31b25
-  - action: utter_intent_i_know_i_8ff31b25
-- rule: Respond to intent_its_the_middle_06e9842f
-  steps:
-  - intent: intent_its_the_middle_06e9842f
-  - action: utter_intent_its_the_middle_06e9842f
-- rule: Respond to intent_that_would_be_9f9ddbcf
-  steps:
-  - intent: intent_that_would_be_9f9ddbcf
-  - action: utter_intent_that_would_be_9f9ddbcf
-- rule: Respond to intent_yeah_especially_since_c0c058c0
-  steps:
-  - intent: intent_yeah_especially_since_c0c058c0
-  - action: utter_intent_yeah_especially_since_c0c058c0
-- rule: Respond to intent_i_know_it_3b6c6541
-  steps:
-  - intent: intent_i_know_it_3b6c6541
-  - action: utter_intent_i_know_it_3b6c6541
-- rule: Respond to intent_yes_it_would_dc639dad
-  steps:
-  - intent: intent_yes_it_would_dc639dad
-  - action: utter_intent_yes_it_would_dc639dad
-- rule: Respond to intent_i_really_wish_02c80692
-  steps:
-  - intent: intent_i_really_wish_02c80692
-  - action: utter_intent_i_really_wish_02c80692
-- rule: Respond to intent_me_too_i_ba8bf8ea
-  steps:
-  - intent: intent_me_too_i_ba8bf8ea
-  - action: utter_intent_me_too_i_ba8bf8ea
-- rule: Respond to intent_i_like_winter_fcb39f93
-  steps:
-  - intent: intent_i_like_winter_fcb39f93
-  - action: utter_intent_i_like_winter_fcb39f93
-- rule: Respond to intent_id_rather_be_faa01254
-  steps:
-  - intent: intent_id_rather_be_faa01254
-  - action: utter_intent_id_rather_be_faa01254
-- rule: Respond to intent_it_doesnt_look_202ffcfc
-  steps:
-  - intent: intent_it_doesnt_look_202ffcfc
-  - action: utter_intent_it_doesnt_look_202ffcfc
-- rule: Respond to intent_youre_right_i_de199303
-  steps:
-  - intent: intent_youre_right_i_de199303
-  - action: utter_intent_youre_right_i_de199303
-- rule: Respond to intent_in_the_middle_72d97e4a
-  steps:
-  - intent: intent_in_the_middle_72d97e4a
-  - action: utter_intent_in_the_middle_72d97e4a
-- rule: Respond to intent_that_wouldnt_seem_23c2b809
-  steps:
-  - intent: intent_that_wouldnt_seem_23c2b809
-  - action: utter_intent_that_wouldnt_seem_23c2b809
-- rule: Respond to intent_considering_that_its_29137732
-  steps:
-  - intent: intent_considering_that_its_29137732
-  - action: utter_intent_considering_that_its_29137732
-- rule: Respond to intent_exactly_it_wouldnt_c4942792
-  steps:
-  - intent: intent_exactly_it_wouldnt_c4942792
-  - action: utter_intent_exactly_it_wouldnt_c4942792
-- rule: Respond to intent_i_know_youre_b1ad6c8d
-  steps:
-  - intent: intent_i_know_youre_b1ad6c8d
-  - action: utter_intent_i_know_youre_b1ad6c8d
-- rule: Respond to intent_i_wish_it_f691c4ba
-  steps:
-  - intent: intent_i_wish_it_f691c4ba
-  - action: utter_intent_i_wish_it_f691c4ba
-- rule: Respond to intent_thats_how_i_86eece56
-  steps:
-  - intent: intent_thats_how_i_86eece56
-  - action: utter_intent_thats_how_i_86eece56
-- rule: Respond to intent_i_enjoy_the_6b60c48e
-  steps:
-  - intent: intent_i_enjoy_the_6b60c48e
-  - action: utter_intent_i_enjoy_the_6b60c48e
-- rule: Respond to intent_i_know_what_e238c269
-  steps:
-  - intent: intent_i_know_what_e238c269
-  - action: utter_intent_i_know_what_e238c269
-- rule: Respond to intent_i_wish_it_c8d15d1e
-  steps:
-  - intent: intent_i_wish_it_c8d15d1e
-  - action: utter_intent_i_wish_it_c8d15d1e
-- rule: Respond to intent_that_is_true_e1ffdab3
-  steps:
-  - intent: intent_that_is_true_e1ffdab3
-  - action: utter_intent_that_is_true_e1ffdab3
-- rule: Respond to intent_it_wouldnt_rain_f5d95da9
-  steps:
-  - intent: intent_it_wouldnt_rain_f5d95da9
-  - action: utter_intent_it_wouldnt_rain_f5d95da9
-- rule: Respond to intent_it_wouldnt_seem_8537d187
-  steps:
-  - intent: intent_it_wouldnt_seem_8537d187
-  - action: utter_intent_it_wouldnt_seem_8537d187
-- rule: Respond to intent_it_would_be_7709aaf5
-  steps:
-  - intent: intent_it_would_be_7709aaf5
-  - action: utter_intent_it_would_be_7709aaf5
-- rule: Respond to intent_any_rain_right_ed98db4b
-  steps:
-  - intent: intent_any_rain_right_ed98db4b
-  - action: utter_intent_any_rain_right_ed98db4b
-- rule: Respond to intent_thats_right_it_5b32d5c3
-  steps:
-  - intent: intent_thats_right_it_5b32d5c3
-  - action: utter_intent_thats_right_it_5b32d5c3
-- rule: Respond to intent_i_want_it_7555eb82
-  steps:
-  - intent: intent_i_want_it_7555eb82
-  - action: utter_intent_i_want_it_7555eb82
-- rule: Respond to intent_i_know_what_48465bd2
-  steps:
-  - intent: intent_i_know_what_48465bd2
-  - action: utter_intent_i_know_what_48465bd2
-- rule: Respond to intent_winter_is_great_9efde366
-  steps:
-  - intent: intent_winter_is_great_9efde366
-  - action: utter_intent_winter_is_great_9efde366
-- rule: Respond to intent_its_such_a_914efe6b
-  steps:
-  - intent: intent_its_such_a_914efe6b
-  - action: utter_intent_its_such_a_914efe6b
-- rule: Respond to intent_it_looks_like_626030f1
-  steps:
-  - intent: intent_it_looks_like_626030f1
-  - action: utter_intent_it_looks_like_626030f1
-- rule: Respond to intent_yes_and_i_c84a179d
-  steps:
-  - intent: intent_yes_and_i_c84a179d
-  - action: utter_intent_yes_and_i_c84a179d
-- rule: Respond to intent_why_is_that_37f30d2d
-  steps:
-  - intent: intent_why_is_that_37f30d2d
-  - action: utter_intent_why_is_that_37f30d2d
-- rule: Respond to intent_i_really_love_a77b42ac
-  steps:
-  - intent: intent_i_really_love_a77b42ac
-  - action: utter_intent_i_really_love_a77b42ac
-- rule: Respond to intent_me_too_it_2c2bd94f
-  steps:
-  - intent: intent_me_too_it_2c2bd94f
-  - action: utter_intent_me_too_it_2c2bd94f
-- rule: Respond to intent_yes_but_i_caf141f2
-  steps:
-  - intent: intent_yes_but_i_caf141f2
-  - action: utter_intent_yes_but_i_caf141f2
-- rule: Respond to intent_really_why_is_2af7a503
-  steps:
-  - intent: intent_really_why_is_2af7a503
-  - action: utter_intent_really_why_is_2af7a503
-- rule: Respond to intent_because_you_can_824f4c3e
-  steps:
-  - intent: intent_because_you_can_824f4c3e
-  - action: utter_intent_because_you_can_824f4c3e
-- rule: Respond to intent_i_really_hope_141ab8a5
-  steps:
-  - intent: intent_i_really_hope_141ab8a5
-  - action: utter_intent_i_really_hope_141ab8a5
-- rule: Respond to intent_isnt_it_a_dcaaf609
-  steps:
-  - intent: intent_isnt_it_a_dcaaf609
-  - action: utter_intent_isnt_it_a_dcaaf609
-- rule: Respond to intent_it_seems_that_ec4a61c3
-  steps:
-  - intent: intent_it_seems_that_ec4a61c3
-  - action: utter_intent_it_seems_that_ec4a61c3
-- rule: Respond to intent_hopefully_it_will_ae5d0f52
-  steps:
-  - intent: intent_hopefully_it_will_ae5d0f52
-  - action: utter_intent_hopefully_it_will_ae5d0f52
-- rule: Respond to intent_how_come_2246bfd2
-  steps:
-  - intent: intent_how_come_2246bfd2
-  - action: utter_intent_how_come_2246bfd2
-- rule: Respond to intent_i_like_how_888a071c
-  steps:
-  - intent: intent_i_like_how_888a071c
-  - action: utter_intent_i_like_how_888a071c
-- rule: Respond to intent_i_feel_the_0839dbb7
-  steps:
-  - intent: intent_i_feel_the_0839dbb7
-  - action: utter_intent_i_feel_the_0839dbb7
-- rule: Respond to intent_i_especially_love_f31eae34
-  steps:
-  - intent: intent_i_especially_love_f31eae34
-  - action: utter_intent_i_especially_love_f31eae34
-- rule: Respond to intent_the_stars_look_c83267c3
-  steps:
-  - intent: intent_the_stars_look_c83267c3
-  - action: utter_intent_the_stars_look_c83267c3
-- rule: Respond to intent_i_really_want_1a8c714e
-  steps:
-  - intent: intent_i_really_want_1a8c714e
-  - action: utter_intent_i_really_want_1a8c714e
-- rule: Respond to intent_dont_you_think_ccc06a00
-  steps:
-  - intent: intent_dont_you_think_ccc06a00
-  - action: utter_intent_dont_you_think_ccc06a00
-- rule: Respond to intent_yes_i_think_684e209f
-  steps:
-  - intent: intent_yes_i_think_684e209f
-  - action: utter_intent_yes_i_think_684e209f
-- rule: Respond to intent_i_think_that_bf32596e
-  steps:
-  - intent: intent_i_think_that_bf32596e
-  - action: utter_intent_i_think_that_bf32596e
-- rule: Respond to intent_i_hope_that_4f0d21aa
-  steps:
-  - intent: intent_i_hope_that_4f0d21aa
-  - action: utter_intent_i_hope_that_4f0d21aa
-- rule: Respond to intent_you_like_the_e0dfc387
-  steps:
-  - intent: intent_you_like_the_e0dfc387
-  - action: utter_intent_you_like_the_e0dfc387
-- rule: Respond to intent_the_sky_looks_419d95fb
-  steps:
-  - intent: intent_the_sky_looks_419d95fb
-  - action: utter_intent_the_sky_looks_419d95fb
-- rule: Respond to intent_i_understand_rain_da8d858d
-  steps:
-  - intent: intent_i_understand_rain_da8d858d
-  - action: utter_intent_i_understand_rain_da8d858d
-- rule: Respond to intent_i_love_most_fd5d3865
-  steps:
-  - intent: intent_i_love_most_fd5d3865
-  - action: utter_intent_i_love_most_fd5d3865
-- rule: Respond to intent_you_can_see_7eba5e4f
-  steps:
-  - intent: intent_you_can_see_7eba5e4f
-  - action: utter_intent_you_can_see_7eba5e4f
-- rule: Respond to intent_i_really_want_b396d419
-  steps:
-  - intent: intent_i_really_want_b396d419
-  - action: utter_intent_i_really_want_b396d419
-- rule: Respond to intent_that_sounds_like_dfdc3223
-  steps:
-  - intent: intent_that_sounds_like_dfdc3223
-  - action: utter_intent_that_sounds_like_dfdc3223
-- rule: Respond to intent_i_heard_that_6b82fac0
-  steps:
-  - intent: intent_i_heard_that_6b82fac0
-  - action: utter_intent_i_heard_that_6b82fac0
-- rule: Respond to intent_is_it_going_5ac2cc3e
-  steps:
-  - intent: intent_is_it_going_5ac2cc3e
-  - action: utter_intent_is_it_going_5ac2cc3e
-- rule: Respond to intent_i_believe_so_082f6703
-  steps:
-  - intent: intent_i_believe_so_082f6703
-  - action: utter_intent_i_believe_so_082f6703
-- rule: Respond to intent_good_i_hope_6c98bf31
-  steps:
-  - intent: intent_good_i_hope_6c98bf31
-  - action: utter_intent_good_i_hope_6c98bf31
-- rule: Respond to intent_i_know_i_3d991f54
-  steps:
-  - intent: intent_i_know_i_3d991f54
-  - action: utter_intent_i_know_i_3d991f54
-- rule: Respond to intent_but_you_know_81adb332
-  steps:
-  - intent: intent_but_you_know_81adb332
-  - action: utter_intent_but_you_know_81adb332
-- rule: Respond to intent_youre_right_one_42efcbc8
-  steps:
-  - intent: intent_youre_right_one_42efcbc8
-  - action: utter_intent_youre_right_one_42efcbc8
-- rule: Respond to intent_i_really_wish_7f15d751
-  steps:
-  - intent: intent_i_really_wish_7f15d751
-  - action: utter_intent_i_really_wish_7f15d751
-- rule: Respond to intent_i_do_too_35f81f2f
-  steps:
-  - intent: intent_i_do_too_35f81f2f
-  - action: utter_intent_i_do_too_35f81f2f
-- rule: Respond to intent_i_would_like_8b8757a8
-  steps:
-  - intent: intent_i_would_like_8b8757a8
-  - action: utter_intent_i_would_like_8b8757a8
-- rule: Respond to intent_a_trip_to_694b51dd
-  steps:
-  - intent: intent_a_trip_to_694b51dd
-  - action: utter_intent_a_trip_to_694b51dd
-- rule: Respond to intent_the_forecast_says_4618162f
-  steps:
-  - intent: intent_the_forecast_says_4618162f
-  - action: utter_intent_the_forecast_says_4618162f
-- rule: Respond to intent_so_do_you_b5b15be8
-  steps:
-  - intent: intent_so_do_you_b5b15be8
-  - action: utter_intent_so_do_you_b5b15be8
-- rule: Respond to intent_it_sounds_like_7ba658aa
-  steps:
-  - intent: intent_it_sounds_like_7ba658aa
-  - action: utter_intent_it_sounds_like_7ba658aa
-- rule: Respond to intent_i_really_hope_d432edcf
-  steps:
-  - intent: intent_i_really_hope_d432edcf
-  - action: utter_intent_i_really_hope_d432edcf
-- rule: Respond to intent_that_would_ruin_f8c09acb
-  steps:
-  - intent: intent_that_would_ruin_f8c09acb
-  - action: utter_intent_that_would_ruin_f8c09acb
-- rule: Respond to intent_that_is_true_75cbaeac
-  steps:
-  - intent: intent_that_is_true_75cbaeac
-  - action: utter_intent_that_is_true_75cbaeac
-- rule: Respond to intent_it_would_be_be606e21
-  steps:
-  - intent: intent_it_would_be_be606e21
-  - action: utter_intent_it_would_be_be606e21
-- rule: Respond to intent_that_would_be_1298d926
-  steps:
-  - intent: intent_that_would_be_1298d926
-  - action: utter_intent_that_would_be_1298d926
-- rule: Respond to intent_it_would_be_69eab66f
-  steps:
-  - intent: intent_it_would_be_69eab66f
-  - action: utter_intent_it_would_be_69eab66f
-- rule: Respond to intent_whats_the_weather_63301010
-  steps:
-  - intent: intent_whats_the_weather_63301010
-  - action: utter_intent_whats_the_weather_63301010
-- rule: Respond to intent_the_weather_this_907b861f
-  steps:
-  - intent: intent_the_weather_this_907b861f
-  - action: utter_intent_the_weather_this_907b861f
-- rule: Respond to intent_will_it_be_23b56fba
-  steps:
-  - intent: intent_will_it_be_23b56fba
-  - action: utter_intent_will_it_be_23b56fba
-- rule: Respond to intent_i_think_it_c212dc4b
-  steps:
-  - intent: intent_i_think_it_c212dc4b
-  - action: utter_intent_i_think_it_c212dc4b
-- rule: Respond to intent_it_wouldnt_be_22ea00a4
-  steps:
-  - intent: intent_it_wouldnt_be_22ea00a4
-  - action: utter_intent_it_wouldnt_be_22ea00a4
-- rule: Respond to intent_i_want_this_18a77436
-  steps:
-  - intent: intent_i_want_this_18a77436
-  - action: utter_intent_i_want_this_18a77436
-- rule: Respond to intent_this_california_weather_e285ad74
-  steps:
-  - intent: intent_this_california_weather_e285ad74
-  - action: utter_intent_this_california_weather_e285ad74
-- rule: Respond to intent_i_know_every_1f68ed20
-  steps:
-  - intent: intent_i_know_every_1f68ed20
-  - action: utter_intent_i_know_every_1f68ed20
-- rule: Respond to intent_i_would_love_c12a3d92
-  steps:
-  - intent: intent_i_would_love_c12a3d92
-  - action: utter_intent_i_would_love_c12a3d92
-- rule: Respond to intent_hello_may_i_15711221
-  steps:
-  - intent: intent_hello_may_i_15711221
-  - action: utter_intent_hello_may_i_15711221
-- rule: Respond to intent_ive_been_trying_d5f4c3e4
-  steps:
-  - intent: intent_ive_been_trying_d5f4c3e4
-  - action: utter_intent_ive_been_trying_d5f4c3e4
-- rule: Respond to intent_sorry_about_that_10824c88
-  steps:
-  - intent: intent_sorry_about_that_10824c88
-  - action: utter_intent_sorry_about_that_10824c88
-- rule: Respond to intent_its_okay_ca38c72b
-  steps:
-  - intent: intent_its_okay_ca38c72b
-  - action: utter_intent_its_okay_ca38c72b
-- rule: Respond to intent_so_what_were_1affc732
-  steps:
-  - intent: intent_so_what_were_1affc732
-  - action: utter_intent_so_what_were_1affc732
-- rule: Respond to intent_oh_i_just_5b4064c7
-  steps:
-  - intent: intent_oh_i_just_5b4064c7
-  - action: utter_intent_oh_i_just_5b4064c7
-- rule: Respond to intent_sure_what_did_0e2d00b9
-  steps:
-  - intent: intent_sure_what_did_0e2d00b9
-  - action: utter_intent_sure_what_did_0e2d00b9
-- rule: Respond to intent_maybe_we_can_dfb88210
-  steps:
-  - intent: intent_maybe_we_can_dfb88210
-  - action: utter_intent_maybe_we_can_dfb88210
-- rule: Respond to intent_that_sounds_like_46294a44
-  steps:
-  - intent: intent_that_sounds_like_46294a44
-  - action: utter_intent_that_sounds_like_46294a44
-- rule: Respond to intent_ill_see_you_fcda5a30
-  steps:
-  - intent: intent_ill_see_you_fcda5a30
-  - action: utter_intent_ill_see_you_fcda5a30
-- rule: Respond to intent_hi_how_are_672db29d
-  steps:
-  - intent: intent_hi_how_are_672db29d
-  - action: utter_intent_hi_how_are_672db29d
-- rule: Respond to intent_speaking_whats_up_74d2148f
-  steps:
-  - intent: intent_speaking_whats_up_74d2148f
-  - action: utter_intent_speaking_whats_up_74d2148f
-- rule: Respond to intent_why_havent_you_fb7b48bc
-  steps:
-  - intent: intent_why_havent_you_fb7b48bc
-  - action: utter_intent_why_havent_you_fb7b48bc
-- rule: Respond to intent_my_bad_i_12bc01b3
-  steps:
-  - intent: intent_my_bad_i_12bc01b3
-  - action: utter_intent_my_bad_i_12bc01b3
-- rule: Respond to intent_thats_all_right_e43eb92d
-  steps:
-  - intent: intent_thats_all_right_e43eb92d
-  - action: utter_intent_thats_all_right_e43eb92d
-- rule: Respond to intent_what_was_the_e7ee8827
-  steps:
-  - intent: intent_what_was_the_e7ee8827
-  - action: utter_intent_what_was_the_e7ee8827
-- rule: Respond to intent_i_want_to_8022f999
-  steps:
-  - intent: intent_i_want_to_8022f999
-  - action: utter_intent_i_want_to_8022f999
-- rule: Respond to intent_sounds_good_what_6f46fba5
-  steps:
-  - intent: intent_sounds_good_what_6f46fba5
-  - action: utter_intent_sounds_good_what_6f46fba5
-- rule: Respond to intent_i_was_thinking_578a1957
-  steps:
-  - intent: intent_i_was_thinking_578a1957
-  - action: utter_intent_i_was_thinking_578a1957
-- rule: Respond to intent_okay_lets_go_bb8c597a
-  steps:
-  - intent: intent_okay_lets_go_bb8c597a
-  - action: utter_intent_okay_lets_go_bb8c597a
-- rule: Respond to intent_until_then_cabddd8e
-  steps:
-  - intent: intent_until_then_cabddd8e
-  - action: utter_intent_until_then_cabddd8e
-- rule: Respond to intent_youre_talking_to_98a78449
-  steps:
-  - intent: intent_youre_talking_to_98a78449
-  - action: utter_intent_youre_talking_to_98a78449
-- rule: Respond to intent_ive_called_you_a2257f92
-  steps:
-  - intent: intent_ive_called_you_a2257f92
-  - action: utter_intent_ive_called_you_a2257f92
-- rule: Respond to intent_i_was_busy_8070e168
-  steps:
-  - intent: intent_i_was_busy_8070e168
-  - action: utter_intent_i_was_busy_8070e168
-- rule: Respond to intent_did_you_need_b7793220
-  steps:
-  - intent: intent_did_you_need_b7793220
-  - action: utter_intent_did_you_need_b7793220
-- rule: Respond to intent_is_there_somewhere_c3bda241
-  steps:
-  - intent: intent_is_there_somewhere_c3bda241
-  - action: utter_intent_is_there_somewhere_c3bda241
-- rule: Respond to intent_how_about_a_2c2784b9
-  steps:
-  - intent: intent_how_about_a_2c2784b9
-  - action: utter_intent_how_about_a_2c2784b9
-- rule: Respond to intent_a_movie_sounds_bffd8a7e
-  steps:
-  - intent: intent_a_movie_sounds_bffd8a7e
-  - action: utter_intent_a_movie_sounds_bffd8a7e
-- rule: Respond to intent_have_you_seen_e19b8c24
-  steps:
-  - intent: intent_have_you_seen_e19b8c24
-  - action: utter_intent_have_you_seen_e19b8c24
-- rule: Respond to intent_no_i_havent_ee6de5a3
-  steps:
-  - intent: intent_no_i_havent_ee6de5a3
-  - action: utter_intent_no_i_havent_ee6de5a3
-- rule: Respond to intent_shes_really_pretty_0a8c3c7b
-  steps:
-  - intent: intent_shes_really_pretty_0a8c3c7b
-  - action: utter_intent_shes_really_pretty_0a8c3c7b
-- rule: Respond to intent_describe_her_to_44a86d72
-  steps:
-  - intent: intent_describe_her_to_44a86d72
-  - action: utter_intent_describe_her_to_44a86d72
-- rule: Respond to intent_shes_not_too_01558acb
-  steps:
-  - intent: intent_shes_not_too_01558acb
-  - action: utter_intent_shes_not_too_01558acb
-- rule: Respond to intent_shes_about_five_83347e26
-  steps:
-  - intent: intent_shes_about_five_83347e26
-  - action: utter_intent_shes_about_five_83347e26
-- rule: Respond to intent_what_does_she_26317187
-  steps:
-  - intent: intent_what_does_she_26317187
-  - action: utter_intent_what_does_she_26317187
-- rule: Respond to intent_she_has_pretty_1dddb729
-  steps:
-  - intent: intent_she_has_pretty_1dddb729
-  - action: utter_intent_she_has_pretty_1dddb729
-- rule: Respond to intent_i_may_know_edf37d51
-  steps:
-  - intent: intent_i_may_know_edf37d51
-  - action: utter_intent_i_may_know_edf37d51
-- rule: Respond to intent_so_you_have_daa74b09
-  steps:
-  - intent: intent_so_you_have_daa74b09
-  - action: utter_intent_so_you_have_daa74b09
-- rule: Respond to intent_i_havent_seen_66aa3989
-  steps:
-  - intent: intent_i_havent_seen_66aa3989
-  - action: utter_intent_i_havent_seen_66aa3989
-- rule: Respond to intent_i_think_that_f0d0e88e
-  steps:
-  - intent: intent_i_think_that_f0d0e88e
-  - action: utter_intent_i_think_that_f0d0e88e
-- rule: Respond to intent_tell_me_how_3ff1514a
-  steps:
-  - intent: intent_tell_me_how_3ff1514a
-  - action: utter_intent_tell_me_how_3ff1514a
-- rule: Respond to intent_shes_kind_of_4985d227
-  steps:
-  - intent: intent_shes_kind_of_4985d227
-  - action: utter_intent_shes_kind_of_4985d227
-- rule: Respond to intent_what_height_is_a63b299e
-  steps:
-  - intent: intent_what_height_is_a63b299e
-  - action: utter_intent_what_height_is_a63b299e
-- rule: Respond to intent_shes_probably_about_51c2a1b5
-  steps:
-  - intent: intent_shes_probably_about_51c2a1b5
-  - action: utter_intent_shes_probably_about_51c2a1b5
-- rule: Respond to intent_thats_nice_but_c6458f9d
-  steps:
-  - intent: intent_thats_nice_but_c6458f9d
-  - action: utter_intent_thats_nice_but_c6458f9d
-- rule: Respond to intent_the_first_thing_35a1bb70
-  steps:
-  - intent: intent_the_first_thing_35a1bb70
-  - action: utter_intent_the_first_thing_35a1bb70
-- rule: Respond to intent_i_think_i_a19f8026
-  steps:
-  - intent: intent_i_think_i_a19f8026
-  - action: utter_intent_i_think_i_a19f8026
-- rule: Respond to intent_are_you_telling_14f9a63e
-  steps:
-  - intent: intent_are_you_telling_14f9a63e
-  - action: utter_intent_are_you_telling_14f9a63e
-- rule: Respond to intent_have_you_met_a7d35014
-  steps:
-  - intent: intent_have_you_met_a7d35014
-  - action: utter_intent_have_you_met_a7d35014
-- rule: Respond to intent_no_have_you_80b22f3e
-  steps:
-  - intent: intent_no_have_you_80b22f3e
-  - action: utter_intent_no_have_you_80b22f3e
-- rule: Respond to intent_shes_one_of_afb6575f
-  steps:
-  - intent: intent_shes_one_of_afb6575f
-  - action: utter_intent_shes_one_of_afb6575f
-- rule: Respond to intent_well_shes_quite_f9a59468
-  steps:
-  - intent: intent_well_shes_quite_f9a59468
-  - action: utter_intent_well_shes_quite_f9a59468
-- rule: Respond to intent_how_tall_would_04c73599
-  steps:
-  - intent: intent_how_tall_would_04c73599
-  - action: utter_intent_how_tall_would_04c73599
-- rule: Respond to intent_i_would_say_3b180041
-  steps:
-  - intent: intent_i_would_say_3b180041
-  - action: utter_intent_i_would_say_3b180041
-- rule: Respond to intent_what_about_her_2b155c73
-  steps:
-  - intent: intent_what_about_her_2b155c73
-  - action: utter_intent_what_about_her_2b155c73
-- rule: Respond to intent_she_has_light_b7dca660
-  steps:
-  - intent: intent_she_has_light_b7dca660
-  - action: utter_intent_she_has_light_b7dca660
-- rule: Respond to intent_i_think_i_531d78a0
-  steps:
-  - intent: intent_i_think_i_531d78a0
-  - action: utter_intent_i_think_i_531d78a0
-- rule: Respond to intent_why_werent_you_23b2eb97
-  steps:
-  - intent: intent_why_werent_you_23b2eb97
-  - action: utter_intent_why_werent_you_23b2eb97
-- rule: Respond to intent_i_wasnt_really_be61ec90
-  steps:
-  - intent: intent_i_wasnt_really_be61ec90
-  - action: utter_intent_i_wasnt_really_be61ec90
-- rule: Respond to intent_what_was_wrong_e5827646
-  steps:
-  - intent: intent_what_was_wrong_e5827646
-  - action: utter_intent_what_was_wrong_e5827646
-- rule: Respond to intent_my_stomach_was_c6303fe7
-  steps:
-  - intent: intent_my_stomach_was_c6303fe7
-  - action: utter_intent_my_stomach_was_c6303fe7
-- rule: Respond to intent_do_you_feel_1714bc2e
-  steps:
-  - intent: intent_do_you_feel_1714bc2e
-  - action: utter_intent_do_you_feel_1714bc2e
-- rule: Respond to intent_i_dont_really_1661b8ed
-  steps:
-  - intent: intent_i_dont_really_1661b8ed
-  - action: utter_intent_i_dont_really_1661b8ed
-- rule: Respond to intent_do_you_want_450c9bda
-  steps:
-  - intent: intent_do_you_want_450c9bda
-  - action: utter_intent_do_you_want_450c9bda
-- rule: Respond to intent_no_thanks_i_2f4d20a6
-  steps:
-  - intent: intent_no_thanks_i_2f4d20a6
-  - action: utter_intent_no_thanks_i_2f4d20a6
-- rule: Respond to intent_what_reason_do_a3e5b443
-  steps:
-  - intent: intent_what_reason_do_a3e5b443
-  - action: utter_intent_what_reason_do_a3e5b443
-- rule: Respond to intent_i_was_sick_f6a0544a
-  steps:
-  - intent: intent_i_was_sick_f6a0544a
-  - action: utter_intent_i_was_sick_f6a0544a
-- rule: Respond to intent_i_had_a_0a33af58
-  steps:
-  - intent: intent_i_had_a_0a33af58
-  - action: utter_intent_i_had_a_0a33af58
-- rule: Respond to intent_did_it_get_e9cfa398
-  steps:
-  - intent: intent_did_it_get_e9cfa398
-  - action: utter_intent_did_it_get_e9cfa398
-- rule: Respond to intent_im_still_feeling_8346d33b
-  steps:
-  - intent: intent_im_still_feeling_8346d33b
-  - action: utter_intent_im_still_feeling_8346d33b
-- rule: Respond to intent_would_you_like_9dedc602
-  steps:
-  - intent: intent_would_you_like_9dedc602
-  - action: utter_intent_would_you_like_9dedc602
-- rule: Respond to intent_i_took_something_049f4c2d
-  steps:
-  - intent: intent_i_took_something_049f4c2d
-  - action: utter_intent_i_took_something_049f4c2d
-- rule: Respond to intent_get_better_c7f6584a
-  steps:
-  - intent: intent_get_better_c7f6584a
-  - action: utter_intent_get_better_c7f6584a
-- rule: Respond to intent_i_stayed_home_2ee26862
-  steps:
-  - intent: intent_i_stayed_home_2ee26862
-  - action: utter_intent_i_stayed_home_2ee26862
-- rule: Respond to intent_are_you_feeling_b8d5f449
-  steps:
-  - intent: intent_are_you_feeling_b8d5f449
-  - action: utter_intent_are_you_feeling_b8d5f449
-- rule: Respond to intent_im_still_feeling_5e1bfade
-  steps:
-  - intent: intent_im_still_feeling_5e1bfade
-  - action: utter_intent_im_still_feeling_5e1bfade
-- rule: Respond to intent_im_going_to_e405da12
-  steps:
-  - intent: intent_im_going_to_e405da12
-  - action: utter_intent_im_going_to_e405da12
-- rule: Respond to intent_did_you_hear_25efa8c5
-  steps:
-  - intent: intent_did_you_hear_25efa8c5
-  - action: utter_intent_did_you_hear_25efa8c5
-- rule: Respond to intent_i_got_a_a94da66e
-  steps:
-  - intent: intent_i_got_a_a94da66e
-  - action: utter_intent_i_got_a_a94da66e
-- rule: Respond to intent_did_you_really_593105da
-  steps:
-  - intent: intent_did_you_really_593105da
-  - action: utter_intent_did_you_really_593105da
-- rule: Respond to intent_seriously_i_am_2df4eb24
-  steps:
-  - intent: intent_seriously_i_am_2df4eb24
-  - action: utter_intent_seriously_i_am_2df4eb24
-- rule: Respond to intent_well_congratulations_a967bf94
-  steps:
-  - intent: intent_well_congratulations_a967bf94
-  - action: utter_intent_well_congratulations_a967bf94
-- rule: Respond to intent_thank_you_16450deb
-  steps:
-  - intent: intent_thank_you_16450deb
-  - action: utter_intent_thank_you_16450deb
-- rule: Respond to intent_im_so_happy_3bcec174
-  steps:
-  - intent: intent_im_so_happy_3bcec174
-  - action: utter_intent_im_so_happy_3bcec174
-- rule: Respond to intent_yes_you_really_ebad862b
-  steps:
-  - intent: intent_yes_you_really_ebad862b
-  - action: utter_intent_yes_you_really_ebad862b
-- rule: Respond to intent_have_you_heard_ba03f420
-  steps:
-  - intent: intent_have_you_heard_ba03f420
-  - action: utter_intent_have_you_heard_ba03f420
-- rule: Respond to intent_you_havent_told_2bd39003
-  steps:
-  - intent: intent_you_havent_told_2bd39003
-  - action: utter_intent_you_havent_told_2bd39003
-- rule: Respond to intent_i_got_a_8c75596d
-  steps:
-  - intent: intent_i_got_a_8c75596d
-  - action: utter_intent_i_got_a_8c75596d
-- rule: Respond to intent_its_the_truth_aec78d7b
-  steps:
-  - intent: intent_its_the_truth_aec78d7b
-  - action: utter_intent_its_the_truth_aec78d7b
-- rule: Respond to intent_congratulations_on_your_d9136991
-  steps:
-  - intent: intent_congratulations_on_your_d9136991
-  - action: utter_intent_congratulations_on_your_d9136991
-- rule: Respond to intent_im_serious_you_8595e789
-  steps:
-  - intent: intent_im_serious_you_8595e789
-  - action: utter_intent_im_serious_you_8595e789
-- rule: Respond to intent_is_that_what_3ae96d1c
-  steps:
-  - intent: intent_is_that_what_3ae96d1c
-  - action: utter_intent_is_that_what_3ae96d1c
-- rule: Respond to intent_i_havent_told_b2c7c78a
-  steps:
-  - intent: intent_i_havent_told_b2c7c78a
-  - action: utter_intent_i_havent_told_b2c7c78a
-- rule: Respond to intent_i_havent_heard_889008eb
-  steps:
-  - intent: intent_i_havent_heard_889008eb
-  - action: utter_intent_i_havent_heard_889008eb
-- rule: Respond to intent_my_boss_offered_0fd9285a
-  steps:
-  - intent: intent_my_boss_offered_0fd9285a
-  - action: utter_intent_my_boss_offered_0fd9285a
-- rule: Respond to intent_are_you_serious_ac20f0bc
-  steps:
-  - intent: intent_are_you_serious_ac20f0bc
-  - action: utter_intent_are_you_serious_ac20f0bc
-- rule: Respond to intent_yes_i_am_768cea4b
-  steps:
-  - intent: intent_yes_i_am_768cea4b
-  - action: utter_intent_yes_i_am_768cea4b
-- rule: Respond to intent_thats_great_congratulations_d8ea6979
-  steps:
-  - intent: intent_thats_great_congratulations_d8ea6979
-  - action: utter_intent_thats_great_congratulations_d8ea6979
-- rule: Respond to intent_i_appreciate_that_85292d15
-  steps:
-  - intent: intent_i_appreciate_that_85292d15
-  - action: utter_intent_i_appreciate_that_85292d15
-- rule: Respond to intent_you_have_no_ea385cbb
-  steps:
-  - intent: intent_you_have_no_ea385cbb
-  - action: utter_intent_you_have_no_ea385cbb
-- rule: Respond to intent_you_look_really_3f511b18
-  steps:
-  - intent: intent_you_look_really_3f511b18
-  - action: utter_intent_you_look_really_3f511b18
-- rule: Respond to intent_thank_you_i_f7bf2a69
-  steps:
-  - intent: intent_thank_you_i_f7bf2a69
-  - action: utter_intent_thank_you_i_f7bf2a69
-- rule: Respond to intent_i_got_it_d6cdbf8e
-  steps:
-  - intent: intent_i_got_it_d6cdbf8e
-  - action: utter_intent_i_got_it_d6cdbf8e
-- rule: Respond to intent_its_really_nice_e556c11d
-  steps:
-  - intent: intent_its_really_nice_e556c11d
-  - action: utter_intent_its_really_nice_e556c11d
-- rule: Respond to intent_thanks_again_you_f769d950
-  steps:
-  - intent: intent_thanks_again_you_f769d950
-  - action: utter_intent_thanks_again_you_f769d950
-- rule: Respond to intent_thank_you_i_03c224ca
-  steps:
-  - intent: intent_thank_you_i_03c224ca
-  - action: utter_intent_thank_you_i_03c224ca
-- rule: Respond to intent_really_what_kind_8db14fb8
-  steps:
-  - intent: intent_really_what_kind_8db14fb8
-  - action: utter_intent_really_what_kind_8db14fb8
-- rule: Respond to intent_these_are_called_437b667f
-  steps:
-  - intent: intent_these_are_called_437b667f
-  - action: utter_intent_these_are_called_437b667f
-- rule: Respond to intent_i_really_like_0d9d4094
-  steps:
-  - intent: intent_i_really_like_0d9d4094
-  - action: utter_intent_i_really_like_0d9d4094
-- rule: Respond to intent_they_were_about_6541078d
-  steps:
-  - intent: intent_they_were_about_6541078d
-  - action: utter_intent_they_were_about_6541078d
-- rule: Respond to intent_i_absolutely_love_5d01195c
-  steps:
-  - intent: intent_i_absolutely_love_5d01195c
-  - action: utter_intent_i_absolutely_love_5d01195c
-- rule: Respond to intent_you_do_i_18ceefba
-  steps:
-  - intent: intent_you_do_i_18ceefba
-  - action: utter_intent_you_do_i_18ceefba
-- rule: Respond to intent_seriously_it_looks_17eb7a05
-  steps:
-  - intent: intent_seriously_it_looks_17eb7a05
-  - action: utter_intent_seriously_it_looks_17eb7a05
-- rule: Respond to intent_i_bought_it_18493bee
-  steps:
-  - intent: intent_i_bought_it_18493bee
-  - action: utter_intent_i_bought_it_18493bee
-- rule: Respond to intent_i_really_like_656a2d3a
-  steps:
-  - intent: intent_i_really_like_656a2d3a
-  - action: utter_intent_i_really_like_656a2d3a
-- rule: Respond to intent_thank_you_i_d55d4b67
-  steps:
-  - intent: intent_thank_you_i_d55d4b67
-  - action: utter_intent_thank_you_i_d55d4b67
-- rule: Respond to intent_those_are_nice_deae1d28
-  steps:
-  - intent: intent_those_are_nice_deae1d28
-  - action: utter_intent_those_are_nice_deae1d28
-- rule: Respond to intent_these_are_some_c9ee4c01
-  steps:
-  - intent: intent_these_are_some_c9ee4c01
-  - action: utter_intent_these_are_some_c9ee4c01
-- rule: Respond to intent_those_are_great_238ee64d
-  steps:
-  - intent: intent_those_are_great_238ee64d
-  - action: utter_intent_those_are_great_238ee64d
-- rule: Respond to intent_i_got_them_9e2d17c8
-  steps:
-  - intent: intent_i_got_them_9e2d17c8
-  - action: utter_intent_i_got_them_9e2d17c8
-- rule: Respond to intent_i_think_that_ae505537
-  steps:
-  - intent: intent_i_think_that_ae505537
-  - action: utter_intent_i_think_that_ae505537
-- rule: Respond to intent_is_that_right_1c8ae363
-  steps:
-  - intent: intent_is_that_right_1c8ae363
-  - action: utter_intent_is_that_right_1c8ae363
-- rule: Respond to intent_what_store_did_fd67fa70
-  steps:
-  - intent: intent_what_store_did_fd67fa70
-  - action: utter_intent_what_store_did_fd67fa70
-- rule: Respond to intent_i_went_to_8c8a6d7e
-  steps:
-  - intent: intent_i_went_to_8c8a6d7e
-  - action: utter_intent_i_went_to_8c8a6d7e
-- rule: Respond to intent_i_love_your_f1e8c569
-  steps:
-  - intent: intent_i_love_your_f1e8c569
-  - action: utter_intent_i_love_your_f1e8c569
-- rule: Respond to intent_well_i_think_8673229d
-  steps:
-  - intent: intent_well_i_think_8673229d
-  - action: utter_intent_well_i_think_8673229d
-- rule: Respond to intent_thanks_i_found_9ad10522
-  steps:
-  - intent: intent_thanks_i_found_9ad10522
-  - action: utter_intent_thanks_i_found_9ad10522
-- rule: Respond to intent_i_think_that_3c1cbe5e
-  steps:
-  - intent: intent_i_think_that_3c1cbe5e
-  - action: utter_intent_i_think_that_3c1cbe5e
-- rule: Respond to intent_these_are_chucks_228d4cc4
-  steps:
-  - intent: intent_these_are_chucks_228d4cc4
-  - action: utter_intent_these_are_chucks_228d4cc4
-- rule: Respond to intent_your_shoes_look_94f5bf9d
-  steps:
-  - intent: intent_your_shoes_look_94f5bf9d
-  - action: utter_intent_your_shoes_look_94f5bf9d
-- rule: Respond to intent_tell_me_what_2fd27b24
-  steps:
-  - intent: intent_tell_me_what_2fd27b24
-  - action: utter_intent_tell_me_what_2fd27b24
-- rule: Respond to intent_i_enjoy_drawing_6d6e667e
-  steps:
-  - intent: intent_i_enjoy_drawing_6d6e667e
-  - action: utter_intent_i_enjoy_drawing_6d6e667e
-- rule: Respond to intent_you_know_how_5a622f6b
-  steps:
-  - intent: intent_you_know_how_5a622f6b
-  - action: utter_intent_you_know_how_5a622f6b
-- rule: Respond to intent_when_did_you_158caaf1
-  steps:
-  - intent: intent_when_did_you_158caaf1
-  - action: utter_intent_when_did_you_158caaf1
-- rule: Respond to intent_i_learned_back_b70538c2
-  steps:
-  - intent: intent_i_learned_back_b70538c2
-  - action: utter_intent_i_learned_back_b70538c2
-- rule: Respond to intent_oh_so_you_63e12fdb
-  steps:
-  - intent: intent_oh_so_you_63e12fdb
-  - action: utter_intent_oh_so_you_63e12fdb
-- rule: Respond to intent_yeah_i_loved_b78dc8f5
-  steps:
-  - intent: intent_yeah_i_loved_b78dc8f5
-  - action: utter_intent_yeah_i_loved_b78dc8f5
-- rule: Respond to intent_i_see_that_cfc87a9b
-  steps:
-  - intent: intent_i_see_that_cfc87a9b
-  - action: utter_intent_i_see_that_cfc87a9b
-- rule: Respond to intent_i_wish_i_3aae2699
-  steps:
-  - intent: intent_i_wish_i_3aae2699
-  - action: utter_intent_i_wish_i_3aae2699
-- rule: Respond to intent_what_kinds_of_7af66130
-  steps:
-  - intent: intent_what_kinds_of_7af66130
-  - action: utter_intent_what_kinds_of_7af66130
-- rule: Respond to intent_ive_always_liked_55323cd6
-  steps:
-  - intent: intent_ive_always_liked_55323cd6
-  - action: utter_intent_ive_always_liked_55323cd6
-- rule: Respond to intent_i_didnt_know_8234fe07
-  steps:
-  - intent: intent_i_didnt_know_8234fe07
-  - action: utter_intent_i_didnt_know_8234fe07
-- rule: Respond to intent_i_do_it_32cee602
-  steps:
-  - intent: intent_i_do_it_32cee602
-  - action: utter_intent_i_do_it_32cee602
-- rule: Respond to intent_how_long_have_19bd30d1
-  steps:
-  - intent: intent_how_long_have_19bd30d1
-  - action: utter_intent_how_long_have_19bd30d1
-- rule: Respond to intent_did_you_take_1882d69b
-  steps:
-  - intent: intent_did_you_take_1882d69b
-  - action: utter_intent_did_you_take_1882d69b
-- rule: Respond to intent_that_was_my_041a2550
-  steps:
-  - intent: intent_that_was_my_041a2550
-  - action: utter_intent_that_was_my_041a2550
-- rule: Respond to intent_you_have_got_9e18f557
-  steps:
-  - intent: intent_you_have_got_9e18f557
-  - action: utter_intent_you_have_got_9e18f557
-- rule: Respond to intent_thanks_ecd43020
-  steps:
-  - intent: intent_thanks_ecd43020
-  - action: utter_intent_thanks_ecd43020
-- rule: Respond to intent_if_only_i_609954e8
-  steps:
-  - intent: intent_if_only_i_609954e8
-  - action: utter_intent_if_only_i_609954e8
-- rule: Respond to intent_are_there_any_f69a3f6b
-  steps:
-  - intent: intent_are_there_any_f69a3f6b
-  - action: utter_intent_are_there_any_f69a3f6b
-- rule: Respond to intent_oh_you_actually_423e0c13
-  steps:
-  - intent: intent_oh_you_actually_423e0c13
-  - action: utter_intent_oh_you_actually_423e0c13
-- rule: Respond to intent_every_so_often_c97e8cca
-  steps:
-  - intent: intent_every_so_often_c97e8cca
-  - action: utter_intent_every_so_often_c97e8cca
-- rule: Respond to intent_i_was_taught_5949892d
-  steps:
-  - intent: intent_i_was_taught_5949892d
-  - action: utter_intent_i_was_taught_5949892d
-- rule: Respond to intent_exactly_it_was_3ce05930
-  steps:
-  - intent: intent_exactly_it_was_3ce05930
-  - action: utter_intent_exactly_it_was_3ce05930
-- rule: Respond to intent_whats_your_favorite_470126b4
-  steps:
-  - intent: intent_whats_your_favorite_470126b4
-  - action: utter_intent_whats_your_favorite_470126b4
-- rule: Respond to intent_my_favorite_movie_53a26a08
-  steps:
-  - intent: intent_my_favorite_movie_53a26a08
-  - action: utter_intent_my_favorite_movie_53a26a08
-- rule: Respond to intent_oh_why_is_0b027a60
-  steps:
-  - intent: intent_oh_why_is_0b027a60
-  - action: utter_intent_oh_why_is_0b027a60
-- rule: Respond to intent_its_the_funniest_1f79f7c7
-  steps:
-  - intent: intent_its_the_funniest_1f79f7c7
-  - action: utter_intent_its_the_funniest_1f79f7c7
-- rule: Respond to intent_thats_true_it_3b08072d
-  steps:
-  - intent: intent_thats_true_it_3b08072d
-  - action: utter_intent_thats_true_it_3b08072d
-- rule: Respond to intent_yes_i_saw_d45e132f
-  steps:
-  - intent: intent_yes_i_saw_d45e132f
-  - action: utter_intent_yes_i_saw_d45e132f
-- rule: Respond to intent_didnt_you_laugh_8d73d86d
-  steps:
-  - intent: intent_didnt_you_laugh_8d73d86d
-  - action: utter_intent_didnt_you_laugh_8d73d86d
-- rule: Respond to intent_me_too_that_f550b390
-  steps:
-  - intent: intent_me_too_that_f550b390
-  - action: utter_intent_me_too_that_f550b390
-- rule: Respond to intent_mine_too_8d73d3bc
-  steps:
-  - intent: intent_mine_too_8d73d3bc
-  - action: utter_intent_mine_too_8d73d3bc
-- rule: Respond to intent_i_have_it_7ec1ca64
-  steps:
-  - intent: intent_i_have_it_7ec1ca64
-  - action: utter_intent_i_have_it_7ec1ca64
-- rule: Respond to intent_which_movie_is_42659029
-  steps:
-  - intent: intent_which_movie_is_42659029
-  - action: utter_intent_which_movie_is_42659029
-- rule: Respond to intent_honestly_it_is_ea94360a
-  steps:
-  - intent: intent_honestly_it_is_ea94360a
-  - action: utter_intent_honestly_it_is_ea94360a
-- rule: Respond to intent_youre_right_that_b1e2c692
-  steps:
-  - intent: intent_youre_right_that_b1e2c692
-  - action: utter_intent_youre_right_that_b1e2c692
-- rule: Respond to intent_i_didnt_think_dbf4c78c
-  steps:
-  - intent: intent_i_didnt_think_dbf4c78c
-  - action: utter_intent_i_didnt_think_dbf4c78c
-- rule: Respond to intent_i_went_to_53a07dd2
-  steps:
-  - intent: intent_i_went_to_53a07dd2
-  - action: utter_intent_i_went_to_53a07dd2
-- rule: Respond to intent_i_was_laughing_10bdf740
-  steps:
-  - intent: intent_i_was_laughing_10bdf740
-  - action: utter_intent_i_was_laughing_10bdf740
-- rule: Respond to intent_i_couldnt_help_5776ae3a
-  steps:
-  - intent: intent_i_couldnt_help_5776ae3a
-  - action: utter_intent_i_couldnt_help_5776ae3a
-- rule: Respond to intent_same_here_4cab7fca
-  steps:
-  - intent: intent_same_here_4cab7fca
-  - action: utter_intent_same_here_4cab7fca
-- rule: Respond to intent_i_bought_the_4cf4bb58
-  steps:
-  - intent: intent_i_bought_the_4cf4bb58
-  - action: utter_intent_i_bought_the_4cf4bb58
-- rule: Respond to intent_im_going_to_50ec6ac1
-  steps:
-  - intent: intent_im_going_to_50ec6ac1
-  - action: utter_intent_im_going_to_50ec6ac1
-- rule: Respond to intent_you_think_so_4a503d8b
-  steps:
-  - intent: intent_you_think_so_4a503d8b
-  - action: utter_intent_you_think_so_4a503d8b
-- rule: Respond to intent_well_superbad_is_22c2e785
-  steps:
-  - intent: intent_well_superbad_is_22c2e785
-  - action: utter_intent_well_superbad_is_22c2e785
-- rule: Respond to intent_youre_not_lying_f62a178c
-  steps:
-  - intent: intent_youre_not_lying_f62a178c
-  - action: utter_intent_youre_not_lying_f62a178c
-- rule: Respond to intent_i_didnt_know_3a4b1bf4
-  steps:
-  - intent: intent_i_didnt_know_3a4b1bf4
-  - action: utter_intent_i_didnt_know_3a4b1bf4
-- rule: Respond to intent_i_made_sure_57192afc
-  steps:
-  - intent: intent_i_made_sure_57192afc
-  - action: utter_intent_i_made_sure_57192afc
-- rule: Respond to intent_i_couldnt_keep_42206cf7
-  steps:
-  - intent: intent_i_couldnt_keep_42206cf7
-  - action: utter_intent_i_couldnt_keep_42206cf7
-- rule: Respond to intent_i_was_laughing_afdcb8b0
-  steps:
-  - intent: intent_i_was_laughing_afdcb8b0
-  - action: utter_intent_i_was_laughing_afdcb8b0
-- rule: Respond to intent_thats_exactly_how_07126a91
-  steps:
-  - intent: intent_thats_exactly_how_07126a91
-  - action: utter_intent_thats_exactly_how_07126a91
-- rule: Respond to intent_what_type_of_88ca7826
-  steps:
-  - intent: intent_what_type_of_88ca7826
-  - action: utter_intent_what_type_of_88ca7826
-- rule: Respond to intent_i_like_listening_c0333430
-  steps:
-  - intent: intent_i_like_listening_c0333430
-  - action: utter_intent_i_like_listening_c0333430
-- rule: Respond to intent_i_enjoy_rock_21f66829
-  steps:
-  - intent: intent_i_enjoy_rock_21f66829
-  - action: utter_intent_i_enjoy_rock_21f66829
-- rule: Respond to intent_why_is_that_37f30d2d
-  steps:
-  - intent: intent_why_is_that_37f30d2d
-  - action: utter_intent_why_is_that_37f30d2d
-- rule: Respond to intent_i_like_the_77a2bc3f
-  steps:
-  - intent: intent_i_like_the_77a2bc3f
-  - action: utter_intent_i_like_the_77a2bc3f
-- rule: Respond to intent_thats_a_good_d8637abf
-  steps:
-  - intent: intent_thats_a_good_d8637abf
-  - action: utter_intent_thats_a_good_d8637abf
-- rule: Respond to intent_what_kind_of_789e3eaf
-  steps:
-  - intent: intent_what_kind_of_789e3eaf
-  - action: utter_intent_what_kind_of_789e3eaf
-- rule: Respond to intent_i_enjoy_listening_b6ec8fab
-  steps:
-  - intent: intent_i_enjoy_listening_b6ec8fab
-  - action: utter_intent_i_enjoy_listening_b6ec8fab
-- rule: Respond to intent_what_kind_3407ac05
-  steps:
-  - intent: intent_what_kind_3407ac05
-  - action: utter_intent_what_kind_3407ac05
-- rule: Respond to intent_i_like_to_f238c942
-  steps:
-  - intent: intent_i_like_to_f238c942
-  - action: utter_intent_i_like_to_f238c942
-- rule: Respond to intent_i_like_the_41649a8a
-  steps:
-  - intent: intent_i_like_the_41649a8a
-  - action: utter_intent_i_like_the_41649a8a
-- rule: Respond to intent_i_think_thats_48ab6689
-  steps:
-  - intent: intent_i_think_thats_48ab6689
-  - action: utter_intent_i_think_thats_48ab6689
-- rule: Respond to intent_what_is_your_24d6c530
-  steps:
-  - intent: intent_what_is_your_24d6c530
-  - action: utter_intent_what_is_your_24d6c530
-- rule: Respond to intent_i_listen_to_fe1402d5
-  steps:
-  - intent: intent_i_listen_to_fe1402d5
-  - action: utter_intent_i_listen_to_fe1402d5
-- rule: Respond to intent_what_genres_831d521e
-  steps:
-  - intent: intent_what_genres_831d521e
-  - action: utter_intent_what_genres_831d521e
-- rule: Respond to intent_i_enjoy_listening_ee3531ab
-  steps:
-  - intent: intent_i_enjoy_listening_ee3531ab
-  - action: utter_intent_i_enjoy_listening_ee3531ab
-- rule: Respond to intent_did_you_go_ae73d5f4
-  steps:
-  - intent: intent_did_you_go_ae73d5f4
-  - action: utter_intent_did_you_go_ae73d5f4
-- rule: Respond to intent_no_i_couldnt_24160a17
-  steps:
-  - intent: intent_no_i_couldnt_24160a17
-  - action: utter_intent_no_i_couldnt_24160a17
-- rule: Respond to intent_you_missed_a_31eb17ee
-  steps:
-  - intent: intent_you_missed_a_31eb17ee
-  - action: utter_intent_you_missed_a_31eb17ee
-- rule: Respond to intent_oh_really_who_0fc91181
-  steps:
-  - intent: intent_oh_really_who_0fc91181
-  - action: utter_intent_oh_really_who_0fc91181
-- rule: Respond to intent_our_school_did_ecdadc5a
-  steps:
-  - intent: intent_our_school_did_ecdadc5a
-  - action: utter_intent_our_school_did_ecdadc5a
-- rule: Respond to intent_too_bad_i_b57543bb
-  steps:
-  - intent: intent_too_bad_i_b57543bb
-  - action: utter_intent_too_bad_i_b57543bb
-- rule: Respond to intent_yeah_you_should_790c7f68
-  steps:
-  - intent: intent_yeah_you_should_790c7f68
-  - action: utter_intent_yeah_you_should_790c7f68
-- rule: Respond to intent_so_what_was_f53051d4
-  steps:
-  - intent: intent_so_what_was_f53051d4
-  - action: utter_intent_so_what_was_f53051d4
-- rule: Respond to intent_the_score_was_b117631e
-  steps:
-  - intent: intent_the_score_was_b117631e
-  - action: utter_intent_the_score_was_b117631e
-- rule: Respond to intent_man_that_was_b615f243
-  steps:
-  - intent: intent_man_that_was_b615f243
-  - action: utter_intent_man_that_was_b615f243
-- rule: Respond to intent_were_you_able_2f506bd8
-  steps:
-  - intent: intent_were_you_able_2f506bd8
-  - action: utter_intent_were_you_able_2f506bd8
-- rule: Respond to intent_i_was_unable_ff9b9bb7
-  steps:
-  - intent: intent_i_was_unable_ff9b9bb7
-  - action: utter_intent_i_was_unable_ff9b9bb7
-- rule: Respond to intent_you_should_have_13bb1c68
-  steps:
-  - intent: intent_you_should_have_13bb1c68
-  - action: utter_intent_you_should_have_13bb1c68
-- rule: Respond to intent_our_team_was_b566d206
-  steps:
-  - intent: intent_our_team_was_b566d206
-  - action: utter_intent_our_team_was_b566d206
-- rule: Respond to intent_i_wish_i_064a30b1
-  steps:
-  - intent: intent_i_wish_i_064a30b1
-  - action: utter_intent_i_wish_i_064a30b1
-- rule: Respond to intent_it_was_a_6d57dfdf
-  steps:
-  - intent: intent_it_was_a_6d57dfdf
-  - action: utter_intent_it_was_a_6d57dfdf
-- rule: Respond to intent_what_was_the_222067e9
-  steps:
-  - intent: intent_what_was_the_222067e9
-  - action: utter_intent_what_was_the_222067e9
-- rule: Respond to intent_our_team_won_ad485095
-  steps:
-  - intent: intent_our_team_won_ad485095
-  - action: utter_intent_our_team_won_ad485095
-- rule: Respond to intent_sounds_like_it_765bd527
-  steps:
-  - intent: intent_sounds_like_it_765bd527
-  - action: utter_intent_sounds_like_it_765bd527
-- rule: Respond to intent_i_was_meaning_192f48b2
-  steps:
-  - intent: intent_i_was_meaning_192f48b2
-  - action: utter_intent_i_was_meaning_192f48b2
-- rule: Respond to intent_i_wanted_to_f28bbcd8
-  steps:
-  - intent: intent_i_wanted_to_f28bbcd8
-  - action: utter_intent_i_wanted_to_f28bbcd8
-- rule: Respond to intent_its_too_bad_c4843b11
-  steps:
-  - intent: intent_its_too_bad_c4843b11
-  - action: utter_intent_its_too_bad_c4843b11
-- rule: Respond to intent_our_team_played_8b313dd0
-  steps:
-  - intent: intent_our_team_played_8b313dd0
-  - action: utter_intent_our_team_played_8b313dd0
-- rule: Respond to intent_i_really_wish_40644be8
-  steps:
-  - intent: intent_i_really_wish_40644be8
-  - action: utter_intent_i_really_wish_40644be8
-- rule: Respond to intent_it_was_the_db3d85ce
-  steps:
-  - intent: intent_it_was_the_db3d85ce
-  - action: utter_intent_it_was_the_db3d85ce
-- rule: Respond to intent_so_tell_me_038a39f8
-  steps:
-  - intent: intent_so_tell_me_038a39f8
-  - action: utter_intent_so_tell_me_038a39f8
-- rule: Respond to intent_the_other_team_7d176988
-  steps:
-  - intent: intent_the_other_team_7d176988
-  - action: utter_intent_the_other_team_7d176988
-- rule: Respond to intent_it_mustve_been_2ad133f3
-  steps:
-  - intent: intent_it_mustve_been_2ad133f3
-  - action: utter_intent_it_mustve_been_2ad133f3
-- rule: Respond to intent_what_are_you_4453ade8
-  steps:
-  - intent: intent_what_are_you_4453ade8
-  - action: utter_intent_what_are_you_4453ade8
-- rule: Respond to intent_im_going_to_be3fde51
-  steps:
-  - intent: intent_im_going_to_be3fde51
-  - action: utter_intent_im_going_to_be3fde51
-- rule: Respond to intent_im_not_sure_83a0d4c3
-  steps:
-  - intent: intent_im_not_sure_83a0d4c3
-  - action: utter_intent_im_not_sure_83a0d4c3
-- rule: Respond to intent_well_did_you_74c50433
-  steps:
-  - intent: intent_well_did_you_74c50433
-  - action: utter_intent_well_did_you_74c50433
-- rule: Respond to intent_what_movie_are_9be009c5
-  steps:
-  - intent: intent_what_movie_are_9be009c5
-  - action: utter_intent_what_movie_are_9be009c5
-- rule: Respond to intent_im_not_sure_fb7b90e0
-  steps:
-  - intent: intent_im_not_sure_fb7b90e0
-  - action: utter_intent_im_not_sure_fb7b90e0
-- rule: Respond to intent_no_thanks_maybe_403691ed
-  steps:
-  - intent: intent_no_thanks_maybe_403691ed
-  - action: utter_intent_no_thanks_maybe_403691ed
-- rule: Respond to intent_do_you_know_783550dc
-  steps:
-  - intent: intent_do_you_know_783550dc
-  - action: utter_intent_do_you_know_783550dc
-- rule: Respond to intent_i_am_going_b2717a7f
-  steps:
-  - intent: intent_i_am_going_b2717a7f
-  - action: utter_intent_i_am_going_b2717a7f
-- rule: Respond to intent_i_dont_know_19dc8709
-  steps:
-  - intent: intent_i_dont_know_19dc8709
-  - action: utter_intent_i_dont_know_19dc8709
-- rule: Respond to intent_do_you_know_70b07c54
-  steps:
-  - intent: intent_do_you_know_70b07c54
-  - action: utter_intent_do_you_know_70b07c54
-- rule: Respond to intent_i_dont_know_323bf863
-  steps:
-  - intent: intent_i_dont_know_323bf863
-  - action: utter_intent_i_dont_know_323bf863
-- rule: Respond to intent_thank_you_for_8ee93c00
-  steps:
-  - intent: intent_thank_you_for_8ee93c00
-  - action: utter_intent_thank_you_for_8ee93c00
-- rule: Respond to intent_you_have_any_7168df40
-  steps:
-  - intent: intent_you_have_any_7168df40
-  - action: utter_intent_you_have_any_7168df40
-- rule: Respond to intent_im_going_to_eaeab07f
-  steps:
-  - intent: intent_im_going_to_eaeab07f
-  - action: utter_intent_im_going_to_eaeab07f
-- rule: Respond to intent_im_not_quite_6b9478c3
-  steps:
-  - intent: intent_im_not_quite_6b9478c3
-  - action: utter_intent_im_not_quite_6b9478c3
-- rule: Respond to intent_what_movie_are_218cb7de
-  steps:
-  - intent: intent_what_movie_are_218cb7de
-  - action: utter_intent_what_movie_are_218cb7de
-- rule: Respond to intent_not_sure_is_2a6d6d49
-  steps:
-  - intent: intent_not_sure_is_2a6d6d49
-  - action: utter_intent_not_sure_is_2a6d6d49
-- rule: Respond to intent_no_good_movies_b40da83f
-  steps:
-  - intent: intent_no_good_movies_b40da83f
-  - action: utter_intent_no_good_movies_b40da83f
-- rule: Respond to intent_have_you_decided_733e90d9
-  steps:
-  - intent: intent_have_you_decided_733e90d9
-  - action: utter_intent_have_you_decided_733e90d9
-- rule: Respond to intent_did_you_go_1ef32a08
-  steps:
-  - intent: intent_did_you_go_1ef32a08
-  - action: utter_intent_did_you_go_1ef32a08
-- rule: Respond to intent_yeah_i_went_eb02b89c
-  steps:
-  - intent: intent_yeah_i_went_eb02b89c
-  - action: utter_intent_yeah_i_went_eb02b89c
-- rule: Respond to intent_no_i_didnt_f38f9f59
-  steps:
-  - intent: intent_no_i_didnt_f38f9f59
-  - action: utter_intent_no_i_didnt_f38f9f59
-- rule: Respond to intent_that_sucks_did_c76fd193
-  steps:
-  - intent: intent_that_sucks_did_c76fd193
-  - action: utter_intent_that_sucks_did_c76fd193
-- rule: Respond to intent_that_would_be_924e4cd7
-  steps:
-  - intent: intent_that_would_be_924e4cd7
-  - action: utter_intent_that_would_be_924e4cd7
-- rule: Respond to intent_i_will_be_4ac2ccac
-  steps:
-  - intent: intent_i_will_be_4ac2ccac
-  - action: utter_intent_i_will_be_4ac2ccac
-- rule: Respond to intent_have_you_attended_9fd5ae2c
-  steps:
-  - intent: intent_have_you_attended_9fd5ae2c
-  - action: utter_intent_have_you_attended_9fd5ae2c
-- rule: Respond to intent_i_wasnt_able_4e946aaf
-  steps:
-  - intent: intent_i_wasnt_able_4e946aaf
-  - action: utter_intent_i_wasnt_able_4e946aaf
-- rule: Respond to intent_im_sorry_to_a22a33a1
-  steps:
-  - intent: intent_im_sorry_to_a22a33a1
-  - action: utter_intent_im_sorry_to_a22a33a1
-- rule: Respond to intent_i_would_really_7dc80995
-  steps:
-  - intent: intent_i_would_really_7dc80995
-  - action: utter_intent_i_would_really_7dc80995
-- rule: Respond to intent_its_no_trouble_40448a34
-  steps:
-  - intent: intent_its_no_trouble_40448a34
-  - action: utter_intent_its_no_trouble_40448a34
-- rule: Respond to intent_if_you_get_e9834ce2
-  steps:
-  - intent: intent_if_you_get_e9834ce2
-  - action: utter_intent_if_you_get_e9834ce2
-- rule: Respond to intent_have_you_gone_a4fda1b8
-  steps:
-  - intent: intent_have_you_gone_a4fda1b8
-  - action: utter_intent_have_you_gone_a4fda1b8
-- rule: Respond to intent_i_couldnt_go_c05cfa12
-  steps:
-  - intent: intent_i_couldnt_go_c05cfa12
-  - action: utter_intent_i_couldnt_go_c05cfa12
-- rule: Respond to intent_thats_horrible_id_2c3332cc
-  steps:
-  - intent: intent_thats_horrible_id_2c3332cc
-  - action: utter_intent_thats_horrible_id_2c3332cc
-- rule: Respond to intent_thank_you_very_2f36c23a
-  steps:
-  - intent: intent_thank_you_very_2f36c23a
-  - action: utter_intent_thank_you_very_2f36c23a
-- rule: Respond to intent_dont_mention_it_8d4192d1
-  steps:
-  - intent: intent_dont_mention_it_8d4192d1
-  - action: utter_intent_dont_mention_it_8d4192d1
-- rule: Respond to intent_did_you_hear_a628414c
-  steps:
-  - intent: intent_did_you_hear_a628414c
-  - action: utter_intent_did_you_hear_a628414c
-- rule: Respond to intent_what_happened_9aed4763
-  steps:
-  - intent: intent_what_happened_9aed4763
-  - action: utter_intent_what_happened_9aed4763
-- rule: Respond to intent_our_cousin_went_97a97b6e
-  steps:
-  - intent: intent_our_cousin_went_97a97b6e
-  - action: utter_intent_our_cousin_went_97a97b6e
-- rule: Respond to intent_she_did_why_ce99a760
-  steps:
-  - intent: intent_she_did_why_ce99a760
-  - action: utter_intent_she_did_why_ce99a760
-- rule: Respond to intent_i_wouldve_thought_256aafcc
-  steps:
-  - intent: intent_i_wouldve_thought_256aafcc
-  - action: utter_intent_i_wouldve_thought_256aafcc
-- rule: Respond to intent_no_i_had_c0d619b3
-  steps:
-  - intent: intent_no_i_had_c0d619b3
-  - action: utter_intent_no_i_had_c0d619b3
-- rule: Respond to intent_well_she_did_6d6b8183
-  steps:
-  - intent: intent_well_she_did_6d6b8183
-  - action: utter_intent_well_she_did_6d6b8183
-- rule: Respond to intent_oh_my_god_c9c87802
-  steps:
-  - intent: intent_oh_my_god_c9c87802
-  - action: utter_intent_oh_my_god_c9c87802
-- rule: Respond to intent_are_you_going_576f2653
-  steps:
-  - intent: intent_are_you_going_576f2653
-  - action: utter_intent_are_you_going_576f2653
-- rule: Respond to intent_good_i_just_61d85861
-  steps:
-  - intent: intent_good_i_just_61d85861
-  - action: utter_intent_good_i_just_61d85861
-- rule: Respond to intent_have_you_heard_19d4a927
-  steps:
-  - intent: intent_have_you_heard_19d4a927
-  - action: utter_intent_have_you_heard_19d4a927
-- rule: Respond to intent_heard_what_89d0d03a
-  steps:
-  - intent: intent_heard_what_89d0d03a
-  - action: utter_intent_heard_what_89d0d03a
-- rule: Respond to intent_debrah_already_had_7907cb20
-  steps:
-  - intent: intent_debrah_already_had_7907cb20
-  - action: utter_intent_debrah_already_had_7907cb20
-- rule: Respond to intent_i_didnt_know_23018ccc
-  steps:
-  - intent: intent_i_didnt_know_23018ccc
-  - action: utter_intent_i_didnt_know_23018ccc
-- rule: Respond to intent_i_thought_you_00f32dcd
-  steps:
-  - intent: intent_i_thought_you_00f32dcd
-  - action: utter_intent_i_thought_you_00f32dcd
-- rule: Respond to intent_thats_good_to_ac3e3c45
-  steps:
-  - intent: intent_thats_good_to_ac3e3c45
-  - action: utter_intent_thats_good_to_ac3e3c45
-- rule: Respond to intent_will_you_go_67e08c0f
-  steps:
-  - intent: intent_will_you_go_67e08c0f
-  - action: utter_intent_will_you_go_67e08c0f
-- rule: Respond to intent_of_course_i_f0b1241c
-  steps:
-  - intent: intent_of_course_i_f0b1241c
-  - action: utter_intent_of_course_i_f0b1241c
-- rule: Respond to intent_i_just_wanted_7e3f4f66
-  steps:
-  - intent: intent_i_just_wanted_7e3f4f66
-  - action: utter_intent_i_just_wanted_7e3f4f66
-- rule: Respond to intent_have_you_heard_e7f3ade0
-  steps:
-  - intent: intent_have_you_heard_e7f3ade0
-  - action: utter_intent_have_you_heard_e7f3ade0
-- rule: Respond to intent_debrah_had_her_96baa3b3
-  steps:
-  - intent: intent_debrah_had_her_96baa3b3
-  - action: utter_intent_debrah_had_her_96baa3b3
-- rule: Respond to intent_nobody_told_me_bb0ba989
-  steps:
-  - intent: intent_nobody_told_me_bb0ba989
-  - action: utter_intent_nobody_told_me_bb0ba989
-- rule: Respond to intent_i_thought_you_357ee93a
-  steps:
-  - intent: intent_i_thought_you_357ee93a
-  - action: utter_intent_i_thought_you_357ee93a
-- rule: Respond to intent_i_really_wasnt_3673687d
-  steps:
-  - intent: intent_i_really_wasnt_3673687d
-  - action: utter_intent_i_really_wasnt_3673687d
-- rule: Respond to intent_she_was_a_b5dc6224
-  steps:
-  - intent: intent_she_was_a_b5dc6224
-  - action: utter_intent_she_was_a_b5dc6224
-- rule: Respond to intent_wow_how_exciting_f66536e5
-  steps:
-  - intent: intent_wow_how_exciting_f66536e5
-  - action: utter_intent_wow_how_exciting_f66536e5
-- rule: Respond to intent_i_know_you_df82e337
-  steps:
-  - intent: intent_i_know_you_df82e337
-  - action: utter_intent_i_know_you_df82e337
-- rule: Respond to intent_of_course_did_81ffd170
-  steps:
-  - intent: intent_of_course_did_81ffd170
-  - action: utter_intent_of_course_did_81ffd170
-- rule: Respond to intent_i_didnt_want_7100f0cd
-  steps:
-  - intent: intent_i_didnt_want_7100f0cd
-  - action: utter_intent_i_didnt_want_7100f0cd
-- rule: Respond to intent_thats_sad_but_3ebb9ba3
-  steps:
-  - intent: intent_thats_sad_but_3ebb9ba3
-  - action: utter_intent_thats_sad_but_3ebb9ba3
-- rule: Respond to intent_thats_a_switch_df8100df
-  steps:
-  - intent: intent_thats_a_switch_df8100df
-  - action: utter_intent_thats_a_switch_df8100df
-- rule: Respond to intent_im_serious_have_4feffc68
-  steps:
-  - intent: intent_im_serious_have_4feffc68
-  - action: utter_intent_im_serious_have_4feffc68
-- rule: Respond to intent_i_really_want_b76b2f1e
-  steps:
-  - intent: intent_i_really_want_b76b2f1e
-  - action: utter_intent_i_really_want_b76b2f1e
-- rule: Respond to intent_so_go_then_06921767
-  steps:
-  - intent: intent_so_go_then_06921767
-  - action: utter_intent_so_go_then_06921767
-- rule: Respond to intent_i_really_dont_f2a8d843
-  steps:
-  - intent: intent_i_really_dont_f2a8d843
-  - action: utter_intent_i_really_dont_f2a8d843
-- rule: Respond to intent_well_anyway_do_cd0e2587
-  steps:
-  - intent: intent_well_anyway_do_cd0e2587
-  - action: utter_intent_well_anyway_do_cd0e2587
-- rule: Respond to intent_did_you_make_48d7fdcc
-  steps:
-  - intent: intent_did_you_make_48d7fdcc
-  - action: utter_intent_did_you_make_48d7fdcc
-- rule: Respond to intent_you_should_have_ea51fe67
-  steps:
-  - intent: intent_you_should_have_ea51fe67
-  - action: utter_intent_you_should_have_ea51fe67
-- rule: Respond to intent_that_was_an_ffb43796
-  steps:
-  - intent: intent_that_was_an_ffb43796
-  - action: utter_intent_that_was_an_ffb43796
-- rule: Respond to intent_maybe_it_was_b74dbeee
-  steps:
-  - intent: intent_maybe_it_was_b74dbeee
-  - action: utter_intent_maybe_it_was_b74dbeee
-- rule: Respond to intent_no_not_recently_170824c1
-  steps:
-  - intent: intent_no_not_recently_170824c1
-  - action: utter_intent_no_not_recently_170824c1
-- rule: Respond to intent_i_want_to_2ed2197f
-  steps:
-  - intent: intent_i_want_to_2ed2197f
-  - action: utter_intent_i_want_to_2ed2197f
-- rule: Respond to intent_whats_stopping_you_0bab986c
-  steps:
-  - intent: intent_whats_stopping_you_0bab986c
-  - action: utter_intent_whats_stopping_you_0bab986c
-- rule: Respond to intent_i_dont_want_5bc03fdd
-  steps:
-  - intent: intent_i_dont_want_5bc03fdd
-  - action: utter_intent_i_dont_want_5bc03fdd
-- rule: Respond to intent_so_will_you_e756d8b8
-  steps:
-  - intent: intent_so_will_you_e756d8b8
-  - action: utter_intent_so_will_you_e756d8b8
-- rule: Respond to intent_did_you_even_eff80da9
-  steps:
-  - intent: intent_did_you_even_eff80da9
-  - action: utter_intent_did_you_even_eff80da9
-- rule: Respond to intent_yeah_i_went_7424168c
-  steps:
-  - intent: intent_yeah_i_went_7424168c
-  - action: utter_intent_yeah_i_went_7424168c
-- rule: Respond to intent_no_i_didnt_b9f1f694
-  steps:
-  - intent: intent_no_i_didnt_b9f1f694
-  - action: utter_intent_no_i_didnt_b9f1f694
-- rule: Respond to intent_thats_nice_have_e81a5831
-  steps:
-  - intent: intent_thats_nice_have_e81a5831
-  - action: utter_intent_thats_nice_have_e81a5831
-- rule: Respond to intent_no_but_that_fe017476
-  steps:
-  - intent: intent_no_but_that_fe017476
-  - action: utter_intent_no_but_that_fe017476
-- rule: Respond to intent_it_may_have_5af6c4bb
-  steps:
-  - intent: intent_it_may_have_5af6c4bb
-  - action: utter_intent_it_may_have_5af6c4bb
-- rule: Respond to intent_i_havent_lately_4d4a421e
-  steps:
-  - intent: intent_i_havent_lately_4d4a421e
-  - action: utter_intent_i_havent_lately_4d4a421e
-- rule: Respond to intent_i_would_love_4fda48af
-  steps:
-  - intent: intent_i_would_love_4fda48af
-  - action: utter_intent_i_would_love_4fda48af
-- rule: Respond to intent_so_then_why_febf54de
-  steps:
-  - intent: intent_so_then_why_febf54de
-  - action: utter_intent_so_then_why_febf54de
-- rule: Respond to intent_i_dont_want_bbbc44c2
-  steps:
-  - intent: intent_i_dont_want_bbbc44c2
-  - action: utter_intent_i_dont_want_bbbc44c2
-- rule: Respond to intent_thanks_for_coming_bc9f1d8d
-  steps:
-  - intent: intent_thanks_for_coming_bc9f1d8d
-  - action: utter_intent_thanks_for_coming_bc9f1d8d
-- rule: Respond to intent_its_no_problem_86a8838a
-  steps:
-  - intent: intent_its_no_problem_86a8838a
-  - action: utter_intent_its_no_problem_86a8838a
-- rule: Respond to intent_i_missed_you_de5e4ee7
-  steps:
-  - intent: intent_i_missed_you_de5e4ee7
-  - action: utter_intent_i_missed_you_de5e4ee7
-- rule: Respond to intent_why_havent_you_6c6e3e0b
-  steps:
-  - intent: intent_why_havent_you_6c6e3e0b
-  - action: utter_intent_why_havent_you_6c6e3e0b
-- rule: Respond to intent_ive_been_really_f799e8a1
-  steps:
-  - intent: intent_ive_been_really_f799e8a1
-  - action: utter_intent_ive_been_really_f799e8a1
-- rule: Respond to intent_working_073b3a3f
-  steps:
-  - intent: intent_working_073b3a3f
-  - action: utter_intent_working_073b3a3f
-- rule: Respond to intent_i_wouldve_come_aa50c624
-  steps:
-  - intent: intent_i_wouldve_come_aa50c624
-  - action: utter_intent_i_wouldve_come_aa50c624
-- rule: Respond to intent_ive_been_working_10966711
-  steps:
-  - intent: intent_ive_been_working_10966711
-  - action: utter_intent_ive_been_working_10966711
-- rule: Respond to intent_well_regardless_im_e2d2ce84
-  steps:
-  - intent: intent_well_regardless_im_e2d2ce84
-  - action: utter_intent_well_regardless_im_e2d2ce84
-- rule: Respond to intent_im_really_glad_68538801
-  steps:
-  - intent: intent_im_really_glad_68538801
-  - action: utter_intent_im_really_glad_68538801
-- rule: Respond to intent_i_had_to_765b68fd
-  steps:
-  - intent: intent_i_had_to_765b68fd
-  - action: utter_intent_i_had_to_765b68fd
-- rule: Respond to intent_i_was_missing_e08b253c
-  steps:
-  - intent: intent_i_was_missing_e08b253c
-  - action: utter_intent_i_was_missing_e08b253c
-- rule: Respond to intent_so_why_havent_8f93cf55
-  steps:
-  - intent: intent_so_why_havent_8f93cf55
-  - action: utter_intent_so_why_havent_8f93cf55
-- rule: Respond to intent_ive_actually_been_93503a8a
-  steps:
-  - intent: intent_ive_actually_been_93503a8a
-  - action: utter_intent_ive_actually_been_93503a8a
-- rule: Respond to intent_ive_just_been_43b3ada7
-  steps:
-  - intent: intent_ive_just_been_43b3ada7
-  - action: utter_intent_ive_just_been_43b3ada7
-- rule: Respond to intent_tell_me_what_c637bc4e
-  steps:
-  - intent: intent_tell_me_what_c637bc4e
-  - action: utter_intent_tell_me_what_c637bc4e
-- rule: Respond to intent_im_really_happy_2c3f2198
-  steps:
-  - intent: intent_im_really_happy_2c3f2198
-  - action: utter_intent_im_really_happy_2c3f2198
-- rule: Respond to intent_i_really_missed_4a96944b
-  steps:
-  - intent: intent_i_really_missed_4a96944b
-  - action: utter_intent_i_really_missed_4a96944b
-- rule: Respond to intent_ive_been_missing_8b675769
-  steps:
-  - intent: intent_ive_been_missing_8b675769
-  - action: utter_intent_ive_been_missing_8b675769
-- rule: Respond to intent_i_dont_understand_a8368730
-  steps:
-  - intent: intent_i_dont_understand_a8368730
-  - action: utter_intent_i_dont_understand_a8368730
-- rule: Respond to intent_lately_ive_been_69b455e9
-  steps:
-  - intent: intent_lately_ive_been_69b455e9
-  - action: utter_intent_lately_ive_been_69b455e9
-- rule: Respond to intent_tell_me_what_4c1afe8b
-  steps:
-  - intent: intent_tell_me_what_4c1afe8b
-  - action: utter_intent_tell_me_what_4c1afe8b
-- rule: Respond to intent_ive_really_been_23617437
-  steps:
-  - intent: intent_ive_really_been_23617437
-  - action: utter_intent_ive_really_been_23617437
-- rule: Respond to intent_ive_been_pretty_c5dec4de
-  steps:
-  - intent: intent_ive_been_pretty_c5dec4de
-  - action: utter_intent_ive_been_pretty_c5dec4de
-- rule: Respond to intent_so_what_have_935ae110
-  steps:
-  - intent: intent_so_what_have_935ae110
-  - action: utter_intent_so_what_have_935ae110
-- rule: Respond to intent_ive_just_been_c9f06cd1
-  steps:
-  - intent: intent_ive_just_been_c9f06cd1
-  - action: utter_intent_ive_just_been_c9f06cd1
-- rule: Respond to intent_hey_did_you_c35f35a4
-  steps:
-  - intent: intent_hey_did_you_c35f35a4
-  - action: utter_intent_hey_did_you_c35f35a4
-- rule: Respond to intent_yeah_but_im_455ea6fa
-  steps:
-  - intent: intent_yeah_but_im_455ea6fa
-  - action: utter_intent_yeah_but_im_455ea6fa
-- rule: Respond to intent_oh_really_she_4ab57c41
-  steps:
-  - intent: intent_oh_really_she_4ab57c41
-  - action: utter_intent_oh_really_she_4ab57c41
-- rule: Respond to intent_well_shell_probably_14f49dda
-  steps:
-  - intent: intent_well_shell_probably_14f49dda
-  - action: utter_intent_well_shell_probably_14f49dda
-- rule: Respond to intent_yeah_so_are_b8a94483
-  steps:
-  - intent: intent_yeah_so_are_b8a94483
-  - action: utter_intent_yeah_so_are_b8a94483
-- rule: Respond to intent_i_think_so_354bef05
-  steps:
-  - intent: intent_i_think_so_354bef05
-  - action: utter_intent_i_think_so_354bef05
-- rule: Respond to intent_it_really_does_da2a6b29
-  steps:
-  - intent: intent_it_really_does_da2a6b29
-  - action: utter_intent_it_really_does_da2a6b29
-- rule: Respond to intent_what_time_does_ebbc21ab
-  steps:
-  - intent: intent_what_time_does_ebbc21ab
-  - action: utter_intent_what_time_does_ebbc21ab
-- rule: Respond to intent_it_starts_at_da4b9909
-  steps:
-  - intent: intent_it_starts_at_da4b9909
-  - action: utter_intent_it_starts_at_da4b9909
-- rule: Respond to intent_oh_well_how_5d911838
-  steps:
-  - intent: intent_oh_well_how_5d911838
-  - action: utter_intent_oh_well_how_5d911838
-- rule: Respond to intent_im_not_sure_49d6280c
-  steps:
-  - intent: intent_im_not_sure_49d6280c
-  - action: utter_intent_im_not_sure_49d6280c
-- rule: Respond to intent_have_you_heard_51892132
+- rule: Respond to hi_how_are
+  steps:
+  - intent: hi_how_are
+  - action: utter_hi_how_are
+- rule: Respond to im_fine_how
+  steps:
+  - intent: im_fine_how
+  - action: utter_im_fine_how
+- rule: Respond to im_pretty_good
+  steps:
+  - intent: im_pretty_good
+  - action: utter_im_pretty_good
+- rule: Respond to no_problem_so
+  steps:
+  - intent: no_problem_so
+  - action: utter_no_problem_so
+- rule: Respond to ive_been_great
+  steps:
+  - intent: ive_been_great
+  - action: utter_ive_been_great
+- rule: Respond to ive_been_good
+  steps:
+  - intent: ive_been_good
+  - action: utter_ive_been_good
+- rule: Respond to what_school_do
+  steps:
+  - intent: what_school_do
+  - action: utter_what_school_do
+- rule: Respond to go_to
+  steps:
+  - intent: go_to
+  - action: utter_go_to
+- rule: Respond to do_you_like
+  steps:
+  - intent: do_you_like
+  - action: utter_do_you_like
+- rule: Respond to its_okay_its
+  steps:
+  - intent: its_okay_its
+  - action: utter_its_okay_its
+- rule: Respond to good_luck_with
+  steps:
+  - intent: good_luck_with
+  - action: utter_good_luck_with
+- rule: Respond to hows_it_going
+  steps:
+  - intent: hows_it_going
+  - action: utter_hows_it_going
+- rule: Respond to im_doing_well
+  steps:
+  - intent: im_doing_well
+  - action: utter_im_doing_well
+- rule: Respond to never_better_thanks
+  steps:
+  - intent: never_better_thanks
+  - action: utter_never_better_thanks
+- rule: Respond to so_how_have
+  steps:
+  - intent: so_how_have
+  - action: utter_so_how_have
+- rule: Respond to ive_actually_been
+  steps:
+  - intent: ive_actually_been
+  - action: utter_ive_actually_been
+- rule: Respond to im_actually_in
+  steps:
+  - intent: im_actually_in
+  - action: utter_im_actually_in
+- rule: Respond to which_school_do
+  steps:
+  - intent: which_school_do
+  - action: utter_which_school_do
+- rule: Respond to im_attending_pcc
+  steps:
+  - intent: im_attending_pcc
+  - action: utter_im_attending_pcc
+- rule: Respond to are_you_enjoying
+  steps:
+  - intent: are_you_enjoying
+  - action: utter_are_you_enjoying
+- rule: Respond to its_not_bad
+  steps:
+  - intent: its_not_bad
+  - action: utter_its_not_bad
+- rule: Respond to good_luck_with_1
+  steps:
+  - intent: good_luck_with_1
+  - action: utter_good_luck_with_1
+- rule: Respond to how_are_you
+  steps:
+  - intent: how_are_you
+  - action: utter_how_are_you
+- rule: Respond to im_doing_great
+  steps:
+  - intent: im_doing_great
+  - action: utter_im_doing_great
+- rule: Respond to im_absolutely_lovely
+  steps:
+  - intent: im_absolutely_lovely
+  - action: utter_im_absolutely_lovely
+- rule: Respond to everythings_been_good
+  steps:
+  - intent: everythings_been_good
+  - action: utter_everythings_been_good
+- rule: Respond to havent_been
+  steps:
+  - intent: havent_been
+  - action: utter_havent_been
+- rule: Respond to started_school
+  steps:
+  - intent: started_school
+  - action: utter_started_school
+- rule: Respond to where_are_you
+  steps:
+  - intent: where_are_you
+  - action: utter_where_are_you
+- rule: Respond to im_going_to
+  steps:
+  - intent: im_going_to
+  - action: utter_im_going_to
+- rule: Respond to how_do_you
+  steps:
+  - intent: how_do_you
+  - action: utter_how_do_you
+- rule: Respond to like_it
+  steps:
+  - intent: like_it
+  - action: utter_like_it
+- rule: Respond to its_an_ugly
+  steps:
+  - intent: its_an_ugly
+  - action: utter_its_an_ugly
+- rule: Respond to know
+  steps:
+  - intent: know
+  - action: utter_know
+- rule: Respond to its_the_middle
+  steps:
+  - intent: its_the_middle
+  - action: utter_its_the_middle
+- rule: Respond to that_would_be
+  steps:
+  - intent: that_would_be
+  - action: utter_that_would_be
+- rule: Respond to yeah_especially_since
+  steps:
+  - intent: yeah_especially_since
+  - action: utter_yeah_especially_since
+- rule: Respond to know_it
+  steps:
+  - intent: know_it
+  - action: utter_know_it
+- rule: Respond to yes_it_would
+  steps:
+  - intent: yes_it_would
+  - action: utter_yes_it_would
+- rule: Respond to really_wish
+  steps:
+  - intent: really_wish
+  - action: utter_really_wish
+- rule: Respond to me_too
+  steps:
+  - intent: me_too
+  - action: utter_me_too
+- rule: Respond to like_winter
+  steps:
+  - intent: like_winter
+  - action: utter_like_winter
+- rule: Respond to id_rather_be
+  steps:
+  - intent: id_rather_be
+  - action: utter_id_rather_be
+- rule: Respond to it_doesnt_look
+  steps:
+  - intent: it_doesnt_look
+  - action: utter_it_doesnt_look
+- rule: Respond to youre_right
+  steps:
+  - intent: youre_right
+  - action: utter_youre_right
+- rule: Respond to in_the_middle
+  steps:
+  - intent: in_the_middle
+  - action: utter_in_the_middle
+- rule: Respond to that_wouldnt_seem
+  steps:
+  - intent: that_wouldnt_seem
+  - action: utter_that_wouldnt_seem
+- rule: Respond to considering_that_its
+  steps:
+  - intent: considering_that_its
+  - action: utter_considering_that_its
+- rule: Respond to exactly_it_wouldnt
+  steps:
+  - intent: exactly_it_wouldnt
+  - action: utter_exactly_it_wouldnt
+- rule: Respond to know_youre
+  steps:
+  - intent: know_youre
+  - action: utter_know_youre
+- rule: Respond to wish_it
+  steps:
+  - intent: wish_it
+  - action: utter_wish_it
+- rule: Respond to thats_how
+  steps:
+  - intent: thats_how
+  - action: utter_thats_how
+- rule: Respond to enjoy_the
+  steps:
+  - intent: enjoy_the
+  - action: utter_enjoy_the
+- rule: Respond to know_what
+  steps:
+  - intent: know_what
+  - action: utter_know_what
+- rule: Respond to wish_it_1
+  steps:
+  - intent: wish_it_1
+  - action: utter_wish_it_1
+- rule: Respond to that_is_true
+  steps:
+  - intent: that_is_true
+  - action: utter_that_is_true
+- rule: Respond to it_wouldnt_rain
+  steps:
+  - intent: it_wouldnt_rain
+  - action: utter_it_wouldnt_rain
+- rule: Respond to it_wouldnt_seem
+  steps:
+  - intent: it_wouldnt_seem
+  - action: utter_it_wouldnt_seem
+- rule: Respond to it_would_be
+  steps:
+  - intent: it_would_be
+  - action: utter_it_would_be
+- rule: Respond to any_rain_right
+  steps:
+  - intent: any_rain_right
+  - action: utter_any_rain_right
+- rule: Respond to thats_right_it
+  steps:
+  - intent: thats_right_it
+  - action: utter_thats_right_it
+- rule: Respond to want_it
+  steps:
+  - intent: want_it
+  - action: utter_want_it
+- rule: Respond to know_what_1
+  steps:
+  - intent: know_what_1
+  - action: utter_know_what_1
+- rule: Respond to winter_is_great
+  steps:
+  - intent: winter_is_great
+  - action: utter_winter_is_great
+- rule: Respond to its_such
+  steps:
+  - intent: its_such
+  - action: utter_its_such
+- rule: Respond to yes_it_is
+  steps:
+  - intent: yes_it_is
+  - action: utter_yes_it_is
+- rule: Respond to it_looks_like
+  steps:
+  - intent: it_looks_like
+  - action: utter_it_looks_like
+- rule: Respond to yes_and
+  steps:
+  - intent: yes_and
+  - action: utter_yes_and
+- rule: Respond to why_is_that
+  steps:
+  - intent: why_is_that
+  - action: utter_why_is_that
+- rule: Respond to really_love
+  steps:
+  - intent: really_love
+  - action: utter_really_love
+- rule: Respond to me_too_it
+  steps:
+  - intent: me_too_it
+  - action: utter_me_too_it
+- rule: Respond to yes_but
+  steps:
+  - intent: yes_but
+  - action: utter_yes_but
+- rule: Respond to really_why_is
+  steps:
+  - intent: really_why_is
+  - action: utter_really_why_is
+- rule: Respond to because_you_can
+  steps:
+  - intent: because_you_can
+  - action: utter_because_you_can
+- rule: Respond to really_hope
+  steps:
+  - intent: really_hope
+  - action: utter_really_hope
+- rule: Respond to isnt_it
+  steps:
+  - intent: isnt_it
+  - action: utter_isnt_it
+- rule: Respond to it_really_is
+  steps:
+  - intent: it_really_is
+  - action: utter_it_really_is
+- rule: Respond to it_seems_that
+  steps:
+  - intent: it_seems_that
+  - action: utter_it_seems_that
+- rule: Respond to hopefully_it_will
+  steps:
+  - intent: hopefully_it_will
+  - action: utter_hopefully_it_will
+- rule: Respond to how_come
+  steps:
+  - intent: how_come
+  - action: utter_how_come
+- rule: Respond to like_how
+  steps:
+  - intent: like_how
+  - action: utter_like_how
+- rule: Respond to feel_the
+  steps:
+  - intent: feel_the
+  - action: utter_feel_the
+- rule: Respond to especially_love
+  steps:
+  - intent: especially_love
+  - action: utter_especially_love
+- rule: Respond to really_why
+  steps:
+  - intent: really_why
+  - action: utter_really_why
+- rule: Respond to the_stars_look
+  steps:
+  - intent: the_stars_look
+  - action: utter_the_stars_look
+- rule: Respond to really_want
+  steps:
+  - intent: really_want
+  - action: utter_really_want
+- rule: Respond to dont_you_think
+  steps:
+  - intent: dont_you_think
+  - action: utter_dont_you_think
+- rule: Respond to yes_think
+  steps:
+  - intent: yes_think
+  - action: utter_yes_think
+- rule: Respond to think_that
+  steps:
+  - intent: think_that
+  - action: utter_think_that
+- rule: Respond to hope_that
+  steps:
+  - intent: hope_that
+  - action: utter_hope_that
+- rule: Respond to you_like_the
+  steps:
+  - intent: you_like_the
+  - action: utter_you_like_the
+- rule: Respond to the_sky_looks
+  steps:
+  - intent: the_sky_looks
+  - action: utter_the_sky_looks
+- rule: Respond to understand_rain
+  steps:
+  - intent: understand_rain
+  - action: utter_understand_rain
+- rule: Respond to love_most
+  steps:
+  - intent: love_most
+  - action: utter_love_most
+- rule: Respond to you_can_see
+  steps:
+  - intent: you_can_see
+  - action: utter_you_can_see
+- rule: Respond to really_want_1
+  steps:
+  - intent: really_want_1
+  - action: utter_really_want_1
+- rule: Respond to that_sounds_like
+  steps:
+  - intent: that_sounds_like
+  - action: utter_that_sounds_like
+- rule: Respond to heard_that
+  steps:
+  - intent: heard_that
+  - action: utter_heard_that
+- rule: Respond to is_it_going
+  steps:
+  - intent: is_it_going
+  - action: utter_is_it_going
+- rule: Respond to believe_so
+  steps:
+  - intent: believe_so
+  - action: utter_believe_so
+- rule: Respond to good_hope
+  steps:
+  - intent: good_hope
+  - action: utter_good_hope
+- rule: Respond to know_1
+  steps:
+  - intent: know_1
+  - action: utter_know_1
+- rule: Respond to but_you_know
+  steps:
+  - intent: but_you_know
+  - action: utter_but_you_know
+- rule: Respond to youre_right_one
+  steps:
+  - intent: youre_right_one
+  - action: utter_youre_right_one
+- rule: Respond to really_wish_1
+  steps:
+  - intent: really_wish_1
+  - action: utter_really_wish_1
+- rule: Respond to do_too
+  steps:
+  - intent: do_too
+  - action: utter_do_too
+- rule: Respond to would_like
+  steps:
+  - intent: would_like
+  - action: utter_would_like
+- rule: Respond to trip_to
+  steps:
+  - intent: trip_to
+  - action: utter_trip_to
+- rule: Respond to the_forecast_says
+  steps:
+  - intent: the_forecast_says
+  - action: utter_the_forecast_says
+- rule: Respond to so_do_you
+  steps:
+  - intent: so_do_you
+  - action: utter_so_do_you
+- rule: Respond to it_sounds_like
+  steps:
+  - intent: it_sounds_like
+  - action: utter_it_sounds_like
+- rule: Respond to really_hope_1
+  steps:
+  - intent: really_hope_1
+  - action: utter_really_hope_1
+- rule: Respond to that_would_ruin
+  steps:
+  - intent: that_would_ruin
+  - action: utter_that_would_ruin
+- rule: Respond to the_weather_in
+  steps:
+  - intent: the_weather_in
+  - action: utter_the_weather_in
+- rule: Respond to that_is_true_1
+  steps:
+  - intent: that_is_true_1
+  - action: utter_that_is_true_1
+- rule: Respond to it_would_be_1
+  steps:
+  - intent: it_would_be_1
+  - action: utter_it_would_be_1
+- rule: Respond to that_would_be_1
+  steps:
+  - intent: that_would_be_1
+  - action: utter_that_would_be_1
+- rule: Respond to it_would_be_2
+  steps:
+  - intent: it_would_be_2
+  - action: utter_it_would_be_2
+- rule: Respond to whats_the_weather
+  steps:
+  - intent: whats_the_weather
+  - action: utter_whats_the_weather
+- rule: Respond to the_weather_this
+  steps:
+  - intent: the_weather_this
+  - action: utter_the_weather_this
+- rule: Respond to will_it_be
+  steps:
+  - intent: will_it_be
+  - action: utter_will_it_be
+- rule: Respond to think_it
+  steps:
+  - intent: think_it
+  - action: utter_think_it
+- rule: Respond to it_wouldnt_be
+  steps:
+  - intent: it_wouldnt_be
+  - action: utter_it_wouldnt_be
+- rule: Respond to want_this
+  steps:
+  - intent: want_this
+  - action: utter_want_this
+- rule: Respond to this_california_weather
+  steps:
+  - intent: this_california_weather
+  - action: utter_this_california_weather
+- rule: Respond to know_every
+  steps:
+  - intent: know_every
+  - action: utter_know_every
+- rule: Respond to would_love
+  steps:
+  - intent: would_love
+  - action: utter_would_love
+- rule: Respond to hello_may
+  steps:
+  - intent: hello_may
+  - action: utter_hello_may
+- rule: Respond to this_is_she
+  steps:
+  - intent: this_is_she
+  - action: utter_this_is_she
+- rule: Respond to ive_been_trying
+  steps:
+  - intent: ive_been_trying
+  - action: utter_ive_been_trying
+- rule: Respond to sorry_about_that
+  steps:
+  - intent: sorry_about_that
+  - action: utter_sorry_about_that
+- rule: Respond to its_okay
+  steps:
+  - intent: its_okay
+  - action: utter_its_okay
+- rule: Respond to so_what_were
+  steps:
+  - intent: so_what_were
+  - action: utter_so_what_were
+- rule: Respond to oh_just
+  steps:
+  - intent: oh_just
+  - action: utter_oh_just
+- rule: Respond to sure_what_did
+  steps:
+  - intent: sure_what_did
+  - action: utter_sure_what_did
+- rule: Respond to maybe_we_can
+  steps:
+  - intent: maybe_we_can
+  - action: utter_maybe_we_can
+- rule: Respond to that_sounds_like_1
+  steps:
+  - intent: that_sounds_like_1
+  - action: utter_that_sounds_like_1
+- rule: Respond to ill_see_you
+  steps:
+  - intent: ill_see_you
+  - action: utter_ill_see_you
+- rule: Respond to hi_how_are_1
+  steps:
+  - intent: hi_how_are_1
+  - action: utter_hi_how_are_1
+- rule: Respond to speaking_whats_up
+  steps:
+  - intent: speaking_whats_up
+  - action: utter_speaking_whats_up
+- rule: Respond to why_havent_you
+  steps:
+  - intent: why_havent_you
+  - action: utter_why_havent_you
+- rule: Respond to my_bad
+  steps:
+  - intent: my_bad
+  - action: utter_my_bad
+- rule: Respond to thats_all_right
+  steps:
+  - intent: thats_all_right
+  - action: utter_thats_all_right
+- rule: Respond to what_was_the
+  steps:
+  - intent: what_was_the
+  - action: utter_what_was_the
+- rule: Respond to want_to
+  steps:
+  - intent: want_to
+  - action: utter_want_to
+- rule: Respond to sounds_good_what
+  steps:
+  - intent: sounds_good_what
+  - action: utter_sounds_good_what
+- rule: Respond to was_thinking
+  steps:
+  - intent: was_thinking
+  - action: utter_was_thinking
+- rule: Respond to okay_lets_go
+  steps:
+  - intent: okay_lets_go
+  - action: utter_okay_lets_go
+- rule: Respond to until_then
+  steps:
+  - intent: until_then
+  - action: utter_until_then
+- rule: Respond to is_alice_available
+  steps:
+  - intent: is_alice_available
+  - action: utter_is_alice_available
+- rule: Respond to youre_talking_to
+  steps:
+  - intent: youre_talking_to
+  - action: utter_youre_talking_to
+- rule: Respond to ive_called_you
+  steps:
+  - intent: ive_called_you
+  - action: utter_ive_called_you
+- rule: Respond to was_busy
+  steps:
+  - intent: was_busy
+  - action: utter_was_busy
+- rule: Respond to no_problem
+  steps:
+  - intent: no_problem
+  - action: utter_no_problem
+- rule: Respond to did_you_need
+  steps:
+  - intent: did_you_need
+  - action: utter_did_you_need
+- rule: Respond to do_you_want
+  steps:
+  - intent: do_you_want
+  - action: utter_do_you_want
+- rule: Respond to is_there_somewhere
+  steps:
+  - intent: is_there_somewhere
+  - action: utter_is_there_somewhere
+- rule: Respond to how_about
+  steps:
+  - intent: how_about
+  - action: utter_how_about
+- rule: Respond to movie_sounds
+  steps:
+  - intent: movie_sounds
+  - action: utter_movie_sounds
+- rule: Respond to have_you_seen
+  steps:
+  - intent: have_you_seen
+  - action: utter_have_you_seen
+- rule: Respond to no_havent
+  steps:
+  - intent: no_havent
+  - action: utter_no_havent
+- rule: Respond to shes_really_pretty
+  steps:
+  - intent: shes_really_pretty
+  - action: utter_shes_really_pretty
+- rule: Respond to describe_her_to
+  steps:
+  - intent: describe_her_to
+  - action: utter_describe_her_to
+- rule: Respond to shes_not_too
+  steps:
+  - intent: shes_not_too
+  - action: utter_shes_not_too
+- rule: Respond to well_how_tall
+  steps:
+  - intent: well_how_tall
+  - action: utter_well_how_tall
+- rule: Respond to shes_about_five
+  steps:
+  - intent: shes_about_five
+  - action: utter_shes_about_five
+- rule: Respond to what_does_she
+  steps:
+  - intent: what_does_she
+  - action: utter_what_does_she
+- rule: Respond to she_has_pretty
+  steps:
+  - intent: she_has_pretty
+  - action: utter_she_has_pretty
+- rule: Respond to may_know
+  steps:
+  - intent: may_know
+  - action: utter_may_know
+- rule: Respond to so_you_have
+  steps:
+  - intent: so_you_have
+  - action: utter_so_you_have
+- rule: Respond to theres_new
+  steps:
+  - intent: theres_new
+  - action: utter_theres_new
+- rule: Respond to havent_seen
+  steps:
+  - intent: havent_seen
+  - action: utter_havent_seen
+- rule: Respond to think_that_1
+  steps:
+  - intent: think_that_1
+  - action: utter_think_that_1
+- rule: Respond to tell_me_how
+  steps:
+  - intent: tell_me_how
+  - action: utter_tell_me_how
+- rule: Respond to shes_kind_of
+  steps:
+  - intent: shes_kind_of
+  - action: utter_shes_kind_of
+- rule: Respond to what_height_is
+  steps:
+  - intent: what_height_is
+  - action: utter_what_height_is
+- rule: Respond to shes_probably_about
+  steps:
+  - intent: shes_probably_about
+  - action: utter_shes_probably_about
+- rule: Respond to thats_nice_but
+  steps:
+  - intent: thats_nice_but
+  - action: utter_thats_nice_but
+- rule: Respond to the_first_thing
+  steps:
+  - intent: the_first_thing
+  - action: utter_the_first_thing
+- rule: Respond to think
+  steps:
+  - intent: think
+  - action: utter_think
+- rule: Respond to are_you_telling
+  steps:
+  - intent: are_you_telling
+  - action: utter_are_you_telling
+- rule: Respond to have_you_met
+  steps:
+  - intent: have_you_met
+  - action: utter_have_you_met
+- rule: Respond to no_have_you
+  steps:
+  - intent: no_have_you
+  - action: utter_no_have_you
+- rule: Respond to shes_one_of
+  steps:
+  - intent: shes_one_of
+  - action: utter_shes_one_of
+- rule: Respond to what_does_she_1
+  steps:
+  - intent: what_does_she_1
+  - action: utter_what_does_she_1
+- rule: Respond to well_shes_quite
+  steps:
+  - intent: well_shes_quite
+  - action: utter_well_shes_quite
+- rule: Respond to how_tall_would
+  steps:
+  - intent: how_tall_would
+  - action: utter_how_tall_would
+- rule: Respond to would_say
+  steps:
+  - intent: would_say
+  - action: utter_would_say
+- rule: Respond to what_about_her
+  steps:
+  - intent: what_about_her
+  - action: utter_what_about_her
+- rule: Respond to she_has_light
+  steps:
+  - intent: she_has_light
+  - action: utter_she_has_light
+- rule: Respond to think_1
+  steps:
+  - intent: think_1
+  - action: utter_think_1
+- rule: Respond to why_werent_you
+  steps:
+  - intent: why_werent_you
+  - action: utter_why_werent_you
+- rule: Respond to wasnt_really
+  steps:
+  - intent: wasnt_really
+  - action: utter_wasnt_really
+- rule: Respond to what_was_wrong
+  steps:
+  - intent: what_was_wrong
+  - action: utter_what_was_wrong
+- rule: Respond to my_stomach_was
+  steps:
+  - intent: my_stomach_was
+  - action: utter_my_stomach_was
+- rule: Respond to do_you_feel
+  steps:
+  - intent: do_you_feel
+  - action: utter_do_you_feel
+- rule: Respond to dont_really
+  steps:
+  - intent: dont_really
+  - action: utter_dont_really
+- rule: Respond to do_you_want_1
+  steps:
+  - intent: do_you_want_1
+  - action: utter_do_you_want_1
+- rule: Respond to no_thanks
+  steps:
+  - intent: no_thanks
+  - action: utter_no_thanks
+- rule: Respond to hope_you
+  steps:
+  - intent: hope_you
+  - action: utter_hope_you
+- rule: Respond to what_reason_do
+  steps:
+  - intent: what_reason_do
+  - action: utter_what_reason_do
+- rule: Respond to was_sick
+  steps:
+  - intent: was_sick
+  - action: utter_was_sick
+- rule: Respond to how_were_you
+  steps:
+  - intent: how_were_you
+  - action: utter_how_were_you
+- rule: Respond to had
+  steps:
+  - intent: had
+  - action: utter_had
+- rule: Respond to did_it_get
+  steps:
+  - intent: did_it_get
+  - action: utter_did_it_get
+- rule: Respond to im_still_feeling
+  steps:
+  - intent: im_still_feeling
+  - action: utter_im_still_feeling
+- rule: Respond to would_you_like
+  steps:
+  - intent: would_you_like
+  - action: utter_would_you_like
+- rule: Respond to took_something
+  steps:
+  - intent: took_something
+  - action: utter_took_something
+- rule: Respond to get_better
+  steps:
+  - intent: get_better
+  - action: utter_get_better
+- rule: Respond to why_didnt_you
+  steps:
+  - intent: why_didnt_you
+  - action: utter_why_didnt_you
+- rule: Respond to stayed_home
+  steps:
+  - intent: stayed_home
+  - action: utter_stayed_home
+- rule: Respond to what_was_your
+  steps:
+  - intent: what_was_your
+  - action: utter_what_was_your
+- rule: Respond to my_stomach_was_1
+  steps:
+  - intent: my_stomach_was_1
+  - action: utter_my_stomach_was_1
+- rule: Respond to are_you_feeling
+  steps:
+  - intent: are_you_feeling
+  - action: utter_are_you_feeling
+- rule: Respond to im_still_feeling_1
+  steps:
+  - intent: im_still_feeling_1
+  - action: utter_im_still_feeling_1
+- rule: Respond to im_going_to_1
+  steps:
+  - intent: im_going_to_1
+  - action: utter_im_going_to_1
+- rule: Respond to thats_okay
+  steps:
+  - intent: thats_okay
+  - action: utter_thats_okay
+- rule: Respond to did_you_hear
+  steps:
+  - intent: did_you_hear
+  - action: utter_did_you_hear
+- rule: Respond to got
+  steps:
+  - intent: got
+  - action: utter_got
+- rule: Respond to did_you_really
+  steps:
+  - intent: did_you_really
+  - action: utter_did_you_really
+- rule: Respond to seriously_am
+  steps:
+  - intent: seriously_am
+  - action: utter_seriously_am
+- rule: Respond to well_congratulations
+  steps:
+  - intent: well_congratulations
+  - action: utter_well_congratulations
+- rule: Respond to thank_you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+- rule: Respond to im_so_happy
+  steps:
+  - intent: im_so_happy
+  - action: utter_im_so_happy
+- rule: Respond to really
+  steps:
+  - intent: really
+  - action: utter_really
+- rule: Respond to yes_you_really
+  steps:
+  - intent: yes_you_really
+  - action: utter_yes_you_really
+- rule: Respond to you_think_so
+  steps:
+  - intent: you_think_so
+  - action: utter_you_think_so
+- rule: Respond to have_you_heard
+  steps:
+  - intent: have_you_heard
+  - action: utter_have_you_heard
+- rule: Respond to you_havent_told
+  steps:
+  - intent: you_havent_told
+  - action: utter_you_havent_told
+- rule: Respond to got_1
+  steps:
+  - intent: got_1
+  - action: utter_got_1
+- rule: Respond to is_that_right
+  steps:
+  - intent: is_that_right
+  - action: utter_is_that_right
+- rule: Respond to its_the_truth
+  steps:
+  - intent: its_the_truth
+  - action: utter_its_the_truth
+- rule: Respond to congratulations_on_your
+  steps:
+  - intent: congratulations_on_your
+  - action: utter_congratulations_on_your
+- rule: Respond to thank_you_very
+  steps:
+  - intent: thank_you_very
+  - action: utter_thank_you_very
+- rule: Respond to am_really
+  steps:
+  - intent: am_really
+  - action: utter_am_really
+- rule: Respond to are_you_really
+  steps:
+  - intent: are_you_really
+  - action: utter_are_you_really
+- rule: Respond to im_serious_you
+  steps:
+  - intent: im_serious_you
+  - action: utter_im_serious_you
+- rule: Respond to is_that_what
+  steps:
+  - intent: is_that_what
+  - action: utter_is_that_what
+- rule: Respond to havent_told
+  steps:
+  - intent: havent_told
+  - action: utter_havent_told
+- rule: Respond to havent_heard
+  steps:
+  - intent: havent_heard
+  - action: utter_havent_heard
+- rule: Respond to my_boss_offered
+  steps:
+  - intent: my_boss_offered
+  - action: utter_my_boss_offered
+- rule: Respond to are_you_serious
+  steps:
+  - intent: are_you_serious
+  - action: utter_are_you_serious
+- rule: Respond to yes_am
+  steps:
+  - intent: yes_am
+  - action: utter_yes_am
+- rule: Respond to thats_great_congratulations
+  steps:
+  - intent: thats_great_congratulations
+  - action: utter_thats_great_congratulations
+- rule: Respond to appreciate_that
+  steps:
+  - intent: appreciate_that
+  - action: utter_appreciate_that
+- rule: Respond to you_have_no
+  steps:
+  - intent: you_have_no
+  - action: utter_you_have_no
+- rule: Respond to you_look_really
+  steps:
+  - intent: you_look_really
+  - action: utter_you_look_really
+- rule: Respond to thank_you_1
+  steps:
+  - intent: thank_you_1
+  - action: utter_thank_you_1
+- rule: Respond to really_where_did
+  steps:
+  - intent: really_where_did
+  - action: utter_really_where_did
+- rule: Respond to got_it
+  steps:
+  - intent: got_it
+  - action: utter_got_it
+- rule: Respond to its_really_nice
+  steps:
+  - intent: its_really_nice
+  - action: utter_its_really_nice
+- rule: Respond to thanks_again_you
+  steps:
+  - intent: thanks_again_you
+  - action: utter_thanks_again_you
+- rule: Respond to thank_you_2
+  steps:
+  - intent: thank_you_2
+  - action: utter_thank_you_2
+- rule: Respond to really_what_kind
+  steps:
+  - intent: really_what_kind
+  - action: utter_really_what_kind
+- rule: Respond to these_are_called
+  steps:
+  - intent: these_are_called
+  - action: utter_these_are_called
+- rule: Respond to really_like
+  steps:
+  - intent: really_like
+  - action: utter_really_like
+- rule: Respond to they_were_about
+  steps:
+  - intent: they_were_about
+  - action: utter_they_were_about
+- rule: Respond to absolutely_love
+  steps:
+  - intent: absolutely_love
+  - action: utter_absolutely_love
+- rule: Respond to you_do
+  steps:
+  - intent: you_do
+  - action: utter_you_do
+- rule: Respond to seriously_it_looks
+  steps:
+  - intent: seriously_it_looks
+  - action: utter_seriously_it_looks
+- rule: Respond to bought_it
+  steps:
+  - intent: bought_it
+  - action: utter_bought_it
+- rule: Respond to really_like_1
+  steps:
+  - intent: really_like_1
+  - action: utter_really_like_1
+- rule: Respond to thanks_think
+  steps:
+  - intent: thanks_think
+  - action: utter_thanks_think
+- rule: Respond to thank_you_3
+  steps:
+  - intent: thank_you_3
+  - action: utter_thank_you_3
+- rule: Respond to those_are_nice
+  steps:
+  - intent: those_are_nice
+  - action: utter_those_are_nice
+- rule: Respond to these_are_some
+  steps:
+  - intent: these_are_some
+  - action: utter_these_are_some
+- rule: Respond to those_are_great
+  steps:
+  - intent: those_are_great
+  - action: utter_those_are_great
+- rule: Respond to got_them
+  steps:
+  - intent: got_them
+  - action: utter_got_them
+- rule: Respond to think_that_2
+  steps:
+  - intent: think_that_2
+  - action: utter_think_that_2
+- rule: Respond to is_that_right_1
+  steps:
+  - intent: is_that_right_1
+  - action: utter_is_that_right_1
+- rule: Respond to what_store_did
+  steps:
+  - intent: what_store_did
+  - action: utter_what_store_did
+- rule: Respond to went_to
+  steps:
+  - intent: went_to
+  - action: utter_went_to
+- rule: Respond to love_your
+  steps:
+  - intent: love_your
+  - action: utter_love_your
+- rule: Respond to well_think
+  steps:
+  - intent: well_think
+  - action: utter_well_think
+- rule: Respond to thanks_found
+  steps:
+  - intent: thanks_found
+  - action: utter_thanks_found
+- rule: Respond to think_that_3
   steps:
-  - intent: intent_have_you_heard_51892132
-  - action: utter_intent_have_you_heard_51892132
-- rule: Respond to intent_ive_heard_about_1fb6ae29
+  - intent: think_that_3
+  - action: utter_think_that_3
+- rule: Respond to these_are_chucks
   steps:
-  - intent: intent_ive_heard_about_1fb6ae29
-  - action: utter_intent_ive_heard_about_1fb6ae29
-- rule: Respond to intent_really_i_got_f419d108
+  - intent: these_are_chucks
+  - action: utter_these_are_chucks
+- rule: Respond to your_shoes_look
   steps:
-  - intent: intent_really_i_got_f419d108
-  - action: utter_intent_really_i_got_f419d108
-- rule: Respond to intent_im_guessing_that_2f96275b
+  - intent: your_shoes_look
+  - action: utter_your_shoes_look
+- rule: Respond to tell_me_what
   steps:
-  - intent: intent_im_guessing_that_2f96275b
-  - action: utter_intent_im_guessing_that_2f96275b
-- rule: Respond to intent_youre_probably_right_94fbb8b4
+  - intent: tell_me_what
+  - action: utter_tell_me_what
+- rule: Respond to enjoy_drawing
   steps:
-  - intent: intent_youre_probably_right_94fbb8b4
-  - action: utter_intent_youre_probably_right_94fbb8b4
-- rule: Respond to intent_i_want_to_bde1b01b
+  - intent: enjoy_drawing
+  - action: utter_enjoy_drawing
+- rule: Respond to you_know_how
   steps:
-  - intent: intent_i_want_to_bde1b01b
-  - action: utter_intent_i_want_to_bde1b01b
-- rule: Respond to intent_i_know_it_ac6f2303
+  - intent: you_know_how
+  - action: utter_you_know_how
+- rule: Respond to yes_do
   steps:
-  - intent: intent_i_know_it_ac6f2303
-  - action: utter_intent_i_know_it_ac6f2303
-- rule: Respond to intent_its_supposed_to_a9ba2cca
+  - intent: yes_do
+  - action: utter_yes_do
+- rule: Respond to when_did_you
   steps:
-  - intent: intent_its_supposed_to_a9ba2cca
-  - action: utter_intent_its_supposed_to_a9ba2cca
-- rule: Respond to intent_how_many_invitations_c8229493
+  - intent: when_did_you
+  - action: utter_when_did_you
+- rule: Respond to learned_back
   steps:
-  - intent: intent_how_many_invitations_c8229493
-  - action: utter_intent_how_many_invitations_c8229493
-- rule: Respond to intent_i_really_dont_3002e3ef
+  - intent: learned_back
+  - action: utter_learned_back
+- rule: Respond to oh_so_you
   steps:
-  - intent: intent_i_really_dont_3002e3ef
-  - action: utter_intent_i_really_dont_3002e3ef
-- rule: Respond to intent_has_anyone_told_3de6f3c2
+  - intent: oh_so_you
+  - action: utter_oh_so_you
+- rule: Respond to yeah_loved
   steps:
-  - intent: intent_has_anyone_told_3de6f3c2
-  - action: utter_intent_has_anyone_told_3de6f3c2
-- rule: Respond to intent_i_was_told_944027c5
+  - intent: yeah_loved
+  - action: utter_yeah_loved
+- rule: Respond to see_that
   steps:
-  - intent: intent_i_was_told_944027c5
-  - action: utter_intent_i_was_told_944027c5
-- rule: Respond to intent_is_that_right_48c894b4
+  - intent: see_that
+  - action: utter_see_that
+- rule: Respond to wish
   steps:
-  - intent: intent_is_that_right_48c894b4
-  - action: utter_intent_is_that_right_48c894b4
-- rule: Respond to intent_i_believe_that_12f8bf18
+  - intent: wish
+  - action: utter_wish
+- rule: Respond to what_kinds_of
   steps:
-  - intent: intent_i_believe_that_12f8bf18
-  - action: utter_intent_i_believe_that_12f8bf18
-- rule: Respond to intent_yeah_it_sounds_9ecdaced
+  - intent: what_kinds_of
+  - action: utter_what_kinds_of
+- rule: Respond to ive_always_liked
   steps:
-  - intent: intent_yeah_it_sounds_9ecdaced
-  - action: utter_intent_yeah_it_sounds_9ecdaced
-- rule: Respond to intent_exactly_it_seems_01e7c904
+  - intent: ive_always_liked
+  - action: utter_ive_always_liked
+- rule: Respond to didnt_know
   steps:
-  - intent: intent_exactly_it_seems_01e7c904
-  - action: utter_intent_exactly_it_seems_01e7c904
-- rule: Respond to intent_when_exactly_does_40a2ca41
+  - intent: didnt_know
+  - action: utter_didnt_know
+- rule: Respond to do_it
   steps:
-  - intent: intent_when_exactly_does_40a2ca41
-  - action: utter_intent_when_exactly_does_40a2ca41
-- rule: Respond to intent_the_invitation_says_1468c4a2
+  - intent: do_it
+  - action: utter_do_it
+- rule: Respond to how_long_have
   steps:
-  - intent: intent_the_invitation_says_1468c4a2
-  - action: utter_intent_the_invitation_says_1468c4a2
-- rule: Respond to intent_has_she_given_9f1208fa
+  - intent: how_long_have
+  - action: utter_how_long_have
+- rule: Respond to first_learned
   steps:
-  - intent: intent_has_she_given_9f1208fa
-  - action: utter_intent_has_she_given_9f1208fa
-- rule: Respond to intent_hey_whats_up_b3363293
+  - intent: first_learned
+  - action: utter_first_learned
+- rule: Respond to did_you_take
   steps:
-  - intent: intent_hey_whats_up_b3363293
-  - action: utter_intent_hey_whats_up_b3363293
-- rule: Respond to intent_im_throwing_a_bc8ef499
+  - intent: did_you_take
+  - action: utter_did_you_take
+- rule: Respond to that_was_my
   steps:
-  - intent: intent_im_throwing_a_bc8ef499
-  - action: utter_intent_im_throwing_a_bc8ef499
-- rule: Respond to intent_nobody_has_told_676c647c
+  - intent: that_was_my
+  - action: utter_that_was_my
+- rule: Respond to you_have_got
   steps:
-  - intent: intent_nobody_has_told_676c647c
-  - action: utter_intent_nobody_has_told_676c647c
-- rule: Respond to intent_when_does_it_e88e01fa
+  - intent: you_have_got
+  - action: utter_you_have_got
+- rule: Respond to thanks
   steps:
-  - intent: intent_when_does_it_e88e01fa
-  - action: utter_intent_when_does_it_e88e01fa
-- rule: Respond to intent_at_800_pm_d68886e2
+  - intent: thanks
+  - action: utter_thanks
+- rule: Respond to if_only
   steps:
-  - intent: intent_at_800_pm_d68886e2
-  - action: utter_intent_at_800_pm_d68886e2
-- rule: Respond to intent_ill_be_there_4fab3a6e
+  - intent: if_only
+  - action: utter_if_only
+- rule: Respond to are_there_any
   steps:
-  - intent: intent_ill_be_there_4fab3a6e
-  - action: utter_intent_ill_be_there_4fab3a6e
+  - intent: are_there_any
+  - action: utter_are_there_any
 - rule: Say goodbye
   steps:
   - intent: goodbye
