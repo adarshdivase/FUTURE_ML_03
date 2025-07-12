@@ -5,8 +5,8 @@ from datetime import datetime
 import uuid
 
 # Configuration
-RASA_SERVER_URL = "http://localhost:5005"  # Change this to your Rasa server URL
-RASA_WEBHOOK_URL = f"http://0.0.0.0:5005/webhooks/rest/webhook"
+RASA_SERVER_URL = "http://localhost:5005" # Changed to localhost for host machine access
+RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook" # Dynamically set using RASA_SERVER_URL
 
 # Initialize session state
 if 'messages' not in st.session_state:
@@ -21,29 +21,31 @@ def send_message_to_rasa(message, user_id):
             "sender": user_id,
             "message": message
         }
-        
+
         response = requests.post(
             RASA_WEBHOOK_URL,
             json=payload,
             headers={"Content-Type": "application/json"},
             timeout=10
         )
-        
+
         if response.status_code == 200:
             rasa_responses = response.json()
             return rasa_responses
         else:
-            st.error(f"Error: Received status code {response.status_code}")
-            return [{"text": "Sorry, I'm having trouble connecting to the server."}]
-            
+            st.error(f"Error: Received status code {response.status_code} from Rasa server.")
+            # Print response text for more detailed debugging
+            st.error(f"Rasa server response: {response.text}")
+            return [{"text": "Sorry, I'm having trouble connecting to the server. Please check the logs for more details."}]
+
     except requests.exceptions.ConnectionError:
-        st.error("Connection Error: Could not connect to Rasa server. Make sure it's running.")
+        st.error(f"Connection Error: Could not connect to Rasa server at {RASA_WEBHOOK_URL}. Make sure it's running and accessible.")
         return [{"text": "Sorry, I'm currently unavailable. Please try again later."}]
     except requests.exceptions.Timeout:
-        st.error("Timeout Error: Server took too long to respond.")
+        st.error("Timeout Error: Rasa server took too long to respond.")
         return [{"text": "Sorry, I'm taking too long to respond. Please try again."}]
     except Exception as e:
-        st.error(f"Unexpected error: {str(e)}")
+        st.error(f"An unexpected error occurred: {str(e)}")
         return [{"text": "Sorry, something went wrong. Please try again."}]
 
 def check_rasa_server():
@@ -68,7 +70,7 @@ with col2:
     if check_rasa_server():
         st.success("🟢 Server Online")
     else:
-        st.error("🔴 Server Offline")
+        st.error("🔴 Server Offline - Please ensure Rasa Docker container is running with port 5005 exposed.")
 
 # Chat container
 chat_container = st.container()
@@ -86,74 +88,87 @@ if prompt := st.chat_input("Type your message here..."):
     # Add user message to chat
     timestamp = datetime.now().strftime("%H:%M:%S")
     st.session_state.messages.append({
-        "role": "user", 
+        "role": "user",
         "content": prompt,
         "timestamp": timestamp
     })
-    
+
     # Display user message
     with st.chat_message("user"):
         st.markdown(prompt)
         st.caption(timestamp)
-    
+
     # Get response from Rasa
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
-        
+
         # Display bot responses
         for response in rasa_responses:
             if 'text' in response:
                 st.markdown(response['text'])
                 response_timestamp = datetime.now().strftime("%H:%M:%S")
                 st.caption(response_timestamp)
-                
+
                 # Add bot response to chat history
                 st.session_state.messages.append({
                     "role": "assistant",
                     "content": response['text'],
                     "timestamp": response_timestamp
                 })
-            
+
             # Handle other response types (images, buttons, etc.)
             if 'image' in response:
                 st.image(response['image'])
-            
+
             if 'buttons' in response:
                 st.markdown("**Quick replies:**")
+                # Using a unique key for each button to prevent Streamlit warnings
                 for button in response['buttons']:
-                    if st.button(button['title'], key=f"btn_{uuid.uuid4()}"):
-                        # Simulate clicking the button
-                        st.rerun()
+                    if st.button(button['title'], key=f"btn_{button['payload']}_{uuid.uuid4()}"):
+                        # If a button is clicked, simulate sending its payload as a user message
+                        # This will trigger a rerun and process the button's payload
+                        # This part might need refinement based on how you want quick replies to function.
+                        # For now, it just re-sends the payload as a new user message.
+                        st.session_state.messages.append({
+                            "role": "user",
+                            "content": button['payload'],
+                            "timestamp": datetime.now().strftime("%H:%M:%S")
+                        })
+                        st.experimental_rerun() # Use rerun to process the new message
 
 # Sidebar with additional features
 with st.sidebar:
     st.header("Settings")
-    
+
     # Server configuration
     st.subheader("Server Configuration")
-    new_url = st.text_input("Rasa Server URL", value=RASA_SERVER_URL)
+    # Make the input dynamic, so if the user updates it, it reflects immediately
+    current_rasa_url = st.text_input("Rasa Server URL", value=st.session_state.get('rasa_server_url_setting', RASA_SERVER_URL))
     if st.button("Update Server URL"):
-        RASA_SERVER_URL = new_url
+        st.session_state.rasa_server_url_setting = current_rasa_url
+        global RASA_SERVER_URL, RASA_WEBHOOK_URL
+        RASA_SERVER_URL = current_rasa_url
         RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
         st.rerun()
-    
+
     # Chat controls
     st.subheader("Chat Controls")
     if st.button("Clear Chat History"):
         st.session_state.messages = []
         st.rerun()
-    
+
     if st.button("New Session"):
         st.session_state.user_id = str(uuid.uuid4())
         st.session_state.messages = []
         st.rerun()
-    
+
     # Debug info
     st.subheader("Debug Info")
     st.text(f"User ID: {st.session_state.user_id[:8]}...")
     st.text(f"Messages: {len(st.session_state.messages)}")
-    
+    st.text(f"Current Rasa URL: {RASA_SERVER_URL}")
+
     # Export chat
     if st.button("Export Chat"):
         chat_data = {
