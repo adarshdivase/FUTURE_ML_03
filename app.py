@@ -4,24 +4,31 @@ import json
 from datetime import datetime
 import uuid
 
-# Configuration
-# Initialize RASA_SERVER_URL and RASA_WEBHOOK_URL in session_state
-# This ensures their values persist across reruns
+# --- CONFIGURATION ---
+
+# When running inside the same container on Hugging Face,
+# Streamlit must connect to Rasa using the internal 'localhost' address.
+RASA_INTERNAL_URL = "http://localhost:5005"
+RASA_PUBLIC_URL = "https://adarshdivase-rasabackend.hf.space"
+
+# Initialize session state variables if they don't exist
 if 'rasa_server_url' not in st.session_state:
-    # Updated to use your Hugging Face Spaces backend URL
-    st.session_state.rasa_server_url = "https://adarshdivase-rasabackend.hf.space"
+    st.session_state.rasa_server_url = RASA_INTERNAL_URL # Default to internal URL
+
+if 'messages' not in st.session_state:
+    st.session_state.messages = []
+
+if 'user_id' not in st.session_state:
+    st.session_state.user_id = str(uuid.uuid4())
 
 # The webhook URL is derived from the server URL
 st.session_state.rasa_webhook_url = f"{st.session_state.rasa_server_url}/webhooks/rest/webhook"
 
-# Initialize other session state variables
-if 'messages' not in st.session_state:
-    st.session_state.messages = []
-if 'user_id' not in st.session_state:
-    st.session_state.user_id = str(uuid.uuid4())
-
 # Your GitHub Repository Link
 GITHUB_REPO_LINK = "https://github.com/adarshdivase/FUTURE_ML_05"
+
+
+# --- HELPER FUNCTIONS ---
 
 def send_message_to_rasa(message, user_id):
     """Send message to Rasa server and get response"""
@@ -30,61 +37,39 @@ def send_message_to_rasa(message, user_id):
             "sender": user_id,
             "message": message
         }
-
         response = requests.post(
-            st.session_state.rasa_webhook_url, # Use session_state variable
+            st.session_state.rasa_webhook_url,
             json=payload,
             headers={"Content-Type": "application/json"},
-            timeout=30  # Increased timeout for hosted services
+            timeout=30
         )
-
         if response.status_code == 200:
-            rasa_responses = response.json()
-            return rasa_responses
+            return response.json()
         else:
-            st.error(f"Error: Received status code {response.status_code} from Rasa server.")
-            # Print response text for more detailed debugging
+            st.error(f"Error: Status code {response.status_code} from Rasa server.")
             st.error(f"Rasa server response: {response.text}")
-            return [{"text": "Sorry, I'm having trouble connecting to the server. Please check the logs for more details."}]
-
-    except requests.exceptions.ConnectionError:
-        st.error(f"Connection Error: Could not connect to Rasa server at {st.session_state.rasa_webhook_url}. Make sure it's running and accessible.")
+            return [{"text": "Sorry, I'm having trouble connecting. Please check the logs."}]
+    except requests.exceptions.RequestException as e:
+        st.error(f"Connection Error: Could not connect to Rasa at {st.session_state.rasa_webhook_url}. Details: {e}")
         return [{"text": "Sorry, I'm currently unavailable. Please try again later."}]
-    except requests.exceptions.Timeout:
-        st.error("Timeout Error: Rasa server took too long to respond.")
-        return [{"text": "Sorry, I'm taking too long to respond. Please try again."}]
-    except Exception as e:
-        st.error(f"An unexpected error occurred: {str(e)}")
-        return [{"text": "Sorry, something went wrong. Please try again."}]
+
 
 def check_rasa_server():
     """Check if Rasa server is running"""
     try:
-        # Try multiple endpoints to check server status
-        endpoints_to_check = [
-            f"{st.session_state.rasa_server_url}/version",
-            f"{st.session_state.rasa_server_url}/",
-            f"{st.session_state.rasa_server_url}/status"
-        ]
-        
-        for endpoint in endpoints_to_check:
-            try:
-                response = requests.get(endpoint, timeout=10)
-                if response.status_code == 200:
-                    return True
-            except:
-                continue
-        return False
-    except:
+        response = requests.get(f"{st.session_state.rasa_server_url}/", timeout=10)
+        return response.status_code == 200
+    except requests.exceptions.RequestException:
         return False
 
-# Streamlit UI
+# --- STREAMLIT UI ---
+
 st.set_page_config(page_title="Rasa Chatbot", page_icon="🤖", layout="wide")
 
 st.title("🤖 Rasa Chatbot")
 st.markdown("---")
 
-# Check server status
+# Main layout
 col1, col2 = st.columns([3, 1])
 with col1:
     st.markdown("### Chat with your Rasa assistant")
@@ -92,12 +77,11 @@ with col2:
     if check_rasa_server():
         st.success("🟢 Server Online")
     else:
-        st.error("🔴 Server Offline - Please ensure your Rasa backend on Hugging Face Spaces is running.")
+        st.error("🔴 Server Offline")
 
 # Chat container
 chat_container = st.container()
 
-# Display chat messages
 with chat_container:
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -107,120 +91,87 @@ with chat_container:
 
 # Chat input
 if prompt := st.chat_input("Type your message here..."):
-    # Add user message to chat
     timestamp = datetime.now().strftime("%H:%M:%S")
-    st.session_state.messages.append({
-        "role": "user",
-        "content": prompt,
-        "timestamp": timestamp
-    })
+    st.session_state.messages.append({"role": "user", "content": prompt, "timestamp": timestamp})
 
-    # Display user message
     with st.chat_message("user"):
         st.markdown(prompt)
         st.caption(timestamp)
 
-    # Get response from Rasa
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
 
-        # Display bot responses
+        if not rasa_responses:
+             rasa_responses = []
+
         for response in rasa_responses:
+            response_timestamp = datetime.now().strftime("%H:%M:%S")
             if 'text' in response:
                 st.markdown(response['text'])
-                response_timestamp = datetime.now().strftime("%H:%M:%S")
                 st.caption(response_timestamp)
-
-                # Add bot response to chat history
-                st.session_state.messages.append({
-                    "role": "assistant",
-                    "content": response['text'],
-                    "timestamp": response_timestamp
-                })
-
-            # Handle other response types (images, buttons, etc.)
+                st.session_state.messages.append({"role": "assistant", "content": response['text'], "timestamp": response_timestamp})
             if 'image' in response:
                 st.image(response['image'])
-
             if 'buttons' in response:
                 st.markdown("**Quick replies:**")
                 for button in response['buttons']:
                     if st.button(button['title'], key=f"btn_{button['payload']}_{uuid.uuid4()}"):
-                        # Simulate clicking the button by adding its payload as a new user message
-                        st.session_state.messages.append({
-                            "role": "user",
-                            "content": button['payload'],
-                            "timestamp": datetime.now().strftime("%H:%M:%S")
-                        })
-                        st.rerun() # Use rerun to process the new message
+                        st.session_state.messages.append({"role": "user", "content": button['payload'], "timestamp": datetime.now().strftime("%H:%M:%S")})
+                        st.rerun()
 
-# Sidebar with additional features
+# --- SIDEBAR ---
 with st.sidebar:
     st.header("Settings")
-
-    # Server configuration
     st.subheader("Server Configuration")
     st.info("🔗 Connected to Hugging Face Spaces backend")
-    # Use session_state for the text_input's value and update it directly
+
     new_url = st.text_input("Rasa Server URL", value=st.session_state.rasa_server_url)
     if st.button("Update Server URL"):
-        st.session_state.rasa_server_url = new_url # Update session_state directly
-        # The webhook URL is automatically re-derived at the top of the script on rerun
+        st.session_state.rasa_server_url = new_url
         st.rerun()
 
-    # Quick server options
     st.subheader("Quick Server Options")
-    col1, col2 = st.columns(2)
-    with col1:
+    s_col1, s_col2 = st.columns(2)
+    with s_col1:
         if st.button("🌐 HF Spaces"):
-            st.session_state.rasa_server_url = "https://adarshdivase-rasabackend.hf.space"
+            st.session_state.rasa_server_url = RASA_PUBLIC_URL # Use public for external testing
             st.rerun()
-    with col2:
+    with s_col2:
         if st.button("🏠 Local"):
             st.session_state.rasa_server_url = "http://localhost:5005"
             st.rerun()
 
-    # Chat controls
     st.subheader("Chat Controls")
     if st.button("Clear Chat History"):
         st.session_state.messages = []
         st.rerun()
-
     if st.button("New Session"):
         st.session_state.user_id = str(uuid.uuid4())
         st.session_state.messages = []
         st.rerun()
 
-    # Debug info
     st.subheader("Debug Info")
     st.text(f"User ID: {st.session_state.user_id[:8]}...")
     st.text(f"Messages: {len(st.session_state.messages)}")
-    st.text(f"Current Rasa URL: {st.session_state.rasa_server_url}") # Use session_state variable
     st.text(f"Webhook URL: {st.session_state.rasa_webhook_url}")
 
-    # Test connection
     if st.button("🔄 Test Connection"):
-        with st.spinner("Testing connection..."):
+        with st.spinner("Testing..."):
             if check_rasa_server():
                 st.success("✅ Connection successful!")
             else:
                 st.error("❌ Connection failed!")
 
-    # Export chat
     if st.button("Export Chat"):
-        chat_data = {
-            "user_id": st.session_state.user_id,
-            "messages": st.session_state.messages,
-            "export_time": datetime.now().isoformat()
-        }
+        chat_data = {"user_id": st.session_state.user_id, "messages": st.session_state.messages}
         st.download_button(
             label="Download Chat JSON",
             data=json.dumps(chat_data, indent=2),
-            file_name=f"chat_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+            file_name=f"chat_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
             mime="application/json"
         )
 
-# Footer
+# --- FOOTER ---
 st.markdown("---")
-st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK}) | [Backend]({st.session_state.rasa_server_url})")
+st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK}) | [Backend]({RASA_PUBLIC_URL})")
