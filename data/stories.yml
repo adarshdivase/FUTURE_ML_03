@@ -1,11 +1,9 @@
 version: '3.1'
 stories:
-- story: simple greeting
+- story: happy path
   steps:
   - intent: greet
   - action: utter_greet
-- story: general farewell
-  steps:
   - intent: goodbye
   - action: utter_goodbye
 - story: bot challenge
