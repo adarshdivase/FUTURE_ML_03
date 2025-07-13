@@ -1,52 +1,45 @@
-# Intent Recognition Project
 
-This project focuses on building and deploying an intent recognition system. The goal is to classify user queries or text into predefined intents, which is a common task in natural language understanding (NLU) for chatbots, virtual assistants, or intelligent systems.
+# Ultra Smart Rasa Chatbot
 
-## Project Files
+An intelligent, AI-powered chatbot generated from a CSV file. This project uses machine learning to cluster intents and generate a production-ready Rasa setup.
 
-* `app.py`: This is likely the main application file, possibly a Flask or Streamlit application, that provides an interface for interacting with the intent recognition model. It might handle user input, pass it to the model, and display the predicted intent.
-* `intent.csv`: This CSV file most probably contains the dataset used for training the intent recognition model. It's expected to have columns for text input (e.g., user utterances) and their corresponding intent labels.
-* `requirements.txt`: This file lists all the Python libraries and their specific versions that are required to run `app.py` and any other scripts within this project. It ensures a reproducible and consistent development environment.
-
-## Getting Started
-
-To set up and run this project locally, follow these steps:
+## 🚀 Quick Start
 
 ### Prerequisites
+- Python 3.8+ & pip
+- A `Conversation.csv` file in the same directory as the script.
 
-* Python 3.x
-
-### Installation
-
-1.  **Clone the repository (if applicable):**
-    ```bash
-    git clone <your-repository-url>
-    cd <your-project-directory>
-    ```
-
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    ```
-
-3.  **Activate the virtual environment:**
-    * **On Windows:**
-        ```bash
-        .\venv\Scripts\activate
-        ```
-    * **On macOS/Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
-
-4.  **Install the required Python packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Running the Application
-
-After installing the dependencies, you can start the main application:
-
+### 1. Installation
+Install the required Python libraries for your chatbot:
 ```bash
-python app.py
+pip install rasa
+```
+
+### 2. Train the Model
+Navigate into your generated project folder (`cd rasa_chatbot`) and train the Rasa model:
+```bash
+rasa train
+```
+
+### 3. Run the Chatbot
+Start the Rasa server (this bot does not require a separate action server):
+```bash
+rasa run -m models --enable-api --cors "*"
+```
+
+### 4. Talk to Your Bot
+Open a new terminal and use the shell to chat:
+```bash
+rasa shell
+```
+
+## Project Structure
+```
+rasa_chatbot/
+├── data/                 # Training data (NLU, rules, stories)
+├── models/               # Trained models
+├── config.yml            # NLU/Core configuration
+├── domain.yml            # Bot's domain
+├── credentials.yml       # Channel credentials
+└── endpoints.yml         # Action server endpoints
+```
