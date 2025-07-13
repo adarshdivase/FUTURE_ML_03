@@ -8,7 +8,8 @@ import uuid
 
 # When running inside the same container on Hugging Face,
 # Streamlit must connect to Rasa using the internal 'localhost' address.
-RASA_INTERNAL_URL = "http://localhost:5005"
+# The logs show Rasa is running on port 7860, so we connect to that.
+RASA_INTERNAL_URL = "http://localhost:7860"
 RASA_PUBLIC_URL = "https://adarshdivase-rasabackend.hf.space"
 
 # Initialize session state variables if they don't exist
@@ -57,7 +58,8 @@ def send_message_to_rasa(message, user_id):
 def check_rasa_server():
     """Check if Rasa server is running"""
     try:
-        response = requests.get(f"{st.session_state.rasa_server_url}/", timeout=10)
+        # Check the /status endpoint which is standard for Rasa
+        response = requests.get(f"{st.session_state.rasa_server_url}/status", timeout=10)
         return response.status_code == 200
     except requests.exceptions.RequestException:
         return False
@@ -139,7 +141,7 @@ with st.sidebar:
             st.rerun()
     with s_col2:
         if st.button("🏠 Local"):
-            st.session_state.rasa_server_url = "http://localhost:5005"
+            st.session_state.rasa_server_url = "http://localhost:7860" # Match the actual running port
             st.rerun()
 
     st.subheader("Chat Controls")
