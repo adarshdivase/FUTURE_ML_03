@@ -7,7 +7,7 @@ import uuid
 # --- CONFIGURATION ---
 
 # Use the actual Hugging Face Space URL for your Rasa backend
-RASA_SERVER_URL = "https://adarshdivase-rasabackend.hf.space"
+RASA_SERVER_URL = "https://adarshdivase-Rasabackend.hf.space"
 RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
 
 # GitHub repository link
@@ -141,7 +141,7 @@ if prompt := st.chat_input("Type your message here..."):
             rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
 
         if not rasa_responses:
-             rasa_responses = []
+             rasa_responses = [{"text": "Sorry, I didn't receive a response. Please try again."}]
 
         for response in rasa_responses:
             response_timestamp = datetime.now().strftime("%H:%M:%S")
@@ -171,30 +171,41 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-    st.subheader("Debug Info")
-    st.text(f"User ID: {st.session_state.user_id[:8]}...")
-    st.text(f"Messages: {len(st.session_state.messages)}")
-    st.info(f"Rasa Backend URL: {RASA_SERVER_URL}")
-    st.info(f"Webhook URL: {RASA_WEBHOOK_URL}")
+    st.subheader("Connection Status")
+    st.info(f"Backend: {RASA_SERVER_URL}")
+    st.info(f"Webhook: {RASA_WEBHOOK_URL}")
 
-    if st.button("🔄 Test Server Connection"):
+    if st.button("🔄 Test Server"):
         with st.spinner("Testing server..."):
             if check_rasa_server():
-                st.success("✅ Server connection successful!")
+                st.success("✅ Server is running!")
             else:
-                st.error("❌ Server connection failed!")
+                st.error("❌ Server is not responding!")
 
     if st.button("🔧 Test Webhook"):
         with st.spinner("Testing webhook..."):
             success, status_code, response_text = test_webhook()
             if success:
-                st.success(f"✅ Webhook test successful! Status: {status_code}")
+                st.success(f"✅ Webhook working! Status: {status_code}")
+                try:
+                    response_json = json.loads(response_text)
+                    st.json(response_json)
+                except:
+                    st.text(response_text)
             else:
-                st.error(f"❌ Webhook test failed! Status: {status_code}")
+                st.error(f"❌ Webhook failed! Status: {status_code}")
                 st.error(f"Response: {response_text}")
 
+    st.subheader("Debug Info")
+    st.text(f"User ID: {st.session_state.user_id[:8]}...")
+    st.text(f"Messages: {len(st.session_state.messages)}")
+
     if st.button("Export Chat"):
-        chat_data = {"user_id": st.session_state.user_id, "messages": st.session_state.messages}
+        chat_data = {
+            "user_id": st.session_state.user_id, 
+            "messages": st.session_state.messages,
+            "timestamp": datetime.now().isoformat()
+        }
         st.download_button(
             label="Download Chat JSON",
             data=json.dumps(chat_data, indent=2),
@@ -206,28 +217,75 @@ with st.sidebar:
 st.markdown("---")
 st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK}) | [Backend]({RASA_SERVER_URL})")
 
-# --- DEBUG SECTION (Remove in production) ---
-with st.expander("🔍 Debug Information"):
-    st.write("**Configuration:**")
-    st.write(f"- Rasa Server URL: {RASA_SERVER_URL}")
-    st.write(f"- Webhook URL: {RASA_WEBHOOK_URL}")
-    st.write(f"- User ID: {st.session_state.user_id}")
+# --- QUICK START GUIDE ---
+with st.expander("🚀 Quick Start Guide"):
+    st.markdown("""
+    **How to use this chatbot:**
+    1. Type your message in the chat input below
+    2. Press Enter to send
+    3. Wait for the assistant's response
     
-    if st.button("🔍 Debug Connection"):
-        st.write("Testing connection...")
+    **Troubleshooting:**
+    - If you see connection errors, use the "Test Server" and "Test Webhook" buttons
+    - Check that the backend server is running at the URL above
+    - Clear chat history if responses seem stuck
+    
+    **Features:**
+    - Persistent chat history during session
+    - Export chat conversations
+    - Debug tools for connection testing
+    """)
+
+# --- ADVANCED DEBUG (Collapsible) ---
+with st.expander("🔍 Advanced Debug"):
+    st.write("**Current Configuration:**")
+    config_info = {
+        "Rasa Server URL": RASA_SERVER_URL,
+        "Webhook URL": RASA_WEBHOOK_URL,
+        "User ID": st.session_state.user_id,
+        "Total Messages": len(st.session_state.messages),
+        "Session State Keys": list(st.session_state.keys())
+    }
+    st.json(config_info)
+    
+    if st.button("🔍 Full Connection Test"):
+        st.write("**Testing full connection flow...**")
         
-        # Test basic connectivity
+        # Test 1: Basic server connectivity
+        st.write("1. Testing server connectivity...")
         try:
             response = requests.get(RASA_SERVER_URL, timeout=5)
-            st.write(f"✅ Basic connection: Status {response.status_code}")
+            st.success(f"✅ Server accessible: {response.status_code}")
         except Exception as e:
-            st.write(f"❌ Basic connection failed: {e}")
+            st.error(f"❌ Server connection failed: {e}")
         
-        # Test webhook
+        # Test 2: Status endpoint
+        st.write("2. Testing status endpoint...")
         try:
-            test_payload = {"sender": "debug", "message": "test"}
-            response = requests.post(RASA_WEBHOOK_URL, json=test_payload, timeout=5)
-            st.write(f"✅ Webhook test: Status {response.status_code}")
-            st.write(f"Response: {response.text}")
+            response = requests.get(f"{RASA_SERVER_URL}/status", timeout=5)
+            if response.status_code == 200:
+                st.success("✅ Status endpoint working")
+                st.json(response.json())
+            else:
+                st.error(f"❌ Status endpoint failed: {response.status_code}")
         except Exception as e:
-            st.write(f"❌ Webhook test failed: {e}")
+            st.error(f"❌ Status endpoint error: {e}")
+        
+        # Test 3: Webhook endpoint
+        st.write("3. Testing webhook endpoint...")
+        try:
+            test_payload = {"sender": "debug_user", "message": "test connection"}
+            response = requests.post(
+                RASA_WEBHOOK_URL, 
+                json=test_payload, 
+                headers={"Content-Type": "application/json"},
+                timeout=10
+            )
+            if response.status_code == 200:
+                st.success("✅ Webhook responding correctly")
+                st.json(response.json())
+            else:
+                st.error(f"❌ Webhook failed: {response.status_code}")
+                st.error(f"Response: {response.text}")
+        except Exception as e:
+            st.error(f"❌ Webhook error: {e}")
