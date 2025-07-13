@@ -6,9 +6,10 @@ import uuid
 
 # --- CONFIGURATION ---
 
-# Correct URLs - note the hyphen in the backend URL
+# Backend URL options for HuggingFace Spaces
 RASA_INTERNAL_URL = "http://localhost:7860"
-RASA_PUBLIC_URL = "https://adarshdivase-rasabackend.hf.space"
+RASA_PUBLIC_URL = "https://adarshdivase-rasabackend.hf.space"  # Standard HF Spaces format
+RASA_ALTERNATIVE_URL = "https://huggingface.co/spaces/adarshdivase/Rasabackend"  # Alternative format (might not work for API)
 
 # Initialize session state variables if they don't exist
 if 'rasa_server_url' not in st.session_state:
@@ -36,14 +37,25 @@ def send_message_to_rasa(message, user_id):
             "sender": user_id,
             "message": message
         }
+        
+        # Add more detailed logging for debugging
+        st.write(f"🔍 Debug: Sending to {st.session_state.rasa_webhook_url}")
+        st.write(f"🔍 Debug: Payload: {payload}")
+        
         response = requests.post(
             st.session_state.rasa_webhook_url,
             json=payload,
             headers={"Content-Type": "application/json"},
             timeout=30
         )
+        
+        st.write(f"🔍 Debug: Response status: {response.status_code}")
+        st.write(f"🔍 Debug: Response headers: {dict(response.headers)}")
+        
         if response.status_code == 200:
-            return response.json()
+            result = response.json()
+            st.write(f"🔍 Debug: Response content: {result}")
+            return result
         else:
             st.error(f"Error: Status code {response.status_code} from Rasa server.")
             st.error(f"Response: {response.text}")
@@ -59,20 +71,24 @@ def check_rasa_server():
     try:
         # Try multiple endpoints to check server status
         endpoints_to_try = [
-            f"{st.session_state.rasa_server_url}/status",
             f"{st.session_state.rasa_server_url}/",
+            f"{st.session_state.rasa_server_url}/status",
             f"{st.session_state.rasa_server_url}/webhooks/rest/webhook"
         ]
         
         for endpoint in endpoints_to_try:
             try:
+                st.write(f"🔍 Debug: Checking endpoint: {endpoint}")
                 response = requests.get(endpoint, timeout=10)
+                st.write(f"🔍 Debug: Endpoint {endpoint} returned status: {response.status_code}")
                 if response.status_code in [200, 404, 405]:  # 404/405 might be expected for some endpoints
                     return True
-            except:
+            except Exception as e:
+                st.write(f"🔍 Debug: Endpoint {endpoint} failed: {str(e)}")
                 continue
         return False
-    except:
+    except Exception as e:
+        st.write(f"🔍 Debug: Server check failed: {str(e)}")
         return False
 
 # --- STREAMLIT UI ---
@@ -81,6 +97,9 @@ st.set_page_config(page_title="Rasa Chatbot", page_icon="🤖", layout="wide")
 
 st.title("🤖 Rasa Chatbot")
 st.markdown("---")
+
+# Add debug toggle
+debug_mode = st.checkbox("Enable Debug Mode", value=False)
 
 # Main layout
 col1, col2 = st.columns([3, 1])
@@ -116,6 +135,8 @@ if prompt := st.chat_input("Type your message here..."):
 
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
+            if debug_mode:
+                st.write("🔍 Debug mode enabled - showing detailed logs")
             rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
 
         if not rasa_responses:
@@ -148,13 +169,18 @@ with st.sidebar:
         st.rerun()
 
     st.subheader("Quick Server Options")
-    s_col1, s_col2 = st.columns(2)
+    s_col1, s_col2, s_col3 = st.columns(3)
     with s_col1:
         if st.button("🌐 HF Spaces"):
             st.session_state.rasa_server_url = RASA_PUBLIC_URL
             st.session_state.rasa_webhook_url = f"{RASA_PUBLIC_URL}/webhooks/rest/webhook"
             st.rerun()
     with s_col2:
+        if st.button("🔄 Alt HF"):
+            st.session_state.rasa_server_url = RASA_ALTERNATIVE_URL
+            st.session_state.rasa_webhook_url = f"{RASA_ALTERNATIVE_URL}/webhooks/rest/webhook"
+            st.rerun()
+    with s_col3:
         if st.button("🏠 Local"):
             st.session_state.rasa_server_url = RASA_INTERNAL_URL
             st.session_state.rasa_webhook_url = f"{RASA_INTERNAL_URL}/webhooks/rest/webhook"
@@ -186,12 +212,19 @@ with st.sidebar:
         with st.spinner("Testing webhook..."):
             try:
                 test_payload = {"sender": "test", "message": "hello"}
+                st.write(f"🔍 Testing webhook at: {st.session_state.rasa_webhook_url}")
+                st.write(f"🔍 Test payload: {test_payload}")
+                
                 response = requests.post(
                     st.session_state.rasa_webhook_url,
                     json=test_payload,
                     headers={"Content-Type": "application/json"},
                     timeout=10
                 )
+                
+                st.write(f"🔍 Response status: {response.status_code}")
+                st.write(f"🔍 Response headers: {dict(response.headers)}")
+                
                 if response.status_code == 200:
                     st.success("✅ Webhook working!")
                     st.json(response.json())
