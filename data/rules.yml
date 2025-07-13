@@ -14900,23 +14900,15 @@ rules:
   steps:
   - intent: qa_pair_3724
   - action: utter_qa_pair_3724
-- rule: Say greet back
+- rule: Say greet
   steps:
   - intent: greet
   - action: utter_greet
-- rule: Say goodbye back
+- rule: Say goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- rule: Say bot_challenge back
+- rule: Say bot_challenge
   steps:
   - intent: bot_challenge
-  - action: utter_bot_challenge
-- rule: Say affirm back
-  steps:
-  - intent: affirm
-  - action: utter_affirm
-- rule: Say deny back
-  steps:
-  - intent: deny
-  - action: utter_deny
+  - action: utter_iamabot
