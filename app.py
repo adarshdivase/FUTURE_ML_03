@@ -6,15 +6,13 @@ import uuid
 
 # --- CONFIGURATION ---
 
-# When running inside the same container on Hugging Face,
-# Streamlit must connect to Rasa using the internal 'localhost' address.
-# The logs show Rasa is running on port 7860, so we connect to that.
+# Correct URLs - note the hyphen in the backend URL
 RASA_INTERNAL_URL = "http://localhost:7860"
 RASA_PUBLIC_URL = "https://adarshdivase-rasabackend.hf.space"
 
 # Initialize session state variables if they don't exist
 if 'rasa_server_url' not in st.session_state:
-    st.session_state.rasa_server_url = RASA_INTERNAL_URL # Default to internal URL
+    st.session_state.rasa_server_url = RASA_PUBLIC_URL  # Default to public URL for HF Spaces
 
 if 'messages' not in st.session_state:
     st.session_state.messages = []
@@ -48,20 +46,33 @@ def send_message_to_rasa(message, user_id):
             return response.json()
         else:
             st.error(f"Error: Status code {response.status_code} from Rasa server.")
-            st.error(f"Rasa server response: {response.text}")
-            return [{"text": "Sorry, I'm having trouble connecting. Please check the logs."}]
+            st.error(f"Response: {response.text}")
+            return [{"text": "Sorry, I'm having trouble connecting. Please check the connection."}]
     except requests.exceptions.RequestException as e:
-        st.error(f"Connection Error: Could not connect to Rasa at {st.session_state.rasa_webhook_url}. Details: {e}")
+        st.error(f"Connection Error: Could not connect to Rasa at {st.session_state.rasa_webhook_url}")
+        st.error(f"Details: {str(e)}")
         return [{"text": "Sorry, I'm currently unavailable. Please try again later."}]
 
 
 def check_rasa_server():
     """Check if Rasa server is running"""
     try:
-        # Check the /status endpoint which is standard for Rasa
-        response = requests.get(f"{st.session_state.rasa_server_url}/status", timeout=10)
-        return response.status_code == 200
-    except requests.exceptions.RequestException:
+        # Try multiple endpoints to check server status
+        endpoints_to_try = [
+            f"{st.session_state.rasa_server_url}/status",
+            f"{st.session_state.rasa_server_url}/",
+            f"{st.session_state.rasa_server_url}/webhooks/rest/webhook"
+        ]
+        
+        for endpoint in endpoints_to_try:
+            try:
+                response = requests.get(endpoint, timeout=10)
+                if response.status_code in [200, 404, 405]:  # 404/405 might be expected for some endpoints
+                    return True
+            except:
+                continue
+        return False
+    except:
         return False
 
 # --- STREAMLIT UI ---
@@ -80,6 +91,9 @@ with col2:
         st.success("🟢 Server Online")
     else:
         st.error("🔴 Server Offline")
+
+# Display current connection info
+st.info(f"🔗 Connected to: {st.session_state.rasa_server_url}")
 
 # Chat container
 chat_container = st.container()
@@ -105,7 +119,7 @@ if prompt := st.chat_input("Type your message here..."):
             rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
 
         if not rasa_responses:
-             rasa_responses = []
+             rasa_responses = [{"text": "No response received from server."}]
 
         for response in rasa_responses:
             response_timestamp = datetime.now().strftime("%H:%M:%S")
@@ -126,22 +140,24 @@ if prompt := st.chat_input("Type your message here..."):
 with st.sidebar:
     st.header("Settings")
     st.subheader("Server Configuration")
-    st.info("🔗 Connected to Hugging Face Spaces backend")
-
+    
     new_url = st.text_input("Rasa Server URL", value=st.session_state.rasa_server_url)
     if st.button("Update Server URL"):
         st.session_state.rasa_server_url = new_url
+        st.session_state.rasa_webhook_url = f"{new_url}/webhooks/rest/webhook"
         st.rerun()
 
     st.subheader("Quick Server Options")
     s_col1, s_col2 = st.columns(2)
     with s_col1:
         if st.button("🌐 HF Spaces"):
-            st.session_state.rasa_server_url = RASA_PUBLIC_URL # Use public for external testing
+            st.session_state.rasa_server_url = RASA_PUBLIC_URL
+            st.session_state.rasa_webhook_url = f"{RASA_PUBLIC_URL}/webhooks/rest/webhook"
             st.rerun()
     with s_col2:
         if st.button("🏠 Local"):
-            st.session_state.rasa_server_url = "http://localhost:7860" # Match the actual running port
+            st.session_state.rasa_server_url = RASA_INTERNAL_URL
+            st.session_state.rasa_webhook_url = f"{RASA_INTERNAL_URL}/webhooks/rest/webhook"
             st.rerun()
 
     st.subheader("Chat Controls")
@@ -164,6 +180,26 @@ with st.sidebar:
                 st.success("✅ Connection successful!")
             else:
                 st.error("❌ Connection failed!")
+
+    # Test webhook endpoint specifically
+    if st.button("🧪 Test Webhook"):
+        with st.spinner("Testing webhook..."):
+            try:
+                test_payload = {"sender": "test", "message": "hello"}
+                response = requests.post(
+                    st.session_state.rasa_webhook_url,
+                    json=test_payload,
+                    headers={"Content-Type": "application/json"},
+                    timeout=10
+                )
+                if response.status_code == 200:
+                    st.success("✅ Webhook working!")
+                    st.json(response.json())
+                else:
+                    st.error(f"❌ Webhook failed: {response.status_code}")
+                    st.text(response.text)
+            except Exception as e:
+                st.error(f"❌ Webhook test failed: {str(e)}")
 
     if st.button("Export Chat"):
         chat_data = {"user_id": st.session_state.user_id, "messages": st.session_state.messages}
