@@ -1,25 +1,5 @@
 version: '3.1'
 nlu:
-- intent: qa_pair_0
-  examples: '- 0'
-- intent: qa_pair_1
-  examples: '- 1'
-- intent: qa_pair_2
-  examples: '- 2'
-- intent: qa_pair_3
-  examples: '- 3'
-- intent: qa_pair_4
-  examples: '- 4'
-- intent: qa_pair_5
-  examples: '- 5'
-- intent: qa_pair_6
-  examples: '- 6'
-- intent: qa_pair_7
-  examples: '- 7'
-- intent: qa_pair_8
-  examples: '- 8'
-- intent: qa_pair_9
-  examples: '- 9'
 - intent: qa_pair_10
   examples: '- 10'
 - intent: qa_pair_11
