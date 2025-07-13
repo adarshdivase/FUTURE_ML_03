@@ -1,5 +1,5 @@
-version: '3.1'
-assistant_id: 20240712-optimized-chatbot
+recipe: default.v1
+assistant_id: 20240712-rasa-bot
 language: en
 pipeline:
 - name: WhitespaceTokenizer
@@ -14,17 +14,12 @@ pipeline:
   min_ngram: 1
   max_ngram: 2
 - name: DIETClassifier
-  epochs: 20
+  epochs: 100
   constrain_similarities: true
   model_confidence: softmax
-  batch_size:
-  - 64
-  - 256
-  eval_num_examples: 20
-  eval_num_epochs: 4
 - name: EntitySynonymMapper
 - name: ResponseSelector
-  epochs: 20
+  epochs: 100
   constrain_similarities: true
 - name: FallbackClassifier
   threshold: 0.3
@@ -35,9 +30,9 @@ policies:
   core_fallback_action_name: action_default_fallback
   enable_fallback_prediction: true
 - name: UnexpecTEDIntentPolicy
-  max_history: 2
-  epochs: 20
+  max_history: 5
+  epochs: 100
 - name: TEDPolicy
-  max_history: 2
-  epochs: 20
+  max_history: 5
+  epochs: 100
   constrain_similarities: true

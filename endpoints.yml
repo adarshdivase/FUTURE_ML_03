@@ -1,6 +1,2 @@
 action_endpoint:
-  url: https://your-action-server-url/webhook  # Update this for your hosted action server
-
-rest:
-  # This is what's missing - the REST webhook for chat
-  webhook_url: "https://adarshdivase-rasabackend.hf.space/webhooks/rest/webhook"
+  url: http://action_server:5055/webhook
