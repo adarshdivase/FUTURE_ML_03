@@ -1,2 +1,2 @@
 action_endpoint:
-  url: "http://localhost:7860/webhook"
+  url: "https://adarshdivase-rasabackend.hf.space/webhooks/rest/webhook"
