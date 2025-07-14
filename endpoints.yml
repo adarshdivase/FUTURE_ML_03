@@ -1,2 +1,7 @@
+yaml# For custom actions (if you have any)
 action_endpoint:
-  url: "https://adarshdivase-rasabackend.hf.space/webhooks/rest/webhook"
+  url: "http://localhost:5055/webhook"
+
+# Tracker Store Configuration
+tracker_store:
+  type: InMemoryTrackerStore
