@@ -1,19 +1,14 @@
 version: '3.1'
 stories:
-- story: happy path
+- story: basic greeting and help
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: goodbye
-  - action: utter_goodbye
-- story: bot challenge with help
+  - intent: ask_help
+  - action: action_provide_help
+- story: bot challenge and goodbye
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-  - intent: ask_help
-  - action: action_provide_help
-- story: fallback recovery
-  steps:
-  - action: action_default_fallback
-  - intent: greet
-  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye

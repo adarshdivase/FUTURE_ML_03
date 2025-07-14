@@ -40,122 +40,122 @@ rules:
   steps:
   - intent: intent_general_9
   - action: utter_intent_general_9
-- rule: Respond to intent_what_10
+- rule: Respond to intent_how_10
   steps:
-  - intent: intent_what_10
-  - action: utter_intent_what_10
-- rule: Respond to intent_what_11
+  - intent: intent_how_10
+  - action: utter_intent_how_10
+- rule: Respond to intent_how_11
   steps:
-  - intent: intent_what_11
-  - action: utter_intent_what_11
-- rule: Respond to intent_what_12
+  - intent: intent_how_11
+  - action: utter_intent_how_11
+- rule: Respond to intent_how_12
   steps:
-  - intent: intent_what_12
-  - action: utter_intent_what_12
-- rule: Respond to intent_what_13
+  - intent: intent_how_12
+  - action: utter_intent_how_12
+- rule: Respond to intent_how_13
   steps:
-  - intent: intent_what_13
-  - action: utter_intent_what_13
-- rule: Respond to intent_what_14
+  - intent: intent_how_13
+  - action: utter_intent_how_13
+- rule: Respond to intent_how_14
   steps:
-  - intent: intent_what_14
-  - action: utter_intent_what_14
-- rule: Respond to intent_what_15
+  - intent: intent_how_14
+  - action: utter_intent_how_14
+- rule: Respond to intent_how_15
   steps:
-  - intent: intent_what_15
-  - action: utter_intent_what_15
-- rule: Respond to intent_what_16
+  - intent: intent_how_15
+  - action: utter_intent_how_15
+- rule: Respond to intent_how_16
   steps:
-  - intent: intent_what_16
-  - action: utter_intent_what_16
-- rule: Respond to intent_what_17
+  - intent: intent_how_16
+  - action: utter_intent_how_16
+- rule: Respond to intent_how_17
   steps:
-  - intent: intent_what_17
-  - action: utter_intent_what_17
-- rule: Respond to intent_what_18
+  - intent: intent_how_17
+  - action: utter_intent_how_17
+- rule: Respond to intent_how_18
   steps:
-  - intent: intent_what_18
-  - action: utter_intent_what_18
-- rule: Respond to intent_what_19
+  - intent: intent_how_18
+  - action: utter_intent_how_18
+- rule: Respond to intent_how_19
   steps:
-  - intent: intent_what_19
-  - action: utter_intent_what_19
-- rule: Respond to intent_how_20
+  - intent: intent_how_19
+  - action: utter_intent_how_19
+- rule: Respond to intent_why_20
   steps:
-  - intent: intent_how_20
-  - action: utter_intent_how_20
-- rule: Respond to intent_how_21
+  - intent: intent_why_20
+  - action: utter_intent_why_20
+- rule: Respond to intent_why_21
   steps:
-  - intent: intent_how_21
-  - action: utter_intent_how_21
-- rule: Respond to intent_how_22
+  - intent: intent_why_21
+  - action: utter_intent_why_21
+- rule: Respond to intent_why_22
   steps:
-  - intent: intent_how_22
-  - action: utter_intent_how_22
-- rule: Respond to intent_how_23
+  - intent: intent_why_22
+  - action: utter_intent_why_22
+- rule: Respond to intent_why_23
   steps:
-  - intent: intent_how_23
-  - action: utter_intent_how_23
-- rule: Respond to intent_how_24
+  - intent: intent_why_23
+  - action: utter_intent_why_23
+- rule: Respond to intent_why_24
   steps:
-  - intent: intent_how_24
-  - action: utter_intent_how_24
-- rule: Respond to intent_how_25
+  - intent: intent_why_24
+  - action: utter_intent_why_24
+- rule: Respond to intent_why_25
   steps:
-  - intent: intent_how_25
-  - action: utter_intent_how_25
-- rule: Respond to intent_how_26
+  - intent: intent_why_25
+  - action: utter_intent_why_25
+- rule: Respond to intent_why_26
   steps:
-  - intent: intent_how_26
-  - action: utter_intent_how_26
-- rule: Respond to intent_how_27
+  - intent: intent_why_26
+  - action: utter_intent_why_26
+- rule: Respond to intent_what_27
   steps:
-  - intent: intent_how_27
-  - action: utter_intent_how_27
-- rule: Respond to intent_how_28
+  - intent: intent_what_27
+  - action: utter_intent_what_27
+- rule: Respond to intent_what_28
   steps:
-  - intent: intent_how_28
-  - action: utter_intent_how_28
-- rule: Respond to intent_how_29
+  - intent: intent_what_28
+  - action: utter_intent_what_28
+- rule: Respond to intent_what_29
   steps:
-  - intent: intent_how_29
-  - action: utter_intent_how_29
-- rule: Respond to intent_which_30
+  - intent: intent_what_29
+  - action: utter_intent_what_29
+- rule: Respond to intent_what_30
   steps:
-  - intent: intent_which_30
-  - action: utter_intent_which_30
-- rule: Respond to intent_which_31
+  - intent: intent_what_30
+  - action: utter_intent_what_30
+- rule: Respond to intent_what_31
   steps:
-  - intent: intent_which_31
-  - action: utter_intent_which_31
-- rule: Respond to intent_where_32
+  - intent: intent_what_31
+  - action: utter_intent_what_31
+- rule: Respond to intent_what_32
   steps:
-  - intent: intent_where_32
-  - action: utter_intent_where_32
-- rule: Respond to intent_where_33
+  - intent: intent_what_32
+  - action: utter_intent_what_32
+- rule: Respond to intent_what_33
   steps:
-  - intent: intent_where_33
-  - action: utter_intent_where_33
-- rule: Respond to intent_where_34
+  - intent: intent_what_33
+  - action: utter_intent_what_33
+- rule: Respond to intent_what_34
   steps:
-  - intent: intent_where_34
-  - action: utter_intent_where_34
-- rule: Respond to intent_where_35
+  - intent: intent_what_34
+  - action: utter_intent_what_34
+- rule: Respond to intent_what_35
   steps:
-  - intent: intent_where_35
-  - action: utter_intent_where_35
-- rule: Respond to intent_where_36
+  - intent: intent_what_35
+  - action: utter_intent_what_35
+- rule: Respond to intent_what_36
   steps:
-  - intent: intent_where_36
-  - action: utter_intent_where_36
-- rule: Respond to intent_where_37
+  - intent: intent_what_36
+  - action: utter_intent_what_36
+- rule: Respond to intent_when_37
   steps:
-  - intent: intent_where_37
-  - action: utter_intent_where_37
-- rule: Respond to intent_where_38
+  - intent: intent_when_37
+  - action: utter_intent_when_37
+- rule: Respond to intent_when_38
   steps:
-  - intent: intent_where_38
-  - action: utter_intent_where_38
+  - intent: intent_when_38
+  - action: utter_intent_when_38
 - rule: Respond to intent_where_39
   steps:
   - intent: intent_where_39
@@ -164,102 +164,26 @@ rules:
   steps:
   - intent: intent_where_40
   - action: utter_intent_where_40
-- rule: Respond to intent_why_41
+- rule: Respond to intent_where_41
   steps:
-  - intent: intent_why_41
-  - action: utter_intent_why_41
-- rule: Respond to intent_why_42
+  - intent: intent_where_41
+  - action: utter_intent_where_41
+- rule: Respond to intent_where_42
   steps:
-  - intent: intent_why_42
-  - action: utter_intent_why_42
-- rule: Respond to intent_why_43
+  - intent: intent_where_42
+  - action: utter_intent_where_42
+- rule: Respond to intent_who_43
   steps:
-  - intent: intent_why_43
-  - action: utter_intent_why_43
-- rule: Respond to intent_why_44
+  - intent: intent_who_43
+  - action: utter_intent_who_43
+- rule: Respond to intent_who_44
   steps:
-  - intent: intent_why_44
-  - action: utter_intent_why_44
-- rule: Respond to intent_why_45
+  - intent: intent_who_44
+  - action: utter_intent_who_44
+- rule: Respond to intent_who_45
   steps:
-  - intent: intent_why_45
-  - action: utter_intent_why_45
-- rule: Respond to intent_why_46
-  steps:
-  - intent: intent_why_46
-  - action: utter_intent_why_46
-- rule: Respond to intent_why_47
-  steps:
-  - intent: intent_why_47
-  - action: utter_intent_why_47
-- rule: Respond to intent_why_48
-  steps:
-  - intent: intent_why_48
-  - action: utter_intent_why_48
-- rule: Respond to intent_why_49
-  steps:
-  - intent: intent_why_49
-  - action: utter_intent_why_49
-- rule: Respond to intent_why_50
-  steps:
-  - intent: intent_why_50
-  - action: utter_intent_why_50
-- rule: Respond to intent_when_51
-  steps:
-  - intent: intent_when_51
-  - action: utter_intent_when_51
-- rule: Respond to intent_when_52
-  steps:
-  - intent: intent_when_52
-  - action: utter_intent_when_52
-- rule: Respond to intent_when_53
-  steps:
-  - intent: intent_when_53
-  - action: utter_intent_when_53
-- rule: Respond to intent_when_54
-  steps:
-  - intent: intent_when_54
-  - action: utter_intent_when_54
-- rule: Respond to intent_when_55
-  steps:
-  - intent: intent_when_55
-  - action: utter_intent_when_55
-- rule: Respond to intent_when_56
-  steps:
-  - intent: intent_when_56
-  - action: utter_intent_when_56
-- rule: Respond to intent_when_57
-  steps:
-  - intent: intent_when_57
-  - action: utter_intent_when_57
-- rule: Respond to intent_who_58
-  steps:
-  - intent: intent_who_58
-  - action: utter_intent_who_58
-- rule: Respond to intent_who_59
-  steps:
-  - intent: intent_who_59
-  - action: utter_intent_who_59
-- rule: Respond to intent_who_60
-  steps:
-  - intent: intent_who_60
-  - action: utter_intent_who_60
-- rule: Respond to intent_who_61
-  steps:
-  - intent: intent_who_61
-  - action: utter_intent_who_61
-- rule: Respond to intent_who_62
-  steps:
-  - intent: intent_who_62
-  - action: utter_intent_who_62
-- rule: Respond to intent_who_63
-  steps:
-  - intent: intent_who_63
-  - action: utter_intent_who_63
-- rule: Respond to intent_who_64
-  steps:
-  - intent: intent_who_64
-  - action: utter_intent_who_64
+  - intent: intent_who_45
+  - action: utter_intent_who_45
 - rule: Greet user
   steps:
   - intent: greet
@@ -268,6 +192,10 @@ rules:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+- rule: Respond to how are you
+  steps:
+  - intent: how_are_you
+  - action: utter_how_are_you
 - rule: Answer bot challenge
   steps:
   - intent: bot_challenge
@@ -280,6 +208,3 @@ rules:
   steps:
   - intent: ask_capabilities
   - action: utter_ask_capabilities
-- rule: Handle fallback
-  steps:
-  - action: action_default_fallback
