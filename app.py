@@ -1,291 +1,114 @@
 import streamlit as st
 import requests
 import json
-from datetime import datetime
+import time
 import uuid
+from streamlit_lottie import st_lottie
 
-# --- CONFIGURATION ---
+# --- PAGE CONFIGURATION ---
+st.set_page_config(
+    page_title="AI Assistant",
+    page_icon="🤖",
+    layout="centered",
+    initial_sidebar_state="auto"
+)
 
-# Use the actual Hugging Face Space URL for your Rasa backend
+# --- RASA SERVER CONFIGURATION ---
 RASA_SERVER_URL = "https://adarshdivase-Rasabackend.hf.space"
 RASA_WEBHOOK_URL = f"{RASA_SERVER_URL}/webhooks/rest/webhook"
 
-# GitHub repository link
-GITHUB_REPO_LINK = "https://github.com/adarshdivase/FUTURE_ML_05"
+# --- LOTTIE ANIMATION LOADER ---
+def load_lottieurl(url: str):
+    """Loads a Lottie animation from a URL."""
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
-# Initialize session state variables if they don't exist
-if 'messages' not in st.session_state:
+# --- SESSION STATE INITIALIZATION ---
+if "user_id" not in st.session_state:
+    st.session_state.user_id = str(uuid.uuid4())
+if "messages" not in st.session_state:
     st.session_state.messages = []
 
-if 'user_id' not in st.session_state:
-    st.session_state.user_id = str(uuid.uuid4())
-
-
 # --- HELPER FUNCTIONS ---
-
 def send_message_to_rasa(message, user_id):
-    """Send message to Rasa server and get response"""
+    """Sends a message to the Rasa server and returns the response."""
+    payload = {"sender": user_id, "message": message}
+    headers = {"Content-Type": "application/json"}
     try:
-        payload = {
-            "sender": user_id,
-            "message": message
-        }
-        
-        # Add headers for better compatibility
-        headers = {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        }
-        
-        # Use the Hugging Face Space URL
-        response = requests.post(
-            RASA_WEBHOOK_URL,
-            json=payload,
-            headers=headers,
-            timeout=30
-        )
-        
-        if response.status_code == 200:
-            return response.json()
-        else:
-            st.error(f"Error: Status code {response.status_code} from Rasa server.")
-            st.error(f"Rasa server response: {response.text}")
-            return [{"text": "Sorry, I'm having trouble connecting. Please check the logs."}]
-            
-    except requests.exceptions.Timeout:
-        st.error("Request timed out. The server might be busy.")
-        return [{"text": "Sorry, the request timed out. Please try again."}]
-    except requests.exceptions.ConnectionError:
-        st.error(f"Connection Error: Could not connect to Rasa at {RASA_WEBHOOK_URL}")
-        return [{"text": "Sorry, I'm currently unavailable. Please try again later."}]
-    except requests.exceptions.RequestException as e:
-        st.error(f"Request Error: {e}")
-        return [{"text": "Sorry, I'm having trouble connecting. Please try again later."}]
-
-
-def check_rasa_server():
-    """Check if Rasa server is running"""
-    try:
-        # First try the /status endpoint
-        response = requests.get(f"{RASA_SERVER_URL}/status", timeout=10)
-        if response.status_code == 200:
-            return True
-        
-        # If status endpoint fails, try the main endpoint
-        response = requests.get(RASA_SERVER_URL, timeout=10)
-        return response.status_code == 200
-        
+        response = requests.post(RASA_WEBHOOK_URL, json=payload, headers=headers, timeout=20)
+        response.raise_for_status()
+        return response.json()
     except requests.exceptions.RequestException:
-        return False
+        return [{"text": "Sorry, I'm having trouble connecting to the server. Please try again later."}]
 
-
-def test_webhook():
-    """Test the webhook endpoint specifically"""
-    try:
-        test_payload = {
-            "sender": "test_user",
-            "message": "hello"
-        }
-        
-        response = requests.post(
-            RASA_WEBHOOK_URL,
-            json=test_payload,
-            headers={"Content-Type": "application/json"},
-            timeout=10
-        )
-        
-        return response.status_code == 200, response.status_code, response.text
-        
-    except requests.exceptions.RequestException as e:
-        return False, 0, str(e)
-
-
-# --- STREAMLIT UI ---
-
-st.set_page_config(page_title="Rasa Chatbot", page_icon="🤖", layout="wide")
-
-st.title("🤖 Rasa Chatbot")
-st.markdown("---")
-
-# Main layout
-col1, col2 = st.columns([3, 1])
-with col1:
-    st.markdown("### Chat with your Rasa assistant")
-with col2:
-    if check_rasa_server():
-        st.success("🟢 Server Online")
-    else:
-        st.error("🔴 Server Offline")
-
-# Chat container
-chat_container = st.container()
-
-with chat_container:
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
-            if message.get("timestamp"):
-                st.caption(message["timestamp"])
-
-# Chat input
-if prompt := st.chat_input("Type your message here..."):
-    timestamp = datetime.now().strftime("%H:%M:%S")
-    st.session_state.messages.append({"role": "user", "content": prompt, "timestamp": timestamp})
-
-    with st.chat_message("user"):
-        st.markdown(prompt)
-        st.caption(timestamp)
-
-    with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
-            rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
-
-        if not rasa_responses:
-             rasa_responses = [{"text": "Sorry, I didn't receive a response. Please try again."}]
-
-        for response in rasa_responses:
-            response_timestamp = datetime.now().strftime("%H:%M:%S")
-            if 'text' in response:
-                st.markdown(response['text'])
-                st.caption(response_timestamp)
-                st.session_state.messages.append({"role": "assistant", "content": response['text'], "timestamp": response_timestamp})
-            if 'image' in response:
-                st.image(response['image'])
-            if 'buttons' in response:
-                st.markdown("**Quick replies:**")
-                for button in response['buttons']:
-                    if st.button(button['title'], key=f"btn_{button['payload']}_{uuid.uuid4()}"):
-                        st.session_state.messages.append({"role": "user", "content": button['payload'], "timestamp": datetime.now().strftime("%H:%M:%S")})
-                        st.rerun()
+def stream_response(text):
+    """Streams the response with a typing effect."""
+    for word in text.split():
+        yield word + " "
+        time.sleep(0.05)
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.header("Settings")
+    st.header("🤖 AI Assistant")
+    st.markdown("Controls and Information")
+    lottie_sidebar = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_vfs41M.json")
+    if lottie_sidebar:
+        st_lottie(lottie_sidebar, height=150, key="sidebar_lottie")
 
-    st.subheader("Chat Controls")
-    if st.button("Clear Chat History"):
+    if st.button("Start New Chat"):
         st.session_state.messages = []
-        st.rerun()
-    if st.button("New Session"):
         st.session_state.user_id = str(uuid.uuid4())
-        st.session_state.messages = []
         st.rerun()
 
-    st.subheader("Connection Status")
-    st.info(f"Backend: {RASA_SERVER_URL}")
-    st.info(f"Webhook: {RASA_WEBHOOK_URL}")
+    with st.expander("Connection Details", expanded=False):
+        st.info(f"**Backend URL**\n{RASA_SERVER_URL}")
+        st.info(f"**User ID**\n`{st.session_state.user_id[:8]}`")
 
-    if st.button("🔄 Test Server"):
-        with st.spinner("Testing server..."):
-            if check_rasa_server():
-                st.success("✅ Server is running!")
-            else:
-                st.error("❌ Server is not responding!")
+# --- MAIN UI ---
+st.title("AI Assistant for Future Interns")
 
-    if st.button("🔧 Test Webhook"):
-        with st.spinner("Testing webhook..."):
-            success, status_code, response_text = test_webhook()
-            if success:
-                st.success(f"✅ Webhook working! Status: {status_code}")
-                try:
-                    response_json = json.loads(response_text)
-                    st.json(response_json)
-                except:
-                    st.text(response_text)
-            else:
-                st.error(f"❌ Webhook failed! Status: {status_code}")
-                st.error(f"Response: {response_text}")
+# Initialize chat with a welcome message if empty
+if not st.session_state.messages:
+    st.session_state.messages.append(
+        {"role": "assistant", "content": "Hello! How can I assist you with the internship program today?"}
+    )
 
-    st.subheader("Debug Info")
-    st.text(f"User ID: {st.session_state.user_id[:8]}...")
-    st.text(f"Messages: {len(st.session_state.messages)}")
+# Display chat messages from history
+for message in st.session_state.messages:
+    avatar = "👤" if message["role"] == "user" else "🤖"
+    with st.chat_message(message["role"], avatar=avatar):
+        st.markdown(message["content"])
 
-    if st.button("Export Chat"):
-        chat_data = {
-            "user_id": st.session_state.user_id, 
-            "messages": st.session_state.messages,
-            "timestamp": datetime.now().isoformat()
-        }
-        st.download_button(
-            label="Download Chat JSON",
-            data=json.dumps(chat_data, indent=2),
-            file_name=f"chat_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
-            mime="application/json"
-        )
+# Handle new user input
+if prompt := st.chat_input("Ask a question about the internship..."):
+    # Add user message to history and display it
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user", avatar="👤"):
+        st.markdown(prompt)
 
-# --- FOOTER ---
-st.markdown("---")
-st.markdown(f"Built with Streamlit and Rasa | [GitHub]({GITHUB_REPO_LINK}) | [Backend]({RASA_SERVER_URL})")
+    # Generate and display bot response
+    with st.chat_message("assistant", avatar="🤖"):
+        # Show Lottie animation while waiting for response
+        lottie_thinking = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_NTDA23.json")
+        lottie_container = st.empty()
+        if lottie_thinking:
+            with lottie_container:
+                st_lottie(lottie_thinking, height=100, speed=1.5, key="thinking")
 
-# --- QUICK START GUIDE ---
-with st.expander("🚀 Quick Start Guide"):
-    st.markdown("""
-    **How to use this chatbot:**
-    1. Type your message in the chat input below
-    2. Press Enter to send
-    3. Wait for the assistant's response
-    
-    **Troubleshooting:**
-    - If you see connection errors, use the "Test Server" and "Test Webhook" buttons
-    - Check that the backend server is running at the URL above
-    - Clear chat history if responses seem stuck
-    
-    **Features:**
-    - Persistent chat history during session
-    - Export chat conversations
-    - Debug tools for connection testing
-    """)
-
-# --- ADVANCED DEBUG (Collapsible) ---
-with st.expander("🔍 Advanced Debug"):
-    st.write("**Current Configuration:**")
-    config_info = {
-        "Rasa Server URL": RASA_SERVER_URL,
-        "Webhook URL": RASA_WEBHOOK_URL,
-        "User ID": st.session_state.user_id,
-        "Total Messages": len(st.session_state.messages),
-        "Session State Keys": list(st.session_state.keys())
-    }
-    st.json(config_info)
-    
-    if st.button("🔍 Full Connection Test"):
-        st.write("**Testing full connection flow...**")
+        # Get response from Rasa
+        rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
         
-        # Test 1: Basic server connectivity
-        st.write("1. Testing server connectivity...")
-        try:
-            response = requests.get(RASA_SERVER_URL, timeout=5)
-            st.success(f"✅ Server accessible: {response.status_code}")
-        except Exception as e:
-            st.error(f"❌ Server connection failed: {e}")
+        # Remove the Lottie animation
+        lottie_container.empty()
         
-        # Test 2: Status endpoint
-        st.write("2. Testing status endpoint...")
-        try:
-            response = requests.get(f"{RASA_SERVER_URL}/status", timeout=5)
-            if response.status_code == 200:
-                st.success("✅ Status endpoint working")
-                st.json(response.json())
-            else:
-                st.error(f"❌ Status endpoint failed: {response.status_code}")
-        except Exception as e:
-            st.error(f"❌ Status endpoint error: {e}")
-        
-        # Test 3: Webhook endpoint
-        st.write("3. Testing webhook endpoint...")
-        try:
-            test_payload = {"sender": "debug_user", "message": "test connection"}
-            response = requests.post(
-                RASA_WEBHOOK_URL, 
-                json=test_payload, 
-                headers={"Content-Type": "application/json"},
-                timeout=10
-            )
-            if response.status_code == 200:
-                st.success("✅ Webhook responding correctly")
-                st.json(response.json())
-            else:
-                st.error(f"❌ Webhook failed: {response.status_code}")
-                st.error(f"Response: {response.text}")
-        except Exception as e:
-            st.error(f"❌ Webhook error: {e}")
+        # Stream the response
+        full_response_text = " ".join([res.get("text", "") for res in rasa_responses])
+        if full_response_text:
+            st.write_stream(stream_response(full_response_text))
+            st.session_state.messages.append({"role": "assistant", "content": full_response_text})
+        else:
+            fallback_text = "Sorry, I encountered an issue. Please try again."
+            st.write_stream(stream_response(fallback_text))
+            st.session_state.messages.append({"role": "assistant", "content": fallback_text})
