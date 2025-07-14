@@ -260,7 +260,7 @@ rules:
   steps:
   - intent: intent_who_64
   - action: utter_intent_who_64
-- rule: Greet
+- rule: Greet user
   steps:
   - intent: greet
   - action: utter_greet
@@ -272,3 +272,14 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: Provide help
+  steps:
+  - intent: ask_help
+  - action: action_provide_help
+- rule: Explain capabilities
+  steps:
+  - intent: ask_capabilities
+  - action: utter_ask_capabilities
+- rule: Handle fallback
+  steps:
+  - action: action_default_fallback

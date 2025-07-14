@@ -6,7 +6,14 @@ stories:
   - action: utter_greet
   - intent: goodbye
   - action: utter_goodbye
-- story: bot challenge
+- story: bot challenge with help
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+  - intent: ask_help
+  - action: action_provide_help
+- story: fallback recovery
+  steps:
+  - action: action_default_fallback
+  - intent: greet
+  - action: utter_greet
