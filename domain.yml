@@ -1,6 +1,8 @@
 version: '3.1'
 intents:
 - affirm
+- ask_capabilities
+- ask_help
 - bot_challenge
 - deny
 - goodbye
@@ -208,10 +210,25 @@ responses:
   utter_intent_who_64:
   - text: a dentist, i'm sure.
   utter_greet:
-  - text: Hello! How can I help?
+  - text: Hello! How can I help you today?
+  - text: Hi there! What would you like to know?
+  - text: Hey! I'm here to help. What's on your mind?
   utter_goodbye:
-  - text: Goodbye!
+  - text: Goodbye! Take care!
+  - text: See you later! Have a great day!
+  - text: Bye! Feel free to come back anytime.
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: I am an AI assistant powered by Rasa. I'm here to help answer your questions!
+  - text: Yes, I'm a chatbot designed to assist you. How can I help?
+  utter_ask_help:
+  - text: I'd be happy to help! You can ask me questions, and I'll do my best to provide
+      useful answers.
+  utter_ask_capabilities:
+  - text: I can answer questions based on my training data. Try asking me something
+      specific, and I'll see if I can help!
+actions:
+- action_default_fallback
+- action_provide_help
 session_config:
   session_expiration_time: 60
+  carry_over_slots_to_new_session: true
