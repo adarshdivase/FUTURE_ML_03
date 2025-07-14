@@ -7,6 +7,7 @@ intents:
 - deny
 - goodbye
 - greet
+- how_are_you
 - intent_general_0
 - intent_general_1
 - intent_general_2
@@ -17,215 +18,156 @@ intents:
 - intent_general_7
 - intent_general_8
 - intent_general_9
-- intent_how_20
-- intent_how_21
-- intent_how_22
-- intent_how_23
-- intent_how_24
-- intent_how_25
-- intent_how_26
-- intent_how_27
-- intent_how_28
-- intent_how_29
-- intent_what_10
-- intent_what_11
-- intent_what_12
-- intent_what_13
-- intent_what_14
-- intent_what_15
-- intent_what_16
-- intent_what_17
-- intent_what_18
-- intent_what_19
-- intent_when_51
-- intent_when_52
-- intent_when_53
-- intent_when_54
-- intent_when_55
-- intent_when_56
-- intent_when_57
-- intent_where_32
-- intent_where_33
-- intent_where_34
-- intent_where_35
-- intent_where_36
-- intent_where_37
-- intent_where_38
+- intent_how_10
+- intent_how_11
+- intent_how_12
+- intent_how_13
+- intent_how_14
+- intent_how_15
+- intent_how_16
+- intent_how_17
+- intent_how_18
+- intent_how_19
+- intent_what_27
+- intent_what_28
+- intent_what_29
+- intent_what_30
+- intent_what_31
+- intent_what_32
+- intent_what_33
+- intent_what_34
+- intent_what_35
+- intent_what_36
+- intent_when_37
+- intent_when_38
 - intent_where_39
 - intent_where_40
-- intent_which_30
-- intent_which_31
-- intent_who_58
-- intent_who_59
-- intent_who_60
-- intent_who_61
-- intent_who_62
-- intent_who_63
-- intent_who_64
-- intent_why_41
-- intent_why_42
-- intent_why_43
-- intent_why_44
-- intent_why_45
-- intent_why_46
-- intent_why_47
-- intent_why_48
-- intent_why_49
-- intent_why_50
+- intent_where_41
+- intent_where_42
+- intent_who_43
+- intent_who_44
+- intent_who_45
+- intent_why_20
+- intent_why_21
+- intent_why_22
+- intent_why_23
+- intent_why_24
+- intent_why_25
+- intent_why_26
 responses:
   utter_intent_general_0:
-  - text: i told her i had gotten the last two on the shelf, but i offered her one
-      of mine.
+  - text: what if you fall while you're holding the light bulb, and it breaks and
+      pieces go into your eyes?
   utter_intent_general_1:
   - text: i do too. that way we can have our activities planned ahead of time.
   utter_intent_general_2:
-  - text: it is. but after about ten washings, the glue washes off.
+  - text: the forecast says that it will be warm on the weekend.
   utter_intent_general_3:
-  - text: no. look at the bill when we get it. there's no charge for the bread.
+  - text: don't believe him! whatever the tv ads tell you, the opposite is true.
   utter_intent_general_4:
   - text: i wonder if there is any job that you don't repeat over and over.
   utter_intent_general_5:
-  - text: you do? i just bought this outfit a couple days ago.
+  - text: my dad got to see the beautiful new world war ii monument.
   utter_intent_general_6:
-  - text: if i owned a restaurant, i would never serve hot bread before the main course.
+  - text: me too. it always smells so fresh after it rains.
   utter_intent_general_7:
-  - text: yes. after two u.s. fighter jets followed him for an hour, he landed on
-      a highway.
-  utter_intent_general_8:
   - text: then they also shouldn't tell us if the robber is male or female, because
       that is sexist.
+  utter_intent_general_8:
+  - text: you don't need to have cable, but you do need a good antenna.
   utter_intent_general_9:
-  - text: we figure our kids can visit us whenever they go to the beach.
-  utter_intent_what_10:
+  - text: oh. what good is that? i thought it gave you free money.
+  utter_intent_how_10:
+  - text: they say he's going 80 miles per hour.
+  utter_intent_how_11:
+  - text: i really don't know, but i don't think she gave out that many yet.
+  utter_intent_how_12:
+  - text: it has about 140,000 people.
+  utter_intent_how_13:
+  - text: you had pizza for lunch.
+  utter_intent_how_14:
+  - text: it took us all day.
+  utter_intent_how_15:
+  - text: i think it will only take you a year or two.
+  utter_intent_how_16:
+  - text: i think we'll be there in half an hour.
+  utter_intent_how_17:
+  - text: they pay money to play this silly game!
+  utter_intent_how_18:
+  - text: it was hot and sunny every day.
+  utter_intent_how_19:
+  - text: his doctor says his heart and lungs are strong and healthy.
+  utter_intent_why_20:
+  - text: i warned her about her new boyfriend. she didn't listen to me.
+  utter_intent_why_21:
+  - text: that's a good question.
+  utter_intent_why_22:
+  - text: because we need to buy a house.
+  utter_intent_why_23:
+  - text: he said he would buy her a nice ring.
+  utter_intent_why_24:
+  - text: who knows? they said they'll fix it before next season.
+  utter_intent_why_25:
+  - text: to try something new and exciting.
+  utter_intent_why_26:
+  - text: i feel sorry for anyone who loses their home.
+  utter_intent_what_27:
+  - text: the weather this weekend is supposed to be warm.
+  utter_intent_what_28:
+  - text: i think if you are friendly to dogs, they are friendly to you.
+  utter_intent_what_29:
   - text: just yesterday, i told her i wouldn't trade her for all the money in the
       world.
-  utter_intent_what_11:
-  - text: he went to las vegas. he lost it all gambling.
-  utter_intent_what_12:
-  - text: i like to listen to rock and r&b.
-  utter_intent_what_13:
-  - text: i'm going to the movies with a friend. how about you?
-  utter_intent_what_14:
-  - text: one to wipe the handle, and the others to wipe the produce.
-  utter_intent_what_15:
-  - text: i think i know, because this happened before.
-  utter_intent_what_16:
-  - text: i mean, someone used their dirty hands to pick the bananas, the apples,
-      and the oranges.
-  utter_intent_what_17:
-  - text: the nation is switching to digital tv.
-  utter_intent_what_18:
-  - text: they didn't say.
-  utter_intent_what_19:
-  - text: he landed on the hood of the car.
-  utter_intent_how_20:
-  - text: i'm doing well. how about you?
-  utter_intent_how_21:
-  - text: i really don't know, but i don't think she gave out that many yet.
-  utter_intent_how_22:
-  - text: you can see the stars so much more clearly after it rains.
-  utter_intent_how_23:
-  - text: it has about 140,000 people.
-  utter_intent_how_24:
-  - text: the tv news is reporting a bank robbery.
-  utter_intent_how_25:
-  - text: it took us all day.
-  utter_intent_how_26:
-  - text: ahora! that means right now.
-  utter_intent_how_27:
-  - text: i don't know. maybe it was from a shopping cart.
-  utter_intent_how_28:
-  - text: one hundred!
-  utter_intent_how_29:
-  - text: same as ever, by mail. all it costs me is a 42-cent stamp.
-  utter_intent_which_30:
-  - text: i have to say, my favorite movie is superbad.
-  utter_intent_which_31:
-  - text: what do you mean?
-  utter_intent_where_32:
-  - text: i'm going to pcc.
-  utter_intent_where_33:
-  - text: i think we should go out to eat.
-  utter_intent_where_34:
-  - text: i buy it at the dollar store.
-  utter_intent_where_35:
-  - text: i have to walk the dog.
-  utter_intent_where_36:
-  - text: we went to a nice restaurant.
-  utter_intent_where_37:
-  - text: they were in the student parking lot.
-  utter_intent_where_38:
-  - text: they're all asking the same question.
+  utter_intent_what_30:
+  - text: nothing really. how about you?
+  utter_intent_what_31:
+  - text: nothing much.
+  utter_intent_what_32:
+  - text: the pants are fine, but the pocket has a huge hole in it.
+  utter_intent_what_33:
+  - text: they want tax cuts.
+  utter_intent_what_34:
+  - text: do you think the bananas fell from the sky?
+  utter_intent_what_35:
+  - text: a blind date is a date with someone you don't know.
+  utter_intent_what_36:
+  - text: the mayor says the crime rate is going down.
+  utter_intent_when_37:
+  - text: he's busy. he said next week.
+  utter_intent_when_38:
+  - text: the invitation says it starts at 8:00 p.m.
   utter_intent_where_39:
   - text: they go out to the north parking lot.
   utter_intent_where_40:
-  - text: it comes from cows.
-  utter_intent_why_41:
-  - text: they will drop the new steak on the floor, step on it, and then spit on
-      it.
-  utter_intent_why_42:
-  - text: i stayed home because i wasn't feeling well.
-  utter_intent_why_43:
-  - text: i have things to do.
-  utter_intent_why_44:
-  - text: she said she didn't love me anymore.
-  utter_intent_why_45:
-  - text: he said he would buy her a nice ring.
-  utter_intent_why_46:
-  - text: the speed limit is 65.
-  utter_intent_why_47:
-  - text: the speed limit is 65!
-  utter_intent_why_48:
-  - text: i don't know. sometimes the law doesn't make sense.
-  utter_intent_why_49:
-  - text: i feel sorry for anyone who loses their home.
-  utter_intent_why_50:
-  - text: i type too much.
-  utter_intent_when_51:
-  - text: i learned back in high school.
-  utter_intent_when_52:
-  - text: i know he has a good hand, so i don't bet.
-  utter_intent_when_53:
-  - text: the invitation says it starts at 8:00 p.m.
-  utter_intent_when_54:
-  - text: i think i lost it today. i used it yesterday.
-  utter_intent_when_55:
-  - text: he's busy. he said next week.
-  utter_intent_when_56:
-  - text: i could pick only one or the other?
-  utter_intent_when_57:
-  - text: no human can do that.
-  utter_intent_who_58:
-  - text: i care. do something.
-  utter_intent_who_59:
-  - text: oh, look. here's the little sticker that was on it. it's called a pink navel.
-  utter_intent_who_60:
-  - text: criminals, of course.
-  utter_intent_who_61:
-  - text: yes, just in english alone.
-  utter_intent_who_62:
+  - text: it's in the fridge, i think.
+  utter_intent_where_41:
+  - text: oh, all over the world.
+  utter_intent_where_42:
+  - text: i think they're in the medicine cabinet.
+  utter_intent_who_43:
+  - text: who knows? but there must be a hundred new ones every day.
+  utter_intent_who_44:
   - text: "the problem is she has no problems\xC2\u2014she's too good for me!"
-  utter_intent_who_63:
-  - text: a man i met in a coffee shop.
-  utter_intent_who_64:
+  utter_intent_who_45:
   - text: a dentist, i'm sure.
   utter_greet:
   - text: Hello! How can I help you today?
-  - text: Hi there! What would you like to know?
-  - text: Hey! I'm here to help. What's on your mind?
+  - text: Hi there! What can I do for you?
   utter_goodbye:
   - text: Goodbye! Take care!
   - text: See you later! Have a great day!
-  - text: Bye! Feel free to come back anytime.
+  utter_affirm:
+  - text: Great! How can I help you further?
+  utter_deny:
+  - text: I understand. Is there something else I can help with?
   utter_iamabot:
-  - text: I am an AI assistant powered by Rasa. I'm here to help answer your questions!
-  - text: Yes, I'm a chatbot designed to assist you. How can I help?
+  - text: I am an AI assistant powered by Rasa. I'm here to help!
   utter_ask_help:
-  - text: I'd be happy to help! You can ask me questions, and I'll do my best to provide
-      useful answers.
+  - text: I'd be happy to help! You can ask me questions on various topics.
   utter_ask_capabilities:
-  - text: I can answer questions based on my training data. Try asking me something
-      specific, and I'll see if I can help!
+  - text: I can answer questions based on my training. Ask away!
+  utter_how_are_you:
+  - text: I'm doing well, thank you for asking! How can I assist you?
 actions:
 - action_default_fallback
 - action_provide_help
