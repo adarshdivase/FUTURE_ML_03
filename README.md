@@ -13,7 +13,33 @@ This project contains an intelligent, AI-powered chatbot automatically generated
 
 ## How to Use This Project
 
-1.  **Install Rasa**: `pip install rasa`
-2.  **Train the Model**: `cd enhanced_rasa_chatbot` and then `rasa train`
-3.  **Run the Action Server**: In a new terminal, `rasa run actions`
-4.  **Talk to Your Bot**: In the first terminal, `rasa shell`
+1. **Install Rasa**: `pip install rasa`
+2. **Install additional dependencies**: `pip install rasa[transformers]`
+3. **Navigate to project**: `cd enhanced_rasa_chatbot`
+4. **Train the Model**: `rasa train`
+5. **Run the Action Server**: In a new terminal, `rasa run actions`
+6. **Talk to Your Bot**: In the first terminal, `rasa shell`
+
+## Troubleshooting
+
+If you encounter training errors:
+- Make sure all dependencies are installed
+- Check that your CSV file has 'question' and 'answer' columns
+- Verify the generated YAML files are properly formatted
+- Try reducing the number of intents if you have memory issues
+
+## Project Structure
+
+```
+enhanced_rasa_chatbot/
+├── data/
+│   ├── nlu.yml          # Training examples
+│   ├── rules.yml        # Conversation rules
+│   └── stories.yml      # Example conversations
+├── actions/
+│   └── actions.py       # Custom actions
+├── config.yml           # Pipeline configuration
+├── domain.yml           # Domain specification
+├── credentials.yml      # Channel credentials
+└── endpoints.yml        # Action server endpoints
+```

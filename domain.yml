@@ -59,24 +59,24 @@ responses:
   - text: what if you fall while you're holding the light bulb, and it breaks and
       pieces go into your eyes?
   utter_intent_general_1:
-  - text: i do too. that way we can have our activities planned ahead of time.
+  - text: if i owned a restaurant, i would never serve hot bread before the main course.
   utter_intent_general_2:
-  - text: the forecast says that it will be warm on the weekend.
-  utter_intent_general_3:
   - text: don't believe him! whatever the tv ads tell you, the opposite is true.
+  utter_intent_general_3:
+  - text: by the time you get home, you'll be too tired to even eat.
   utter_intent_general_4:
   - text: i wonder if there is any job that you don't repeat over and over.
   utter_intent_general_5:
   - text: my dad got to see the beautiful new world war ii monument.
   utter_intent_general_6:
-  - text: me too. it always smells so fresh after it rains.
+  - text: that should be a nice trip. lots of fun, and lots of food.
   utter_intent_general_7:
   - text: then they also shouldn't tell us if the robber is male or female, because
       that is sexist.
   utter_intent_general_8:
   - text: you don't need to have cable, but you do need a good antenna.
   utter_intent_general_9:
-  - text: oh. what good is that? i thought it gave you free money.
+  - text: the police need to shoot all the bears.
   utter_intent_how_10:
   - text: they say he's going 80 miles per hour.
   utter_intent_how_11:
@@ -135,7 +135,7 @@ responses:
   utter_intent_when_37:
   - text: he's busy. he said next week.
   utter_intent_when_38:
-  - text: the invitation says it starts at 8:00 p.m.
+  - text: the invitation says it starts at 800 p.m.
   utter_intent_where_39:
   - text: they go out to the north parking lot.
   utter_intent_where_40:
@@ -147,7 +147,7 @@ responses:
   utter_intent_who_43:
   - text: who knows? but there must be a hundred new ones every day.
   utter_intent_who_44:
-  - text: "the problem is she has no problems\xC2\u2014she's too good for me!"
+  - text: the problem is she has no problemsÂshe's too good for me!
   utter_intent_who_45:
   - text: a dentist, i'm sure.
   utter_greet:
