@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime
 import uuid
+import time
 
 # --- CONFIGURATION ---
 
@@ -20,6 +21,8 @@ if 'messages' not in st.session_state:
 if 'user_id' not in st.session_state:
     st.session_state.user_id = str(uuid.uuid4())
 
+if 'button_clicked' not in st.session_state:
+    st.session_state.button_clicked = None
 
 # --- HELPER FUNCTIONS ---
 
@@ -46,7 +49,10 @@ def send_message_to_rasa(message, user_id):
         )
         
         if response.status_code == 200:
-            return response.json()
+            rasa_response = response.json()
+            # Debug: Print the actual response format
+            st.write(f"DEBUG - Rasa Response: {rasa_response}")
+            return rasa_response
         else:
             st.error(f"Error: Status code {response.status_code} from Rasa server.")
             st.error(f"Rasa server response: {response.text}")
@@ -100,6 +106,55 @@ def test_webhook():
         return False, 0, str(e)
 
 
+def process_message(message):
+    """Process a user message and get bot response"""
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    
+    # Add user message to chat
+    st.session_state.messages.append({
+        "role": "user", 
+        "content": message, 
+        "timestamp": timestamp
+    })
+    
+    # Get bot response
+    rasa_responses = send_message_to_rasa(message, st.session_state.user_id)
+    
+    if not rasa_responses:
+        rasa_responses = [{"text": "Sorry, I didn't receive a response. Please try again."}]
+    
+    # Process each response
+    for response in rasa_responses:
+        response_timestamp = datetime.now().strftime("%H:%M:%S")
+        
+        # Handle text responses
+        if 'text' in response and response['text']:
+            st.session_state.messages.append({
+                "role": "assistant", 
+                "content": response['text'], 
+                "timestamp": response_timestamp
+            })
+        
+        # Handle other response types (images, buttons, etc.)
+        if 'image' in response:
+            st.session_state.messages.append({
+                "role": "assistant", 
+                "content": f"[Image: {response['image']}]", 
+                "timestamp": response_timestamp,
+                "type": "image",
+                "image_url": response['image']
+            })
+        
+        if 'buttons' in response:
+            st.session_state.messages.append({
+                "role": "assistant", 
+                "content": "[Quick Reply Buttons]", 
+                "timestamp": response_timestamp,
+                "type": "buttons",
+                "buttons": response['buttons']
+            })
+
+
 # --- STREAMLIT UI ---
 
 st.set_page_config(page_title="Rasa Chatbot", page_icon="🤖", layout="wide")
@@ -121,42 +176,34 @@ with col2:
 chat_container = st.container()
 
 with chat_container:
-    for message in st.session_state.messages:
+    for i, message in enumerate(st.session_state.messages):
         with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+            # Handle different message types
+            if message.get("type") == "image":
+                st.image(message.get("image_url"))
+            elif message.get("type") == "buttons":
+                st.markdown("**Quick replies:**")
+                for j, button in enumerate(message.get("buttons", [])):
+                    button_key = f"btn_{i}_{j}_{button.get('payload', '')}"
+                    if st.button(button['title'], key=button_key):
+                        process_message(button['payload'])
+                        st.rerun()
+            else:
+                st.markdown(message["content"])
+            
             if message.get("timestamp"):
                 st.caption(message["timestamp"])
 
+# Handle button clicks
+if st.session_state.button_clicked:
+    process_message(st.session_state.button_clicked)
+    st.session_state.button_clicked = None
+    st.rerun()
+
 # Chat input
 if prompt := st.chat_input("Type your message here..."):
-    timestamp = datetime.now().strftime("%H:%M:%S")
-    st.session_state.messages.append({"role": "user", "content": prompt, "timestamp": timestamp})
-
-    with st.chat_message("user"):
-        st.markdown(prompt)
-        st.caption(timestamp)
-
-    with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
-            rasa_responses = send_message_to_rasa(prompt, st.session_state.user_id)
-
-        if not rasa_responses:
-             rasa_responses = [{"text": "Sorry, I didn't receive a response. Please try again."}]
-
-        for response in rasa_responses:
-            response_timestamp = datetime.now().strftime("%H:%M:%S")
-            if 'text' in response:
-                st.markdown(response['text'])
-                st.caption(response_timestamp)
-                st.session_state.messages.append({"role": "assistant", "content": response['text'], "timestamp": response_timestamp})
-            if 'image' in response:
-                st.image(response['image'])
-            if 'buttons' in response:
-                st.markdown("**Quick replies:**")
-                for button in response['buttons']:
-                    if st.button(button['title'], key=f"btn_{button['payload']}_{uuid.uuid4()}"):
-                        st.session_state.messages.append({"role": "user", "content": button['payload'], "timestamp": datetime.now().strftime("%H:%M:%S")})
-                        st.rerun()
+    process_message(prompt)
+    st.rerun()
 
 # --- SIDEBAR ---
 with st.sidebar:
@@ -289,3 +336,10 @@ with st.expander("🔍 Advanced Debug"):
                 st.error(f"Response: {response.text}")
         except Exception as e:
             st.error(f"❌ Webhook error: {e}")
+
+# --- REAL-TIME DEBUGGING ---
+if st.session_state.messages:
+    with st.expander("🐛 Real-time Debug - Latest Messages"):
+        st.write("**Last 3 messages:**")
+        for msg in st.session_state.messages[-3:]:
+            st.json(msg)
