@@ -18,138 +18,138 @@ intents:
 - intent_general_7
 - intent_general_8
 - intent_general_9
-- intent_how_24
-- intent_how_25
-- intent_how_26
-- intent_how_27
-- intent_how_28
-- intent_how_29
-- intent_how_30
-- intent_how_31
-- intent_how_32
-- intent_how_33
-- intent_what_10
-- intent_what_11
-- intent_what_12
-- intent_what_13
-- intent_what_14
-- intent_what_15
-- intent_what_16
-- intent_what_17
-- intent_what_18
-- intent_what_19
-- intent_when_34
-- intent_when_35
-- intent_where_20
-- intent_where_21
-- intent_where_22
-- intent_where_23
+- intent_how_10
+- intent_how_11
+- intent_how_12
+- intent_how_13
+- intent_how_14
+- intent_how_15
+- intent_how_16
+- intent_how_17
+- intent_how_18
+- intent_how_19
+- intent_what_27
+- intent_what_28
+- intent_what_29
+- intent_what_30
+- intent_what_31
+- intent_what_32
+- intent_what_33
+- intent_what_34
+- intent_what_35
+- intent_what_36
+- intent_when_37
+- intent_when_38
+- intent_where_39
+- intent_where_40
+- intent_where_41
+- intent_where_42
 - intent_who_43
 - intent_who_44
 - intent_who_45
-- intent_why_36
-- intent_why_37
-- intent_why_38
-- intent_why_39
-- intent_why_40
-- intent_why_41
-- intent_why_42
+- intent_why_20
+- intent_why_21
+- intent_why_22
+- intent_why_23
+- intent_why_24
+- intent_why_25
+- intent_why_26
 responses:
   utter_intent_general_0:
-  - text: What if you fall while you're holding the light bulb, and it breaks and
+  - text: what if you fall while you're holding the light bulb, and it breaks and
       pieces go into your eyes?
   utter_intent_general_1:
-  - text: So why are you arguing with me? don't lie in the sun too long!
+  - text: if i owned a restaurant, i would never serve hot bread before the main course.
   utter_intent_general_2:
-  - text: Honestly, it is one of the funniest movies i've seen in a long time.
+  - text: don't believe him! whatever the tv ads tell you, the opposite is true.
   utter_intent_general_3:
-  - text: No, the car stopped and the passenger pushed the injured student off the
-      hood.
+  - text: by the time you get home, you'll be too tired to even eat.
   utter_intent_general_4:
-  - text: That should be a nice trip. lots of fun, and lots of food.
+  - text: i wonder if there is any job that you don't repeat over and over.
   utter_intent_general_5:
-  - text: If we are bad, we will be unhappy forever in hell.
+  - text: my dad got to see the beautiful new world war ii monument.
   utter_intent_general_6:
-  - text: I really wanted you to come, but i understand.
+  - text: that should be a nice trip. lots of fun, and lots of food.
   utter_intent_general_7:
-  - text: Yes, but only the cheap tickets.
+  - text: then they also shouldn't tell us if the robber is male or female, because
+      that is sexist.
   utter_intent_general_8:
-  - text: Like what, for instance?
+  - text: you don't need to have cable, but you do need a good antenna.
   utter_intent_general_9:
-  - text: You're not going to examine it before we order dinner?
-  utter_intent_what_10:
-  - text: You get to put someone in power that you like.
-  utter_intent_what_11:
-  - text: We had a 40 meal, and he left a 1 tip!
-  utter_intent_what_12:
-  - text: The weather this weekend is supposed to be warm.
-  utter_intent_what_13:
-  - text: I don't know. i just woke up.
-  utter_intent_what_14:
-  - text: I think if you are friendly to dogs, they are friendly to you.
-  utter_intent_what_15:
-  - text: Just yesterday, i told her i wouldn't trade her for all the money in the
+  - text: the police need to shoot all the bears.
+  utter_intent_how_10:
+  - text: they say he's going 80 miles per hour.
+  utter_intent_how_11:
+  - text: i really don't know, but i don't think she gave out that many yet.
+  utter_intent_how_12:
+  - text: it has about 140,000 people.
+  utter_intent_how_13:
+  - text: you had pizza for lunch.
+  utter_intent_how_14:
+  - text: it took us all day.
+  utter_intent_how_15:
+  - text: i think it will only take you a year or two.
+  utter_intent_how_16:
+  - text: i think we'll be there in half an hour.
+  utter_intent_how_17:
+  - text: they pay money to play this silly game!
+  utter_intent_how_18:
+  - text: it was hot and sunny every day.
+  utter_intent_how_19:
+  - text: his doctor says his heart and lungs are strong and healthy.
+  utter_intent_why_20:
+  - text: i warned her about her new boyfriend. she didn't listen to me.
+  utter_intent_why_21:
+  - text: that's a good question.
+  utter_intent_why_22:
+  - text: because we need to buy a house.
+  utter_intent_why_23:
+  - text: he said he would buy her a nice ring.
+  utter_intent_why_24:
+  - text: who knows? they said they'll fix it before next season.
+  utter_intent_why_25:
+  - text: to try something new and exciting.
+  utter_intent_why_26:
+  - text: i feel sorry for anyone who loses their home.
+  utter_intent_what_27:
+  - text: the weather this weekend is supposed to be warm.
+  utter_intent_what_28:
+  - text: i think if you are friendly to dogs, they are friendly to you.
+  utter_intent_what_29:
+  - text: just yesterday, i told her i wouldn't trade her for all the money in the
       world.
-  utter_intent_what_16:
-  - text: A blind date is a date with someone you don't know.
-  utter_intent_what_17:
-  - text: They didn't say.
-  utter_intent_what_18:
-  - text: Your white shirt is ruined.
-  utter_intent_what_19:
-  - text: Now he has the world record!
-  utter_intent_where_20:
-  - text: They go out to the north parking lot.
-  utter_intent_where_21:
-  - text: I think they're in the medicine cabinet.
-  utter_intent_where_22:
-  - text: What do you mean?
-  utter_intent_where_23:
-  - text: Which one?
-  utter_intent_how_24:
-  - text: The travel agent gave us a 50-percent discount!
-  utter_intent_how_25:
-  - text: When he is almost finished with one cigarette, he uses it to light another.
-  utter_intent_how_26:
-  - text: Oh, yes! "let it be, let it beÂ"
-  utter_intent_how_27:
-  - text: It has about 140,000 people.
-  utter_intent_how_28:
-  - text: They pay money to play this silly game!
-  utter_intent_how_29:
-  - text: It was nothing for him.
-  utter_intent_how_30:
-  - text: I think we'll be there in half an hour.
-  utter_intent_how_31:
-  - text: They say he's going 80 miles per hour.
-  utter_intent_how_32:
-  - text: One or two tires were cut on each car.
-  utter_intent_how_33:
-  - text: Ahora! that means right now.
-  utter_intent_when_34:
-  - text: The invitation says it starts at 800 p.m.
-  utter_intent_when_35:
-  - text: A couple of months ago.
-  utter_intent_why_36:
-  - text: I feel sorry for anyone who loses their home.
-  utter_intent_why_37:
-  - text: He was invited, along with about 90 other veterans.
-  utter_intent_why_38:
-  - text: Because we need to buy a house.
-  utter_intent_why_39:
-  - text: Who knows? they said they'll fix it before next season.
-  utter_intent_why_40:
-  - text: I warned her about her new boyfriend. she didn't listen to me.
-  utter_intent_why_41:
-  - text: To try something new and exciting.
-  utter_intent_why_42:
-  - text: I have to check the stove.
+  utter_intent_what_30:
+  - text: nothing really. how about you?
+  utter_intent_what_31:
+  - text: nothing much.
+  utter_intent_what_32:
+  - text: the pants are fine, but the pocket has a huge hole in it.
+  utter_intent_what_33:
+  - text: they want tax cuts.
+  utter_intent_what_34:
+  - text: do you think the bananas fell from the sky?
+  utter_intent_what_35:
+  - text: a blind date is a date with someone you don't know.
+  utter_intent_what_36:
+  - text: the mayor says the crime rate is going down.
+  utter_intent_when_37:
+  - text: he's busy. he said next week.
+  utter_intent_when_38:
+  - text: the invitation says it starts at 800 p.m.
+  utter_intent_where_39:
+  - text: they go out to the north parking lot.
+  utter_intent_where_40:
+  - text: it's in the fridge, i think.
+  utter_intent_where_41:
+  - text: oh, all over the world.
+  utter_intent_where_42:
+  - text: i think they're in the medicine cabinet.
   utter_intent_who_43:
-  - text: Who knows? but there must be a hundred new ones every day.
+  - text: who knows? but there must be a hundred new ones every day.
   utter_intent_who_44:
-  - text: Some private organization.
+  - text: the problem is she has no problemsÂshe's too good for me!
   utter_intent_who_45:
-  - text: There are so many great players.
+  - text: a dentist, i'm sure.
   utter_greet:
   - text: Hello! How can I help you today?
   - text: Hi there! What can I do for you?
