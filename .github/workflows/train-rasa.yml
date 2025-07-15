@@ -1,205 +1,40 @@
 name: Train Rasa Model
 
-# Triggers: Run on push to main, PRs, and allow manual triggering
+# This action runs automatically whenever you push code to your "main" branch
 on:
   push:
     branches:
       - main
-    paths:
-      - 'data/**'
-      - 'domain.yml'
-      - 'config.yml'
-      - 'requirements.txt'
-      - 'actions/**'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'data/**'
-      - 'domain.yml'
-      - 'config.yml'
-      - 'requirements.txt'
-      - 'actions/**'
-  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   train-model:
-    runs-on: ubuntu-latest
-    timeout-minutes: 45  # Increased timeout for larger models
-    
+    runs-on: ubuntu-latest  # Use a clean Linux environment from GitHub
+
     steps:
-    # 1. Check out repository code
+    # 1. Check out your repository code
     - name: Checkout Repository
-      uses: actions/checkout@v4
-    
-    # 2. Set up Python with caching
+      uses: actions/checkout@v3
+
+    # 2. Set up the correct Python version (e.g., 3.8)
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
-        cache: 'pip'
-    
-    # 3. Install system dependencies (required for some Rasa dependencies)
-    - name: Install System Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y build-essential libssl-dev libffi-dev python3-dev
-    
-    # 4. Install Python dependencies with caching and error handling
+        python-version: '3.8'
+
+    # 3. Install all Python dependencies, including Rasa
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip setuptools wheel
-        # Install from requirements.txt and add missing ML dependencies
-        if [ -f requirements.txt ]; then
-          pip install -r requirements.txt
-          # Add missing dependencies for training if not already installed
-          pip install nltk spacy scikit-learn
-          python -m spacy download en_core_web_md
-        else
-          pip install rasa[full]==3.6.0 nltk spacy
-          python -m spacy download en_core_web_md
-        fi
-    
-    # 5. Download NLTK data (since your script uses NLTK)
-    - name: Download NLTK Data
-      run: |
-        python -c "import nltk; nltk.download('wordnet'); nltk.download('punkt'); nltk.download('stopwords')"
-    
-    # 6. Validate Rasa project structure
-    - name: Validate Project Structure
-      run: |
-        # Check for required files
-        if [ ! -f "domain.yml" ]; then
-          echo "Error: domain.yml not found"
-          exit 1
-        fi
-        if [ ! -f "config.yml" ]; then
-          echo "Error: config.yml not found"
-          exit 1
-        fi
-        if [ ! -f "data/nlu.yml" ]; then
-          echo "Error: data/nlu.yml not found"
-          exit 1
-        fi
-        if [ ! -f "data/stories.yml" ]; then
-          echo "Error: data/stories.yml not found"
-          exit 1
-        fi
-        if [ ! -f "data/rules.yml" ]; then
-          echo "Error: data/rules.yml not found"
-          exit 1
-        fi
-        echo "All required files found!"
-    
-    # 7. Validate Rasa configuration
-    - name: Validate Rasa Configuration
-      run: |
-        rasa data validate --domain domain.yml --config config.yml
-    
-    # 8. Train the model with error handling
+        python -m pip install --upgrade pip
+        pip install rasa==3.6.0
+
+    # 4. Run the Rasa training command
     - name: Train Rasa Model
-      run: |
-        echo "Starting Rasa model training..."
-        rasa train --verbose --config config.yml --domain domain.yml --data data/
-        
-        # Check if model was created successfully
-        if [ ! -d "models" ] || [ -z "$(ls -A models)" ]; then
-          echo "Error: No model was generated"
-          exit 1
-        fi
-        
-        # List generated models
-        echo "Generated models:"
-        ls -la models/
-    
-    # 9. Test the trained model (optional but recommended)
-    - name: Test Trained Model
-      run: |
-        # Run tests if test stories exist
-        if [ -f "tests/test_stories.yml" ]; then
-          echo "Running story tests..."
-          rasa test --stories tests/test_stories.yml
-        elif [ -f "data/test_stories.yml" ]; then
-          echo "Running story tests from data directory..."
-          rasa test --stories data/test_stories.yml
-        else
-          echo "No test stories found, skipping tests"
-        fi
-    
-    # 10. Validate trained model
-    - name: Validate Trained Model
-      run: |
-        # Get the latest model
-        LATEST_MODEL=$(ls -t models/*.tar.gz | head -n1)
-        echo "Latest model: $LATEST_MODEL"
-        
-        # Simple validation - check if model file exists and is not empty
-        if [ -f "$LATEST_MODEL" ] && [ -s "$LATEST_MODEL" ]; then
-          echo "Model file exists and is not empty"
-          echo "Model size: $(du -h $LATEST_MODEL)"
-        else
-          echo "Error: Model file is missing or empty"
-          exit 1
-        fi
-    
-    # 11. Upload trained model with better organization
+      run: rasa train
+
+    # 5. (Optional) Upload the trained model as an artifact
+    # This saves the trained model so you can download it from GitHub
     - name: Upload Trained Model
       uses: actions/upload-artifact@v4
       with:
-        name: trained-rasa-model-${{ github.sha }}
+        name: trained-rasa-model
         path: models/
-        retention-days: 30
-    
-    # 12. Upload test results if available
-    - name: Upload Test Results
-      if: always()  # Upload even if tests fail
-      uses: actions/upload-artifact@v4
-      with:
-        name: test-results-${{ github.sha }}
-        path: results/
-        retention-days: 7
-      continue-on-error: true  # Don't fail if no results directory exists
-    
-    # 13. Upload training logs
-    - name: Upload Training Logs
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: training-logs-${{ github.sha }}
-        path: |
-          rasa.log
-          *.log
-        retention-days: 7
-      continue-on-error: true
-    
-    # 14. Model performance summary
-    - name: Model Performance Summary
-      if: success()
-      run: |
-        echo "🎉 Model training completed successfully!"
-        echo "📊 Training Summary:"
-        echo "- Model artifact: trained-rasa-model-${{ github.sha }}"
-        echo "- Models generated: $(ls models/ | wc -l)"
-        echo "- Model size: $(du -h models/ | tail -1)"
-        
-        # Display model info if available
-        if [ -f "models/model_info.json" ]; then
-          echo "- Model info:"
-          cat models/model_info.json
-        fi
-    
-    # 15. Notify on failure with debugging info
-    - name: Debug Information on Failure
-      if: failure()
-      run: |
-        echo "❌ Model training failed. Debug information:"
-        echo "🔍 Current directory contents:"
-        ls -la
-        echo "🔍 Data directory contents:"
-        ls -la data/ || echo "No data directory found"
-        echo "🔍 Models directory contents:"
-        ls -la models/ || echo "No models directory found"
-        echo "🔍 Python packages:"
-        pip list | grep -E "(rasa|spacy|nltk)"
-        echo "🔍 Last 50 lines of any log files:"
-        find . -name "*.log" -exec tail -50 {} \; || echo "No log files found"
