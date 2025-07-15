@@ -1,40 +1,102 @@
 name: Train Rasa Model
 
-# This action runs automatically whenever you push code to your "main" branch
+# Triggers: Run on push to main, PRs, and allow manual triggering
 on:
   push:
     branches:
       - main
+    paths:
+      - 'data/**'
+      - 'domain.yml'
+      - 'config.yml'
+      - 'requirements.txt'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'domain.yml'
+      - 'config.yml'
+      - 'requirements.txt'
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   train-model:
-    runs-on: ubuntu-latest  # Use a clean Linux environment from GitHub
-
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # Prevent jobs from running indefinitely
+    
     steps:
-    # 1. Check out your repository code
+    # 1. Check out repository code
     - name: Checkout Repository
-      uses: actions/checkout@v3
-
-    # 2. Set up the correct Python version (e.g., 3.8)
+      uses: actions/checkout@v4  # Updated to v4
+    
+    # 2. Set up Python with caching
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.8'
-
-    # 3. Install all Python dependencies, including Rasa
+        cache: 'pip'  # Cache pip dependencies
+    
+    # 3. Install dependencies with caching and error handling
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install rasa==3.6.0
-
-    # 4. Run the Rasa training command
+        # Install from requirements.txt if it exists, otherwise install Rasa
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        else
+          pip install rasa==3.6.0
+        fi
+    
+    # 4. Validate Rasa configuration
+    - name: Validate Rasa Configuration
+      run: |
+        rasa data validate --domain domain.yml
+    
+    # 5. Train the model with error handling
     - name: Train Rasa Model
-      run: rasa train
-
-    # 5. (Optional) Upload the trained model as an artifact
-    # This saves the trained model so you can download it from GitHub
+      run: |
+        rasa train --verbose
+        # Check if model was created successfully
+        if [ ! -d "models" ] || [ -z "$(ls -A models)" ]; then
+          echo "Error: No model was generated"
+          exit 1
+        fi
+    
+    # 6. Test the trained model (optional but recommended)
+    - name: Test Trained Model
+      run: |
+        # Run tests if test stories exist
+        if [ -f "tests/test_stories.yml" ]; then
+          rasa test --stories tests/test_stories.yml
+        fi
+    
+    # 7. Upload trained model with better organization
     - name: Upload Trained Model
+      uses: actions/upload-artifact@v4  # Updated to v4
+      with:
+        name: trained-rasa-model-${{ github.sha }}  # Include commit hash
+        path: models/
+        retention-days: 30  # Keep artifacts for 30 days
+    
+    # 8. Upload test results if available
+    - name: Upload Test Results
+      if: always()  # Upload even if tests fail
       uses: actions/upload-artifact@v4
       with:
-        name: trained-rasa-model
-        path: models/
+        name: test-results-${{ github.sha }}
+        path: results/
+        retention-days: 7
+    
+    # 9. Optional: Deploy or notify on success
+    - name: Notify Success
+      if: success()
+      run: |
+        echo "Model training completed successfully!"
+        echo "Model artifact: trained-rasa-model-${{ github.sha }}"
+        
+    # 10. Optional: Notify on failure
+    - name: Notify Failure
+      if: failure()
+      run: |
+        echo "Model training failed. Check the logs above for details."
