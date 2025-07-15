@@ -1,8 +1,18 @@
-rasa==3.6.0
+# Core Rasa dependencies
+rasa[full]==3.6.0  # Changed from rasa==3.6.0 to include all ML dependencies
+nltk>=3.8  # Added since your script uses NLTK
+spacy>=3.5.0  # Added for NLP processing
+
+# Streamlit app dependencies
 streamlit>=1.29.0
 requests>=2.31.0
 python-dotenv>=1.0.0
 urllib3>=2.0.0
 certifi>=2023.0.0
 orjson>=3.9.0
-streamlit-cookie-manager>=0.2.0  # Fixed package name
+streamlit-cookie-manager>=0.2.0
+
+# Additional dependencies that might be needed for training
+scikit-learn>=1.3.0  # For some ML components
+tensorflow>=2.13.0  # If using TensorFlow-based components
+transformers>=4.30.0  # If using transformer-based components
