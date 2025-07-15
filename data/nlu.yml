@@ -1,512 +1,671 @@
 version: '3.1'
 nlu:
 - intent: intent_general_0
-  examples: '- We watch people walk by with their dogs.
+  examples: '- that driver is crazy.
 
-    - We have to practice every day.
+    - it was seven feet tall.
 
-    - That''s not the attitude of a good driver.
+    - i wasn''t able to attend school because i was feeling ill.
 
-    - I hate medication. it makes me feel different.
+    - that''s good to hear.
 
-    - Never better, thanks.
+    - i hate shaving.
 
-    - I will knock on the doors of all the corporations.
+    - he''s the only candidate that i trust.
 
-    - So does every smoker.
+    - it certainly is.
 
-    - That means it will get hotter.
+    - hopefully it will.
 
-    - I''m in a hurry.
+    - i really have to go.
 
-    - He will solve our problems.
+    - no, i hate vegetables.
 
-    - We haven''t been in a month.
+    - boy, that is a good nose.
 
-    - Me too. i can''t wait until winter.
+    - oh, that''s so delicious.
 
-    - Number three, it doesn''t run 24 hours.
+    - well, more than 50 million people voted for mccain.
 
-    - It''s so nice to have a heated apartment.
+    - just boil raw peanuts in salt water until the shells are soft.
 
-    - Of course. but i don''t have cable.
+    - lately, i''ve been quite busy.
 
-    - That''s what i need to do.
+    - we will be house rich, but cash poor.
 
-    - Okay, so she''s not ugly she''s just fat.
+    - so, i''ll just buy another one.
 
-    - No. i''m divorced.
+    - i''ve got to go.
 
-    - That''s no good.
+    - oh, look. here''s the little sticker that was on it. it''s called a pink navel.
 
-    - The wind blows those trucks over.'
+    - maybe we should honk the horn next time.'
 - intent: intent_general_1
-  examples: '- We don''t even know what kind most of them are.
+  examples: '- okay, let''s sit down.
 
-    - Don''t we have about five sharpeners?
+    - let''s go to a movie.
 
-    - I don''t know. i just woke up.
+    - okay, she''s not fat. so what''s the problem with her?
 
-    - I don''t know how that store makes money.
+    - okay, i''m sorry i did it.
 
-    - I don''t know, maybe one hundred.
+    - let me look. no, it''s not there.
 
-    - Yes, but i don''t know where the orange cones are.
+    - well, the tables and chairs look okay.
 
-    - I don''t know. whenever the weather comes on, i switch channels.
+    - okay. i just put a stamp on the envelope.
 
-    - I don''t know. maybe i''m not rich enough.
+    - okay, until next time then.
 
-    - I don''t know. look in the fridge.
+    - well, the waiter looked clean, so i guess it''s okay to eat here.
 
-    - I don''t know. maybe it was from a shopping cart.
+    - it''s a little bitter, but it''s okay.
 
-    - I don''t know. the tag is missing.
+    - it''s okay. it''s a really big campus.
 
-    - I don''t know. it''s not my mud.
+    - okay, that won''t be very crowded.
 
-    - I know he has a good hand, so i don''t bet.
+    - well, that''s okay.
 
-    - I don''t have enough will power.
+    - oh, yes! "let it be, let it beÂ"
 
-    - I don''t even know why we need to fix it.
+    - let me look at our list.
 
-    - I don''t know.
+    - let''s go to the lake.
 
-    - But how can we identify someone if we don''t know their race?
+    - okay, my seatbelt is on.
 
-    - Don''t be ridiculous.
+    - okay, i''ll get a bucket.
 
-    - I know that.
+    - let me get the keys.
 
-    - I don''t know any card games.'
+    - okay, i''ll get the vacuum cleaner.'
 - intent: intent_general_2
-  examples: '- I parked it right here.
+  examples: '- that''s a lot.
 
-    - Any rain right now would be pointless.
+    - i''d like that.
 
-    - Oh, no. we can walk right in.
+    - i am happy, but marriage is a lot of responsibility.
 
-    - Yes, that''s right. it does get boring.
+    - i really like that outfit.
 
-    - I just peeled it, and i''m looking at it right now.
+    - i like a good story.
 
-    - But i do all my writing with my right hand.
+    - i like to listen to rock and rb.
 
-    - I''m actually in school right now.
+    - well, i got a lot of good deals, as usual.
 
-    - No, i''d rather not find out that it''s dirty, because i''m pretty hungry right
-    now.
+    - i like it so far. my classes are pretty good right now.
 
-    - And then he turned right around.
+    - like fruit that is too ripe?
 
-    - That''s not right!
+    - it''s a lot better than paying someone 60.
 
-    - That''s right, it really would be.
+    - i read a lot.
 
-    - That doesn''t make it right.
+    - girls like guys with money.
 
-    - I''m attending pcc right now.
+    - yes, but she looks like a man.
 
-    - Is that right?
+    - i like listening to different kinds of music.
 
-    - Is that right. who ended up winning?
+    - i''ll say. my girlfriend has a nose like a drug dog.
 
-    - I''ve been good. i''m in school right now.
+    - i wish i had a talent like that.
 
-    - That''s all right.
+    - i like the ones i can sing along with.
 
-    - It wouldn''t seem right if it started raining right now.
+    - is that a lot of work?
 
-    - Is that right? why?
+    - that sounds like fun. what''s the weather going to be like?
 
-    - I like it so far. my classes are pretty good right now.'
+    - i like the one where the fireman tells us why we should vote yes.'
 - intent: intent_general_3
-  examples: '- Yes, i did.
+  examples: '- i really wish it wasn''t so hot every day.
 
-    - No, i never did. all i know is that i got a''s and b''s in school.
+    - that''s a bad day.
 
-    - That''s true. where did that money go?
+    - it was, until one day my manager caught me.
 
-    - So did i.
+    - it''s an ugly day today.
 
-    - Did he crash?
+    - yes, i saw that movie the first day it came out in theaters.
 
-    - Did the cops find out why he flew into the u.s.?
+    - we have to practice every day.
 
-    - I did, but i have to go again.
+    - all day long we heard tvs or telephones.
 
-    - Did he understand what the problem is?
+    - it was hot and sunny every day.
 
-    - I bet dad did it all the time when he was my age.
+    - i was busy the whole day.
 
-    - Did he get off the hood?
+    - sunday is mother''s day.
 
-    - Did it get any better?
+    - i can''t spend four hours on the road every day.
 
-    - I did too.
+    - i wish it would cool off one day.
 
-    - Well, i guess that''s why he did it.
+    - i eat two apples, one banana, and one orange every day.
 
-    - Then why did the lifeguard dive into the water?
+    - no, it''s earth day.
 
-    - That''s terrible! when did it happen?
+    - it seems like i get a new pimple almost every day.
 
-    - Did the seller know that?
+    - i had a long day.
 
-    - She had good reason. what did she do?
+    - i ate free cheese and meat every day.
 
-    - Oh, it did. there were about 300 people there to honor us.
+    - i listen day and night.
 
-    - Yes, i did. i saved about 50.
+    - i know. every day the weather seems different.
 
-    - Neither did i.'
+    - it took us all day.'
 - intent: intent_general_4
-  examples: '- I didn''t want to, so i didn''t.
+  examples: '- yes, it was.
 
-    - That doesn''t matter. i don''t want to sit around.
+    - yes, i''ve passed all my tests.
 
-    - I don''t want to date a blind woman.
+    - yes, the snow is fun.
 
-    - I don''t want to go to hell.
+    - yes, we do.
 
-    - And i want to get a big cabin with a view.
+    - yes, dad, it was.
 
-    - I don''t want to go alone.
+    - yes. he said he''d be here at 9 o''clock.
 
-    - I don''t want to see a movie by myself.
+    - oh, yes, because of all the killer germs.
 
-    - I don''t really want to.
+    - yes. he said he''d come over tomorrow.
 
-    - I want to get a puppy for my son.
+    - yes. that''s why it''s also the best hamburger in town.
 
-    - Not me. i want to play for the dodgers.
+    - yes, i looked there, too.
 
-    - That''s good, because i don''t want to live under people with loud feet.
+    - yes, but the red hand was blinking.
 
-    - I''m not. i just want to know.
+    - yes, even though some of the potatoes had eyes.
 
-    - I loved it. i want to live there.
+    - yes, it''s very dirty.
 
-    - Mom, i want a puppy.
+    - yes. when we landed, tv reporters and the army band were there.
 
-    - Well, of course i want to go when the weather is nice.
+    - yes, everybody gets the public broadcasting system.
 
-    - I know. i really want to go to the beach.
+    - yes, it''s covered with crud.
 
-    - I want it to cool down some.
+    - yes, it does.
 
-    - I want to cruise to hawaii.
+    - yes, it''s beautiful.
 
-    - Because i want to make a lot of money.
+    - yes, it''s cheaper than a hot dog or a beer.
 
-    - I just really don''t want to go.'
+    - yes. it gets a little cool at night.'
 - intent: intent_general_5
-  examples: '- I can''t believe he hasn''t crashed.
+  examples: '- i agree. pasadena is a nice city.
 
-    - She laughed! she didn''t believe me.
+    - i''ll get her a nice card.
 
-    - I don''t believe the art world.
+    - exactly, it wouldn''t be nice if it started raining. it''s too hot.
 
-    - I can''t believe how hot it is.
+    - take me to a nice restaurant, not to mcdonald''s.
 
-    - I can''t believe he won the election.
+    - that sounds nice.
 
-    - I believe that she will give me the invitation today.
+    - wow! that is nice. let''s stay for two nights.
 
-    - That''s what many people believe.
+    - there''s a real nice park nearby.
 
-    - I believe so.
+    - that''s very nice.
 
-    - 140. i can''t believe it.
+    - maybe the room is nice, but not the bed.
 
-    - I can''t believe we haven''t seen any animals.'
+    - it''s so nice to have a heated apartment.
+
+    - that''s nice, but tell me what she looks like.
+
+    - that sounds like a nice date.
+
+    - it''s really nice.
+
+    - it doesn''t look very nice outside today.
+
+    - yes, cheese is nice.
+
+    - but the house is so nice.
+
+    - that was a nice funeral.
+
+    - we went to a nice restaurant.
+
+    - that wasn''t very nice of her.
+
+    - that should be a nice trip. lots of fun, and lots of food.'
 - intent: intent_general_6
-  examples: '- Take me to dinner.
+  examples: '- i don''t want any other woman.
 
-    - So why can''t i have pizza for dinner?
+    - i''m not. i just want to know.
 
-    - My family and i are going to dinner.
+    - i just really don''t want to go.
 
-    - Just ask her out to dinner.
+    - thank goodness! i don''t want to see any wild animals.
 
-    - I''ll start dinner at 600.
+    - i will play the radio as loud as i want.
 
-    - I''m having dinner with my family
+    - we want to make sure all the students are out of the building.
 
-    - I''m going to dinner with my family.
+    - i didn''t want to, so i didn''t.
 
-    - Room service brought us a cold dinner.'
+    - that''s good, because i don''t want to live under people with loud feet.
+
+    - i don''t really want to.
+
+    - i don''t want to go alone.
+
+    - i want to. i heard it''s going to be really fun.
+
+    - i really want it to rain today.
+
+    - sometimes i want to throw it out the window.
+
+    - i want to buy lunch.
+
+    - mom, i want a puppy.
+
+    - i want to be a baseball player when i grow up.
+
+    - i would never want to be president.
+
+    - i want it to cool down some.
+
+    - well, i want to see "the pursuit of happyness."
+
+    - i know. i really want to go to the beach.'
 - intent: intent_general_7
-  examples: '- Can we get tickets?
+  examples: '- i know, it does sound pretty awesome.
 
-    - Yes, but only the cheap tickets.'
+    - i don''t know. it''s not my mud.
+
+    - no, i don''t like nose drops.
+
+    - men singers don''t have to look good.
+
+    - no, the police don''t care.
+
+    - i don''t like my job.
+
+    - i don''t have even one dollar in it.
+
+    - but how can we identify someone if we don''t know their race?
+
+    - i hope i don''t come back as a fish.
+
+    - i know he has a good hand, so i don''t bet.
+
+    - no, but my feet don''t hurt anymore.
+
+    - i don''t like it reheated.
+
+    - the neighbors don''t party on the weekends.
+
+    - i don''t really feel too well yet.
+
+    - well, i know how to flip hamburgers.
+
+    - i don''t like it.
+
+    - don''t vacuum it now.
+
+    - i didn''t know that.
+
+    - but i don''t have a tissue.
+
+    - don''t be ridiculous.'
 - intent: intent_general_8
-  examples: '- I like listening to different kinds of music.
+  examples: '- i''m taking a math course in school.
 
-    - I enjoy listening to all kinds of music.'
+    - oh, a laptop, of course.
+
+    - criminals, of course.
+
+    - of course. it''s not a hard job.
+
+    - of course, the cheese with holes in it.
+
+    - of course i''m sure.
+
+    - of course it does.
+
+    - of course! he''s world famous.
+
+    - of course not.
+
+    - of course. he stops the fastest cars.
+
+    - to the city, of course.
+
+    - if i owned a restaurant, i would never serve hot bread before the main course.
+
+    - of course not. if i do that, i''ll lose my job.
+
+    - against all of them, of course.
+
+    - cigarettes, of course.
+
+    - of course i do. but not on our flag!
+
+    - of course i will.
+
+    - of course. i have lots of best friends.
+
+    - of course not. that would be racist.
+
+    - yes, of course i wiped my feet.'
 - intent: intent_general_9
-  examples: '- Then go find a tissue in the bathroom.
+  examples: '- the police need our help finding a robber.
 
-    - I''m going to just hope that the bathroom is clean.
+    - my doctor said i need surgery.
 
-    - I hope so. i have to go to the bathroom.
+    - i need a notebook.
 
-    - I said i have to go to the bathroom.
+    - well, i need some help.
 
-    - I have to go to the bathroom.
+    - i need some pants.
 
-    - People are always getting up to use the bathroom.'
-- intent: intent_what_10
-  examples: '- What good does it do?
+    - no, i don''t need a converter because i bought a digital tv.
 
-    - What''s so good about it?
+    - do we need reservations?
 
-    - What makes it so good?'
-- intent: intent_what_11
-  examples: '- What happened before?
+    - i know that we need milk.
 
-    - What happened to the other student?
+    - we need a new mattress.
 
-    - What happened at the restaurant?'
-- intent: intent_what_12
-  examples: '- What are we going to do?
+    - but we need to turn left.
 
-    - What''s going on?
+    - we need cheese, bread, and ham.
 
-    - What''s the weather going to be like? i may want to go too.'
-- intent: intent_what_13
-  examples: '- What was it like?
+    - i need a new computer.
 
-    - What if i don''t like her?
+    - we need to save enough for a down payment.
 
-    - What''s the weather like?'
-- intent: intent_what_14
-  examples: '- What was the score at the end of the game?
+    - i need pencils.
 
-    - What''s on tv?
+    - because we need to buy a house.
 
-    - What kind of change?
+    - the police need to shoot all the bears.
 
-    - What kind of soup was that?
+    - that''s why we need to save money.
 
-    - What height is she?
+    - i need to withdraw some money.
 
-    - What was the second story?
+    - i need a job.
 
-    - What''s wrong with that?
+    - we need to save money.'
+- intent: intent_how_10
+  examples: '- how fast is he going?
 
-    - What''s wrong with the bed?
+    - how''s it going?'
+- intent: intent_how_11
+  examples: '- how much do we need to save?
 
-    - What''s wrong with them so soon?
+    - how about a dictionary?
 
-    - What do we need to buy?
+    - how about if i take shorter showers?
 
-    - What about the other homeless people?
+    - how many cars?
 
-    - What did the doctor say?
+    - how much money does he give away?
 
-    - What is there to eat?
+    - how long was the flight?
 
-    - What''s bad about it?
+    - how many are there?
 
-    - What are we waiting for?
+    - how big is los angeles?
 
-    - What''s the matter with green eyes?
+    - how much is that?
 
-    - What a great song.
+    - how much was that?
 
-    - What do the teachers do?
+    - how can i prove it?
 
-    - What''s so hard about golf?
+    - how many tires were cut?
 
-    - What did she say?'
-- intent: intent_what_15
-  examples: '- What time does it start?
+    - how about "let it be?"
 
-    - What time does the party start?
+    - how can he do that?
 
-    - What does that have to do with it?
+    - how often do i have to do that?
 
-    - What does she look like, though?
+    - how much is it?
 
-    - What time does the recycle truck come by?
+    - how about a movie?
 
-    - What does it say?
+    - how could that be?
 
-    - What difference does it make?
+    - how soon can we begin?
 
-    - What does she do?
+    - how many invitations has she given out?'
+- intent: intent_how_12
+  examples: '- how big was it?
 
-    - What should our flag look like?
+    - how big is "pretty big"?'
+- intent: intent_how_13
+  examples: '- how about a pizza?'
+- intent: intent_how_14
+  examples: '- how did he do it?
 
-    - What does she look like?'
-- intent: intent_what_16
-  examples: '- What does it mean?
+    - how long did it take?'
+- intent: intent_how_15
+  examples: '- how long will it take me to learn?'
+- intent: intent_how_16
+  examples: '- how far away is it?
 
-    - What does "mi" mean?
+    - how far away is that?'
+- intent: intent_how_17
+  examples: '- how can it be fun?'
+- intent: intent_how_18
+  examples: '- how was the weather?'
+- intent: intent_how_19
+  examples: '- how can he still be alive?'
+- intent: intent_why_20
+  examples: '- why was that?
 
-    - What does "mmddyy" mean?'
-- intent: intent_what_17
-  examples: '- What race is he?'
-- intent: intent_what_18
-  examples: '- What''s a little blood?
+    - why would he do that?
 
-    - Whatever a customer ordered, i sliced off a little more for me.'
-- intent: intent_what_19
-  examples: '- What''s the point?'
-- intent: intent_where_20
-  examples: '- Where do the students go?'
-- intent: intent_where_21
-  examples: '- Where does he travel to?
+    - why is that?
 
-    - Where are the band-aids?
+    - why is there so much crime?
 
-    - Where does cheese come from?
+    - why? we''re already late.
 
-    - Where are the seats?
+    - why would i do that?'
+- intent: intent_why_21
+  examples: '- why is it so slow?'
+- intent: intent_why_22
+  examples: '- why do we need to save money?'
+- intent: intent_why_23
+  examples: '- why did he do that?
 
-    - Where are we going?
+    - why did she do that?'
+- intent: intent_why_24
+  examples: '- why doesn''t it close?'
+- intent: intent_why_25
+  examples: '- why would i date someone i don''t even know?'
+- intent: intent_why_26
+  examples: '- why feel sorry for rich people?'
+- intent: intent_what_27
+  examples: '- what does she look like?
 
-    - Where are all these people going?
+    - what''s the weather going to be like? i may want to go too.
 
-    - Where is pasadena?
+    - what was it like?
 
-    - Where were the cars?
+    - what does she look like, though?
 
-    - Where''s the mustard?'
-- intent: intent_where_22
-  examples: '- Where''s the car?'
-- intent: intent_where_23
-  examples: '- Where''s the pencil sharpener?'
-- intent: intent_how_24
-  examples: '- How did we end up in that terrible hotel?'
-- intent: intent_how_25
-  examples: '- How can i prove it?
+    - what''s the weather like?
 
-    - How about if i take shorter showers?
+    - what if i don''t like her?
 
-    - How could that be?
+    - what should our flag look like?'
+- intent: intent_what_28
+  examples: '- what''s a little blood?
 
-    - How long was the flight?
+    - what''s so tough about it? of course, i would pick cigarettes.
 
-    - How can he do that?
+    - what race is he?
 
-    - How about a movie?
+    - what else do we get from cows?
 
-    - How big is los angeles?
+    - what was the lead story on the news?
 
-    - How much is it?
+    - what are we waiting for?
 
-    - How much was that?
+    - whatever the cause, i hate seeing them on my face.
 
-    - How often do i have to do that?
+    - what about her facial features?
 
-    - How many cars?
+    - what was the second story?
 
-    - How was the weather?
+    - what is there to eat?
 
-    - How much money does he give away?
+    - what happened to the other student?
 
-    - How about a pizza?
+    - what is gravity?
 
-    - How about a dictionary?
+    - what''s bad about it?
 
-    - How many invitations has she given out?
+    - what''s the point?
 
-    - How long will it take me to learn?
+    - what about the baseball game?
 
-    - How can he still be alive?
+    - what a great song.
 
-    - How much is that?
+    - what happened at the restaurant?
 
-    - How easy is that?'
-- intent: intent_how_26
-  examples: '- How about "let it be?"'
-- intent: intent_how_27
-  examples: '- How big is "pretty big"?
+    - what height is she?
 
-    - How big was it?'
-- intent: intent_how_28
-  examples: '- How can it be fun?'
-- intent: intent_how_29
-  examples: '- How did he do it?
+    - what was the score at the end of the game?
 
-    - How long did it take?'
-- intent: intent_how_30
-  examples: '- How far away is it?
+    - whatever it is, it hurts.'
+- intent: intent_what_29
+  examples: '- what does that have to do with it?
 
-    - How far away is that?'
-- intent: intent_how_31
-  examples: '- How fast is he going?
+    - what time does the recycle truck come by?
 
-    - How''s it going?'
-- intent: intent_how_32
-  examples: '- How many tires were cut?'
-- intent: intent_how_33
-  examples: '- How soon can we begin?'
-- intent: intent_when_34
-  examples: '- When i have time, i sometimes draw and paint.
+    - what difference does it make?
 
-    - When exactly does the party start?
+    - what makes it so good?
 
-    - When he is almost finished with one cigarette, he uses it to light another.
+    - what does she do?
 
-    - When is he coming?
+    - what good does it do?
 
-    - When are we going to stop?
+    - what time does it start?
 
-    - When does it start?
+    - what''s so good about it?
 
-    - Whenever he needs a shot to win a tournament, he makes that shot.'
-- intent: intent_when_35
-  examples: '- When did he die?'
-- intent: intent_why_36
-  examples: '- Why feel sorry for rich people?'
-- intent: intent_why_37
-  examples: '- Why did he do that?
+    - what time does the party start?'
+- intent: intent_what_30
+  examples: '- what''s going on?
 
-    - Why did she do that?'
-- intent: intent_why_38
-  examples: '- Why do we need to save money?'
-- intent: intent_why_39
-  examples: '- Why doesn''t it close?'
-- intent: intent_why_40
-  examples: '- Why is there so much crime?
+    - what are we going to do?'
+- intent: intent_what_31
+  examples: '- what''s on tv?'
+- intent: intent_what_32
+  examples: '- what''s wrong with it?
 
-    - Why is that?
+    - what''s wrong with that?
 
-    - Why would he do that?
+    - what''s wrong with the bed?
 
-    - Why was that?
+    - what''s wrong with looking pale?
 
-    - Why is it so slow?
+    - what''s wrong with them so soon?'
+- intent: intent_what_33
+  examples: '- what kind of cheese?
 
-    - Why would i do that?'
-- intent: intent_why_41
-  examples: '- Why would i date someone i don''t even know?'
-- intent: intent_why_42
-  examples: '- Why? we''re already late.'
+    - what kind of soup was that?
+
+    - what kind of change?'
+- intent: intent_what_34
+  examples: '- what''s the matter?
+
+    - what''s the matter with it?
+
+    - what''s the matter with the produce?
+
+    - what''s the matter with that?'
+- intent: intent_what_35
+  examples: '- what does it mean?
+
+    - what does "mmddyy" mean?
+
+    - what does "mi" mean?'
+- intent: intent_what_36
+  examples: '- what did she say?
+
+    - what does it say?
+
+    - what did the doctor say?'
+- intent: intent_when_37
+  examples: '- when is he coming?
+
+    - when he is almost finished with one cigarette, he uses it to light another.
+
+    - when i have time, i sometimes draw and paint.
+
+    - whenever he needs a shot to win a tournament, he makes that shot.
+
+    - when are we going to stop?
+
+    - when did he die?'
+- intent: intent_when_38
+  examples: '- when exactly does the party start?
+
+    - when does it start?'
+- intent: intent_where_39
+  examples: '- where are all these people going?
+
+    - where were the cars?
+
+    - where are the seats?
+
+    - where do the students go?
+
+    - where''s the car?
+
+    - where is pasadena?
+
+    - where''s the pencil sharpener?
+
+    - where are we going?'
+- intent: intent_where_40
+  examples: '- where''s the mustard?'
+- intent: intent_where_41
+  examples: '- where does he travel to?
+
+    - where does cheese come from?'
+- intent: intent_where_42
+  examples: '- where are the band-aids?'
 - intent: intent_who_43
-  examples: '- Who would turn in a gun for 200?
+  examples: '- who carries a sharp knife in their pocket?
 
-    - Who knows? but there must be a hundred new ones every day.
+    - who''s paying for that?
 
-    - Who makes up all these jokes?
+    - who makes up all these jokes?
 
-    - Who carries a sharp knife in their pocket?
+    - who invited them?
 
-    - Who in the world is ralph nader?
+    - who would turn in a gun for 200?
 
-    - Who said there is a problem with her?
+    - who knows? but there must be a hundred new ones every day.
 
-    - Who''s paying for that?
+    - who in the world is ralph nader?
 
-    - Who invented flossing?'
+    - who''s the greatest baseball player?'
 - intent: intent_who_44
-  examples: '- Who invited them?'
+  examples: '- who said there is a problem with her?'
 - intent: intent_who_45
-  examples: '- Who''s the greatest baseball player?'
+  examples: '- who invented flossing?'
 - intent: greet
   examples: '- hello
 
